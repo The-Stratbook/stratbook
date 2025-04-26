@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Color Palette */
+[data-theme="dark"] {
+  --color-base-100: oklch(25.33% 0.016 252.42);
+  --color-base-200: oklch(23.26% 0.014 253.1);;
+  --color-base-300: oklch(21.15% 0.012 254.09);
+  --color-base-content: #d4d4d8;
+  --color-primary: #ffc857;
+  --color-primary-content: #17171b;
+  --color-secondary: #37f0f7;
+  --color-secondary-content: #141411;
+  --color-accent: #8f8f9f;
+  --color-accent-content: #151420;
+  --color-neutral: #1e1e2f;
+  --color-neutral-content: #d4d4d8;
+  --color-info: #2563eb;
+  --color-info-content: #17171b;
+  --color-success: #10b981;
+  --color-success-content: oklch(17.112% 0.017 144.778);
+  --color-warning: #f59e0b;
+  --color-warning-content: oklch(17.113% 0.016 74.427);
+  --color-error: #ef4444;
+  --color-error-content: oklch(17.102% 0.015 16.886);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+
+  
+}
+
+[data-theme="light"] {
+  --color-primary: #ffc857;
+  --color-primary-content: #17171b;
+  
+}
+
+:root {  
+  --attack-color: #ff9800; /* Default Orange */
+  --defend-color: #2196f3; /* Default Blue */
+}
+
+/* Orange/Red Theme */
+[data-color-theme="orange-red"] {
+  --attack-color: #ff9800;
+  --defend-color: #f44336;
+}
+
+/* Blue/Orange Theme */
+[data-color-theme="blue-orange"] {
+  --attack-color: #2196f3;
+  --defend-color: #ff9800;
+}
+
+/* Blue/Red Theme */
+[data-color-theme="blue-red"] {
+  --attack-color: #2196f3;
+  --defend-color: #f44336;
+}
+
+/* DaisyUI/Tailwind custom buttons for attack/defend (unchanged) */
+.btn-attack {
+  background-color: var(--attack-color);
+  border-color: var(--attack-color);
+}
+
+.btn-attack-outline {
+  background-color: transparent;
+  border-color: var(--attack-color);
+  color: var(--attack-color);
+}
+
+.btn-defend {
+  background-color: var(--defend-color);
+  border-color: var(--defend-color);
+}
+
+.btn-defend-outline {
+  background-color: transparent;
+  border-color: var(--defend-color);
+  color: var(--defend-color);
+}
+
+.card.attack {
+  border-color: var(--attack-color);
+}
+
+.card.defend {
+  border-color: var(--defend-color);
+}

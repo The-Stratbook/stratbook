@@ -1,0 +1,28 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*", "/data/*", "/*.{svg,png,jpg,jpeg,ico,json}"]
+  },
+  "routes": [
+    {
+      "route": "/siege/tips*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/siege/tip/*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/terms-of-service",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/privacy-policy",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/cookie-policy",
+      "rewrite": "/index.html"
+    }
+  ]
+}

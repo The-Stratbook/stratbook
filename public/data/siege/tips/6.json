@@ -1,0 +1,18 @@
+{
+  "id": 6,
+  "title": "Maverick Tricking for Reinforced Walls",
+  "description": "**Maverick tricking** is an essential technique for opening reinforced walls when Thatcher is banned. This technique involves making horizontal lines at the top and bottom of a reinforced wall, which causes it to lose its reinforcement properties and can be breached with a regular soft breach afterwards.",
+  "operator": "Maverick",
+  "side": "Attack",
+  "map": "",
+  "bombSite": "",
+  "skill": "Expert",
+  "tags": ["Hard Breach"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/PjbbW6dAq6Q",
+  "detailedNotes": {
+    "teamCoordination": "Low",
+    "riskLevel": "High",
+    "counterStrategies": []
+  }
+}

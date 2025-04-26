@@ -1,0 +1,21 @@
+{
+  "id": 9,
+  "title": "Raurora claymore door",
+  "description": "Place a claymore on a door and place a **raurora** door on it with a drone close to it, this will open the bottom of th edoor. This will make it difficult for defenders to spot the claymore and increase the chances of catching them off-guard.",
+  "operator": "Raurora",
+  "side": "Attack",
+  "map": "",
+  "bombSite": "",
+  "skill": "Intermediate",
+  "tags": ["Trap", "Kill Potential"],
+  "imageUrl": "",
+  "videoUrl": "",
+  "detailedNotes": {
+    "setupTime": "None",
+    "teamCoordination": "Medium",
+    "riskLevel": "Low",
+    "counterStrategies": [
+      "Defenders can shoot the drone"
+    ]
+  }
+}

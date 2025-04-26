@@ -1,0 +1,19 @@
+{
+  "id": 13,
+  "title": "Advanced Mira Window Usage",
+  "description": "**Mira's Black Mirrors** can completely change how a site is defended. But you can also keep one in your pocket for later and place it late in the round to catch attackers off-guard.",
+  "operator": "Mira",
+  "side": "Defend",
+  "map": "",
+  "bombSite": "",
+  "skill": "Advanced",
+  "tags": ["Intel"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/1JSGg-RqadM",
+  "detailedNotes": {
+    "setupTime": "None",
+    "teamCoordination": "Low",
+    "riskLevel": "High",
+    "counterStrategies": []
+  }
+}

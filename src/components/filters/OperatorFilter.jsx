@@ -1,0 +1,32 @@
+import React, { useState } from "react";
+import OperatorFilterModal from "../modals/OperatorFilterModal";
+
+const OperatorFilter = ({ selectedOperator, onSelectOperator, selectedSide, onSideChange }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  return (
+    <div className="w-full"> {/* Ensure the div takes full width */}
+      <button
+        className="btn btn-primary w-full" // Make the button full width
+        onClick={() => setIsModalOpen(true)}
+      >
+        {selectedOperator ? `Selected Operator: ${selectedOperator.name}` : "Select an Operator"}
+      </button>
+      {isModalOpen && (
+        <OperatorFilterModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          onSelectOperator={(operator) => {
+            onSelectOperator(operator);
+            setIsModalOpen(false);
+          }}
+          selectedSide={selectedSide}
+          onSideChange={onSideChange}
+          selectedOperator={selectedOperator}
+        />
+      )}
+    </div>
+  );
+};
+
+export default OperatorFilter;

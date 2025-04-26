@@ -1,0 +1,20 @@
+{
+  "id": 4,
+  "title": "Hibana crouch hole trick",
+  "description": "Use **Hibana** to create a crouch hole in reinforced walls. This trick allows you to crouch walk through the hole and surprise defenders. It is especially useful for flanking or rotating between bomb sites.",
+  "operator": "Hibana",
+  "side": "Attack",
+  "map": "",
+  "bombSite": "",
+  "skill": "Intermediate",
+  "tags": ["Hard Breach"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/TUnjN75M9A4",
+  "detailedNotes": {
+    "teamCoordination": "Low",
+    "riskLevel": "Low",
+    "counterStrategies": [
+      "Bandit wires can destroy Hibana pellets"
+    ]
+  }
+}

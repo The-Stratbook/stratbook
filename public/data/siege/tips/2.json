@@ -1,0 +1,21 @@
+{
+    "id": 2,
+    "title": "Thermite + EMP Combo",
+    "description": "Use **Thermite** to breach reinforced walls near objectives and ask one of your teammates to pick an operator with **EMP's** for example thatcher. Coordinate with your team to create new entry points and catch defenders off-guard.",
+    "operator": "Attack",
+    "side": "Attack",
+    "map": "",
+    "bombSite": "",
+    "skill": "Intermediate",
+    "tags": ["Support"],
+    "imageUrl": "",
+    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "detailedNotes": {
+      "teamCoordination": "High",
+      "riskLevel": "High",
+      "counterStrategies": [
+        "Bandit Tricking",
+        "Mute Jammers"
+      ]
+    }
+  }

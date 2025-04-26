@@ -1,0 +1,22 @@
+{
+  "id": 14,
+  "title": "Perfect Bandit Tricking Technique",
+  "description": "**Bandit tricking** is the art of timing the placement of Bandit's batteries to destroy hard breaching equipment. Listen for the distinctive sound of Thermite charges or Hibana pellets being placed, then quickly deploy your battery to destroy them before detonation.",
+  "operator": "Bandit",
+  "side": "Defend",
+  "map": "",
+  "bombSite": "",
+  "skill": "Expert",
+  "tags": ["Anti-Breach", "Trick", "Sound"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/uhnoiVI9aBs",
+  "detailedNotes": {
+    "setupTime": "None",
+    "teamCoordination": "Medium",
+    "riskLevel": "High",
+    "counterStrategies": [
+      "Thatcher EMPs to destroy batteries",
+      "Kali's LV Lance can destroy batteries"
+    ]
+  }
+}

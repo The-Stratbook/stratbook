@@ -1,0 +1,64 @@
+{
+  "id": 0,
+  "title": "Advanced Vertical Play on Coastline",
+  "description": "This strategy utilizes vertical destruction to gain an advantage when attacking the Hookah objective on Coastline. By controlling Billiards and applying pressure from above, you can force defenders to relocate or become vulnerable to coordinated pushes.",
+  "operator": "Buck",
+  "side": "Attacker",
+  "map": "Coastline",
+  "bombSite": "Hookah/Billiards",
+  "skill": "Intermediate",
+  "tags": ["Vertical Play", "Map Control", "Utility Usage"],
+  "imageUrl": "https://example.com/your-strategy-image.jpg",
+  "videoUrl": "https://www.youtube.com/watch?v=example123",
+  "videoTimestamps": [
+    {"time": "0:15", "description": "Initial drone phase setup"},
+    {"time": "0:45", "description": "Buck skeleton key spots for vertical play"},
+    {"time": "1:20", "description": "Coordinated push execution"},
+    {"time": "2:05", "description": "Alternative approach for site control"}
+  ],
+  "lastTested": "2025-04-25",
+  "relatedStrategies": [12, 15, 23],
+  "detailedNotes": {
+    "teamCoordination": "High",
+    "riskLevel": "Medium",
+    "timeRequired": "1:30 minute setup",
+    "counterStrategies": [
+      "Jager ADS Placement",
+      "Mute Jammers on critical walls",
+      "Roamer in VIP to flank"
+    ],
+    "alternativeOperators": [
+      "Sledge can replace Buck but has less efficient vertical destruction",
+      "Zofia provides additional utility with concussion grenades"
+    ],
+    "extraTips": [
+      "Bring Thatcher to deal with defensive utility",
+      "Have a teammate watch flanks from VIP and Sunrise Bar",
+      "Save at least one drone for late-round info gathering"
+    ]
+  },
+  "contributor": {
+    "name": "Your Name",
+    "discord_username": "yourusername#1234",
+    "twitter": "@yourtwitterhandle",
+    "youtube": "https://youtube.com/@yourchannel"
+  },
+  "FAQ": [
+    {
+      "question": "How long does this strategy take to set up?",
+      "answer": "The setup takes approximately 90 seconds, which includes the initial droning and vertical destruction phase."
+    },
+    {
+      "question": "Can this work against higher-rank players?",
+      "answer": "Yes, this strategy has been successfully used in Platinum and Diamond ranks because it relies on **coordinated teamwork** rather than opponent mistakes."
+    },
+    {
+      "question": "What if the defenders reinforce the ceiling?",
+      "answer": "The strategy includes alternative entry points through VIP and Aquarium if ceiling reinforcements are in place. Buck can still open up unreinforced portions for line-of-sight."
+    },
+    {
+      "question": "Is this viable in solo queue?",
+      "answer": "While coordination makes this strategy more effective, the vertical pressure aspect can be executed solo. Communication with your team about your intentions is still recommended."
+    }
+  ]
+}

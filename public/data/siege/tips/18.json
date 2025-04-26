@@ -1,0 +1,22 @@
+{
+  "id": 18,
+  "title": "Smart Kapkan Trap Placements make for easy kills",
+  "description": "When playing **Kapkan**, place traps in unexpected positions that attackers won't check. Instead of placing them at eye level, set them at crouch height or behind door frames. This increases the chances of catching attackers off-guard and securing easy kills.",
+  "operator": "Kapkan",
+  "side": "Defend",
+  "map": "",
+  "bombSite": "",
+  "skill": "Intermediate",
+  "tags": ["Trap Placement", "Kill Potential"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/2dB9prSYU4M",
+  "detailedNotes": {
+    "setupTime": "Preparation Phase",
+    "teamCoordination": "Low",
+    "riskLevel": "Low",
+    "counterStrategies": [
+      "IQ can detect Kapkan traps through walls",
+      "Thatcher's EMP grenades can disable traps"
+    ]
+  }
+}

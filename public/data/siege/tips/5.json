@@ -1,0 +1,19 @@
+{
+  "id": 5,
+  "title": "A secret way to place the Nomads",
+  "description": "When playing **Nomad**, place Airjabs in unexpected positions that still cover high-traffic areas. Instead of placing them directly on site, set them behind half-walls or in adjacent rooms that defenders can rotate to. This prevents attackers from benefiting from your Airjabs while still keeping your team in range.",
+  "operator": "Nomad",
+  "side": "Attack",
+  "map": "",
+  "bombSite": "",
+  "skill": "Advanced",
+  "tags": ["Flank Watch"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/g_BlOmIf2l0",
+  "detailedNotes": {
+    "setupTime": "Preparation Phase",
+    "teamCoordination": "Medium",
+    "riskLevel": "Low",
+    "counterStrategies": []
+  }
+}

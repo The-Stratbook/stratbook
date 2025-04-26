@@ -1,0 +1,23 @@
+{
+  "id": 8,
+  "title": "Impact Tricking to Counter Hard Breachers",
+  "description": "**Impact tricking** is an advanced defensive technique to counter Thermite and Hibana. By timing your impact grenade perfectly with the breaching sound cue, you can destroy the exothermic charge or X-KAIROS pellets before they detonate.",
+  "operator": "",
+  "side": "Defend",
+  "map": "",
+  "bombSite": "",
+  "skill": "Intermediate",
+  "tags": ["Counter-Breach", "Trick"],
+  "imageUrl": "",
+  "videoUrl": "",
+  "detailedNotes": {
+    "setupTime": "None",
+    "teamCoordination": "Low",
+    "riskLevel": "Medium",
+    "counterStrategies": [
+      "Flashbangs to cover breach sound",
+      "Multiple simultaneous breaches",
+      "Zofia to stun impact holder"
+    ]
+  }
+}

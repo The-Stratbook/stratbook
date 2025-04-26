@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "name": "Bank",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 2,
+        "name": "Consulate",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 3,
+        "name": "Kafe Dostoyevsky",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 4,
+        "name": "Clubhouse",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 5,
+        "name": "Lair",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 6,
+        "name": "Skyscraper",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 7,
+        "name": "Coastline",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 8,
+        "name": "Nighthaven Labs",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 9,
+        "name": "Border",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 10,
+        "name": "Villa",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 11,
+        "name": "Emerald Plains",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 12,
+        "name": "Outback",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 13,
+        "name": "Stadium Alpha",
+        "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+    },
+    {
+        "id": 14,
+        "name": "Stadium Bravo",
+        "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+    },
+    {
+        "id": 15,
+        "name": "Chalet",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 16,
+        "name": "Oregon",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 17,
+        "name": "Kanal",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 18,
+        "name": "Theme Park",
+        "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+    },
+    {
+        "id": 19,
+        "name": "House",
+        "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+    },
+    {
+        "id": 20,
+        "name": "Favela",
+        "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+    },
+    {
+        "id": 21,
+        "name": "Tower",
+        "playlist": ["Quick Match", "Team Deathmatch"]
+    },
+    {
+        "id": 22,
+        "name": "Yacht",
+        "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+    },
+    {
+        "id": 23,
+        "name": "Fortress",
+        "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+    },
+    {
+        "id": 24,
+        "name": "Presidential Plane",
+        "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+    },
+    {
+        "id": 25,
+        "name": "Close Quarter",
+        "playlist": ["Team Deathmatch"]
+    },
+    {
+        "id": 26,
+        "name": "Hereford Base",
+        "playlist": []
+    }
+]

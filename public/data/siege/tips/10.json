@@ -1,0 +1,22 @@
+{
+  "id": 10,
+  "title": "Sneaky Kaid Electroclaw Placements",
+  "description": "**Kaid's Electroclaws** have a large radius that can be exploited for hidden placements. Use this to your advantage by placing them in unexpected spots that attackers won't check. This increases the chances of catching attackers off-guard and denying them entry.",
+  "operator": "Kaid",
+  "side": "Defend",
+  "map": "",
+  "bombSite": "",
+  "skill": "Intermediate",
+  "tags": ["Anti-Breach"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/Vn3fqcvRASw",
+  "detailedNotes": {
+    "setupTime": "Preparation Phase",
+    "teamCoordination": "Low",
+    "riskLevel": "Low",
+    "counterStrategies": [
+       "Thatcher's EMP grenades can disable Electroclaws",
+       "IQ can detect Electroclaws through walls"
+    ]
+  }
+}

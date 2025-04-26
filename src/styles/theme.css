@@ -1,0 +1,33 @@
+
+/* These will work regardless of the theme */
+.btn-attack {
+  background-color: var(--attack-color);
+  border-color: var(--attack-color);
+  color: #17171b;
+}
+
+.btn-attack-outline {
+  background-color: transparent;
+  border-color: var(--attack-color);
+  color: var(--attack-color);
+}
+
+.btn-defend {
+  background-color: var(--defend-color);
+  border-color: var(--defend-color);
+  color: #17171b;
+}
+
+.btn-defend-outline {
+  background-color: transparent;
+  border-color: var(--defend-color);
+  color: var(--defend-color);
+}
+
+.card.attack {
+  border-color: var(--attack-color);
+}
+
+.card.defend {
+  border-color: var(--defend-color);
+}

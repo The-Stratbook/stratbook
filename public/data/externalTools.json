@@ -1,0 +1,145 @@
+{
+  "proLeague": [
+    {
+      "id": "liquipedia",
+      "name": "Liquipedia Rainbow Six",
+      "description": "Comprehensive wiki for Rainbow Six esports, featuring tournament information, team rosters, player statistics, and match results.",
+      "link": "https://liquipedia.net/rainbowsix/Main_Page",
+      "image": "/images/external-tools/liquipedia.png"
+    },
+    {
+      "id": "siegegg",
+      "name": "SiegeGG",
+      "description": "News, statistics, and analysis focused on Rainbow Six Siege esports and competitive play.",
+      "link": "https://siege.gg/",
+      "image": "/images/external-tools/siegegg.png"
+    },
+    {
+      "id": "ubiesports",
+      "name": "Ubisoft Esports",
+      "description": "Official Ubisoft Rainbow Six Siege esports portal with tournament schedules, news, and broadcasts.",
+      "link": "https://www.ubisoft.com/en-us/esports/rainbow-six/siege",
+      "image": "/images/external-tools/ubisoft-esports.png"
+    },
+    {
+      "id": "challengermode",
+      "name": "BLAST R6 Challengermode",
+      "description": "Platform for Rainbow Six Siege tournaments organized by BLAST.",
+      "link": "https://www.challengermode.com/s/BlastR6",
+      "image": "/images/external-tools/challengermode.png"
+    },
+    {
+      "id": "faceit",
+      "name": "FaceIt Rainbow Six",
+      "description": "Competitive platform for playing Rainbow Six Siege tournaments and ladders.",
+      "link": "https://www.faceit.com/en/club/361f6fdd-dbab-4c87-8106-fd3498b8a4de?cp=organizer_page",
+      "image": "/images/external-tools/faceit.png"
+    }
+  ],
+  "competitive": [
+    {
+      "id": "r6strat",
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "link": "https://r6strat.com/",
+      "image": "/images/external-tools/r6strat.png"
+    },
+    {
+      "id": "statscc",
+      "name": "Stats.cc",
+      "description": "Advanced statistics platform for Rainbow Six Siege player performance tracking.",
+      "link": "https://stats.cc/siege",
+      "image": "/images/external-tools/statscc.png"
+    },
+    {
+      "id": "r6tracker",
+      "name": "R6 Tracker Network",
+      "description": "Comprehensive statistics tracking for Rainbow Six Siege players, including leaderboards and performance metrics.",
+      "link": "https://r6.tracker.network/r6siege/leaderboards?page=1",
+      "image": "/images/external-tools/r6tracker.png"
+    },
+    {
+      "id": "stratbookgg",
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "link": "https://stratbook.gg/",
+      "image": "/images/external-tools/stratbookgg.png"
+    },
+    {
+      "id": "r6strats",
+      "name": "R6 Strats Generator",
+      "description": "Simple tool for generating Rainbow Six Siege strategies to try in your matches.",
+      "link": "https://codingpenguin1.github.io/R6-Strats/",
+      "image": "/images/external-tools/r6strats.png"
+    },
+    {
+      "id": "r6calls",
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "link": "https://www.r6calls.com/",
+      "image": "/images/external-tools/r6calls.png"
+    }
+  ],
+  "community": [
+    {
+      "id": "r6reddit",
+      "name": "Rainbow Six Reddit",
+      "description": "The official Rainbow Six Siege subreddit for discussions, news, clips, and community content.",
+      "link": "https://www.reddit.com/r/Rainbow6/",
+      "image": "/images/external-tools/r6reddit.png"
+    },
+    {
+      "id": "steamcommunity",
+      "name": "Steam Community",
+      "description": "Rainbow Six Siege Steam community hub with discussions, guides, and user content.",
+      "link": "https://steamcommunity.com/app/359550/discussions/",
+      "image": "/images/external-tools/steamcommunity.png"
+    },
+    {
+      "id": "r6loot",
+      "name": "R6Loot",
+      "description": "Browse and discover all cosmetic items available in Rainbow Six Siege.",
+      "link": "https://r6loot.com/",
+      "image": "/images/external-tools/r6loot.png"
+    },
+    {
+      "id": "siegrsgg",
+      "name": "SiegRS.gg",
+      "description": "Community platform for finding Rainbow Six Siege teams and players.",
+      "link": "https://siegrs.gg/",
+      "image": "/images/external-tools/siegrsgg.png"
+    }
+  ],
+  "fun": [
+    {
+      "id": "stratroulette",
+      "name": "Strat Roulette",
+      "description": "Generate random, fun challenges to spice up your Rainbow Six Siege matches.",
+      "link": "https://stratroulette.net/",
+      "image": "/images/external-tools/stratroulette.png"
+    },
+    {
+      "id": "stratroulettehub",
+      "name": "Strat Roulette Hub",
+      "description": "Collection of random strategy challenges for casual Rainbow Six Siege play.",
+      "link": "https://siege.stratroulettehub.com/",
+      "image": "/images/external-tools/stratroulettehub.png"
+    }
+  ],
+  "creators": [
+    {
+      "id": "reaperen",
+      "name": "Reaper_EN",
+      "description": "YouTube channel focused on competitive Rainbow Six Siege analysis and strategy breakdowns.",
+      "link": "https://www.youtube.com/c/ReaperEN",
+      "image": "/images/external-tools/reaperen.png"
+    },
+    {
+      "id": "kaosx",
+      "name": "KaosX",
+      "description": "Rainbow Six Siege content creator focused on educational and strategic gameplay guides.",
+      "link": "https://www.youtube.com/c/kaosx",
+      "image": "/images/external-tools/kaosx.png"
+    }
+  ]
+}

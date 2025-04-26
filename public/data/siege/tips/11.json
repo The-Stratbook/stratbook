@@ -1,0 +1,21 @@
+{
+  "id": 11,
+  "title": "Unexpected Frost Mat Placements",
+  "description": "**Frost's Welcome Mats** are most effective when placed in unexpected locations. Instead of obvious doorways, try placing them near bulletproof camera's or in bushes or dark corners.",
+  "operator": "Frost",
+  "side": "Defend",
+  "map": "",
+  "bombSite": "",
+  "skill": "Intermediate",
+  "tags": ["Traps"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/tRC05PSYslw",
+  "detailedNotes": {
+    "setupTime": "Preparation Phase",
+    "teamCoordination": "Low",
+    "riskLevel": "Low",
+    "counterStrategies": [
+      "Drones can spot Frost Mats"
+    ]
+  }
+}

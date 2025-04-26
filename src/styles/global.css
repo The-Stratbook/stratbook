@@ -1,0 +1,27 @@
+:root {
+    --color-background: #0C121C;
+    --color-primary: #FFD02F;
+    --color-secondary: #00C2CB;
+    --color-text: #FFFFFF;
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #17171b;
+  }
+  
+  body {
+    background: var(--color-background);
+    color: var(--color-text);
+  }
+  
+  .primary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  
+  .secondary {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }

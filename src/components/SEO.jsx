@@ -1,0 +1,90 @@
+import React, { useEffect } from 'react';
+
+const SEO = ({ title, description, url, image, type, canonicalUrl, faqSchema, keywords, author, publishedDate, modifiedDate }) => {
+  useEffect(() => {
+    // Update the document title
+    document.title = title ? `${title} - Siege Tips` : 'Siege Tips';
+    
+    // Update meta tags
+    const metaTags = {
+      description: description || 'Tips and tricks for Rainbow Six Siege',
+      'og:title': title || 'Siege Tips',
+      'og:description': description || 'Tips and tricks for Rainbow Six Siege',
+      'og:url': url || window.location.href,
+      'og:type': type || 'website',
+      'twitter:card': 'summary_large_image',
+      'twitter:title': title || 'Siege Tips',
+      'twitter:description': description || 'Tips and tricks for Rainbow Six Siege',
+      // New meta tags
+      'keywords': keywords || 'Rainbow Six Siege, R6, Siege, tips, strategies, gaming',
+      'author': author || 'Siege Tips',
+      'robots': 'index, follow',
+      'language': 'en',
+    };
+
+    // Add structured data for articles
+    if (type === 'article' && (publishedDate || modifiedDate)) {
+      metaTags['article:published_time'] = publishedDate;
+      metaTags['article:modified_time'] = modifiedDate || publishedDate;
+    }
+
+    if (image) {
+      metaTags['og:image'] = image;
+      metaTags['twitter:image'] = image;
+    }
+
+    // Update existing meta tags or create new ones
+    Object.entries(metaTags).forEach(([name, content]) => {
+      let metaTag = document.querySelector(`meta[name="${name}"]`) ||
+                   document.querySelector(`meta[property="${name}"]`);
+      
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        if (name.startsWith('og:') || name.startsWith('twitter:') || name.startsWith('article:')) {
+          metaTag.setAttribute('property', name);
+        } else {
+          metaTag.setAttribute('name', name);
+        }
+        document.head.appendChild(metaTag);
+      }
+      
+      metaTag.setAttribute('content', content);
+    });
+
+    // Handle canonical URL
+    let canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (canonicalUrl) {
+      if (!canonicalTag) {
+        canonicalTag = document.createElement('link');
+        canonicalTag.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonicalTag);
+      }
+      canonicalTag.setAttribute('href', canonicalUrl);
+    } else if (canonicalTag) {
+      canonicalTag.remove();
+    }
+
+    // Handle schema data if provided
+    let schemaTag = document.querySelector('script[type="application/ld+json"]');
+    if (faqSchema) {
+      if (!schemaTag) {
+        schemaTag = document.createElement('script');
+        schemaTag.type = 'application/ld+json';
+        document.head.appendChild(schemaTag);
+      }
+      schemaTag.textContent = JSON.stringify(faqSchema);
+    } else if (schemaTag) {
+      schemaTag.remove();
+    }
+
+    // Cleanup function
+    return () => {
+      // We don't want to remove title or meta tags on unmount
+      // as this can cause flicker, and the next component will update them
+    };
+  }, [title, description, url, image, type, canonicalUrl, faqSchema, keywords, author, publishedDate, modifiedDate]);
+
+  return null; // This component doesn't render anything
+};
+
+export default SEO;

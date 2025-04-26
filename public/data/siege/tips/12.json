@@ -1,0 +1,23 @@
+{
+  "id": 12,
+  "title": "Nomad Flank Watch Setup",
+  "description": "**Nomad's Airjabs** are perfect for watching your flanks. Place them at common rotation points and entrances to secure an area without needing a teammate to watch it. This allows your team to focus on the objective while eliminating the risk of roamers.",
+  "operator": "Nomad",
+  "side": "Attack",
+  "map": "",
+  "bombSite": "",
+  "skill": "Intermediate",
+  "tags": ["Flank Watch", "Area Denial", "Solo Queue"],
+  "imageUrl": "",
+  "videoUrl": "",
+  "detailedNotes": {
+    "setupTime": "Attack Phase",
+    "teamCoordination": "Low",
+    "riskLevel": "Low",
+    "counterStrategies": [
+      "Jäger's ADS can destroy Airjabs",
+      "Wamai's Mag-NET can redirect Airjabs",
+      "Careful defenders spotting and shooting Airjabs"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "Siege",
+    "description": "A collection of tips and strategies for Rainbow Six Siege.",
+    "version": "1.0.0",
+    "lastUpdated": "2025-04-23",
+    "author": "Dakpan",
+    "license": "MIT",
+    "website": "https://thestratbook.com",
+    "repository": "",
+    "keywords": [
+        "Rainbow Six Siege",
+        "tips",
+        "strategies",
+        "gaming",
+        "esports"
+    ],
+    "categories": [
+        "Gaming",
+        "Esports",
+        "Strategy"
+    ],
+    "tags": [
+        "Siege",
+        "Rainbow Six",
+        "Tactics",
+        "Teamwork",
+        "Coordination"
+    ],
+    "socialMedia": {
+        "twitter": "https://twitter.com/thestratbook",
+        "discord": "https://discord.gg/thestratbook",
+        "reddit": "https://www.reddit.com/r/thestratbook/",
+        "youtube": "https://www.youtube.com/channel/UC1234567890"
+    },
+    "contact": {
+        "email": "",
+        "support": "https://thestratbook.com/support",
+        "feedback": "https://thestratbook.com/feedback" 
+    }
+}

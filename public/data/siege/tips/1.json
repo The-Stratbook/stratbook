@@ -1,0 +1,40 @@
+{
+  "id": 1,
+  "title": "Basic stuff",
+  "description": "Use this music to get a motivational boost",
+  "operator": "",
+  "side": "Both",
+  "map": "",
+  "bombSite": "",
+  "skill": "Beginner",
+  "tags": ["Support"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "videoTimestamps": [
+    {"time": "0:15", "description": "Initial setup"},
+    {"time": "0:45", "description": "Alternative angle"}
+  ],
+  "lastTested": "2025-04-23",
+  "relatedStrategies": [2, 3, 4],
+  "detailedNotes": {
+    "teamCoordination": "Medium",
+    "riskLevel": "High",
+    "counterStrategies": [
+      "Bandit Tricking"
+    ]
+  },
+  "contributor": {
+    "name": "Dakpan",
+    "discord_username": "myusernameisdakpanbutitwastaken"
+  },
+  "FAQ": [
+    {
+      "question": "How long does this strategy take to set up?",
+      "answer": "This setup takes approximately 20 seconds, leaving time for additional reinforcements."
+    },
+    {
+      "question": "Can this work against higher-rank players?",
+      "answer": "Yes, this strategy has been successfully used in Platinum and Diamond ranks because it relies on **surprise** rather than opponent mistakes."
+    }
+  ]
+}

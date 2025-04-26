@@ -1,0 +1,22 @@
+{
+  "id": 15,
+  "title": "Stupid kapkan traps work too",
+  "description": "Sometimes placing a **kapkan trap** in a stupid spot can work wonders. Check out this video to see how it can catch attackers off-guard.",
+  "operator": "Kapkan",
+  "side": "Defend",
+  "map": "Club House",
+  "bombSite": "Basement",
+  "skill": "Advanced",
+  "tags": ["Traps", "Kill Potential"],
+  "imageUrl": "",
+  "videoUrl": "https://www.youtube.com/shorts/U5wS_ZW00O4",
+  "detailedNotes": {
+    "setupTime": "Preparation Phase",
+    "teamCoordination": "Low",
+    "riskLevel": "Medium",
+    "counterStrategies": [
+      "IQ can detect Kapkan traps through walls",
+      "Thatcher's EMP grenades can disable traps"
+    ]
+  }
+}
