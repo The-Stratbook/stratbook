@@ -1,40 +1,26 @@
 {
   "id": 1,
-  "title": "Basic stuff",
-  "description": "Use this music to get a motivational boost",
-  "operator": "",
-  "side": "Both",
+  "title": "Hidden Kapkan traps (2x coastline, 1x kafe)",
+  "description": "With these 3 spots you can hide Kapkan traps in a way that they are not visible to the enemy team. This is a great way to get free kills and make the enemy team waste their drones.",
+  "operator": "Kapkan",
+  "side": "Defend",
   "map": "",
   "bombSite": "",
   "skill": "Beginner",
   "tags": ["Support"],
   "imageUrl": "",
-  "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-  "videoTimestamps": [
-    {"time": "0:15", "description": "Initial setup"},
-    {"time": "0:45", "description": "Alternative angle"}
-  ],
-  "lastTested": "2025-04-23",
-  "relatedStrategies": [2, 3, 4],
+  "videoUrl": "https://www.instagram.com/p/DHHMlCfIcak/",
+  "lastTested": "",
+  "relatedStrategies": [],
   "detailedNotes": {
-    "teamCoordination": "Medium",
-    "riskLevel": "High",
+    "teamCoordination": "Low",
+    "riskLevel": "Low",
     "counterStrategies": [
-      "Bandit Tricking"
+      "Use IQ to find the traps."
     ]
   },
   "contributor": {
     "name": "Dakpan",
     "discord_username": "myusernameisdakpanbutitwastaken"
-  },
-  "FAQ": [
-    {
-      "question": "How long does this strategy take to set up?",
-      "answer": "This setup takes approximately 20 seconds, leaving time for additional reinforcements."
-    },
-    {
-      "question": "Can this work against higher-rank players?",
-      "answer": "Yes, this strategy has been successfully used in Platinum and Diamond ranks because it relies on **surprise** rather than opponent mistakes."
-    }
-  ]
+  }
 }

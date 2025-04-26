@@ -1,21 +1,20 @@
 {
     "id": 2,
-    "title": "Thermite + EMP Combo",
-    "description": "Use **Thermite** to breach reinforced walls near objectives and ask one of your teammates to pick an operator with **EMP's** for example thatcher. Coordinate with your team to create new entry points and catch defenders off-guard.",
-    "operator": "Attack",
+    "title": "Use Osa's shield to block the lasers of a claymore",
+    "description": "You can use Osa's shield to block the lasers of a claymore. This is a great way to get a suprise kill when the enemy pushes you.",
+    "operator": "Osa",
     "side": "Attack",
     "map": "",
     "bombSite": "",
     "skill": "Intermediate",
-    "tags": ["Support"],
+    "tags": ["Tactical"],
     "imageUrl": "",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "videoUrl": "https://www.instagram.com/p/DAbWA1ZRSqq/",
     "detailedNotes": {
-      "teamCoordination": "High",
-      "riskLevel": "High",
+      "teamCoordination": "Medium",
+      "riskLevel": "Medium",
       "counterStrategies": [
-        "Bandit Tricking",
-        "Mute Jammers"
+        "C4"
       ]
     }
   }

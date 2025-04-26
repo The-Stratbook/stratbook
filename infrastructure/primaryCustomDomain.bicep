@@ -11,5 +11,5 @@ resource primaryCustomDomain 'Microsoft.Web/staticSites/customDomains@2022-03-01
   }
 }
 
-@description('Output the primary domain validation token')
-output validationToken string = primaryCustomDomain.properties.validationToken
+@description('Output the primary domain name')
+output domainName string = primaryCustomDomain.properties.domainName

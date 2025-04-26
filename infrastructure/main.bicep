@@ -83,9 +83,3 @@ output staticWebAppName string = swa.outputs.name
 
 @description('Output the resource group name')
 output resourceGroupName string = rg.name
-
-@description('Output the primary domain validation token')
-output primaryDomainValidationToken string = primaryCustomDomainModule.outputs.validationToken
-
-@description('Output the www primary domain validation token')
-output wwwPrimaryDomainValidationToken string = wwwPrimaryCustomDomainModule.outputs.validationToken
