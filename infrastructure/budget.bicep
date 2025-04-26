@@ -2,7 +2,7 @@
 param budgetAmount int = 10
 
 @description('Email address for budget alerts')
-param budgetContactEmail string = 'thestratbook.com@vanhoutensolutions.nl'
+param budgetContactEmail string
 
 @description('Resource Group to monitor')
 param resourceGroupName string
