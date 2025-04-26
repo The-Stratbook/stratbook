@@ -139,7 +139,7 @@ To submit a new strategy:
 
 1. Fork this repository
 2. Create your strategy JSON file in the `public/data/siege/tips` directory
-3. The filename should be temporary (e.g., `new-strategy-1.json`) - we'll assign a proper ID
+3. The filename should be structured (e.g., `<id>.json`) for example `1.json`
 4. Submit a pull request with your new strategy
 5. Our team will review the submission and provide feedback if needed
 
