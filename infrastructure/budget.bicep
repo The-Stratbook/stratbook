@@ -1,8 +1,17 @@
 @description('Budget amount in Euros')
 param budgetAmount int = 10
 
-@description('Email address for budget alerts')
-param budgetContactEmail string = 'your-email@example.com'
+@description('Key Vault name containing the budget contact email secret')
+param keyVaultName string
+
+@description('Secret name for the budget contact email')
+param budgetContactEmailSecretName string = 'BudgetContactEmail'
+
+resource keyVault 'Microsoft.KeyVault/vaults@2021-06-01-preview' existing = {
+  name: keyVaultName
+}
+
+var budgetContactEmail = listSecrets(keyVault.id, '2021-06-01-preview').value[budgetContactEmailSecretName]
 
 @description('Resource Group to monitor')
 param resourceGroupName string
