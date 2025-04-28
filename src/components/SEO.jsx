@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const SEO = ({ title, description, url, image, type, canonicalUrl, faqSchema, keywords, author, publishedDate, modifiedDate }) => {
   useEffect(() => {

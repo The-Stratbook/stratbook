@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import TipCard from "../cards/TipCard";
-import Layout from '../../layouts/Layout';
 
 const TipsList = ({ tips }) => {
   const [visibleCount, setVisibleCount] = useState(8); // Number of tips to show initially
