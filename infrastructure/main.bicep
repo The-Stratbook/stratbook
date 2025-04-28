@@ -74,12 +74,3 @@ module budgetModule './budget.bicep' = {
     budgetContactEmail: budgetContactEmail
   }
 }
-
-@description('Output the default hostname')
-output endpoint string = swa.outputs.defaultHostname
-
-@description('Output the static web app name')
-output staticWebAppName string = swa.outputs.name
-
-@description('Output the resource group name')
-output resourceGroupName string = rg.name

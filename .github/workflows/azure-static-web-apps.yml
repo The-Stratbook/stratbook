@@ -20,50 +20,52 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_and_deploy_job:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }} || github.event_name == 'push' || github.event_name == 'repository_dispatch' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+  build-and-deploy-app:
+    name: Build and Deploy Application
     runs-on: ubuntu-latest
-    name: Build and Deploy
-    env:
-      # Define environment variables at the job level
-      REACT_APP_CLARITY_ID: ${{ secrets.REACT_APP_CLARITY_ID }}
-      REACT_APP_GA_MEASUREMENT_ID: ${{ secrets.REACT_APP_GA_MEASUREMENT_ID }}
+
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true
-      
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
-      
+          node-version: '18.x'
+
       - name: Install dependencies
         run: npm ci
-      
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          app_location: "/" # App source code path
-          output_location: "build" # Built app content directory
-          action: "upload"
-        env:
-          # Pass the environment variables to the build process
-          REACT_APP_CLARITY_ID: ${{ secrets.REACT_APP_CLARITY_ID }}
-          REACT_APP_GA_MEASUREMENT_ID: ${{ secrets.REACT_APP_GA_MEASUREMENT_ID }}
 
-  close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+      - name: Build React App
+        run: npm run build
+
+      - name: Deploy to Static Web App
+        run: |
+          npx @azure/static-web-apps-cli deploy \
+            --app-location . \
+            --api-location "" \
+            --output-location build \
+            --deployment-token "${{ secrets.STATIC_WEB_APP_TOKEN }}" \
+            --env production
+
+  validate-deployment:
+    name: Validate Deployment
     runs-on: ubuntu-latest
-    name: Close Pull Request Job
+    needs: build-and-deploy-app
     steps:
-      - name: Close Pull Request
-        id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          app_location: "/" # App source code path
-          action: "close"
+      - name: Check Deployment Status
+        run: |
+          APP_URL=$(az staticwebapp show \
+            --name swa-thestratbook-prod \
+            --query "defaultHostname" -o tsv)
+
+          echo "Application deployed to: https://$APP_URL"
+
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://$APP_URL)
+
+          if [ $HTTP_STATUS -eq 200 ]; then
+            echo "✅ Deployment validated successfully!"
+          else
+            echo "❌ Deployment validation failed! Status code: $HTTP_STATUS"
+            exit 1
+          fi
