@@ -1,6 +1,6 @@
 targetScope = 'subscription'
 
-@description('Location for all resources')
+@description('Server Location for all resources')
 param location string = 'westeurope'
 
 @description('Name of the resource group')
