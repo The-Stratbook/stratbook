@@ -30,19 +30,9 @@ jobs:
                          staticWebAppName=swa-thestratbook-prod \
                          budgetAmount=10 \
                          primaryDomain=thestratbook.com
-
-  trigger-app-deployment:
-    name: Trigger App Deployment
-    runs-on: ubuntu-latest
-    needs: deploy-infrastructure
-    steps:
-      - name: Trigger App Workflow
-        uses: actions/github-script@v6
+                         
+      - name: Trigger App Deployment via Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
         with:
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'azure-static-web-apps.yml',
-              ref: context.ref
-            });
+          token: ${{ secrets.WORKFLOW_DISPATCH_TOKEN }}
+          event-type: infrastructure-deployed

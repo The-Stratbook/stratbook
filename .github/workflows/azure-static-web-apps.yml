@@ -10,6 +10,8 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+  repository_dispatch:
+    types: [infrastructure-deployed]
   workflow_run:
     workflows:
       - Deploy Infrastructure and App
@@ -19,9 +21,13 @@ on:
 
 jobs:
   build_and_deploy_job:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }} || github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    if: ${{ github.event.workflow_run.conclusion == 'success' }} || github.event_name == 'push' || github.event_name == 'repository_dispatch' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy
+    env:
+      # Define environment variables at the job level
+      REACT_APP_CLARITY_ID: ${{ secrets.REACT_APP_CLARITY_ID }}
+      REACT_APP_GA_MEASUREMENT_ID: ${{ secrets.REACT_APP_GA_MEASUREMENT_ID }}
     steps:
       - uses: actions/checkout@v3
         with:

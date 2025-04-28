@@ -4,7 +4,7 @@ param budgetAmount int = 10
 @description('Email address for budget alerts')
 param budgetContactEmail string
 
-@description('Resource Group to monitor')
+@description('Resource Group for monitoring')
 param resourceGroupName string
 
 @description('Name of the budget')
