@@ -33,7 +33,7 @@ const Home = () => {
     "url": window.location.origin,
     "logo": `${window.location.origin}/images/general/logo.png`,
     "sameAs": [
-      "https://github.com/your-repo"
+      "https://github.com/The-Stratbook/stratbook"
       // Add other social profiles if available (Twitter, Discord, etc.)
     ]
   };
@@ -160,7 +160,7 @@ const Home = () => {
                 Join our <span className="font-bold">GitHub repository</span> and start sharing your tips & tricks with the community today.
               </p>
               <a
-                href="https://github.com/your-repo"
+                href="https://github.com/The-Stratbook/stratbook"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary btn-lg"

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,7 +19,7 @@ code {
 /* Color Palette */
 [data-theme="dark"] {
   --color-base-100: oklch(25.33% 0.016 252.42);
-  --color-base-200: oklch(23.26% 0.014 253.1);;
+  --color-base-200: oklch(23.26% 0.014 253.1);
   --color-base-300: oklch(21.15% 0.012 254.09);
   --color-base-content: #d4d4d8;
   --color-primary: #ffc857;
@@ -47,14 +46,15 @@ code {
   --border: 1px;
   --depth: 0;
   --noise: 0;
+}
 
-  
+label {
+  color: var(--color-primary-content) !important;
 }
 
 [data-theme="light"] {
   --color-primary: #ffc857;
   --color-primary-content: #17171b;
-  
 }
 
 :root {  

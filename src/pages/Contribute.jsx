@@ -215,7 +215,7 @@ const Contribute = () => {
 
         <div className="flex justify-center mb-12">
           <a 
-            href="https://github.com/your-repo" 
+            href="https://github.com/The-Stratbook/stratbook" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn btn-primary btn-lg"

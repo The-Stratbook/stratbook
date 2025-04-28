@@ -8,7 +8,7 @@
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
     "clarity-js": "^0.8.6",
-    "daisyui": "^5.0.9",
+    "daisyui": "^3.9.4",
     "js-yaml": "^4.1.0",
     "lucide-react": "^0.484.0",
     "react": "^19.0.0",
@@ -24,9 +24,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node generateTipsIndex.js && react-scripts start",
+    "start": "node generateTipsIndex.js && npm run build:css && react-scripts start",
     "generate-sitemap": "node src/generate-sitemap.js",
-    "build": "node generateTipsIndex.js && npm run generate-sitemap && react-scripts build",
+    "build": "node generateTipsIndex.js && npm run generate-sitemap && npm run build:css && react-scripts build",
+    "build:css": "tailwindcss -i src/index.css -o src/styles/tailwind.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -51,7 +52,8 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.17",
     "@types/react-router-dom": "^5.3.3",
+    "autoprefixer": "^10.4.21",
     "raw-loader": "^4.0.2",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.3.3"
   }
 }

@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import TagManager from 'react-gtm-module';
 import './index.css';
-import './styles/theme.css'; // Import the custom theme styles
+import './styles/global.css';
+import './styles/theme.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
