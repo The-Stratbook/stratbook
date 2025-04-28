@@ -26,7 +26,7 @@
   "scripts": {
     "start": "node generateTipsIndex.js && react-scripts start",
     "generate-sitemap": "node src/generate-sitemap.js",
-    "build": "node generateTipsIndex.js && react-scripts build && npm run generate-sitemap",
+    "build": "node generateTipsIndex.js && npm run generate-sitemap && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
