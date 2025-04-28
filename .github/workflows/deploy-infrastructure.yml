@@ -40,8 +40,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
-            await octokit.actions.createWorkflowDispatch({
+            await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'azure-static-web-apps.yml',
