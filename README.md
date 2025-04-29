@@ -1,9 +1,8 @@
-# Introduction
+# Stratbook: Elevate Your Tactical FPS Gameplay
 
-An Open Source project build for the gaming-community to be extended on by anyone.
+Discover strategies, tips, and tricks to dominate tactical FPS games. Built by players, for the community, Stratbook is an open-source project designed to help gamers improve and share their knowledge.
 
-Slogan:
-"Discover strategies, tips, and tricks to elevate your tactical FPS gameplay. Built by players, for the community."
+---
 
 ## Status
 
@@ -11,14 +10,106 @@ This project is quite new and is still improving on many fronts, we do not have 
 We are always happy with any help or contributions done by you! Doesn't matter if it is adding new strategies to the 'database' or helping build features.
 At this moment we do not have a board or wiki yet, but we do want to add it in the future.
 
-## Contributing 
+---
 
-We are happy with any and all ideas/issues that are submitted are appreciated! We will do our best to look into them as quickly as possible.
-Contributions can be done through submitting Pull Requests. Please refer to our [contributing guideline](./CONTRIBUTING.md).
+## Features
+- **Comprehensive Strategy 'Database'**: Explore a wide range of strategies with detailed explanations, skill levels, and more.
+- **Community Contributions**: Submit your own strategies or improve existing ones.
+- **Open Source Development**: Collaborate with developers to add features and enhance the platform.
 
-In the future we want to add a way to reward quality contributions, right now this will be done through credits on the website. If in the future we make any profits from the ads / affiliated links we will be splitting that contribution based on a score-card system using the Open Collective. At this moment we do not have such a method in place.
+---
 
-Keep in mind that this is a passion project!
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/The-Stratbook/stratbook.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd stratbook
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Usage
+
+- **Explore Strategies**: Browse, search, and filter strategies tailored to different maps, operators, and playstyles.
+- **Contribute**: Add new strategies or improve existing ones by following the guidelines in the [Contributing](#contributing) section.
+
+---
+
+## Contributing
+
+We welcome all contributions, whether you're adding new strategies, fixing bugs, or building new features. Here's how you can contribute:
+
+1. Fork this repository.
+2. Create a new branch for your changes:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add a brief description of your changes"
+   ```
+4. Push your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
+
+For more details, check out our [Contributing Guidelines](./CONTRIBUTING.md).
+
+---
+
+## Strategy Contributions
+
+We welcome community contributions to our strategy database! Check out the [Contributing Strategy](#contributing-strategies) section for details on how to submit your strategies.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE). Feel free to use, modify, and distribute this software in compliance with the license terms.
+
+---
+
+## Acknowledgments
+
+A huge thank you to the community for their support and contributions. Special thanks to [vanhoutenbos](https://github.com/vanhoutenbos) for spearheading the project.
+
+---
+
+## Contact
+
+Have questions or suggestions? Reach out to us:
+- [GitHub Discussions](https://github.com/The-Stratbook/stratbook/discussions)
+- [Discord](https://discord.gg/vBt738j)
+
+---
+
+## Badges (Optional - Can Be Added)
+[![Build Status](https://img.shields.io/github/workflow/status/The-Stratbook/stratbook/CI)](https://github.com/The-Stratbook/stratbook/actions)
+[![License](https://img.shields.io/github/license/The-Stratbook/stratbook)](./LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/The-Stratbook/stratbook)](https://github.com/The-Stratbook/stratbook/graphs/contributors)
+
+---
+
+## Screenshots (Optional - Add Visuals)
+Include screenshots or GIFs here to showcase the project.
+
+---
 
 ## Contributing Strategies
 
@@ -89,53 +180,12 @@ We've provided two example templates to help you understand the structure:
 To submit a new strategy:
 
 1. Fork this repository
-2. Create your strategy JSON file in the `public/data/siege/tips` directory
+2. Create your strategy JSON file in the `public/data/<game>/tips` directory
 3. The filename should be structured (e.g., `<id>.json`) for example `1.json`
 4. Submit a pull request with your new strategy
 5. Our team will review the submission and provide feedback if needed
 
-Thank you for contributing to the Siege Tips community!
-
-## Contributing to Development
-
-We are open to anyone wanting to spend their time helping grow the platform.
-
-### Available Scripts
-
-In the project directory, you can run:
-
-#### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-#### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-#### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-#### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Thank you for contributing to the Stratbook community!
 
 ## Any other contributions
 
