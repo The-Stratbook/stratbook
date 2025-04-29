@@ -99,15 +99,10 @@ Have questions or suggestions? Reach out to us:
 
 ---
 
-## Badges (Optional - Can Be Added)
+## Badges
 [![Build Status](https://img.shields.io/github/workflow/status/The-Stratbook/stratbook/CI)](https://github.com/The-Stratbook/stratbook/actions)
 [![License](https://img.shields.io/github/license/The-Stratbook/stratbook)](./LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/The-Stratbook/stratbook)](https://github.com/The-Stratbook/stratbook/graphs/contributors)
-
----
-
-## Screenshots (Optional - Add Visuals)
-Include screenshots or GIFs here to showcase the project.
 
 ---
 
