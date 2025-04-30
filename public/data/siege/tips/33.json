@@ -1,0 +1,21 @@
+{
+    "id": 33,
+    "title": "You use specific azami's to have a pixel peek advantage.",
+    "description": "You can use specific azami's to have a pixel peek advantage. This can help you catch enemies off-guard and gain an advantage in gunfights.",
+    "side": "Both",
+    "skill": "Beginner",
+    "operator": "Azami",
+    "map": "Clubhouse",
+    "bombSite": "Arsenal",
+    "tags": ["Pixel peek"],
+    "videoUrl": "https://www.instagram.com/p/DFZOdbLxD1n/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  

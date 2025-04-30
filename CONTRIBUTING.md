@@ -24,7 +24,7 @@ Thank you for your interest in contributing to The Stratbook! We welcome contrib
 - **How to Report**: Open an issue in the GitHub repository and use the provided issue template.
 
 ### 3. Contributing New Strategies
-- Refer to the [Contribute Page](./src/pages/Contribute.jsx) and the [README](./README.md) for detailed guidelines.
+- Refer to the [Contribute Page](https://www.thestratbook.com/Contribute) and the [README](./README.md) for detailed guidelines.
 - Use the JSON structure provided in the documentation to format your strategy submissions.
 - Submit your strategy as a pull request in the `public/data/siege/tips` directory.
 

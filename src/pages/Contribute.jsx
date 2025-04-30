@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../layouts/Layout';
 
 const Contribute = () => {
+
   return (
     <Layout seoProps={{ 
       title: 'Contribute to The Stratbook | Share Your Knowledge',
@@ -78,6 +79,11 @@ const Contribute = () => {
                 <h3 className="font-bold text-xl">External Tools & Resources</h3>
                 <p>Suggestions for useful websites, apps, or tools that help tactical FPS players.</p>
               </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h3 className="font-bold text-xl">Technical suggestions</h3>
+                <p>Suggestions for improvements for the website or other tools to mention.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -106,10 +112,11 @@ const Contribute = () => {
               
               <div className="step step-primary">
                 <div className="text-left ml-4">
-                  <h3 className="font-bold">Submit via GitHub</h3>
+                  <h3 className="font-bold">Submit via GitHub or Discord</h3>
                   <p className="text-sm">
                     Fork our repository, add your content, and submit a pull request. Don't worry if you're 
                     not familiar with Git—we have a step-by-step guide.
+                    The other option is to join our Discord server and submit your content there.
                   </p>
                 </div>
               </div>
@@ -161,6 +168,7 @@ const Contribute = () => {
               include at minimum all the required fields.
             </p>
             
+            
             <div className="mockup-code text-xs md:text-sm">
               <pre><code>{`{
   "id": 0,                        // Leave as 0 for new submissions
@@ -209,6 +217,15 @@ const Contribute = () => {
     }
   ]
 }`}</code></pre>
+            </div>
+            
+            <div className="alert alert-info mt-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <span className="font-semibold">Need a simpler example?</span> Check our <a href="https://github.com/The-Stratbook/stratbook/blob/main/docs/example-minimal.json" target="_blank" rel="noopener noreferrer" className="underline">minimal example</a> that shows just the required fields.
+              </div>
             </div>
           </div>
         </div>
