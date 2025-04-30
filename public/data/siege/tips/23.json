@@ -1,0 +1,21 @@
+{
+    "id": 23,
+    "title": "Insane kiba pixel peek on Club House basement",
+    "description": "With this trick you can use **Kiba** to pixel peek on Club House basement. This is a great way to surprise attackers and that try to take control over main door.",
+    "side": "Defender",
+    "skill": "Intermediate",
+    "operator": "Azami",
+    "tags": ["Pixel"],
+    "map": "Clubhouse",
+    "videoUrl": "https://www.instagram.com/p/DD8eFNqR7D1/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low",
+      "timeRequired": "30 seconds or less"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  

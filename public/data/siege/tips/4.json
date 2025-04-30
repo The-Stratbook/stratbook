@@ -16,5 +16,9 @@
     "counterStrategies": [
       "Bandit wires can destroy Hibana pellets"
     ]
+  },
+  "contributor": {
+    "name": "Dakpan",
+    "discord_username": "myusernameisdakpanbutitwastaken"
   }
 }

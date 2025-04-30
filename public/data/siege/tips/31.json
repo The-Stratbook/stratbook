@@ -1,0 +1,19 @@
+{
+    "id": 31,
+    "title": "Barricade a door and open it again before placing a kapkan trap, it covers it more!",
+    "description": "You can hide your kapkan traps by barricading a door and opening it again. This will make it difficult for attackers to spot the trap and increase the chances of catching them off-guard.",
+    "side": "Defender",
+    "skill": "Beginner",
+    "operator": "Kapkan",
+    "tags": ["Spawn peek"],
+    "videoUrl": "https://www.instagram.com/p/DBjronbOEc4/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  
