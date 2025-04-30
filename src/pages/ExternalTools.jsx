@@ -61,7 +61,7 @@ const ExternalTools = () => {
       <div className="container mx-auto p-4">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold mb-2">External Tools & Resources</h1>
-          <p className="text-xl">
+          <p className="text-xl text-base-content">
             A curated collection of useful websites, tools, and resources for tactical FPS players
           </p>
         </div>
@@ -71,7 +71,7 @@ const ExternalTools = () => {
           <div className="divider">
             <h2 className="text-3xl font-bold text-primary mb-2">Pro League Resources</h2>
           </div>
-          <p className="text-center mb-8 max-w-3xl mx-auto">
+          <p className="text-center mb-8 max-w-3xl mx-auto text-base-content">
             Stay up-to-date with professional play, tournaments, and esports events
           </p>
           
@@ -87,7 +87,7 @@ const ExternalTools = () => {
           <div className="divider">
             <h2 className="text-3xl font-bold text-primary mb-2">Competitive Tools</h2>
           </div>
-          <p className="text-center mb-8 max-w-3xl mx-auto">
+          <p className="text-center mb-8 max-w-3xl mx-auto text-base-content">
             Enhance your competitive play with strategy planning, statistics tracking, and skill improvement resources
           </p>
           
@@ -103,7 +103,7 @@ const ExternalTools = () => {
           <div className="divider">
             <h2 className="text-3xl font-bold text-primary mb-2">Content Creators</h2>
           </div>
-          <p className="text-center mb-8 max-w-3xl mx-auto">
+          <p className="text-center mb-8 max-w-3xl mx-auto text-base-content">
             Educational content creators who provide in-depth analysis and valuable gameplay insights
           </p>
           
@@ -119,7 +119,7 @@ const ExternalTools = () => {
           <div className="divider">
             <h2 className="text-3xl font-bold text-primary mb-2">Community Resources</h2>
           </div>
-          <p className="text-center mb-8 max-w-3xl mx-auto">
+          <p className="text-center mb-8 max-w-3xl mx-auto text-base-content">
             Connect with the wider community through forums, discussion boards, and social platforms
           </p>
           

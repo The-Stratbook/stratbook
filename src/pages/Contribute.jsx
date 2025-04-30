@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Layout from '../layouts/Layout';
 
 const Contribute = () => {
@@ -13,7 +13,7 @@ const Contribute = () => {
       <div className="container mx-auto p-4 max-w-4xl">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold mb-2">Contribute to The Stratbook</h1>
-          <p className="text-xl">
+          <p className="text-xl text-base-content">
             Share your knowledge and help the tactical FPS community grow
           </p>
         </div>
@@ -22,7 +22,7 @@ const Contribute = () => {
           <div className="card-body">
             <h2 className="card-title text-2xl mb-4">Why Contribute?</h2>
             <div className="space-y-4">
-              <p>
+              <p className="text-base-content">
                 The Stratbook is a community-driven platform built by players for players. By sharing 
                 your knowledge, you help others improve their gameplay while establishing yourself as 
                 a valuable contributor to the tactical FPS community.
@@ -57,32 +57,32 @@ const Contribute = () => {
             <div className="space-y-6">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-bold text-xl">Tips & Tricks</h3>
-                <p>Share practical advice, shortcuts, and techniques for improving gameplay.</p>
+                <p className="text-base-content">Share practical advice, shortcuts, and techniques for improving gameplay.</p>
               </div>
               
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-bold text-xl">Strategy Guides</h3>
-                <p>Detailed explanations of tactics for specific maps, bomb sites, or scenarios.</p>
+                <p className="text-base-content">Detailed explanations of tactics for specific maps, bomb sites, or scenarios.</p>
               </div>
               
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-bold text-xl">Operator Insights</h3>
-                <p>Specialized knowledge about using specific operators effectively.</p>
+                <p className="text-base-content">Specialized knowledge about using specific operators effectively.</p>
               </div>
               
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-bold text-xl">Weapon & Loadout Recommendations</h3>
-                <p>Analysis of different weapons, attachments, and loadout combinations.</p>
+                <p className="text-base-content">Analysis of different weapons, attachments, and loadout combinations.</p>
               </div>
               
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-bold text-xl">External Tools & Resources</h3>
-                <p>Suggestions for useful websites, apps, or tools that help tactical FPS players.</p>
+                <p className="text-base-content">Suggestions for useful websites, apps, or tools that help tactical FPS players.</p>
               </div>
               
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-bold text-xl">Technical suggestions</h3>
-                <p>Suggestions for improvements for the website or other tools to mention.</p>
+                <p className="text-base-content">Suggestions for improvements for the website or other tools to mention.</p>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ const Contribute = () => {
             <h2 className="card-title text-2xl mb-4">Contribution Guidelines</h2>
             
             <div className="space-y-4">
-              <p>To maintain quality and consistency, please follow these guidelines:</p>
+              <p className="text-base-content">To maintain quality and consistency, please follow these guidelines:</p>
               
               <ul className="list-disc pl-5 space-y-2">
                 <li>Content should be original or properly attributed if based on others' work.</li>
@@ -163,11 +163,10 @@ const Contribute = () => {
           <div className="card-body">
             <h2 className="card-title text-2xl mb-4">JSON Structure for Tips & Strategies</h2>
             
-            <p className="mb-4">
+            <p className="mb-4 text-base-content">
               When submitting a tip or strategy, please use the following JSON structure. Your submission should 
               include at minimum all the required fields.
             </p>
-            
             
             <div className="mockup-code text-xs md:text-sm">
               <pre><code>{`{
