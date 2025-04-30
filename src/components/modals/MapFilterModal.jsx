@@ -7,7 +7,7 @@ const MapFilterModal = ({ isOpen, onClose, onSelectMap, selectedMap }) => {
   useEffect(() => {
     const fetchMaps = async () => {
       try {
-        const response = await fetch('/data/maps.json');
+        const response = await fetch('/data/siege/maps.json');
         if (!response.ok) throw new Error('Failed to fetch maps');
         const data = await response.json();
         setMaps(data);
@@ -102,7 +102,7 @@ const MapFilterModal = ({ isOpen, onClose, onSelectMap, selectedMap }) => {
                 />
               </figure>
               <div className="card-body text-black text-center py-2 rounded-b-lg">
-                <h3 className="text-sm font-bold">{map.name}</h3>
+                <h3 className="text-sm font-bold text-base-content">{map.name}</h3>
               </div>
               {selectedMap === map.name && (
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
