@@ -7,7 +7,7 @@ const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, 
   useEffect(() => {
     const fetchOperators = async () => {
       try {
-        const response = await fetch('/data/operators.json');
+        const response = await fetch('/data/siege/operators.json');
         if (!response.ok) throw new Error('Failed to fetch operators');
         const data = await response.json();
         setOperators(data);
@@ -58,7 +58,7 @@ const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, 
           {filteredOperators.map((operator) => (
             <div
               key={operator.id}
-              className={`relative group cursor-pointer ${
+              className={`card bg-base-200 relative group cursor-pointer ${
                 operator.name === selectedOperator?.name ? "opacity-75" : ""
               }`}
               onClick={() => {
@@ -80,8 +80,8 @@ const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, 
                   onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
                 />
               </figure>
-              <div className="text-black text-center py-2 rounded-b-lg">
-                <h3 className="text-sm font-bold">{operator.name}</h3>
+              <div className="card-body text-black text-center py-2 rounded-b-lg">
+                <h3 className="text-sm font-bold text-base-content">{operator.name}</h3>
               </div>
               {operator.name === selectedOperator?.name && (
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
