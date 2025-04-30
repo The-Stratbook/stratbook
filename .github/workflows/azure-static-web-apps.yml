@@ -21,9 +21,33 @@ on:
   workflow_call:
 
 jobs:
+  build-only:
+    name: Build Application (Pull Request)
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.x'
+
+      - name: Install or update npm packages
+        run: npm install
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build React App
+        run: npm run build
+
   build-and-deploy-app:
     name: Build and Deploy Application
     runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
 
     steps:
       - name: Checkout code
@@ -55,6 +79,7 @@ jobs:
   validate-deployment:
     name: Validate Deployment
     runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
     needs: build-and-deploy-app
     steps:
       - name: Check Deployment Status
