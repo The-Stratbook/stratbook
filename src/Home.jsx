@@ -62,10 +62,10 @@ const Home = () => {
               <h1 className="text-6xl font-extrabold mb-6 bg-clip-text bg-gradient-to-r leading-tight text-secondary">
                 Tactical FPS Strategies & Tips
               </h1>
-              <p className="mb-6 text-lg">
+              <p className="mb-6 text-lg text-base-content">
                 Elevate your gameplay with curated tips & tricks for tactical shooters. Designed for beginner and intermediate players to improve their skills and understanding.
               </p>
-              <div className="flex justify-center gap-4">
+              <div className="flex flex-col justify-center gap-4 md:flex-row space-y-2 md:space-y-0 md:space-x-2">
                 <Link to="/siege/tips" className="btn btn-primary btn-lg">
                   Explore Tips & Tricks
                 </Link>

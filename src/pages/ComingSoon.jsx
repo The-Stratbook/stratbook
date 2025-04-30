@@ -80,7 +80,7 @@ const ComingSoon = () => {
       <div className="container mx-auto p-4 max-w-6xl">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold mb-2">Our Roadmap</h1>
-          <p className="text-xl mb-4">
+          <p className="text-xl mb-4 text-base-content">
             The future of The Stratbook is packed with exciting content and features
           </p>
           <div className="max-w-3xl mx-auto">
@@ -142,9 +142,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/operator-guides" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Operator Guides</h3>
-                <p className="text-sm">Master every operator with our comprehensive loadout and strategy guides.</p>
+                <p className="text-sm text-base-content">Master every operator with our comprehensive loadout and strategy guides.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -152,9 +152,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/map-guides" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Map Guides</h3>
-                <p className="text-sm">Master every map with detailed callouts, angles, and strategic positions.</p>
+                <p className="text-sm text-base-content">Master every map with detailed callouts, angles, and strategic positions.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -162,9 +162,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/fun-tools" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Fun Tools</h3>
-                <p className="text-sm">Enhance your gameplay with Strat Roulette, Random Operator, and more.</p>
+                <p className="text-sm text-base-content">Enhance your gameplay with Strat Roulette, Random Operator, and more.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -174,9 +174,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/pro-setups" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Pro Setups</h3>
-                <p className="text-sm">Learn tournament-tested strategies used by professional teams.</p>
+                <p className="text-sm text-base-content">Learn tournament-tested strategies used by professional teams.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -184,9 +184,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/myths-section" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Myths Section</h3>
-                <p className="text-sm">Discover what really works and what doesn't in Rainbow Six Siege mechanics.</p>
+                <p className="text-sm text-base-content">Discover what really works and what doesn't in Rainbow Six Siege mechanics.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -194,9 +194,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/community-features" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Community Features</h3>
-                <p className="text-sm">Create accounts, save strategies, and contribute your own content.</p>
+                <p className="text-sm text-base-content">Create accounts, save strategies, and contribute your own content.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -206,9 +206,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/meta-tier-lists" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Meta Tier Lists</h3>
-                <p className="text-sm">Stay updated with the current meta and most effective strategies.</p>
+                <p className="text-sm text-base-content">Stay updated with the current meta and most effective strategies.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -216,9 +216,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/educational-content" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Educational Content</h3>
-                <p className="text-sm">Learn fundamental concepts and advanced techniques to improve your gameplay.</p>
+                <p className="text-sm text-base-content">Learn fundamental concepts and advanced techniques to improve your gameplay.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -226,9 +226,9 @@ const ComingSoon = () => {
             <Link to="/coming-soon/site-improvements" className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="card-body items-center text-center">
                 <h3 className="card-title text-xl">Site Improvements</h3>
-                <p className="text-sm">Enhanced filtering, powerful search, and improved mobile experience.</p>
+                <p className="text-sm text-base-content">Enhanced filtering, powerful search, and improved mobile experience.</p>
                 <div className="card-actions mt-2">
-                  <span className="btn btn-sm btn-outline btn-primary">Learn More</span>
+                  <span className="btn btn-sm btn-primary">Learn More</span>
                 </div>
               </div>
             </Link>
@@ -265,7 +265,7 @@ const ComingSoon = () => {
                       
                       return (
                         <li key={itemIndex} className="flex items-start">
-                          <div className={`badge ${item.status === 'completed' ? 'badge-success' : item.status === 'in-progress' ? 'badge-warning' : 'badge-outline'} mr-2 mt-1`}>
+                          <div className={`badge ${item.status === 'completed' ? 'badge-success' : item.status === 'in-progress' ? 'badge-warning' : 'badge-outline'} mr-2 mt-1 px-3 whitespace-nowrap`}>
                             {item.status === 'completed' ? 'Completed' : item.status === 'in-progress' ? 'In Progress' : 'Planned'}
                           </div>
                           <div>
@@ -292,7 +292,7 @@ const ComingSoon = () => {
         <div className="card bg-base-300 shadow-xl mb-12">
           <div className="card-body">
             <h2 className="card-title text-2xl mb-4">Get Involved</h2>
-            <p className="mb-4">
+            <p className="mb-4 text-base-content">
               We're passionate about building the ultimate resource for tactical FPS players, but we need your help!
               Here's how you can contribute to accelerating this roadmap:
             </p>
@@ -300,17 +300,17 @@ const ComingSoon = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
               <div className="bg-base-200 p-4 rounded-lg">
                 <h3 className="font-bold text-primary">Share Content</h3>
-                <p className="text-sm">Submit your strategies, tips, or content ideas to help us grow our knowledge base.</p>
+                <p className="text-sm text-base-content">Submit your strategies, tips, or content ideas to help us grow our knowledge base.</p>
               </div>
               
               <div className="bg-base-200 p-4 rounded-lg">
                 <h3 className="font-bold text-primary">Development Help</h3>
-                <p className="text-sm">Contribute to our open-source codebase if you have web development skills.</p>
+                <p className="text-sm text-base-content">Contribute to our open-source codebase if you have web development skills.</p>
               </div>
               
               <div className="bg-base-200 p-4 rounded-lg">
                 <h3 className="font-bold text-primary">Spread the Word</h3>
-                <p className="text-sm">Tell other players about The Stratbook to help grow our community.</p>
+                <p className="text-sm text-base-content">Tell other players about The Stratbook to help grow our community.</p>
               </div>
             </div>
             
@@ -331,7 +331,7 @@ const ComingSoon = () => {
                 When will these features be released?
               </div>
               <div className="collapse-content"> 
-                <p>Our roadmap isn't time-bound as we're focusing on quality over speed. Features will be released as they're completed, with priority given to the most requested items. Join our Discord for the latest updates!</p>
+                <p className="text-base-content">Our roadmap isn't time-bound as we're focusing on quality over speed. Features will be released as they're completed, with priority given to the most requested items. Join our Discord for the latest updates!</p>
               </div>
             </div>
             
@@ -341,7 +341,7 @@ const ComingSoon = () => {
                 How can I request a specific feature?
               </div>
               <div className="collapse-content"> 
-                <p>You can suggest features through our Discord server or by creating an issue on our GitHub repository. We review all community suggestions and prioritize those with the most demand.</p>
+                <p className="text-base-content">You can suggest features through our Discord server or by creating an issue on our GitHub repository. We review all community suggestions and prioritize those with the most demand.</p>
               </div>
             </div>
             
@@ -351,7 +351,7 @@ const ComingSoon = () => {
                 Will you expand beyond Rainbow Six Siege?
               </div>
               <div className="collapse-content"> 
-                <p>Yes! While our initial focus is on Rainbow Six Siege, we plan to expand to other tactical FPS games in the future. Our platform is being built with this scalability in mind.</p>
+                <p className="text-base-content">Yes! While our initial focus is on Rainbow Six Siege, we plan to expand to other tactical FPS games in the future. Our platform is being built with this scalability in mind.</p>
               </div>
             </div>
             
@@ -361,7 +361,7 @@ const ComingSoon = () => {
                 How can I stay updated on new features?
               </div>
               <div className="collapse-content"> 
-                <p>Follow us on social media and join our Discord server for the latest updates on feature releases and development progress.</p>
+                <p className="text-base-content">Follow us on social media and join our Discord server for the latest updates on feature releases and development progress.</p>
               </div>
             </div>
           </div>
