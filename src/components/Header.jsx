@@ -1,19 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [isLightTheme, setIsLightTheme] = useState(false);
-
-  useEffect(() => {
-    // Check if theme is saved in localStorage, otherwise use system preference
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-    
-    // Use saved theme or system preference
-    const initialTheme = savedTheme || (systemPrefersLight ? 'light' : 'dark');
-    document.querySelector('html').setAttribute('data-theme', initialTheme);
-    setIsLightTheme(initialTheme === 'light');
-  }, []);
 
   const handleColorThemeChange = (colorTheme) => {
     // Simply set the data-color-theme attribute, the colors are defined in index.css
