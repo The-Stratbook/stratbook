@@ -14,11 +14,14 @@ export default function Layout ({ children, seoProps  }) {
         <aside className="hidden lg:block w-[15%] pr-4">
           <div id="ad-container" className="relative">
             {/* Google AdSense Code */}
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3059216769615228"></script>
+            <script 
+              async 
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.REACT_APP_ADSENSE_CLIENT_ID}`}
+            ></script>
             <ins className="adsbygoogle"
                  style={{ display: 'block' }}
-                 data-ad-client="ca-pub-3059216769615228" // Replace with your AdSense client ID
-                 data-ad-slot="6604217585" // Replace with your AdSense ad slot ID
+                 data-ad-client={process.env.REACT_APP_ADSENSE_CLIENT_ID}
+                 data-ad-slot={process.env.REACT_APP_ADSENSE_AD_SLOT}
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -36,11 +39,14 @@ export default function Layout ({ children, seoProps  }) {
         <aside className="hidden lg:block w-[15%] pl-4">
           <div id="ad-container" className="relative">
             {/* Google AdSense Code */}
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3059216769615228"></script>
+            <script 
+              async 
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.REACT_APP_ADSENSE_CLIENT_ID}`}
+            ></script>
             <ins className="adsbygoogle"
                  style={{ display: 'block' }}
-                 data-ad-client="ca-pub-3059216769615228"
-                 data-ad-slot="6604217585"
+                 data-ad-client={process.env.REACT_APP_ADSENSE_CLIENT_ID}
+                 data-ad-slot={process.env.REACT_APP_ADSENSE_AD_SLOT}
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>

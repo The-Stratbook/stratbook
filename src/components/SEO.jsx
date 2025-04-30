@@ -3,21 +3,21 @@ import { useEffect } from 'react';
 const SEO = ({ title, description, url, image, type, canonicalUrl, faqSchema, keywords, author, publishedDate, modifiedDate }) => {
   useEffect(() => {
     // Update the document title
-    document.title = title ? `${title} - Siege Tips` : 'Siege Tips';
+    document.title = title ? `${title} - The Stratbook` : 'The Stratbook';
     
     // Update meta tags
     const metaTags = {
       description: description || 'Tips and tricks for Rainbow Six Siege',
-      'og:title': title || 'Siege Tips',
+      'og:title': title || 'The Stratbook',
       'og:description': description || 'Tips and tricks for Rainbow Six Siege',
       'og:url': url || window.location.href,
       'og:type': type || 'website',
       'twitter:card': 'summary_large_image',
-      'twitter:title': title || 'Siege Tips',
+      'twitter:title': title || 'The Stratbook',
       'twitter:description': description || 'Tips and tricks for Rainbow Six Siege',
       // New meta tags
       'keywords': keywords || 'Rainbow Six Siege, R6, Siege, tips, strategies, gaming',
-      'author': author || 'Siege Tips',
+      'author': author || 'The Stratbook',
       'robots': 'index, follow',
       'language': 'en',
     };

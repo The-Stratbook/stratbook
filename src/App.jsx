@@ -23,15 +23,18 @@ import CommunityFeatures from './pages/coming-soon/CommunityFeatures';
 import SiteImprovements from './pages/coming-soon/SiteImprovements';
 import EducationalContent from './pages/coming-soon/EducationalContent';
 
-import { trackPageView } from './ga4';
+import { trackPageView, initializeGA } from './ga4';
 import { initializeClarity } from './clarity';
+import { initializeGTM } from './gtm';
 
 function App() {
   const location = useLocation();
 
   useEffect(() => {
-    trackPageView(location.pathname);
+    initializeGA();
+    initializeGTM();
     initializeClarity();
+    trackPageView(location.pathname);
   }, [location]);
 
   return (
