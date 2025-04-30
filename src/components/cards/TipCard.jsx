@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Tag } from "lucide-react";
+import ReactMarkdown from 'react-markdown';
 
 const TipCard = ({ tip }) => {
   // Generate a descriptive alt text that combines title, map and operator info when available
@@ -13,8 +14,8 @@ const TipCard = ({ tip }) => {
   };
 
   // Display only the first 2 tags
-  const displayedTags = tip.tags.slice(0, 2);
-  const hasMoreTags = tip.tags.length > 2;
+  const displayedTags = Array.isArray(tip.tags) ? tip.tags.slice(0, 2) : [];
+  const hasMoreTags = Array.isArray(tip.tags) && tip.tags.length > 2;
 
   return (
     <div
@@ -83,19 +84,24 @@ const TipCard = ({ tip }) => {
               overflow: "hidden",
             }}
           >
-            <div
-              style={{
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                display: "-webkit-box",
-                WebkitLineClamp: 3,
-                WebkitBoxOrient: "vertical",
+            <ReactMarkdown
+              components={{
+                p: ({ node, ...props }) => (
+                  <span
+                    style={{
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      display: "-webkit-box",
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: "vertical",
+                    }}
+                    {...props}
+                  />
+                ),
               }}
             >
-              {tip.description.length > 150 
-                ? tip.description.substring(0, 150) + "..." 
-                : tip.description}
-            </div>
+              {tip.description}
+            </ReactMarkdown>
           </div>
           <div className="card-actions mt-4">
             <button

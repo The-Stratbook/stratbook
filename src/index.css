@@ -46,6 +46,7 @@ code {
   --border: 1px;
   --depth: 0;
   --noise: 0;
+  --p: 50 80% 50%;
 }
 
 [data-theme="light"] {

@@ -58,13 +58,13 @@ const TipsOverview = () => {
       (!filters.side || tip.side === filters.side) &&
       (!filters.skill || tip.skill === filters.skill) &&
       (!filters.map || tip.map === filters.map || tip.map === 'Any') &&
-      (!filters.tag || tip.tags.includes(filters.tag))
+      (!filters.tag || (Array.isArray(tip.tags) && tip.tags.includes(filters.tag)))
     )
     .filter(tip => 
       !searchTerm || 
       tip.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
       tip.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      tip.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
+      (Array.isArray(tip.tags) && tip.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase())))
     );
 
   // Create structured data for the collection
@@ -125,7 +125,7 @@ const TipsOverview = () => {
           <div className="card bg-base-200 shadow-xl">
             <div className="card-body">
               <button
-                className="btn btn-outline btn-primary mb-4"
+                className="btn btn-primary mb-4"
                 onClick={() => setFiltersVisible(!filtersVisible)}
               >
                 {filtersVisible ? "Hide Filters" : "Show Filters"}

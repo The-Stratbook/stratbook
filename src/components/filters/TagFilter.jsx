@@ -7,7 +7,7 @@ const TagFilter = ({ selectedTag, onSelectTag, allTags }) => {
       <div className="flex flex-wrap gap-2">
         <button
           onClick={() => onSelectTag("")}
-          className={`badge ${!selectedTag ? "badge-primary" : "badge-outline"}`}
+          className={`badge ${!selectedTag ? "badge-primary text-black" : "badge-outline"}`}
         >
           All Tags
         </button>
