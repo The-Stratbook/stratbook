@@ -61,7 +61,7 @@ const MapFilterModal = ({ isOpen, onClose, onSelectMap, selectedMap }) => {
         </div>
         <div className="tabs tabs-boxed w-full mb-4 rounded-lg overflow-hidden">
           {uniquePlaylists.map((playlist, index) => (
-            <a
+            <button
               key={playlist}
               className={`tab transition-all duration-300 ${
                 selectedPlaylist === playlist
@@ -77,7 +77,7 @@ const MapFilterModal = ({ isOpen, onClose, onSelectMap, selectedMap }) => {
               onClick={() => setSelectedPlaylist(playlist)}
             >
               {playlist}
-            </a>
+            </button>
           ))}
         </div>
         <div className="grid grid-cols-3 gap-4">

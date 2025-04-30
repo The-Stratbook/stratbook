@@ -154,13 +154,28 @@ const Header = () => {
               tabIndex={0}
               className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
               <li>
-                <a onClick={() => handleColorThemeChange('orange-red')}>Orange/Red</a>
+                <button 
+                  className="btn btn-ghost text-left w-full justify-start" 
+                  onClick={() => handleColorThemeChange('orange-red')}
+                >
+                  Orange/Red
+                </button>
               </li>
               <li>
-                <a onClick={() => handleColorThemeChange('blue-orange')}>Blue/Orange</a>
+                <button 
+                  className="btn btn-ghost text-left w-full justify-start" 
+                  onClick={() => handleColorThemeChange('blue-orange')}
+                >
+                  Blue/Orange
+                </button>
               </li>
               <li>
-                <a onClick={() => handleColorThemeChange('blue-red')}>Blue/Red</a>
+                <button 
+                  className="btn btn-ghost text-left w-full justify-start" 
+                  onClick={() => handleColorThemeChange('blue-red')}
+                >
+                  Blue/Red
+                </button>
               </li>
             </ul>
           </div>
