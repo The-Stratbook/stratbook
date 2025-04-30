@@ -1,0 +1,19 @@
+{
+    "id": 37,
+    "title": "An insane frostmat on Border where it is almost invisible.",
+    "description": "This insane frostmat is placed in a often crowded area when defending downstairs.",
+    "side": "Defender",
+    "skill": "Intermediate",
+    "operator": "Frost",
+    "tags": ["Trap"],
+    "videoUrl": "https://www.instagram.com/p/DGjCws8JJRK/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  
