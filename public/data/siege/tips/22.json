@@ -1,0 +1,22 @@
+{
+    "id": 22,
+    "title": "Rapple into the kitchen hatch on Nighthaven labs",
+    "description": "With this trick you can rapple into the kitchen hatch on Nighthaven labs. This is a great way to surprise defenders and take control of the kitchen area quickly.",
+    "side": "Attacker",
+    "skill": "Intermediate",
+    "operator": "Osa",
+    "tags": ["Sneaky"],
+    "map": "Nighthaven Labs",
+    "bombSite": "Kitchen",
+    "videoUrl": "https://www.instagram.com/p/DEOHAc0i0Ss/",
+    "detailedNotes": {
+      "teamCoordination": "Medium",
+      "riskLevel": "High",
+      "timeRequired": "30 seconds or less"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  

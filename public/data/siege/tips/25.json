@@ -1,0 +1,21 @@
+{
+    "id": 25,
+    "title": "Buck can get an angle onto basement double wall from the top floor of Nighthaven labs.",
+    "description": "With this trick you can get an angle onto the basement double wall from the top floor of Nighthaven labs. You can easily get rid of any bandit or kaid's playing that wall and even open up the standard mira placements.",
+    "side": "Attacker",
+    "skill": "Intermediate",
+    "operator": "Buck",
+    "tags": ["Breach"],
+    "map": "Nighthaven Labs",
+    "videoUrl": "https://www.instagram.com/p/DAniF-0N5C7/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low",
+      "timeRequired": "30 seconds or less"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  

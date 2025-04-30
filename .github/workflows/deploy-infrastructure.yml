@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - 'infrastructure/**'
+  workflow_dispatch:
 
 jobs:
   deploy-infrastructure:
@@ -30,9 +31,6 @@ jobs:
                          staticWebAppName=swa-thestratbook-prod \
                          budgetAmount=10 \
                          primaryDomain=thestratbook.com
-                         
-      - name: Trigger App Deployment via Repository Dispatch
-        uses: peter-evans/repository-dispatch@v2
-        with:
-          token: ${{ secrets.WORKFLOW_DISPATCH_TOKEN }}
-          event-type: infrastructure-deployed
+           
+  call-workflow:
+    uses: ./.github/workflows/azure-static-web-apps.yml

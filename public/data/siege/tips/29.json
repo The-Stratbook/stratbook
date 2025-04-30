@@ -1,0 +1,20 @@
+{
+    "id": 29,
+    "title": "Some awesome spots for your Maestro Evil Eyes in Kafe Dostoyevsky Kitchen site.",
+    "description": "Maestro's Evil Eyes can be placed in some awesome spots that can catch attackers off-guard. Use these tips to maximize their effectiveness.",
+    "side": "Defender",
+    "skill": "Intermediate",
+    "operator": "Maestro",
+    "map": "Kafe Dostoyevsky",
+    "bombSite": "Kitchen",
+    "videoUrl": "https://www.instagram.com/p/DC_gVxuN8Mz/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  
