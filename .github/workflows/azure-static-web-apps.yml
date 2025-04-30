@@ -32,7 +32,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '23.x'
+          node-version: '22.x'
 
       - name: Install or update npm packages
         run: npm install
@@ -49,7 +49,7 @@ jobs:
             --app-location . \
             --api-location "" \
             --output-location build \
-            --deployment-token "${{ secrets.STATIC_WEB_APP_TOKEN }}" \
+            --deployment-token "${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}" \
             --env production
 
   validate-deployment:

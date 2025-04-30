@@ -32,5 +32,7 @@ jobs:
                          budgetAmount=10 \
                          primaryDomain=thestratbook.com
            
-  call-workflow:
+  deploy-static-app:
+    needs: deploy-infrastructure
+    name: Deploy Static App
     uses: ./.github/workflows/azure-static-web-apps.yml
