@@ -1,0 +1,19 @@
+{
+    "id": 35,
+    "title": "Using Raoura's ability with drones makes it so that you cannot open the door when a drone is close.",
+    "description": "This will probably be patched soon since this seems like a bug. If the defenders do not have explosive you can lock them in a room using this strat.",
+    "side": "Attacker",
+    "skill": "Intermediate",
+    "operator": "Raoura",
+    "tags": ["Block"],
+    "videoUrl": "https://www.instagram.com/p/DG4n1xkNE4w/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  
