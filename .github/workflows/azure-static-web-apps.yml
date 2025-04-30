@@ -49,7 +49,7 @@ jobs:
             --app-location . \
             --api-location "" \
             --output-location build \
-            --deployment-token "${{ secrets.STATIC_WEB_APP_TOKEN }}" \
+            --deployment-token "${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}" \
             --env production
 
   validate-deployment:
