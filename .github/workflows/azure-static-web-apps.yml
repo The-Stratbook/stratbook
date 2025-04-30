@@ -34,14 +34,35 @@ jobs:
         with:
           node-version: '23.x'
 
-      - name: Install or update npm packages
-        run: npm install
+      - name: Install Linux build essentials
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential python3
 
-      - name: Install dependencies
+      - name: Cache Node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies with optional packages
         run: npm ci --include=optional
+
+      - name: Debug node_modules content
+        run: |
+          echo "Checking @parcel/watcher installation..."
+          ls -la node_modules/@parcel/watcher || echo "@parcel/watcher directory not found"
+          echo "Node.js version:"
+          node --version
+          echo "NPM version:"
+          npm --version
 
       - name: Build React App
         run: npm run build
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
 
       - name: Deploy to Static Web App
         run: |
