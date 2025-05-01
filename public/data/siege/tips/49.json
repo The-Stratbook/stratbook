@@ -1,0 +1,19 @@
+{
+    "id": 49,
+    "title": "Suprise the defenders in bar of the chalet",
+    "description": "With maverick you can open the bottom of the wall secretly and shoot who ever is playing the corridor!",
+    "side": "Attacker",
+    "operator": "Maverick",
+    "skill": "Intermediate",
+    "tags": ["Sneaky"],
+    "videoUrl": "https://www.instagram.com/p/DHW2WmNoIaN/",
+    "detailedNotes": {
+      "teamCoordination": "Medium",
+      "riskLevel": "High"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  

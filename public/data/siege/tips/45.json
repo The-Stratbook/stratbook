@@ -1,0 +1,19 @@
+{
+    "id": 45,
+    "title": "Clash can block rappling into the window.",
+    "description": "When you play clash you can block or deny the rapple into a window with your shield.",
+    "side": "Defender",
+    "operator": "Clash",
+    "skill": "Intermediate",
+    "tags": ["Denial"],
+    "videoUrl": "https://www.instagram.com/p/DGucJZTOJod/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  

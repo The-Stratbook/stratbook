@@ -1,0 +1,19 @@
+{
+    "id": 42,
+    "title": "A great spawnpeek on Coastline Main door.",
+    "description": "With this spawnpeek you can catch attackers off guard who are just running out of spawn with a low risk.",
+    "side": "Defender",
+    "skill": "Intermediate",
+    "tags": ["Spawnpeek"],
+    "map": "Coastline",
+    "videoUrl": "https://www.instagram.com/p/DGHsrtaux2J/",
+    "detailedNotes": {
+      "teamCoordination": "Low",
+      "riskLevel": "Low"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  

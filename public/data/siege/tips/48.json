@@ -1,0 +1,19 @@
+{
+    "id": 48,
+    "title": "Trap the attackers in sewers of the bank",
+    "description": "You can trap the attackers in the sewers using Clash and Tachanka!",
+    "side": "Defender",
+    "operator": "Clash",
+    "skill": "Beginner",
+    "tags": ["Trap"],
+    "videoUrl": "https://www.instagram.com/p/DGLyBUNxAQE/",
+    "detailedNotes": {
+      "teamCoordination": "Medium",
+      "riskLevel": "High"
+    },
+    "contributor": {
+      "name": "Dakpan",
+      "discord_username": "myusernameisdakpanbutitwastaken"
+    }
+  }
+  
