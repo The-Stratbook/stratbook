@@ -1,0 +1,33 @@
+{
+  "id": 56,
+  "name": "Zero",
+  "side": "Attack",
+  "roles": ["Intel", "Disruptor"],
+  "loadout": {
+    "primary": [
+      { "name": "MP7", "type": "Submachine Gun" },
+      { "name": "SC3000K", "type": "Assault Rifle" }
+    ],
+    "secondary": [
+      { "name": "5.7 USG", "type": "Handgun" },
+      { "name": "GONNE-6", "type": "Hand Cannon" }
+    ],
+    "gadgets": ["Hard Breach Charge", "Claymore"]
+  },
+  "uniqueAbility": "Argus Launcher",
+  "biography": {
+    "realName": "Samuel Leo Fisher",
+    "dateOfBirth": "August 8th (Age 63)",
+    "placeOfBirth": "Baltimore, Maryland",
+    "description": "Zero uses the Argus Launcher to deploy cameras that can surveil both sides of breakable and reinforced surfaces, providing intel and disrupting defender setups."
+  },
+  "squad": "Ghosteyes",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use the Argus Launcher to gather intel on enemy positions and setups.",
+    "Take advantage of the cameras' ability to shoot a single laser to destroy defender gadgets.",
+    "Coordinate with teammates to maximize the tactical advantage of your intel."
+  ]
+}

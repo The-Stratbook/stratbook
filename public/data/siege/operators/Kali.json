@@ -1,0 +1,33 @@
+{
+  "id": 21,
+  "name": "Kali",
+  "side": "Attack",
+  "roles": ["Support"],
+  "loadout": {
+    "primary": [
+      { "name": "CSRX 300", "type": "Marksman Rifle" }
+    ],
+    "secondary": [
+      { "name": "SPSMG9", "type": "Machine Pistol" },
+      { "name": "C75 Auto", "type": "Machine Pistol" },
+      { "name": "P226 MK 25", "type": "Handgun" }
+    ],
+    "gadgets": ["Breach Charge", "Claymore", "Smoke Grenade"]
+  },
+  "uniqueAbility": "LV Explosive Lance",
+  "biography": {
+    "realName": "Jaimini Kalimohan Shah",
+    "dateOfBirth": "August 21st (Age 34)",
+    "placeOfBirth": "Amreli, India",
+    "description": "Kali uses the LV Explosive Lance to destroy gadgets and create openings in breakable surfaces, providing tactical support to her team."
+  },
+  "squad": "Nighthaven",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use the LV Explosive Lance to clear defender gadgets and open sightlines.",
+    "Coordinate with teammates to maximize the impact of your sniper rifle and gadget.",
+    "Be mindful of your positioning to avoid being flanked while providing support."
+  ]
+}

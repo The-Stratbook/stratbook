@@ -26,6 +26,10 @@ import EducationalContent from './pages/coming-soon/EducationalContent';
 import { trackPageView, initializeGA } from './ga4';
 import { initializeClarity } from './clarity';
 import { initializeGTM } from './gtm';
+import Hub from './pages/Hub';
+import HubMaps from './pages/HubMaps';
+import HubOperators from './pages/HubOperators';
+import OperatorDetail from './pages/OperatorDetail';
 
 function App() {
   const location = useLocation();
@@ -48,6 +52,12 @@ function App() {
       <Route path="/terms-of-service" element={<TermsOfService />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/cookie-policy" element={<CookiePolicy />} />
+
+      {/* Hub routes */}
+      <Route path="/hub" element={<Hub isFullWidth={true} />} />
+      <Route path="/hub/maps" element={<HubMaps isFullWidth={false} />} />
+      <Route path="/hub/operators" element={<HubOperators isFullWidth={false} />} />
+      <Route path="/hub/operators/:operatorName" element={<OperatorDetail isFullWidth={false} />} />
       
       {/* Coming Soon feature routes */}
       <Route path="/coming-soon/operator-guides" element={<OperatorGuides />} />

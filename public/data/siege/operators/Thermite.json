@@ -1,0 +1,33 @@
+{
+  "id": 2,
+  "name": "Thermite",
+  "side": "Attack",
+  "roles": ["Hard Breacher"],
+  "loadout": {
+    "primary": [
+      { "name": "M1014", "type": "Shotgun" },
+      { "name": "556XI", "type": "Assault Rifle" }
+    ],
+    "secondary": [
+      { "name": "5.7 USG", "type": "Handgun" },
+      { "name": "M45 MEUSOC", "type": "Handgun" }
+    ],
+    "gadgets": ["Smoke Grenade", "Stun Grenade"]
+  },
+  "uniqueAbility": "Exothermic Charge",
+  "biography": {
+    "realName": "Jordan Trace",
+    "dateOfBirth": "March 14th (Age 35)",
+    "placeOfBirth": "Plano, Texas",
+    "description": "Thermite is an important backline support for an attacking team. As one of the only hard-breachers in the game, losing Thermite early in the round will hinder your team significantly."
+  },
+  "squad": "Redhammer",
+  "health": 3,
+  "speed": 2,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Watch out for counters like Bandit's batteries or Mute's jammers.",
+    "Work with teammates like Thatcher or Twitch to remove defender gadgets.",
+    "Use Exothermic Charges for bigger destruction ranges on walls, hatches, or floors."
+  ]
+}

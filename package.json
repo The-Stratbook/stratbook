@@ -24,9 +24,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node generateTipsIndex.js && react-scripts start",
+    "start": "node generateIndexes.js && react-scripts start",
     "generate-sitemap": "node src/generate-sitemap.js",
-    "build": "node generateTipsIndex.js && npm run generate-sitemap && react-scripts build",
+    "build": "node generateIndexes.js && npm run generate-sitemap && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

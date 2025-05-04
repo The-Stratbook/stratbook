@@ -1,0 +1,33 @@
+{
+  "id": 59,
+  "name": "Grim",
+  "side": "Attack",
+  "roles": ["Intel", "Area Denial"],
+  "loadout": {
+    "primary": [
+      { "name": "552 Commando", "type": "Assault Rifle" },
+      { "name": "SG-CQB", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "Bailiff 410", "type": "Handgun" },
+      { "name": "P229", "type": "Handgun" }
+    ],
+    "gadgets": ["Claymore", "Hard Breach Charge", "Impact EMP Grenade"]
+  },
+  "uniqueAbility": "Kawan Hive Launcher",
+  "biography": {
+    "realName": "Charlie Tho Keng Boon",
+    "dateOfBirth": "April 5th (Age 39)",
+    "placeOfBirth": "Jurong, Singapore",
+    "description": "Grim uses the Kawan Hive Launcher to deploy swarms of bots that track opponents who pass through them, providing valuable intel and area control."
+  },
+  "squad": "Nighthaven",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Deploy the Kawan Hive Launcher to track enemy movements and gather intel.",
+    "Use the swarms to deny access to key areas and disrupt enemy plans.",
+    "Coordinate with teammates to capitalize on the intel provided by the swarms."
+  ]
+}

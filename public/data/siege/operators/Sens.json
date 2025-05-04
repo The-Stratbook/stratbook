@@ -1,0 +1,32 @@
+{
+  "id": 58,
+  "name": "Sens",
+  "side": "Attack",
+  "roles": ["Support", "Map Control"],
+  "loadout": {
+    "primary": [
+      { "name": "417", "type": "Marksman Rifle" },
+      { "name": "POF9", "type": "Assault Rifle" }
+    ],
+    "secondary": [
+      { "name": "SDP 9MM", "type": "Handgun" }
+    ],
+    "gadgets": ["Claymore", "Frag Grenade", "Hard Breach Charge"]
+  },
+  "uniqueAbility": "R.O.U. Projector System",
+  "biography": {
+    "realName": "Néon Ngoma Mutombo",
+    "dateOfBirth": "March 3rd (Age 30)",
+    "placeOfBirth": "Brussels, Belgium",
+    "description": "Sens uses the R.O.U. Projector System to create screens that block lines of sight, providing tactical advantages for their team."
+  },
+  "squad": "Wolfguard",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Deploy the R.O.U. Projector System to cut off enemy sightlines and create opportunities for your team.",
+    "Use the screens to safely advance or hold positions.",
+    "Coordinate with teammates to maximize the strategic impact of the screens."
+  ]
+}

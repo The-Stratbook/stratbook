@@ -1,19 +1,18 @@
 {
-    "id": 50,
-    "title": "A handy pixel angle with azami on oregon",
-    "description": "With this pixel angle you can catch attackers off guard who are trying to push the site from the main double window.",
-    "side": "Defender",
-    "operator": "Azami",
-    "skill": "Intermediate",
-    "tags": ["Sneaky"],
-    "videoUrl": "https://www.instagram.com/p/DEn2BWRRw9K/",
-    "detailedNotes": {
-      "teamCoordination": "Low",
-      "riskLevel": "Medium"
-    },
-    "contributor": {
-      "name": "Dakpan",
-      "discord_username": "myusernameisdakpanbutitwastaken"
-    }
+  "id": 50,
+  "title": "A handy pixel angle with azami on oregon",
+  "description": "With this pixel angle you can catch attackers off guard who are trying to push the site from the main double window.",
+  "side": "Defender",
+  "operator": "Azami",
+  "skill": "Intermediate",
+  "tags": ["Sneaky"],
+  "videoUrl": "https://www.instagram.com/p/DEn2BWRRw9K/",
+  "detailedNotes": {
+    "teamCoordination": "Low",
+    "riskLevel": "Medium"
+  },
+  "contributor": {
+    "name": "Dakpan",
+    "discord_username": "myusernameisdakpanbutitwastaken"
   }
-  
+}

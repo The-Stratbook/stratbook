@@ -1,0 +1,34 @@
+{
+  "id": 13,
+  "name": "Dokkaebi",
+  "side": "Attack",
+  "roles": ["Disruptor"],
+  "loadout": {
+    "primary": [
+      { "name": "MK 14 EBR", "type": "Marksman Rifle" },
+      { "name": "BOSG.12.2", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "GONNE-6", "type": "Hand Cannon" },
+      { "name": "SMG-12", "type": "Machine Pistol" },
+      { "name": "C75 Auto", "type": "Machine Pistol" }
+    ],
+    "gadgets": ["Smoke Grenade", "Stun Grenade", "Impact EMP Grenade"]
+  },
+  "uniqueAbility": "Logic Bomb",
+  "biography": {
+    "realName": "Grace Nam",
+    "dateOfBirth": "February 2nd (Age 29)",
+    "placeOfBirth": "Seoul, South Korea",
+    "description": "Dokkaebi uses the Logic Bomb, a hacking device that compromises enemy devices by emitting loud noises to reveal their positions."
+  },
+  "squad": "Viperstrike",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use the Logic Bomb to disrupt defenders and reveal their positions.",
+    "Coordinate with teammates to capitalize on the confusion caused by the Logic Bomb.",
+    "Be mindful of defenders who may use the noise to bait attackers into traps."
+  ]
+}

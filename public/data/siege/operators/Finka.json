@@ -1,0 +1,34 @@
+{
+  "id": 15,
+  "name": "Finka",
+  "side": "Attack",
+  "roles": ["Support"],
+  "loadout": {
+    "primary": [
+      { "name": "6P41", "type": "Light Machine Gun" },
+      { "name": "SASG-12", "type": "Shotgun" },
+      { "name": "SPEAR .308", "type": "Assault Rifle" }
+    ],
+    "secondary": [
+      { "name": "GSH-18", "type": "Handgun" },
+      { "name": "PMM", "type": "Handgun" }
+    ],
+    "gadgets": ["Frag Grenade", "Smoke Grenade", "Stun Grenade"]
+  },
+  "uniqueAbility": "Adrenal Surge",
+  "biography": {
+    "realName": "Lera Melnikova",
+    "dateOfBirth": "June 7th (Age 30)",
+    "placeOfBirth": "Gomel, Belarus",
+    "description": "Finka's Adrenal Surge activates pre-injected nanobots, providing a temporary boost in HP, reviving downed allies, and steadying aim."
+  },
+  "squad": "Nighthaven",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use Adrenal Surge to revive downed teammates and provide a health boost during engagements.",
+    "Coordinate with teammates to maximize the impact of the ability.",
+    "Be mindful of the cooldown and use it strategically in critical moments."
+  ]
+}

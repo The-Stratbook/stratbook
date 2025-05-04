@@ -1,0 +1,32 @@
+{
+  "id": 61,
+  "name": "Ram",
+  "side": "Attack",
+  "roles": ["Breach", "Anti-Gadget"],
+  "loadout": {
+    "primary": [
+      { "name": "LMG-E", "type": "Light Machine Gun" },
+      { "name": "R4-C", "type": "Assault Rifle" }
+    ],
+    "secondary": [
+      { "name": "MK1 9MM", "type": "Handgun" }
+    ],
+    "gadgets": ["Smoke Grenade", "Stun Grenade"]
+  },
+  "uniqueAbility": "BU-GI Auto Breacher",
+  "biography": {
+    "realName": "Bo-Ram Choi",
+    "dateOfBirth": "April 25th (Age 37)",
+    "placeOfBirth": "Busan, South Korea",
+    "description": "Ram uses the BU-GI Auto Breacher, a deployable mini-tank that destroys breakable surfaces and devices in its path, leaving a trail of destruction."
+  },
+  "squad": "Redhammer",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Deploy the BU-GI Auto Breacher to clear paths and destroy enemy gadgets.",
+    "Use the destruction caused by the breacher to create new sightlines and opportunities.",
+    "Coordinate with teammates to maximize the tactical advantage of the breacher."
+  ]
+}

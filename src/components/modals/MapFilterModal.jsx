@@ -7,10 +7,19 @@ const MapFilterModal = ({ isOpen, onClose, onSelectMap, selectedMap }) => {
   useEffect(() => {
     const fetchMaps = async () => {
       try {
-        const response = await fetch('/data/siege/maps.json');
-        if (!response.ok) throw new Error('Failed to fetch maps');
-        const data = await response.json();
-        setMaps(data);
+        const response = await fetch('/data/siege/mapsIndex.json');
+        if (!response.ok) throw new Error('Failed to fetch maps index');
+        const mapFiles = await response.json();
+
+        const mapData = await Promise.all(
+          mapFiles.map(async (file) => {
+            const mapResponse = await fetch(`/data/siege/maps/${file}`);
+            if (!mapResponse.ok) throw new Error(`Failed to fetch map: ${file}`);
+            return mapResponse.json();
+          })
+        );
+
+        setMaps(mapData);
       } catch (error) {
         console.error('Error fetching maps:', error);
       }

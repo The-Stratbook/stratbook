@@ -1,0 +1,32 @@
+{
+  "id": 57,
+  "name": "Osa",
+  "side": "Attack",
+  "roles": ["Support", "Intel"],
+  "loadout": {
+    "primary": [
+      { "name": "556XI", "type": "Assault Rifle" },
+      { "name": "PDW9", "type": "Submachine Gun" }
+    ],
+    "secondary": [
+      { "name": "PMM", "type": "Handgun" }
+    ],
+    "gadgets": ["Claymore", "Frag Grenade", "Impact EMP Grenade"]
+  },
+  "uniqueAbility": "Talon-8 Clear Shield",
+  "biography": {
+    "realName": "Anja Katarina Janković",
+    "dateOfBirth": "April 29th (Age 27)",
+    "placeOfBirth": "Split, Croatia",
+    "description": "Osa uses the Talon-8 Clear Shield to provide a transparent and bulletproof line of sight, aiding in attack strategies and team support."
+  },
+  "squad": "Nighthaven",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Deploy the Talon-8 Clear Shield to create safe sightlines for your team.",
+    "Use the shield to block enemy fire while advancing or holding a position.",
+    "Coordinate with teammates to maximize the strategic advantage of the shield."
+  ]
+}

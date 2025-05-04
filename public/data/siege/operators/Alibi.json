@@ -1,0 +1,33 @@
+{
+  "id": 43,
+  "name": "Alibi",
+  "side": "Defend",
+  "roles": ["Decoy", "Intel"],
+  "loadout": {
+    "primary": [
+      { "name": "MX4 Storm", "type": "Submachine Gun" },
+      { "name": "ACS12", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "Keratos .357", "type": "Handgun" },
+      { "name": "Bailiff 410", "type": "Handgun" }
+    ],
+    "gadgets": ["Proximity Alarm", "Observation Blocker"]
+  },
+  "uniqueAbility": "Prisma",
+  "biography": {
+    "realName": "Aria de Luca",
+    "dateOfBirth": "December 15th (Age 37)",
+    "placeOfBirth": "Tripoli, Libya",
+    "description": "Alibi uses Prisma to deploy holograms identical to herself, tricking attackers and gathering intel when the holograms are interacted with."
+  },
+  "squad": "Gruppo Intervento Speciale (G.I.S.)",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Deploy Prisma holograms in strategic locations to confuse attackers and gather intel.",
+    "Use the holograms to bait attackers into revealing their positions.",
+    "Coordinate with teammates to capitalize on the confusion caused by the holograms."
+  ]
+}

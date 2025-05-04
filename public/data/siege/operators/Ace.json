@@ -1,0 +1,32 @@
+{
+  "id": 23,
+  "name": "Ace",
+  "side": "Attack",
+  "roles": ["Hard Breacher"],
+  "loadout": {
+    "primary": [
+      { "name": "AK-12", "type": "Assault Rifle" },
+      { "name": "M1014", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "P9", "type": "Handgun" }
+    ],
+    "gadgets": ["Breach Charge", "Claymore"]
+  },
+  "uniqueAbility": "S.E.L.M.A. Aqua Breacher",
+  "biography": {
+    "realName": "Håvard Haugland",
+    "dateOfBirth": "March 15th (Age 33)",
+    "placeOfBirth": "Lærdalsøyri, Norway",
+    "description": "Ace uses the S.E.L.M.A. Aqua Breacher to create clean breaches in breakable and reinforced surfaces, providing entry points for his team."
+  },
+  "squad": "Nighthaven",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use the S.E.L.M.A. Aqua Breacher to open reinforced walls and hatches for team entry.",
+    "Coordinate with teammates to maximize the tactical advantage of new entry points.",
+    "Be mindful of the gadget's deployment mechanics to ensure optimal placement."
+  ]
+}

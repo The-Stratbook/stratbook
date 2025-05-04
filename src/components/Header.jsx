@@ -27,8 +27,13 @@ const Header = () => {
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
             <li><Link to="/external-tools">External Tools</Link></li>
             <li><Link to="/contribute">Contribute</Link></li>
-            <li>
-              <Link to="/coming-soon">Coming Soon</Link>
+            <li><Link to="/hub">Hub</Link>
+              <ul className="p-2 bg-base-200">
+                <li><Link to="/hub/maps">Maps</Link></li>
+                <li><Link to="/hub/operators">Operators</Link></li>
+              </ul>
+            </li>
+            <li><Link to="/coming-soon">Coming Soon</Link>
               <ul className="p-2 bg-base-200">
                 <li><Link to="/coming-soon/operator-guides" className="text-base-content">Operator Guides</Link></li>
                 <li><Link to="/coming-soon/map-guides" className="text-base-content">Map Guides</Link></li>
@@ -64,6 +69,17 @@ const Header = () => {
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
             <li><Link to="/external-tools">External Tools</Link></li>
             <li><Link to="/contribute">Contribute</Link></li>
+            <li tabIndex={0}>
+              <details>
+                <summary>
+                  <Link to="/hub" className="inline-block pr-1">Hub</Link>
+                </summary>
+                <ul className="p-2 bg-base-200 z-[999]">
+                  <li><Link to="/hub/maps">Maps</Link></li>
+                  <li><Link to="/hub/operators">Operators</Link></li>
+                </ul>
+              </details>
+            </li>
             <li tabIndex={0}>
               <details>
                 <summary>

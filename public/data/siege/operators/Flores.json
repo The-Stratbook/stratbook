@@ -1,0 +1,32 @@
+{
+  "id": 55,
+  "name": "Flores",
+  "side": "Attack",
+  "roles": ["Disruptor"],
+  "loadout": {
+    "primary": [
+      { "name": "AR33", "type": "Assault Rifle" },
+      { "name": "SR-25", "type": "Marksman Rifle" }
+    ],
+    "secondary": [
+      { "name": "GSH-18", "type": "Handgun" }
+    ],
+    "gadgets": ["Stun Grenade", "Claymore"]
+  },
+  "uniqueAbility": "RCE-Ratero Charge",
+  "biography": {
+    "realName": "Santiago Miguel Lucero",
+    "dateOfBirth": "October 2nd (Age 38)",
+    "placeOfBirth": "Buenos Aires, Argentina",
+    "description": "Flores uses the RCE-Ratero Charge to scout and destroy gadgets or soft surfaces, providing tactical advantages for his team."
+  },
+  "squad": "Ghosteyes",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use the RCE-Ratero Charge to clear defender gadgets and create openings in soft walls.",
+    "Coordinate with teammates to maximize the impact of your gadget's destruction capabilities.",
+    "Be mindful of the gadget's timing and placement to avoid wasting its potential."
+  ]
+}

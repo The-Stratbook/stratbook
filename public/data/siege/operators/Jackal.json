@@ -1,0 +1,34 @@
+{
+  "id": 10,
+  "name": "Jackal",
+  "side": "Attack",
+  "roles": ["Tracker"],
+  "loadout": {
+    "primary": [
+      { "name": "C7E", "type": "Assault Rifle" },
+      { "name": "PDW9", "type": "Submachine Gun" },
+      { "name": "ITA12L", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "USP40", "type": "Handgun" },
+      { "name": "ITA12S", "type": "Shotgun" }
+    ],
+    "gadgets": ["Claymore", "Smoke Grenade"]
+  },
+  "uniqueAbility": "Eyenox Model III",
+  "biography": {
+    "realName": "Ryad Ramírez Al-Hassar",
+    "dateOfBirth": "February 29th (Age 49)",
+    "placeOfBirth": "Ceuta, Spain",
+    "description": "Jackal is equipped with the Eyenox Model III, a mobile tracking device capable of identifying and trailing a person’s footprints in real-time."
+  },
+  "squad": "Viperstrike",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use the Eyenox to track defenders' movements and locate roamers.",
+    "Coordinate with teammates to capitalize on tracked enemies.",
+    "Be cautious of defenders baiting you into traps while tracking."
+  ]
+}
