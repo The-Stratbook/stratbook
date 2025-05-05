@@ -2,21 +2,35 @@
   "id": 26,
   "name": "Bandit",
   "side": "Defend",
-  "roles": ["Anti-Breach"],
+  "roles": [
+    "Anti-Breach"
+  ],
   "loadout": {
     "primary": [
-      { "name": "MP7", "type": "Submachine Gun" },
-      { "name": "M870", "type": "Shotgun" }
+      {
+        "name": "MP7",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "M870",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "P12", "type": "Handgun" }
+      {
+        "name": "P12",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Barbed Wire", "Nitro Cell"]
+    "gadgets": [
+      "Barbed Wire",
+      "Nitro Cell"
+    ]
   },
   "uniqueAbility": "Shock Wire",
   "biography": {
     "realName": "Dominic Brunsmeier",
-    "dateOfBirth": "August 13th (Age 42)",
+    "dateOfBirth": "1983-08-13",
     "placeOfBirth": "Berlin, Germany",
     "description": "Bandit is capable of electrifying a variety of surfaces thanks to his special ability: Crude Electrical Device or CED-1 Shock Wire."
   },
@@ -28,5 +42,6 @@
     "Protect your batteries from Twitch drones and EMPs.",
     "Use Shock Wire to deny hard breaching on reinforced walls.",
     "Be ready to redeploy batteries if attackers attempt to disable them."
-  ]
+  ],
+  "relatedTips": [14]
 }

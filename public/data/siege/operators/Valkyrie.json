@@ -2,21 +2,36 @@
   "id": 64,
   "name": "Valkyrie",
   "side": "Defend",
-  "roles": ["Intel", "Support"],
+  "roles": [
+    "Intel",
+    "Support"
+  ],
   "loadout": {
     "primary": [
-      { "name": "MPX", "type": "Submachine Gun" },
-      { "name": "SPAS-12", "type": "Shotgun" }
+      {
+        "name": "MPX",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "SPAS-12",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "D-50", "type": "Handgun" }
+      {
+        "name": "D-50",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Impact Grenade", "Nitro Cell"]
+    "gadgets": [
+      "Impact Grenade",
+      "Nitro Cell"
+    ]
   },
   "uniqueAbility": "Black Eye",
   "biography": {
     "realName": "Meghan J. Castellano",
-    "dateOfBirth": "July 21st (Age 31)",
+    "dateOfBirth": "1994-07-21",
     "placeOfBirth": "Oceanside, California",
     "description": "Valkyrie deploys Black Eye cameras to provide live video feed for her team, enhancing situational awareness."
   },

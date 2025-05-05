@@ -2,22 +2,40 @@
   "id": 51,
   "name": "Pulse",
   "side": "Defend",
-  "roles": ["Intel", "Roamer"],
+  "roles": [
+    "Intel",
+    "Roamer"
+  ],
   "loadout": {
     "primary": [
-      { "name": "UMP45", "type": "Submachine Gun" },
-      { "name": "M1014", "type": "Shotgun" }
+      {
+        "name": "UMP45",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "M1014",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "5.7 USG", "type": "Handgun" },
-      { "name": "M45 MEUSOC", "type": "Handgun" }
+      {
+        "name": "5.7 USG",
+        "type": "Handgun"
+      },
+      {
+        "name": "M45 MEUSOC",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Nitro Cell", "Deployable Shield"]
+    "gadgets": [
+      "Nitro Cell",
+      "Deployable Shield"
+    ]
   },
   "uniqueAbility": "Cardiac Sensor",
   "biography": {
     "realName": "Jack Estrada",
-    "dateOfBirth": "October 11th (Age 32)",
+    "dateOfBirth": "1993-10-11",
     "placeOfBirth": "Goldsboro, North Carolina",
     "description": "Pulse uses his Cardiac Sensor to detect heartbeats through walls, providing critical intel for his team."
   },

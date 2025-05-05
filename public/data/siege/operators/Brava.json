@@ -1,33 +1,34 @@
 {
-  "id": 60,
+  "id": 75,
   "name": "Brava",
   "side": "Attack",
-  "roles": ["Anti-Gadget", "Support"],
+  "roles": ["Support", "Anti-Gadget"],
   "loadout": {
     "primary": [
       { "name": "PARA-308", "type": "Assault Rifle" },
       { "name": "CAMRS", "type": "Marksman Rifle" }
     ],
     "secondary": [
-      { "name": "USP40", "type": "Handgun" },
-      { "name": "Super Shorty", "type": "Shotgun" }
+      { "name": "SUPER SHORTY", "type": "Shotgun" },
+      { "name": "USP40", "type": "Handgun" }
     ],
     "gadgets": ["Smoke Grenade", "Claymore"]
   },
   "uniqueAbility": "Kludge Drone",
   "biography": {
     "realName": "Nayara Cardoso",
-    "dateOfBirth": "January 10th (Age 40)",
-    "placeOfBirth": "Curitiba, Brazil",
-    "description": "Brava uses the Kludge Drone to sabotage enemy devices by either taking control of them or destroying them, providing a tactical advantage for her team."
+    "dateOfBirth": "1988-03-23",
+    "placeOfBirth": "Belo Horizonte, Brazil",
+    "description": "Brava deploys Kludge Drones that can hack and reprogram defender electronic devices, turning them against their owners or neutralizing them remotely."
   },
-  "squad": "Viperstrike",
-  "health": 3,
+  "squad": "Ghosteyes",
+  "health": 1,
   "speed": 3,
   "difficulty": 3,
   "gameplayTips": [
-    "Use the Kludge Drone to disable or take over enemy gadgets, creating opportunities for your team.",
-    "Coordinate with teammates to maximize the impact of sabotaged devices.",
-    "Deploy the drone strategically to avoid detection and ensure success."
+    "Hack defender cameras to gain valuable intel for your team.",
+    "Reprogram defender gadgets like Kapkan traps or Bandit batteries to work against them.",
+    "Use your Kludge Drones to neutralize defender utility without exposing yourself.",
+    "Coordinate with your team to maximize the impact of hacked devices."
   ]
 }

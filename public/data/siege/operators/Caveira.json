@@ -2,21 +2,35 @@
   "id": 36,
   "name": "Caveira",
   "side": "Defend",
-  "roles": ["Interrogator"],
+  "roles": [
+    "Interrogator"
+  ],
   "loadout": {
     "primary": [
-      { "name": "M12", "type": "Submachine Gun" },
-      { "name": "SPAS-15", "type": "Shotgun" }
+      {
+        "name": "M12",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "SPAS-15",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "Luison", "type": "Handgun" }
+      {
+        "name": "Luison",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Proximity Alarm", "Impact Grenade"]
+    "gadgets": [
+      "Proximity Alarm",
+      "Impact Grenade"
+    ]
   },
   "uniqueAbility": "Silent Step",
   "biography": {
     "realName": "Taina Pereira",
-    "dateOfBirth": "October 15th (Age 27)",
+    "dateOfBirth": "1998-10-15",
     "placeOfBirth": "Rinópolis, Brazil",
     "description": "Caveira uses her Silent Step ability to move quietly and surprise enemies, allowing her to interrogate incapacitated opponents for intel."
   },

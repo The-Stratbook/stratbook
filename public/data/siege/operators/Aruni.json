@@ -2,21 +2,36 @@
   "id": 70,
   "name": "Aruni",
   "side": "Defend",
-  "roles": ["Anti-Entry", "Intel"],
+  "roles": [
+    "Anti-Entry",
+    "Intel"
+  ],
   "loadout": {
     "primary": [
-      { "name": "P10 Roni", "type": "Submachine Gun" },
-      { "name": "MK 14 EBR", "type": "Marksman Rifle" }
+      {
+        "name": "P10 Roni",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "MK 14 EBR",
+        "type": "Marksman Rifle"
+      }
     ],
     "secondary": [
-      { "name": "PRB92", "type": "Handgun" }
+      {
+        "name": "PRB92",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Bulletproof Camera", "Barbed Wire"]
+    "gadgets": [
+      "Bulletproof Camera",
+      "Barbed Wire"
+    ]
   },
   "uniqueAbility": "Surya Gate",
   "biography": {
     "realName": "Apha Tawanroong",
-    "dateOfBirth": "August 9th (Age 42)",
+    "dateOfBirth": "1983-08-09",
     "placeOfBirth": "Ta Phraya District, Thailand",
     "description": "Aruni deploys Surya Gates that project laser arrays to detect and damage intruders, providing area denial and intel."
   },

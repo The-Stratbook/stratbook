@@ -2,21 +2,36 @@
   "id": 48,
   "name": "Mozzie",
   "side": "Defend",
-  "roles": ["Intel", "Anti-Gadget"],
+  "roles": [
+    "Intel",
+    "Anti-Gadget"
+  ],
   "loadout": {
     "primary": [
-      { "name": "Commando 9", "type": "Assault Rifle" },
-      { "name": "P10 Roni", "type": "Submachine Gun" }
+      {
+        "name": "Commando 9",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "P10 Roni",
+        "type": "Submachine Gun"
+      }
     ],
     "secondary": [
-      { "name": "SDP 9mm", "type": "Handgun" }
+      {
+        "name": "SDP 9mm",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Barbed Wire", "Nitro Cell"]
+    "gadgets": [
+      "Barbed Wire",
+      "Nitro Cell"
+    ]
   },
   "uniqueAbility": "Pest Launcher",
   "biography": {
     "realName": "Max Goose",
-    "dateOfBirth": "February 15th (Age 35)",
+    "dateOfBirth": "1990-02-15",
     "placeOfBirth": "Portland, Australia",
     "description": "Mozzie uses his Pest Launcher to hack enemy drones, providing a tactical advantage for his team."
   },

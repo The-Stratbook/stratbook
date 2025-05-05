@@ -1,5 +1,5 @@
 {
-  "id": 68,
+  "id": 79,
   "name": "Osa",
   "side": "Attack",
   "roles": ["Support", "Intel"],
@@ -11,22 +11,24 @@
     "secondary": [
       { "name": "PMM", "type": "Handgun" }
     ],
-    "gadgets": ["Claymore", "Frag Grenade", "Impact EMP Grenade"]
+    "gadgets": ["Claymore", "Smoke Grenade"]
   },
   "uniqueAbility": "Talon-8 Clear Shield",
   "biography": {
-    "realName": "Anja Katarina Janković",
-    "dateOfBirth": "April 29th (Age 27)",
+    "realName": "Anja Janković",
+    "dateOfBirth": "1984-05-29",
     "placeOfBirth": "Split, Croatia",
-    "description": "Osa uses the Talon-8 Clear Shield to provide a transparent and bulletproof line of sight, aiding in attack strategies and team support."
+    "description": "Osa carries transparent bulletproof Talon-8 Clear Shields that can be deployed on windows, doorframes, or carried for mobile cover, allowing for safe intel gathering and strategic positioning."
   },
   "squad": "Nighthaven",
-  "health": 3,
-  "speed": 3,
-  "difficulty": 3,
+  "health": 2,
+  "speed": 2,
+  "difficulty": 2,
   "gameplayTips": [
-    "Deploy the Talon-8 Clear Shield to create safe sightlines for your team.",
-    "Use the shield to block enemy fire while advancing or holding a position.",
-    "Coordinate with teammates to maximize the strategic advantage of the shield."
-  ]
+    "Use the Talon-8 Shield to safely gather intel through windows or doorways.",
+    "Deploy shields on windows to create safe angles for attack.",
+    "Remember that the shield is transparent from both sides - defenders can see you too.",
+    "The shield can be broken by explosives or melee attacks, so be prepared with backup plans."
+  ],
+  "relatedTips": [2, 22]
 }

@@ -2,22 +2,39 @@
   "id": 24,
   "name": "Smoke",
   "side": "Defend",
-  "roles": ["Area Denial"],
+  "roles": [
+    "Area Denial"
+  ],
   "loadout": {
     "primary": [
-      { "name": "M590A1", "type": "Shotgun" },
-      { "name": "FMG-9", "type": "Submachine Gun" }
+      {
+        "name": "M590A1",
+        "type": "Shotgun"
+      },
+      {
+        "name": "FMG-9",
+        "type": "Submachine Gun"
+      }
     ],
     "secondary": [
-      { "name": "P226 MK 25", "type": "Handgun" },
-      { "name": "SMG-11", "type": "Machine Pistol" }
+      {
+        "name": "P226 MK 25",
+        "type": "Handgun"
+      },
+      {
+        "name": "SMG-11",
+        "type": "Machine Pistol"
+      }
     ],
-    "gadgets": ["Barbed Wire", "Proximity Alarm"]
+    "gadgets": [
+      "Barbed Wire",
+      "Proximity Alarm"
+    ]
   },
   "uniqueAbility": "Remote Gas Grenade",
   "biography": {
     "realName": "James Porter",
-    "dateOfBirth": "May 14th (Age 36)",
+    "dateOfBirth": "1989-05-14",
     "placeOfBirth": "London, England (King's Cross)",
     "description": "Smoke uses his Remote Gas Grenades to deny area access and control enemy movement."
   },

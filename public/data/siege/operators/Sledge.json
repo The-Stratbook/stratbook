@@ -2,21 +2,37 @@
   "id": 4,
   "name": "Sledge",
   "side": "Attack",
-  "roles": ["Soft Breacher", "Entry Fragger"],
+  "roles": [
+    "Soft Breacher",
+    "Entry Fragger"
+  ],
   "loadout": {
     "primary": [
-      { "name": "L85A2", "type": "Assault Rifle" },
-      { "name": "M590A1", "type": "Shotgun" }
+      {
+        "name": "L85A2",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "M590A1",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "P226 MK 25", "type": "Handgun" }
+      {
+        "name": "P226 MK 25",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Frag Grenade", "Stun Grenade", "Impact EMP Grenade"]
+    "gadgets": [
+      "Frag Grenade",
+      "Stun Grenade",
+      "Impact EMP Grenade"
+    ]
   },
   "uniqueAbility": "Breaching Hammer",
   "biography": {
     "realName": "Seamus Cowden",
-    "dateOfBirth": "April 2nd (Age 35)",
+    "dateOfBirth": "1990-04-02",
     "placeOfBirth": "John O’Groats, Scotland",
     "description": "Sledge is a soft breacher and flanker, excelling at creating new lines of fire and entry points, harassing the defenders."
   },

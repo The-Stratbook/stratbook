@@ -2,23 +2,45 @@
   "id": 8,
   "name": "Fuze",
   "side": "Attack",
-  "roles": ["Soft Breacher", "Area Denial"],
+  "roles": [
+    "Soft Breacher",
+    "Area Denial"
+  ],
   "loadout": {
     "primary": [
-      { "name": "AK-12", "type": "Assault Rifle" },
-      { "name": "6P41", "type": "Light Machine Gun" },
-      { "name": "Ballistic Shield", "type": "Shield" }
+      {
+        "name": "AK-12",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "6P41",
+        "type": "Light Machine Gun"
+      },
+      {
+        "name": "Ballistic Shield",
+        "type": "Shield"
+      }
     ],
     "secondary": [
-      { "name": "PMM", "type": "Handgun" },
-      { "name": "GSH-18", "type": "Handgun" }
+      {
+        "name": "PMM",
+        "type": "Handgun"
+      },
+      {
+        "name": "GSH-18",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Breach Charge", "Hard Breach Charge", "Smoke Grenade"]
+    "gadgets": [
+      "Breach Charge",
+      "Hard Breach Charge",
+      "Smoke Grenade"
+    ]
   },
   "uniqueAbility": "Cluster Charge",
   "biography": {
     "realName": "Shuhrat Kessikbayev",
-    "dateOfBirth": "October 12th (Age 34)",
+    "dateOfBirth": "1991-10-12",
     "placeOfBirth": "Samarkand, Uzbekistan",
     "description": "Fuze is best played as an aggressive flanker and area denial Operator. His strengths allow him to dispatch defensive capabilities and harass enemies anchored in defensive positions."
   },

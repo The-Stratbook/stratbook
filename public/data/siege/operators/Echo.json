@@ -2,22 +2,39 @@
   "id": 37,
   "name": "Echo",
   "side": "Defend",
-  "roles": ["Disruptor Drone"],
+  "roles": [
+    "Disruptor Drone"
+  ],
   "loadout": {
     "primary": [
-      { "name": "MP5SD", "type": "Submachine Gun" },
-      { "name": "Supernova", "type": "Shotgun" }
+      {
+        "name": "MP5SD",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "Supernova",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "Bearing 9", "type": "Machine Pistol" },
-      { "name": "P229", "type": "Handgun" }
+      {
+        "name": "Bearing 9",
+        "type": "Machine Pistol"
+      },
+      {
+        "name": "P229",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Impact Grenade", "Deployable Shield"]
+    "gadgets": [
+      "Impact Grenade",
+      "Deployable Shield"
+    ]
   },
   "uniqueAbility": "Yokai",
   "biography": {
     "realName": "Masaru Enatsu",
-    "dateOfBirth": "October 31st (Age 36)",
+    "dateOfBirth": "1989-10-31",
     "placeOfBirth": "Tokyo, Japan (Suginami-ku)",
     "description": "Echo uses his Yokai drone to disorient enemies with ultrasonic bursts, providing tactical support to his team."
   },

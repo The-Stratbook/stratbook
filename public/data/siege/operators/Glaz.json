@@ -2,22 +2,40 @@
   "id": 7,
   "name": "Glaz",
   "side": "Attack",
-  "roles": ["Sniper"],
+  "roles": [
+    "Sniper"
+  ],
   "loadout": {
     "primary": [
-      { "name": "OTS-03", "type": "Marksman Rifle" }
+      {
+        "name": "OTS-03",
+        "type": "Marksman Rifle"
+      }
     ],
     "secondary": [
-      { "name": "PMM", "type": "Handgun" },
-      { "name": "GONNE-6", "type": "Hand Cannon" },
-      { "name": "BEARING 9", "type": "Machine Pistol" }
+      {
+        "name": "PMM",
+        "type": "Handgun"
+      },
+      {
+        "name": "GONNE-6",
+        "type": "Hand Cannon"
+      },
+      {
+        "name": "BEARING 9",
+        "type": "Machine Pistol"
+      }
     ],
-    "gadgets": ["Smoke Grenade", "Frag Grenade", "Claymore"]
+    "gadgets": [
+      "Smoke Grenade",
+      "Frag Grenade",
+      "Claymore"
+    ]
   },
   "uniqueAbility": "Flip Sight",
   "biography": {
     "realName": "Timur Glazkov",
-    "dateOfBirth": "July 2nd (Age 32)",
+    "dateOfBirth": "1993-07-02",
     "placeOfBirth": "Vladivostok, Russia",
     "description": "Glaz is a back-line marksman, capable of soft breaching and providing covering fire from a distance."
   },

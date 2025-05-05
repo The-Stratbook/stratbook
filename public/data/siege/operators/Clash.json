@@ -2,21 +2,35 @@
   "id": 44,
   "name": "Clash",
   "side": "Defend",
-  "roles": ["Shield"],
+  "roles": [
+    "Shield"
+  ],
   "loadout": {
     "primary": [
-      { "name": "CCE Shield", "type": "Shield" }
+      {
+        "name": "CCE Shield",
+        "type": "Shield"
+      }
     ],
     "secondary": [
-      { "name": "P-10C", "type": "Handgun" },
-      { "name": "SPSMG9", "type": "Machine Pistol" }
+      {
+        "name": "P-10C",
+        "type": "Handgun"
+      },
+      {
+        "name": "SPSMG9",
+        "type": "Machine Pistol"
+      }
     ],
-    "gadgets": ["Barbed Wire", "Deployable Shield"]
+    "gadgets": [
+      "Barbed Wire",
+      "Deployable Shield"
+    ]
   },
   "uniqueAbility": "CCE Shield",
   "biography": {
     "realName": "Morowa Evans",
-    "dateOfBirth": "June 7th (Age 35)",
+    "dateOfBirth": "1990-06-07",
     "placeOfBirth": "London, England",
     "description": "Clash uses her CCE Shield to slow down and damage enemies, making her an effective crowd-control defender."
   },
@@ -28,5 +42,6 @@
     "Use the CCE Shield to block entry points and delay attackers.",
     "Coordinate with teammates to capitalize on slowed enemies.",
     "Switch to your secondary weapon when attackers get too close."
-  ]
+  ],
+  "relatedTips": [45, 48]
 }

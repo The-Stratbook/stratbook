@@ -2,21 +2,36 @@
   "id": 63,
   "name": "Azami",
   "side": "Defend",
-  "roles": ["Utility", "Trap"],
+  "roles": [
+    "Utility",
+    "Trap"
+  ],
   "loadout": {
     "primary": [
-      { "name": "9X19SVN", "type": "Submachine Gun" },
-      { "name": "ACS12", "type": "Shotgun" }
+      {
+        "name": "9X19SVN",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "ACS12",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "D-50", "type": "Handgun" }
+      {
+        "name": "D-50",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Impact Grenade", "Barbed Wire"]
+    "gadgets": [
+      "Impact Grenade",
+      "Barbed Wire"
+    ]
   },
   "uniqueAbility": "Kiba Barrier",
   "biography": {
     "realName": "Kana Fujiwara",
-    "dateOfBirth": "September 6th (Age 28)",
+    "dateOfBirth": "1997-09-06",
     "placeOfBirth": "Kyoto, Japan",
     "description": "Azami uses Kiba Barriers, throwable kunai that create bulletproof barriers, to patch defenses and control sightlines."
   },
@@ -25,8 +40,9 @@
   "speed": 3,
   "difficulty": 3,
   "gameplayTips": [
-    "Use Kiba Barriers to block attacker sightlines and reinforce weak points.",
-    "Coordinate with teammates to create strong defensive setups.",
-    "Deploy barriers strategically to control the flow of attackers."
-  ]
+    "Use Kiba Barriers to block lines of sight and protect vulnerable angles.",
+    "Deploy barriers to cover breached walls or create new defensive positions.",
+    "Be creative with barrier placement - ceilings, floors, and doorways can all be reinforced."
+  ],
+  "relatedTips": [23, 33, 50, 7]
 }

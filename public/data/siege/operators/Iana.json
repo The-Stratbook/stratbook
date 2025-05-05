@@ -2,22 +2,39 @@
   "id": 22,
   "name": "Iana",
   "side": "Attack",
-  "roles": ["Intel"],
+  "roles": [
+    "Intel"
+  ],
   "loadout": {
     "primary": [
-      { "name": "ARX200", "type": "Assault Rifle" },
-      { "name": "G36C", "type": "Assault Rifle" }
+      {
+        "name": "ARX200",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "G36C",
+        "type": "Assault Rifle"
+      }
     ],
     "secondary": [
-      { "name": "GONNE-6", "type": "Hand Cannon" },
-      { "name": "MK1 9mm", "type": "Handgun" }
+      {
+        "name": "GONNE-6",
+        "type": "Hand Cannon"
+      },
+      {
+        "name": "MK1 9mm",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Impact EMP Grenade", "Smoke Grenade"]
+    "gadgets": [
+      "Impact EMP Grenade",
+      "Smoke Grenade"
+    ]
   },
   "uniqueAbility": "Gemini Replicator",
   "biography": {
     "realName": "Nienke Meijer",
-    "dateOfBirth": "August 27th (Age 35)",
+    "dateOfBirth": "1990-08-27",
     "placeOfBirth": "Katwijk, the Netherlands",
     "description": "Iana uses the Gemini Replicator to deploy a holographic copy of herself, gathering intel and creating distractions."
   },

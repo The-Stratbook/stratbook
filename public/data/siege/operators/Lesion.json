@@ -2,22 +2,39 @@
   "id": 39,
   "name": "Lesion",
   "side": "Defend",
-  "roles": ["Trapper"],
+  "roles": [
+    "Trapper"
+  ],
   "loadout": {
     "primary": [
-      { "name": "SIX12 SD", "type": "Shotgun" },
-      { "name": "T-5 SMG", "type": "Submachine Gun" }
+      {
+        "name": "SIX12 SD",
+        "type": "Shotgun"
+      },
+      {
+        "name": "T-5 SMG",
+        "type": "Submachine Gun"
+      }
     ],
     "secondary": [
-      { "name": "Q-929", "type": "Handgun" },
-      { "name": "Super Shorty", "type": "Shotgun" }
+      {
+        "name": "Q-929",
+        "type": "Handgun"
+      },
+      {
+        "name": "Super Shorty",
+        "type": "Shotgun"
+      }
     ],
-    "gadgets": ["Observation Blocker", "Bulletproof Camera"]
+    "gadgets": [
+      "Observation Blocker",
+      "Bulletproof Camera"
+    ]
   },
   "uniqueAbility": "Gu Mines",
   "biography": {
     "realName": "Liu Tze Long",
-    "dateOfBirth": "July 2nd (Age 44)",
+    "dateOfBirth": "1981-07-02",
     "placeOfBirth": "Junk Bay, Hong Kong, China",
     "description": "Lesion uses his Gu Mines to injure and slow down enemies, providing a tactical advantage for his team."
   },

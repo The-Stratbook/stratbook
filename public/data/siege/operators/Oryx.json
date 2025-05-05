@@ -2,22 +2,40 @@
   "id": 50,
   "name": "Oryx",
   "side": "Defend",
-  "roles": ["Mobility", "Roamer"],
+  "roles": [
+    "Mobility",
+    "Roamer"
+  ],
   "loadout": {
     "primary": [
-      { "name": "SPAS-12", "type": "Shotgun" },
-      { "name": "T-5 SMG", "type": "Submachine Gun" }
+      {
+        "name": "SPAS-12",
+        "type": "Shotgun"
+      },
+      {
+        "name": "T-5 SMG",
+        "type": "Submachine Gun"
+      }
     ],
     "secondary": [
-      { "name": "Bailiff 410", "type": "Handgun" },
-      { "name": "USP40", "type": "Handgun" }
+      {
+        "name": "Bailiff 410",
+        "type": "Handgun"
+      },
+      {
+        "name": "USP40",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Barbed Wire", "Proximity Alarm"]
+    "gadgets": [
+      "Barbed Wire",
+      "Proximity Alarm"
+    ]
   },
   "uniqueAbility": "Remah Dash",
   "biography": {
     "realName": "Saif Al Hadid",
-    "dateOfBirth": "July 3rd (Age 45)",
+    "dateOfBirth": "1980-07-03",
     "placeOfBirth": "Azraq, Jordan",
     "description": "Oryx uses his Remah Dash to knock down enemies, breach walls, and climb hatches, providing a tactical advantage for his team."
   },

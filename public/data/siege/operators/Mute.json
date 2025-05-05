@@ -2,22 +2,40 @@
   "id": 66,
   "name": "Mute",
   "side": "Defend",
-  "roles": ["Anti-Gadget", "Crowd Control"],
+  "roles": [
+    "Anti-Gadget",
+    "Crowd Control"
+  ],
   "loadout": {
     "primary": [
-      { "name": "MP5K", "type": "Submachine Gun" },
-      { "name": "M590A1", "type": "Shotgun" }
+      {
+        "name": "MP5K",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "M590A1",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "P226 MK 25", "type": "Handgun" },
-      { "name": "SMG-11", "type": "Machine Pistol" }
+      {
+        "name": "P226 MK 25",
+        "type": "Handgun"
+      },
+      {
+        "name": "SMG-11",
+        "type": "Machine Pistol"
+      }
     ],
-    "gadgets": ["Bulletproof Camera", "Nitro Cell"]
+    "gadgets": [
+      "Bulletproof Camera",
+      "Nitro Cell"
+    ]
   },
   "uniqueAbility": "Signal Disruptor",
   "biography": {
     "realName": "Mark R. Chandar",
-    "dateOfBirth": "October 11th (Age 25)",
+    "dateOfBirth": "2000-10-11",
     "placeOfBirth": "York, England",
     "description": "Mute uses his Signal Disruptors to jam enemy electronics, providing a tactical advantage for his team."
   },

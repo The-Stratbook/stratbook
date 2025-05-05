@@ -2,22 +2,40 @@
   "id": 18,
   "name": "Gridlock",
   "side": "Attack",
-  "roles": ["Map Control"],
+  "roles": [
+    "Map Control"
+  ],
   "loadout": {
     "primary": [
-      { "name": "F90", "type": "Assault Rifle" },
-      { "name": "M249 SAW", "type": "Light Machine Gun" }
+      {
+        "name": "F90",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "M249 SAW",
+        "type": "Light Machine Gun"
+      }
     ],
     "secondary": [
-      { "name": "Super Shorty", "type": "Shotgun" },
-      { "name": "SDP 9mm", "type": "Handgun" }
+      {
+        "name": "Super Shorty",
+        "type": "Shotgun"
+      },
+      {
+        "name": "SDP 9mm",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Smoke Grenade", "Frag Grenade", "Impact EMP Grenade"]
+    "gadgets": [
+      "Smoke Grenade",
+      "Frag Grenade",
+      "Impact EMP Grenade"
+    ]
   },
   "uniqueAbility": "Trax Stingers",
   "biography": {
     "realName": "Tori Tallyo Fairous",
-    "dateOfBirth": "August 5th (Age 36)",
+    "dateOfBirth": "1989-08-05",
     "placeOfBirth": "Cairns, Australia",
     "description": "Gridlock uses Trax Stingers to deploy clusters of spikes that slow and damage enemies, providing area denial and map control."
   },

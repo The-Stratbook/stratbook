@@ -2,22 +2,40 @@
   "id": 3,
   "name": "Hibana",
   "side": "Attack",
-  "roles": ["Hard Breacher", "Flexible"],
+  "roles": [
+    "Hard Breacher",
+    "Flexible"
+  ],
   "loadout": {
     "primary": [
-      { "name": "TYPE-89", "type": "Assault Rifle" },
-      { "name": "SUPERNOVA", "type": "Shotgun" }
+      {
+        "name": "TYPE-89",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "SUPERNOVA",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "P229", "type": "Handgun" },
-      { "name": "BEARING 9", "type": "Machine Pistol" }
+      {
+        "name": "P229",
+        "type": "Handgun"
+      },
+      {
+        "name": "BEARING 9",
+        "type": "Machine Pistol"
+      }
     ],
-    "gadgets": ["Stun Grenade", "Breach Charge"]
+    "gadgets": [
+      "Stun Grenade",
+      "Breach Charge"
+    ]
   },
   "uniqueAbility": "X-KAIROS",
   "biography": {
     "realName": "Yumiko Imagawa",
-    "dateOfBirth": "July 12th (Age 34)",
+    "dateOfBirth": "1991-07-12",
     "placeOfBirth": "Nagoya, Japan",
     "description": "The X-KAIROS - a 40 mm caliber launcher - fires explosive pellets that can be detonated simultaneously from a distance. Deliver innovative assaults by creating lines of sights, or new pathways!"
   },
@@ -26,8 +44,9 @@
   "speed": 3,
   "difficulty": 3,
   "gameplayTips": [
-    "Use X-KAIROS to create new pathways or lines of sight.",
-    "Coordinate with teammates to maximize the impact of your breaching capabilities.",
-    "Be mindful of your surroundings to avoid wasting X-KAIROS charges."
-  ]
+    "Use X-KAIROS to create multiple small entry points or one large breach.",
+    "Coordinate with teammates to maximize the tactical advantage of new entry points.",
+    "Be mindful of defenders who can counter your breaching capability."
+  ],
+  "relatedTips": [4]
 }

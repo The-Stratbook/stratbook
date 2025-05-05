@@ -1,22 +1,36 @@
 {
   "id": 54,
-  "name": "Tubarao",
+  "name": "Tubarão",
   "side": "Defend",
-  "roles": ["Delay"],
+  "roles": [
+    "Delay"
+  ],
   "loadout": {
     "primary": [
-      { "name": "MPX", "type": "Submachine Gun" },
-      { "name": "AR-15.50", "type": "Assault Rifle" }
+      {
+        "name": "MPX",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "AR-15.50",
+        "type": "Assault Rifle"
+      }
     ],
     "secondary": [
-      { "name": "P226 MK 25", "type": "Handgun" }
+      {
+        "name": "P226 MK 25",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Nitro Cell", "Proximity Alarm"]
+    "gadgets": [
+      "Nitro Cell",
+      "Proximity Alarm"
+    ]
   },
   "uniqueAbility": "Zoto Canister",
   "biography": {
     "realName": "Isaac Nunes Oliveira",
-    "dateOfBirth": "November 24th (Age 35)",
+    "dateOfBirth": "1990-11-24",
     "placeOfBirth": "Ponta Delgada, Portugal",
     "description": "Tubarao uses the Zoto Canister to slow enemies, freeze devices, and leave footprints in frozen areas, providing tactical control."
   },

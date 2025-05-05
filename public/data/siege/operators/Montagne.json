@@ -2,21 +2,36 @@
   "id": 6,
   "name": "Montagne",
   "side": "Attack",
-  "roles": ["Shield"],
+  "roles": [
+    "Shield"
+  ],
   "loadout": {
     "primary": [
-      { "name": "Le Roc Shield", "type": "Shield" }
+      {
+        "name": "Le Roc Shield",
+        "type": "Shield"
+      }
     ],
     "secondary": [
-      { "name": "P9", "type": "Handgun" },
-      { "name": "LFP586", "type": "Handgun" }
+      {
+        "name": "P9",
+        "type": "Handgun"
+      },
+      {
+        "name": "LFP586",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Hard Breach Charge", "Smoke Grenade", "Impact EMP Grenade"]
+    "gadgets": [
+      "Hard Breach Charge",
+      "Smoke Grenade",
+      "Impact EMP Grenade"
+    ]
   },
   "uniqueAbility": "Le Roc Shield",
   "biography": {
     "realName": "Gilles Touré",
-    "dateOfBirth": "October 11th (Age 48)",
+    "dateOfBirth": "1977-10-11",
     "placeOfBirth": "Bordeaux, France",
     "description": "Montagne is a shield operator who provides protection against small-arms fire and close combat attacks."
   },

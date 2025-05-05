@@ -2,22 +2,40 @@
   "id": 47,
   "name": "Melusi",
   "side": "Defend",
-  "roles": ["Crowd Control", "Intel"],
+  "roles": [
+    "Crowd Control",
+    "Intel"
+  ],
   "loadout": {
     "primary": [
-      { "name": "MP5", "type": "Submachine Gun" },
-      { "name": "Super 90", "type": "Shotgun" }
+      {
+        "name": "MP5",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "Super 90",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "ITA12S", "type": "Shotgun" },
-      { "name": "RG15", "type": "Handgun" }
+      {
+        "name": "ITA12S",
+        "type": "Shotgun"
+      },
+      {
+        "name": "RG15",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Bulletproof Camera", "Impact Grenade"]
+    "gadgets": [
+      "Bulletproof Camera",
+      "Impact Grenade"
+    ]
   },
   "uniqueAbility": "Banshee Sonic Defense",
   "biography": {
     "realName": "Thandiwe Ndlovu",
-    "dateOfBirth": "June 16th (Age 32)",
+    "dateOfBirth": "1993-06-16",
     "placeOfBirth": "Louwsburg, South Africa",
     "description": "Melusi uses her Banshee Sonic Defense to slow and disrupt attackers, providing a tactical advantage for her team."
   },

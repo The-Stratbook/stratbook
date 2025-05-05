@@ -2,21 +2,35 @@
   "id": 27,
   "name": "Castle",
   "side": "Defend",
-  "roles": ["Barricade"],
+  "roles": [
+    "Barricade"
+  ],
   "loadout": {
     "primary": [
-      { "name": "UMP45", "type": "Submachine Gun" },
-      { "name": "M1014", "type": "Shotgun" }
+      {
+        "name": "UMP45",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "M1014",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "5.7 USG", "type": "Handgun" }
+      {
+        "name": "5.7 USG",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Bulletproof Camera", "Impact Grenade"]
+    "gadgets": [
+      "Bulletproof Camera",
+      "Impact Grenade"
+    ]
   },
   "uniqueAbility": "Armor Panel",
   "biography": {
     "realName": "Miles Campbell",
-    "dateOfBirth": "September 20th (Age 36)",
+    "dateOfBirth": "1989-09-20",
     "placeOfBirth": "Sherman Oaks, California, USA",
     "description": "Castle uses his Armor Panels to reinforce doors and windows, providing additional protection for his team."
   },

@@ -1,32 +1,34 @@
 {
-  "id": 61,
+  "id": 72,
   "name": "Ram",
   "side": "Attack",
-  "roles": ["Breach", "Anti-Gadget"],
+  "roles": ["Breach", "Support"],
   "loadout": {
     "primary": [
-      { "name": "LMG-E", "type": "Light Machine Gun" },
-      { "name": "R4-C", "type": "Assault Rifle" }
+      { "name": "R4-C", "type": "Assault Rifle" },
+      { "name": "552 COMMANDO", "type": "Assault Rifle" }
     ],
     "secondary": [
-      { "name": "MK1 9MM", "type": "Handgun" }
+      { "name": "MK1 9mm", "type": "Handgun" },
+      { "name": "P229", "type": "Handgun" }
     ],
     "gadgets": ["Smoke Grenade", "Stun Grenade"]
   },
-  "uniqueAbility": "BU-GI Auto Breacher",
+  "uniqueAbility": "BU-GI Auto-Breacher",
   "biography": {
-    "realName": "Bo-Ram Choi",
-    "dateOfBirth": "April 25th (Age 37)",
-    "placeOfBirth": "Busan, South Korea",
-    "description": "Ram uses the BU-GI Auto Breacher, a deployable mini-tank that destroys breakable surfaces and devices in its path, leaving a trail of destruction."
+    "realName": "Jae-min Park",
+    "dateOfBirth": "1994-08-02",
+    "placeOfBirth": "Seoul, South Korea",
+    "description": "Ram deploys the BU-GI Auto-Breacher, a remote-controlled device that can create breaching holes in walls and barricades, providing new entry points for attackers without risking operator exposure."
   },
-  "squad": "Redhammer",
-  "health": 3,
+  "squad": "Wolfguard",
+  "health": 1,
   "speed": 3,
-  "difficulty": 3,
+  "difficulty": 2,
   "gameplayTips": [
-    "Deploy the BU-GI Auto Breacher to clear paths and destroy enemy gadgets.",
-    "Use the destruction caused by the breacher to create new sightlines and opportunities.",
-    "Coordinate with teammates to maximize the tactical advantage of the breacher."
+    "Use the BU-GI Auto-Breacher to create unexpected entry points for your team.",
+    "Coordinate breaches with teammates' attacks to maximize effectiveness.",
+    "The BU-GI can be used as a sacrificial drone to bait out defender utility.",
+    "Create multiple breach points to confuse defenders and split their attention."
   ]
 }

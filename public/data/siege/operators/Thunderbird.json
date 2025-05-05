@@ -2,23 +2,45 @@
   "id": 55,
   "name": "Thunderbird",
   "side": "Defend",
-  "roles": ["Support", "Healer"],
+  "roles": [
+    "Support",
+    "Healer"
+  ],
   "loadout": {
     "primary": [
-      { "name": "SPAS-15", "type": "Shotgun" },
-      { "name": "SPEAR .308", "type": "Assault Rifle" }
+      {
+        "name": "SPAS-15",
+        "type": "Shotgun"
+      },
+      {
+        "name": "SPEAR .308",
+        "type": "Assault Rifle"
+      }
     ],
     "secondary": [
-      { "name": "BEARING 9", "type": "Machine Pistol" },
-      { "name": "Q-929", "type": "Handgun" },
-      { "name": "ITA12S", "type": "Shotgun" }
+      {
+        "name": "BEARING 9",
+        "type": "Machine Pistol"
+      },
+      {
+        "name": "Q-929",
+        "type": "Handgun"
+      },
+      {
+        "name": "ITA12S",
+        "type": "Shotgun"
+      }
     ],
-    "gadgets": ["Barbed Wire", "Bulletproof Camera", "Deployable Shield"]
+    "gadgets": [
+      "Barbed Wire",
+      "Bulletproof Camera",
+      "Deployable Shield"
+    ]
   },
   "uniqueAbility": "Kóna Station",
   "biography": {
     "realName": "Mina Sky",
-    "dateOfBirth": "April 1st (Age 36)",
+    "dateOfBirth": "1989-04-01",
     "placeOfBirth": "Nakoda Territories, Saskatchewan",
     "description": "Thunderbird deploys Kóna Stations to heal or revive teammates, providing critical support during engagements."
   },

@@ -1,32 +1,34 @@
 {
-  "id": 65,
+  "id": 77,
   "name": "Sens",
   "side": "Attack",
   "roles": ["Support", "Map Control"],
   "loadout": {
     "primary": [
-      { "name": "417", "type": "Marksman Rifle" },
-      { "name": "POF9", "type": "Assault Rifle" }
+      { "name": "POF-9", "type": "Assault Rifle" },
+      { "name": "417", "type": "Marksman Rifle" }
     ],
     "secondary": [
-      { "name": "SDP 9MM", "type": "Handgun" }
+      { "name": "SDP 9mm", "type": "Handgun" },
+      { "name": "GONNE-6", "type": "Handgun" }
     ],
-    "gadgets": ["Claymore", "Frag Grenade", "Hard Breach Charge"]
+    "gadgets": ["Hard Breach Charge", "Claymore"]
   },
   "uniqueAbility": "R.O.U. Projector System",
   "biography": {
     "realName": "Néon Ngoma Mutombo",
-    "dateOfBirth": "March 3rd (Age 30)",
+    "dateOfBirth": "1993-11-19",
     "placeOfBirth": "Brussels, Belgium",
-    "description": "Sens uses the R.O.U. Projector System to create screens that block lines of sight, providing tactical advantages for their team."
+    "description": "Sens deploys the R.O.U. Projector System that creates a wall of light, blocking line of sight for defenders and providing cover for attacking teammates during pushes and plants."
   },
   "squad": "Wolfguard",
   "health": 3,
-  "speed": 3,
+  "speed": 1,
   "difficulty": 3,
   "gameplayTips": [
-    "Deploy the R.O.U. Projector System to cut off enemy sightlines and create opportunities for your team.",
-    "Use the screens to safely advance or hold positions.",
-    "Coordinate with teammates to maximize the strategic impact of the screens."
+    "Use the R.O.U. to create visual cover when planting the defuser or advancing to the objective.",
+    "Deploy the R.O.U. to block multiple angles simultaneously during a push.",
+    "Remember that the light wall only blocks vision, not bullets or movement.",
+    "Combine with smoke grenades from teammates for maximum visual coverage."
   ]
 }

@@ -2,22 +2,39 @@
   "id": 67,
   "name": "Wamai",
   "side": "Defend",
-  "roles": ["Trap"],
+  "roles": [
+    "Trap"
+  ],
   "loadout": {
     "primary": [
-      { "name": "AUG A2", "type": "Assault Rifle" },
-      { "name": "MP5K", "type": "Submachine Gun" }
+      {
+        "name": "AUG A2",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "MP5K",
+        "type": "Submachine Gun"
+      }
     ],
     "secondary": [
-      { "name": "P12", "type": "Handgun" },
-      { "name": "KERATOS .357", "type": "Handgun" }
+      {
+        "name": "P12",
+        "type": "Handgun"
+      },
+      {
+        "name": "KERATOS .357",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Proximity Alarm", "Impact Grenade"]
+    "gadgets": [
+      "Proximity Alarm",
+      "Impact Grenade"
+    ]
   },
   "uniqueAbility": "Mag-NET System",
   "biography": {
     "realName": "Ngũgĩ Muchoki Furaha",
-    "dateOfBirth": "June 1st (Age 28)",
+    "dateOfBirth": "1997-06-01",
     "placeOfBirth": "Lamu, Kenya",
     "description": "Wamai uses the Mag-NET System to attract and neutralize enemy projectiles, providing tactical control."
   },

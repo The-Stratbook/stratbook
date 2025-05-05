@@ -2,23 +2,45 @@
   "id": 53,
   "name": "Tachanka",
   "side": "Defend",
-  "roles": ["Area Denial", "Crowd Control"],
+  "roles": [
+    "Area Denial",
+    "Crowd Control"
+  ],
   "loadout": {
     "primary": [
-      { "name": "DP27", "type": "Light Machine Gun" },
-      { "name": "9X19VSN", "type": "Submachine Gun" }
+      {
+        "name": "DP27",
+        "type": "Light Machine Gun"
+      },
+      {
+        "name": "9X19VSN",
+        "type": "Submachine Gun"
+      }
     ],
     "secondary": [
-      { "name": "PMM", "type": "Handgun" },
-      { "name": "GSH-18", "type": "Handgun" },
-      { "name": "BEARING 9", "type": "Machine Pistol" }
+      {
+        "name": "PMM",
+        "type": "Handgun"
+      },
+      {
+        "name": "GSH-18",
+        "type": "Handgun"
+      },
+      {
+        "name": "BEARING 9",
+        "type": "Machine Pistol"
+      }
     ],
-    "gadgets": ["Barbed Wire", "Proximity Alarm", "Deployable Shield"]
+    "gadgets": [
+      "Barbed Wire",
+      "Proximity Alarm",
+      "Deployable Shield"
+    ]
   },
   "uniqueAbility": "Shumikha Launcher",
   "biography": {
     "realName": "Alexsandr Senaviev",
-    "dateOfBirth": "November 3rd (Age 38)",
+    "dateOfBirth": "1987-11-03",
     "placeOfBirth": "Saint Petersburg, Russia",
     "description": "Tachanka uses his Shumikha Launcher to deploy incendiary grenades, providing area denial and tactical control."
   },

@@ -1,0 +1,33 @@
+{
+  "id": 74,
+  "name": "Solis",
+  "side": "Defend",
+  "roles": ["Intel", "Anti-Gadget"],
+  "loadout": {
+    "primary": [
+      { "name": "P90", "type": "Submachine Gun" },
+      { "name": "ITA12L", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "SMG-11", "type": "Machine Pistol" }
+    ],
+    "gadgets": ["Impact Grenade", "Bulletproof Camera"]
+  },
+  "uniqueAbility": "SPEC-IO Electro-Sensor",
+  "biography": {
+    "realName": "Ana Valentina Díaz",
+    "dateOfBirth": "1985-06-18",
+    "placeOfBirth": "Rancagua, Chile",
+    "description": "Solis uses the SPEC-IO Electro-Sensor, an augmented reality interface that allows her to identify and track electronic devices through walls, providing vital intel on attacker equipment and positions."
+  },
+  "squad": "Ghosteyes",
+  "health": 2,
+  "speed": 2,
+  "difficulty": 2,
+  "gameplayTips": [
+    "Scan for attacker electronic devices to anticipate attack routes and strategies.",
+    "Share intel with teammates about attacker gadget positions.",
+    "Use the SPEC-IO Electro-Sensor to track attackers carrying electronic devices.",
+    "Combine with Mute or Bandit to know which electronic devices have been neutralized."
+  ]
+}

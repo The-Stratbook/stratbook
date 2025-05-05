@@ -2,21 +2,35 @@
   "id": 11,
   "name": "Ying",
   "side": "Attack",
-  "roles": ["Roamer"],
+  "roles": [
+    "Roamer"
+  ],
   "loadout": {
     "primary": [
-      { "name": "T-95 LSW", "type": "Light Machine Gun" },
-      { "name": "SIX12", "type": "Shotgun" }
+      {
+        "name": "T-95 LSW",
+        "type": "Light Machine Gun"
+      },
+      {
+        "name": "SIX12",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "Q-929", "type": "Handgun" }
+      {
+        "name": "Q-929",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Hard Breach Charge", "Smoke Grenade"]
+    "gadgets": [
+      "Hard Breach Charge",
+      "Smoke Grenade"
+    ]
   },
   "uniqueAbility": "Candela",
   "biography": {
     "realName": "Siu Mei Lin",
-    "dateOfBirth": "May 12th (Age 33)",
+    "dateOfBirth": "1992-05-12",
     "placeOfBirth": "Central District, Hong Kong, China",
     "description": "Ying is equipped with the Candela, a device that releases a cluster of flash charges to blind enemies."
   },

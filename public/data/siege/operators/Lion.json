@@ -2,23 +2,44 @@
   "id": 14,
   "name": "Lion",
   "side": "Attack",
-  "roles": ["Intel"],
+  "roles": [
+    "Intel"
+  ],
   "loadout": {
     "primary": [
-      { "name": "417", "type": "Marksman Rifle" },
-      { "name": "SG-CQB", "type": "Shotgun" },
-      { "name": "V308", "type": "Assault Rifle" }
+      {
+        "name": "417",
+        "type": "Marksman Rifle"
+      },
+      {
+        "name": "SG-CQB",
+        "type": "Shotgun"
+      },
+      {
+        "name": "V308",
+        "type": "Assault Rifle"
+      }
     ],
     "secondary": [
-      { "name": "LFP586", "type": "Handgun" },
-      { "name": "P9", "type": "Handgun" }
+      {
+        "name": "LFP586",
+        "type": "Handgun"
+      },
+      {
+        "name": "P9",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Claymore", "Frag Grenade", "Stun Grenade"]
+    "gadgets": [
+      "Claymore",
+      "Frag Grenade",
+      "Stun Grenade"
+    ]
   },
   "uniqueAbility": "EE-ONE-D",
   "biography": {
     "realName": "Olivier Flament",
-    "dateOfBirth": "August 29th (Age 31)",
+    "dateOfBirth": "1994-08-29",
     "placeOfBirth": "Toulouse, France",
     "description": "Lion uses the EE-ONE-D drone to detect movement in an area, providing valuable intel on enemy positions."
   },

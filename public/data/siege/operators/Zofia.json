@@ -2,21 +2,35 @@
   "id": 12,
   "name": "Zofia",
   "side": "Attack",
-  "roles": ["Flexible Entry"],
+  "roles": [
+    "Flexible Entry"
+  ],
   "loadout": {
     "primary": [
-      { "name": "LMG-E", "type": "Light Machine Gun" },
-      { "name": "M762", "type": "Assault Rifle" }
+      {
+        "name": "LMG-E",
+        "type": "Light Machine Gun"
+      },
+      {
+        "name": "M762",
+        "type": "Assault Rifle"
+      }
     ],
     "secondary": [
-      { "name": "RG15", "type": "Handgun" }
+      {
+        "name": "RG15",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Claymore", "Hard Breach Charge"]
+    "gadgets": [
+      "Claymore",
+      "Hard Breach Charge"
+    ]
   },
   "uniqueAbility": "KS79 Lifeline",
   "biography": {
     "realName": "Zofia Bosak",
-    "dateOfBirth": "January 28th (Age 36)",
+    "dateOfBirth": "1989-01-28",
     "placeOfBirth": "Wrocław, Poland",
     "description": "Zofia is equipped with the KS79 Lifeline, a device that fires both concussion and impact projectiles to disrupt enemies and breach surfaces."
   },

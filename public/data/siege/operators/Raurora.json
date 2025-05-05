@@ -1,0 +1,16 @@
+{
+  "name": "Raurora",
+  "description": "Raurora is a tactical operator specializing in reconnaissance and information gathering.",
+  "abilities": [
+    {
+      "name": "XTRAKT",
+      "description": "Deploys a remote-controlled drone to scout and mark enemy positions."
+    }
+  ],
+  "gameplayTips": [
+    "Use XTRAKT to tactically scout and provide intel for your team.",
+    "Coordinate with teammates to capitalize on information gathered by XTRAKT.",
+    "Be mindful of the device's vulnerability to enemy fire and utility."
+  ],
+  "relatedTips": [9, 35]
+}

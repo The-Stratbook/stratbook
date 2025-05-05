@@ -2,22 +2,40 @@
   "id": 9,
   "name": "IQ",
   "side": "Attack",
-  "roles": ["Intel"],
+  "roles": [
+    "Intel"
+  ],
   "loadout": {
     "primary": [
-      { "name": "AUG A2", "type": "Assault Rifle" },
-      { "name": "552 Commando", "type": "Assault Rifle" },
-      { "name": "G8A1", "type": "Light Machine Gun" }
+      {
+        "name": "AUG A2",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "552 Commando",
+        "type": "Assault Rifle"
+      },
+      {
+        "name": "G8A1",
+        "type": "Light Machine Gun"
+      }
     ],
     "secondary": [
-      { "name": "P12", "type": "Handgun" }
+      {
+        "name": "P12",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Breach Charge", "Frag Grenade", "Claymore"]
+    "gadgets": [
+      "Breach Charge",
+      "Frag Grenade",
+      "Claymore"
+    ]
   },
   "uniqueAbility": "Electronics Detector",
   "biography": {
     "realName": "Monika Weiss",
-    "dateOfBirth": "August 1st (Age 38)",
+    "dateOfBirth": "1987-08-01",
     "placeOfBirth": "Leipzig, Germany",
     "description": "IQ is an intel operator equipped with a wrist-mounted electronics detector, capable of identifying enemy gadgets through walls."
   },

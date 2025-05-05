@@ -2,21 +2,35 @@
   "id": 35,
   "name": "Goyo",
   "side": "Defend",
-  "roles": ["Anti-Entry"],
+  "roles": [
+    "Anti-Entry"
+  ],
   "loadout": {
     "primary": [
-      { "name": "Vector .45 ACP", "type": "Submachine Gun" },
-      { "name": "TCSG12", "type": "Shotgun" }
+      {
+        "name": "Vector .45 ACP",
+        "type": "Submachine Gun"
+      },
+      {
+        "name": "TCSG12",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "P229", "type": "Handgun" }
+      {
+        "name": "P229",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Proximity Alarm", "Bulletproof Camera"]
+    "gadgets": [
+      "Proximity Alarm",
+      "Bulletproof Camera"
+    ]
   },
   "uniqueAbility": "Volcán Canister",
   "biography": {
     "realName": "César Ruiz Hernández",
-    "dateOfBirth": "June 20th (Age 31)",
+    "dateOfBirth": "1994-06-20",
     "placeOfBirth": "Culiacán Rosales, Mexico",
     "description": "Goyo uses his Volcán Canisters to create explosive traps, providing a tactical advantage for his team."
   },

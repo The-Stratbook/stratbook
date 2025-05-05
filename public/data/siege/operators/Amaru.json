@@ -2,23 +2,43 @@
   "id": 20,
   "name": "Amaru",
   "side": "Attack",
-  "roles": ["Flanker"],
+  "roles": [
+    "Flanker"
+  ],
   "loadout": {
     "primary": [
-      { "name": "G8A1", "type": "Light Machine Gun" },
-      { "name": "Supernova", "type": "Shotgun" }
+      {
+        "name": "G8A1",
+        "type": "Light Machine Gun"
+      },
+      {
+        "name": "Supernova",
+        "type": "Shotgun"
+      }
     ],
     "secondary": [
-      { "name": "GONNE-6", "type": "Hand Cannon" },
-      { "name": "SMG-11", "type": "Machine Pistol" },
-      { "name": "ITA12S", "type": "Shotgun" }
+      {
+        "name": "GONNE-6",
+        "type": "Hand Cannon"
+      },
+      {
+        "name": "SMG-11",
+        "type": "Machine Pistol"
+      },
+      {
+        "name": "ITA12S",
+        "type": "Shotgun"
+      }
     ],
-    "gadgets": ["Stun Grenade", "Hard Breach Charge"]
+    "gadgets": [
+      "Stun Grenade",
+      "Hard Breach Charge"
+    ]
   },
   "uniqueAbility": "Garra Hook",
   "biography": {
     "realName": "Azucena Rocío Quispe",
-    "dateOfBirth": "May 6th (Age 48)",
+    "dateOfBirth": "1977-05-06",
     "placeOfBirth": "Cojata, Peru",
     "description": "Amaru uses the Garra Hook to quickly ascend ledges, windows, and even open hatches, surprising enemies with her mobility."
   },

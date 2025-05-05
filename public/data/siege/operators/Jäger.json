@@ -2,21 +2,35 @@
   "id": 33,
   "name": "Jäger",
   "side": "Defend",
-  "roles": ["Anti-Projectile"],
+  "roles": [
+    "Anti-Projectile"
+  ],
   "loadout": {
     "primary": [
-      { "name": "M870", "type": "Shotgun" },
-      { "name": "416-C Carbine", "type": "Assault Rifle" }
+      {
+        "name": "M870",
+        "type": "Shotgun"
+      },
+      {
+        "name": "416-C Carbine",
+        "type": "Assault Rifle"
+      }
     ],
     "secondary": [
-      { "name": "P12", "type": "Handgun" }
+      {
+        "name": "P12",
+        "type": "Handgun"
+      }
     ],
-    "gadgets": ["Bulletproof Camera", "Observation Blocker"]
+    "gadgets": [
+      "Bulletproof Camera",
+      "Observation Blocker"
+    ]
   },
   "uniqueAbility": "Active Defense",
   "biography": {
     "realName": "Marius Streicher",
-    "dateOfBirth": "March 9th (Age 39)",
+    "dateOfBirth": "1986-03-09",
     "placeOfBirth": "Düsseldorf, Germany",
     "description": "Jäger uses his Active Defense System to intercept and destroy incoming projectiles, providing a tactical advantage for his team."
   },

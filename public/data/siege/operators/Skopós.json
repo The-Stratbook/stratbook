@@ -1,0 +1,34 @@
+{
+  "id": 80,
+  "name": "Skopós",
+  "side": "Defend",
+  "roles": ["Intel", "Support"],
+  "loadout": {
+    "primary": [
+      { "name": "MPX", "type": "Submachine Gun" },
+      { "name": "SPAS-15", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "USP40", "type": "Handgun" },
+      { "name": "BEARING-9", "type": "Machine Pistol" }
+    ],
+    "gadgets": ["Deployable Shield", "Impact Grenade"]
+  },
+  "uniqueAbility": "V10 Pantheon Shells",
+  "biography": {
+    "realName": "Dimitrios Theodoropoulos",
+    "dateOfBirth": "1980-02-22",
+    "placeOfBirth": "Athens, Greece",
+    "description": "Skopós deploys V10 Pantheon Shells, a pair of AI-controlled flying cameras that scan for attackers and can anchor to surfaces to provide expanded surveillance coverage."
+  },
+  "squad": "Wolfguard",
+  "health": 2,
+  "speed": 2,
+  "difficulty": 2,
+  "gameplayTips": [
+    "Position your V10 Pantheon Shells to monitor key entry points and flanks.",
+    "Use the shells to gather intel on attacker positions and movements.",
+    "Remember that anchored shells provide wider scanning coverage but are more visible.",
+    "Coordinate intel with roamers to set up flanks and traps for attackers."
+  ]
+}
