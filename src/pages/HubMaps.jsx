@@ -78,13 +78,13 @@ const HubMaps = () => {
         <div className="grid grid-cols-3 gap-4">
           {filteredMaps.map((map) => (
             <div key={map.id} className="card bg-base-200 shadow-lg">
-              <Link to={`/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+              <Link to={`/siege/hub/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
                 <figure>
                   <img
                     src={`/images/maps/${map.name}.jpg`}
                     alt={map.name}
                     className="w-full h-32 object-cover rounded-t-lg"
-                    onError={(e) => (e.target.src = '/images/maps/default.jpg')}
+                    onError={(e) => (e.target.src = '/images/maps/default.png')}
                   />
                 </figure>
                 <div className="card-body text-center">

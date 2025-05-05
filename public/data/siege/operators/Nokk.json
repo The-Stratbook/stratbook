@@ -1,7 +1,7 @@
 ﻿{
-    "id":  47,
+    "id": 47,
     "name":  "Nøkk",
-    "file":  "Nokk",
+    "fileName":  "Nokk",
     "side":  "Attack",
     "roles":  [
                   "Stealth"
@@ -38,7 +38,7 @@
                       "realName":  "[REDACTED]",
                       "dateOfBirth":  "[REDACTED]",
                       "placeOfBirth":  "[REDACTED]",
-                      "description":  "NÃ¸kk uses the HEL Presence Reduction to reduce noise and hide from observation tools, allowing her to move undetected."
+                      "description":  "Nøkk uses the HEL Presence Reduction to reduce noise and hide from observation tools, allowing her to move undetected."
                   },
     "squad":  "Ghosteyes",
     "health":  3,

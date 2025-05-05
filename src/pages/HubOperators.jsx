@@ -16,6 +16,7 @@ const HubOperators = () => {
         if (!response.ok) throw new Error('Failed to fetch operators index');
         const operatorFiles = await response.json();
 
+        console.log('operatorFiles', operatorFiles);
         const operatorData = await Promise.all(
           operatorFiles.map(async (file) => {
             const operatorResponse = await fetch(`/data/siege/operators/${file}`);
@@ -75,20 +76,20 @@ const HubOperators = () => {
         <div className="grid grid-cols-5 gap-5 mt-4">
           {filteredOperators.map((operator) => (
             <Link
-              to={`/hub/operators/${operator.fileName}`}
+              to={`/siege/hub/operators/${operator.fileName || operator.name}`}
               className="block card bg-base-200 relative group cursor-pointer"
               key={operator.id}
             >
               <figure className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src={`/images/operators/${operator.fileName}.png`}
-                  alt={operator.fileName}
+                  src={`/images/operators/${operator.fileName || operator.name}.png`}
+                  alt={operator.fileName || operator.name}
                   className="w-full h-50 object-cover object-top rounded-t-lg"
-                  onError={(e) => (e.target.src = "/images/operators/default.jpg")}
+                  onError={(e) => (e.target.src = "/images/operators/default.png")}
                 />
                 <img
-                  src={`/images/operators/${operator.fileName}_logo.png`}
-                  alt={`${operator.fileName} Icon`}
+                  src={`/images/operators/${operator.fileName || operator.name}_logo.png`}
+                  alt={`${operator.fileName || operator.name} Icon`}
                   className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-2 border-white shadow-md"
                   onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
                 />

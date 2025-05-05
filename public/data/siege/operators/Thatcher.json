@@ -1,0 +1,34 @@
+{
+    "id": 54,
+    "name": "Thatcher",
+    "fileName": "thatcher",
+    "side": "Attack",
+    "roles": ["Anti-Gadget", "Support"],
+    "loadout": {
+        "primary": [
+            { "name": "AR33", "type": "Assault Rifle" },
+            { "name": "L85A2", "type": "Assault Rifle" },
+            { "name": "M590A1", "type": "Shotgun" }
+        ],
+        "secondary": [
+            { "name": "P226 MK 25", "type": "Handgun" }
+        ],
+        "gadgets": ["Breach Charge", "Claymore"]
+    },
+    "uniqueAbility": "EMP Grenade",
+    "biography": {
+        "realName": "Mike Baker",
+        "dateOfBirth": "June 22nd (Age 56)",
+        "placeOfBirth": "Bideford, England",
+        "description": "Thatcher uses EMP Grenades to disable electronic devices, providing critical support to his team."
+    },
+    "squad": "Viperstrike",
+    "health": 3,
+    "speed": 1,
+    "difficulty": 1,
+    "gameplayTips": [
+        "Use EMP Grenades to disable defender gadgets and traps.",
+        "Coordinate with teammates to maximize the impact of disabled electronics.",
+        "Be mindful of the EMP Grenade's range to ensure effectiveness."
+    ]
+}

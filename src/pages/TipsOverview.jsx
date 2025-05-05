@@ -110,7 +110,10 @@ const TipsOverview = () => {
     setFilters({ ...filters, operator: operator.name, side: operator.side });
   };
 
-  const handleSideChange = (side) => setFilters({ ...filters, side });
+  const handleSideChange = (side) => {
+    setFilters({ ...filters, side, operator: "" });
+    setSelectedOperator("");
+  };
 
   return (
     <Layout seoProps={{ 

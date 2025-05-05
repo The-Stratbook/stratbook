@@ -56,7 +56,7 @@ const TipMetadata = ({ tip }) => {
           <h3 className="text-lg font-bold">Tags</h3>
           <div className="flex flex-wrap gap-2">
             {tip.tags.map(tag => (
-              <span key={tag} className="badge badge-primary">{tag}</span>
+              <span key={tag} className="badge badge-primary text-black">{tag}</span>
             ))}
           </div>
         </div>

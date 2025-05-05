@@ -1,6 +1,7 @@
 ﻿{
     "id":  66,
     "name": "Thunderbird",
+    "fileName": "thunderbird",
     "side":  "Defend",
     "roles":  [
                   "Support",

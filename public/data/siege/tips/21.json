@@ -2,7 +2,7 @@
     "id": 21,
     "title": "Fire a player who is hiding in the showers",
     "description": "This trick can easily flush out any player hiding in the showers. Use capitao's fire bolt to set the showers on fire. This will force any player hiding in the showers to either take damage or leave the area.",
-    "side": "Attacker",
+    "side": "Attack",
     "skill": "Beginner",
     "operator": "Capitao",
     "tags": ["Flush"],

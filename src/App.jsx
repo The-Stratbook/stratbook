@@ -30,6 +30,7 @@ import Hub from './pages/Hub';
 import HubMaps from './pages/HubMaps';
 import HubOperators from './pages/HubOperators';
 import OperatorDetail from './pages/OperatorDetail';
+import MapDetail from './pages/MapDetail';
 
 function App() {
   const location = useLocation();
@@ -43,21 +44,13 @@ function App() {
 
   return (
     <Routes>
+      {/* Default The Stratbook route */}
       <Route path="/" element={<Home isFullWidth={true} />} />
-      <Route path="/siege/tips" element={<TipsOverview />} />
-      <Route path="/siege/tip/:id" element={<TipDetail />} />
-      <Route path="/external-tools" element={<ExternalTools />} />
       <Route path="/coming-soon" element={<ComingSoon />} />
       <Route path="/contribute" element={<Contribute />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/cookie-policy" element={<CookiePolicy />} />
-
-      {/* Hub routes */}
-      <Route path="/hub" element={<Hub isFullWidth={true} />} />
-      <Route path="/hub/maps" element={<HubMaps isFullWidth={false} />} />
-      <Route path="/hub/operators" element={<HubOperators isFullWidth={false} />} />
-      <Route path="/hub/operators/:operatorName" element={<OperatorDetail isFullWidth={false} />} />
       
       {/* Coming Soon feature routes */}
       <Route path="/coming-soon/operator-guides" element={<OperatorGuides />} />
@@ -69,6 +62,18 @@ function App() {
       <Route path="/coming-soon/community-features" element={<CommunityFeatures />} />
       <Route path="/coming-soon/site-improvements" element={<SiteImprovements />} />
       <Route path="/coming-soon/educational-content" element={<EducationalContent />} />
+
+      {/* Siege routes */}
+      <Route path="/siege/tips" element={<TipsOverview />} />
+      <Route path="/siege/tip/:id" element={<TipDetail />} />
+      <Route path="/siege/external-tools" element={<ExternalTools />} />
+
+      {/* Hub routes */}
+      <Route path="/siege/hub" element={<Hub isFullWidth={true} />} />
+      <Route path="/siege/hub/maps" element={<HubMaps isFullWidth={false} />} />
+      <Route path="/siege/hub/maps/:mapName" element={<MapDetail isFullWidth={false} />} />
+      <Route path="/siege/hub/operators" element={<HubOperators isFullWidth={false} />} />
+      <Route path="/siege/hub/operators/:operatorName" element={<OperatorDetail isFullWidth={false} />} />
     </Routes>
 );
 }

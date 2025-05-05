@@ -1,7 +1,7 @@
 ﻿{
     "id":  58,
     "name":  "Skopós",
-    "filename":  "Skopos",
+    "fileName":  "Skopos",
     "side":  "Defend",
     "roles":  [
                   "Intel",

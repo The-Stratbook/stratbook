@@ -2,7 +2,7 @@
     "id": 37,
     "title": "An insane frostmat on Border where it is almost invisible.",
     "description": "This insane frostmat is placed in a often crowded area when defending downstairs.",
-    "side": "Defender",
+    "side": "Defend",
     "skill": "Intermediate",
     "operator": "Frost",
     "tags": ["Trap"],

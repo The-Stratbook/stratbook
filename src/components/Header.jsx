@@ -25,12 +25,12 @@ const Header = () => {
             className="menu menu-sm dropdown-content bg-base-300 rounded-box z-[999] mt-3 w-52 p-2 shadow">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
-            <li><Link to="/external-tools">External Tools</Link></li>
+            <li><Link to="/siege/external-tools">External Tools</Link></li>
             <li><Link to="/contribute">Contribute</Link></li>
             <li><Link to="/hub">Hub</Link>
               <ul className="p-2 bg-base-200">
-                <li><Link to="/hub/maps">Maps</Link></li>
-                <li><Link to="/hub/operators">Operators</Link></li>
+                <li><Link to="/siege/hub/maps">Maps</Link></li>
+                <li><Link to="/siege/hub/operators">Operators</Link></li>
               </ul>
             </li>
             <li><Link to="/coming-soon">Coming Soon</Link>
@@ -67,7 +67,7 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
-            <li><Link to="/external-tools">External Tools</Link></li>
+            <li><Link to="/siege/external-tools">External Tools</Link></li>
             <li><Link to="/contribute">Contribute</Link></li>
             <li tabIndex={0}>
               <details>
@@ -75,8 +75,8 @@ const Header = () => {
                   <Link to="/hub" className="inline-block pr-1">Hub</Link>
                 </summary>
                 <ul className="p-2 bg-base-200 z-[999]">
-                  <li><Link to="/hub/maps">Maps</Link></li>
-                  <li><Link to="/hub/operators">Operators</Link></li>
+                  <li><Link to="/siege/hub/maps">Maps</Link></li>
+                  <li><Link to="/siege/hub/operators">Operators</Link></li>
                 </ul>
               </details>
             </li>

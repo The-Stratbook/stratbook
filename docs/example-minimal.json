@@ -2,7 +2,7 @@
   "id": 0,
   "title": "Your Strategy Title",
   "description": "Brief description of your strategy",
-  "side": "Attacker",
+  "side": "Attack",
   "skill": "Beginner",
   "tags": ["Entry"],
   "relatedStrategies": [],

@@ -75,7 +75,7 @@ const Hub = () => {
                       src={`/images/maps/${map.name}.jpg`}
                       alt={map.name}
                       className="w-full h-32 object-cover rounded-t-lg"
-                      onError={(e) => (e.target.src = '/images/maps/default.jpg')}
+                      onError={(e) => (e.target.src = '/images/maps/default.png')}
                     />
                   </figure>
                   <div className="card-body text-center">
@@ -86,7 +86,7 @@ const Hub = () => {
             ))}
           </div>
           <div className="text-center mt-4">
-            <Link to="/hub/maps" className="btn btn-primary">Show All Maps</Link>
+            <Link to="/siege/hub/maps" className="btn btn-primary">Show All Maps</Link>
           </div>
         </section>
 
@@ -95,11 +95,11 @@ const Hub = () => {
           <div className="grid grid-cols-3 gap-4">
             {operators.map((operator) => (
               <div key={operator.id} className="card bg-base-200 shadow-lg">
-                <Link to={`/hub/operators/${operator.fileName}`} className="block">
+                <Link to={`/siege/hub/operators/${operator.fileName || operator.name}`} className="block">
                   <figure>
                     <img
-                      src={`/images/operators/${operator.fileName}.png`}
-                      alt={operator.fileName}
+                      src={`/images/operators/${operator.fileName || operator.name}.png`}
+                      alt={operator.fileName || operator.name}
                       className="w-full h-48 object-cover rounded-t-lg"
                       onError={(e) => (e.target.src = '/images/operators/default.png')}
                     />
@@ -112,7 +112,7 @@ const Hub = () => {
             ))}
           </div>
           <div className="text-center mt-4">
-            <Link to="/hub/operators" className="btn btn-primary">Show All Operators</Link>
+            <Link to="/siege/hub/operators" className="btn btn-primary">Show All Operators</Link>
           </div>
         </section>
       </div>

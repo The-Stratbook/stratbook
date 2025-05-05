@@ -2,7 +2,7 @@
   "id": 49,
   "title": "Suprise the defenders in bar of the chalet",
   "description": "With maverick you can open the bottom of the wall secretly and shoot who ever is playing the corridor!",
-  "side": "Attacker",
+  "side": "Attack",
   "operator": "Maverick",
   "skill": "Intermediate",
   "tags": ["Sneaky"],
