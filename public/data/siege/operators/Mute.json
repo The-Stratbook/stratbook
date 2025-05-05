@@ -1,51 +1,51 @@
-{
-  "id": 66,
-  "name": "Mute",
-  "side": "Defend",
-  "roles": [
-    "Anti-Gadget",
-    "Crowd Control"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "MP5K",
-        "type": "Submachine Gun"
-      },
-      {
-        "name": "M590A1",
-        "type": "Shotgun"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "P226 MK 25",
-        "type": "Handgun"
-      },
-      {
-        "name": "SMG-11",
-        "type": "Machine Pistol"
-      }
-    ],
-    "gadgets": [
-      "Bulletproof Camera",
-      "Nitro Cell"
-    ]
-  },
-  "uniqueAbility": "Signal Disruptor",
-  "biography": {
-    "realName": "Mark R. Chandar",
-    "dateOfBirth": "2000-10-11",
-    "placeOfBirth": "York, England",
-    "description": "Mute uses his Signal Disruptors to jam enemy electronics, providing a tactical advantage for his team."
-  },
-  "squad": "Viperstrike",
-  "health": 2,
-  "speed": 2,
-  "difficulty": 2,
-  "gameplayTips": [
-    "Place Signal Disruptors near entry points to deny enemy drones and gadgets.",
-    "Combine with Castle's barricades for enhanced area denial.",
-    "Use Signal Disruptors to protect key defensive assets."
-  ]
+﻿{
+    "id":  46,
+    "name": "Mute",
+    "side":  "Defend",
+    "roles":  [
+                  "Anti-Gadget",
+                  "Crowd Control"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "MP5K",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "M590A1",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "P226 MK 25",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "SMG-11",
+                                          "type":  "Machine Pistol"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Bulletproof Camera",
+                                    "Nitro Cell"
+                                ]
+                },
+    "uniqueAbility":  "Signal Disruptor",
+    "biography":  {
+                      "realName":  "Mark R. Chandar",
+                      "dateOfBirth":  "2000-10-11",
+                      "placeOfBirth":  "York, England",
+                      "description":  "Mute uses his Signal Disruptors to jam enemy electronics, providing a tactical advantage for his team."
+                  },
+    "squad":  "Viperstrike",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Place Signal Disruptors near entry points to deny enemy drones and gadgets.",
+                         "Combine with Castle's barricades for enhanced area denial.",
+                         "Use Signal Disruptors to protect key defensive assets."
+                     ]
 }

@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from '../layouts/Layout';
 import SearchFilter from '../components/filters/SearchFilter';
+import SideFilter from '../components/filters/SideFilter';
 
 const HubOperators = () => {
   const [operators, setOperators] = useState([]);
-  const [selectedSide, setSelectedSide] = useState("All");
+  const [selectedSide, setSelectedSide] = useState(""); 
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -36,11 +37,22 @@ const HubOperators = () => {
     .filter((operator) =>
       selectedSide === "Both" ||
       selectedSide === "All" ||
+      selectedSide === "" ||
       (operator.side && operator.side.toLowerCase() === selectedSide.toLowerCase())
     )
-    .filter((operator) =>
-      !searchTerm || operator.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    .filter((operator) => {
+      if (!searchTerm) return true;
+      
+      const operatorName = operator.name.toLowerCase();
+      const searchTermLower = searchTerm.toLowerCase();
+      
+      // Only return true if the operator name contains the search term
+      return operatorName.includes(searchTermLower);
+    });
+
+  const handleSideChange = (side) => {
+    setSelectedSide(side);
+  };
 
   return (
     <Layout seoProps={{
@@ -52,24 +64,8 @@ const HubOperators = () => {
       <div className="container mx-auto p-4">
         <h1 className="text-4xl font-bold mb-4">Operators</h1>
 
-        <div className="btn-group w-full mb-4">
-          {["Attack", "Both", "Defend"].map((side) => (
-            <button
-              key={side}
-              className={`btn w-1/3 ${
-                selectedSide === side
-                  ? "btn-primary"
-                  : side === "Attack"
-                  ? "btn-attack-outline"
-                  : side === "Defend"
-                  ? "btn-defend-outline"
-                  : "btn-outline"
-              }`}
-              onClick={() => setSelectedSide(side)}
-            >
-              {side}
-            </button>
-          ))}
+        <div className="mb-4">
+          <SideFilter selectedSide={selectedSide} onSideChange={handleSideChange} />
         </div>
 
         <div className="mb-4">
@@ -79,20 +75,20 @@ const HubOperators = () => {
         <div className="grid grid-cols-5 gap-5 mt-4">
           {filteredOperators.map((operator) => (
             <Link
-              to={`/hub/operators/${operator.name.toLowerCase().replace(/\s+/g, '-')}`}
+              to={`/hub/operators/${operator.fileName}`}
               className="block card bg-base-200 relative group cursor-pointer"
               key={operator.id}
             >
               <figure className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src={`/images/operators/${operator.name}.png`}
-                  alt={operator.name}
+                  src={`/images/operators/${operator.fileName}.png`}
+                  alt={operator.fileName}
                   className="w-full h-50 object-cover object-top rounded-t-lg"
                   onError={(e) => (e.target.src = "/images/operators/default.jpg")}
                 />
                 <img
-                  src={`/images/operators/${operator.name}_logo.png`}
-                  alt={`${operator.name} Icon`}
+                  src={`/images/operators/${operator.fileName}_logo.png`}
+                  alt={`${operator.fileName} Icon`}
                   className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-2 border-white shadow-md"
                   onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
                 />

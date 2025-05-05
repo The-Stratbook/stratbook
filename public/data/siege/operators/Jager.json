@@ -1,0 +1,47 @@
+﻿{
+    "id":  34,
+    "name":  "Jäger",
+    "fileName":  "Jager",
+    "side":  "Defend",
+    "roles":  [
+                  "Anti-Projectile"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "M870",
+                                        "type":  "Shotgun"
+                                    },
+                                    {
+                                        "name":  "416-C Carbine",
+                                        "type":  "Assault Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "P12",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Bulletproof Camera",
+                                    "Observation Blocker"
+                                ]
+                },
+    "uniqueAbility":  "Active Defense",
+    "biography":  {
+                      "realName":  "Marius Streicher",
+                      "dateOfBirth":  "1986-03-09",
+                      "placeOfBirth":  "Düsseldorf, Germany",
+                      "description":  "Jäger uses his Active Defense System to intercept and destroy incoming projectiles, providing a tactical advantage for his team."
+                  },
+    "squad":  "Viperstrike",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Place Active Defense Systems in areas with high projectile traffic.",
+                         "Coordinate with teammates to protect key defensive assets.",
+                         "Use the systems to deny attackers' utility and create a stronghold."
+                     ]
+}

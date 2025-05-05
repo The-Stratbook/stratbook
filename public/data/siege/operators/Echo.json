@@ -1,50 +1,50 @@
-{
-  "id": 37,
-  "name": "Echo",
-  "side": "Defend",
-  "roles": [
-    "Disruptor Drone"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "MP5SD",
-        "type": "Submachine Gun"
-      },
-      {
-        "name": "Supernova",
-        "type": "Shotgun"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "Bearing 9",
-        "type": "Machine Pistol"
-      },
-      {
-        "name": "P229",
-        "type": "Handgun"
-      }
-    ],
-    "gadgets": [
-      "Impact Grenade",
-      "Deployable Shield"
-    ]
-  },
-  "uniqueAbility": "Yokai",
-  "biography": {
-    "realName": "Masaru Enatsu",
-    "dateOfBirth": "1989-10-31",
-    "placeOfBirth": "Tokyo, Japan (Suginami-ku)",
-    "description": "Echo uses his Yokai drone to disorient enemies with ultrasonic bursts, providing tactical support to his team."
-  },
-  "squad": "Viperstrike",
-  "health": 3,
-  "speed": 2,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Use Yokai to disrupt enemy plants and defuses.",
-    "Coordinate with roamers to maximize the impact of disoriented enemies.",
-    "Keep Yokai hidden to ensure it remains effective throughout the round."
-  ]
+﻿{
+    "id":  19,
+    "name": "Echo",
+    "side":  "Defend",
+    "roles":  [
+                  "Disruptor Drone"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "MP5SD",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "Supernova",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "Bearing 9",
+                                          "type":  "Machine Pistol"
+                                      },
+                                      {
+                                          "name":  "P229",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Impact Grenade",
+                                    "Deployable Shield"
+                                ]
+                },
+    "uniqueAbility":  "Yokai",
+    "biography":  {
+                      "realName":  "Masaru Enatsu",
+                      "dateOfBirth":  "1989-10-31",
+                      "placeOfBirth":  "Tokyo, Japan (Suginami-ku)",
+                      "description":  "Echo uses his Yokai drone to disorient enemies with ultrasonic bursts, providing tactical support to his team."
+                  },
+    "squad":  "Viperstrike",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use Yokai to disrupt enemy plants and defuses.",
+                         "Coordinate with roamers to maximize the impact of disoriented enemies.",
+                         "Keep Yokai hidden to ensure it remains effective throughout the round."
+                     ]
 }

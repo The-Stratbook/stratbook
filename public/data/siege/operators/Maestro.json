@@ -1,52 +1,54 @@
-{
-  "id": 46,
-  "name": "Maestro",
-  "side": "Defend",
-  "roles": [
-    "Intel",
-    "Anti-Gadget"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "ALDA 5.56",
-        "type": "Light Machine Gun"
-      },
-      {
-        "name": "ACS12",
-        "type": "Shotgun"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "KERATOS .357",
-        "type": "Handgun"
-      },
-      {
-        "name": "Bailiff 410",
-        "type": "Handgun"
-      }
-    ],
-    "gadgets": [
-      "Barbed Wire",
-      "Impact Grenade"
-    ]
-  },
-  "uniqueAbility": "Evil Eye",
-  "biography": {
-    "realName": "Adriano Martello",
-    "dateOfBirth": "1980-04-13",
-    "placeOfBirth": "Rome, Italy",
-    "description": "Maestro uses his Evil Eye cameras to provide remote surveillance and fire high-energy laser beams, offering tactical support to his team."
-  },
-  "squad": "Redhammer",
-  "health": 3,
-  "speed": 1,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Place Evil Eye cameras in strategic locations to gather intel and disrupt attackers.",
-    "Use the laser to destroy enemy gadgets or deal damage to attackers.",
-    "Coordinate with teammates to maximize the effectiveness of your cameras."
-  ],
-  "relatedTips": [29]
+﻿{
+    "id":  40,
+    "name": "Maestro",
+    "side":  "Defend",
+    "roles":  [
+                  "Intel",
+                  "Anti-Gadget"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "ALDA 5.56",
+                                        "type":  "Light Machine Gun"
+                                    },
+                                    {
+                                        "name":  "ACS12",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "KERATOS .357",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "Bailiff 410",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Barbed Wire",
+                                    "Impact Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Evil Eye",
+    "biography":  {
+                      "realName":  "Adriano Martello",
+                      "dateOfBirth":  "1980-04-13",
+                      "placeOfBirth":  "Rome, Italy",
+                      "description":  "Maestro uses his Evil Eye cameras to provide remote surveillance and fire high-energy laser beams, offering tactical support to his team."
+                  },
+    "squad":  "Redhammer",
+    "health":  3,
+    "speed":  1,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Place Evil Eye cameras in strategic locations to gather intel and disrupt attackers.",
+                         "Use the laser to destroy enemy gadgets or deal damage to attackers.",
+                         "Coordinate with teammates to maximize the effectiveness of your cameras."
+                     ],
+    "relatedTips":  [
+                        29
+                    ]
 }

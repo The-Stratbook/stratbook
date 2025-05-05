@@ -1,33 +1,55 @@
-{
-  "id": 68,
-  "name": "Sentry",
-  "side": "Defend",
-  "roles": ["Support"],
-  "loadout": {
-    "primary": [
-      { "name": "COMMANDO 9", "type": "Assault Rifle" },
-      { "name": "M870", "type": "Shotgun" }
-    ],
-    "secondary": [
-      { "name": "C75 AUTO", "type": "Machine Pistol" },
-      { "name": "SUPER SHORTY", "type": "Shotgun" }
-    ],
-    "gadgets": ["Barbed Wire", "Bulletproof Camera", "Deployable Shield", "Observation Blocker", "Impact Grenade", "Nitro Cell", "Proximity Alarm"]
-  },
-  "uniqueAbility": "Gadget Kit",
-  "biography": {
-    "realName": "Undefined",
-    "dateOfBirth": "Undefined",
-    "placeOfBirth": "Undefined",
-    "description": "Sentry is a Defense Recruit with access to all secondary gadgets available for Defense Operators. They focus on hostage protection and versatile defensive strategies."
-  },
-  "squad": "Recruit",
-  "health": 2,
-  "speed": 2,
-  "difficulty": 1,
-  "gameplayTips": [
-    "Choose the appropriate gadget based on the site you're defending and team composition.",
-    "Utilize your versatile loadout to adapt to various defensive situations.",
-    "Prioritize communication and teamwork to effectively support your team's Specialists."
-  ]
+﻿{
+    "id":  57,
+    "name": "Sentry",
+    "side":  "Defend",
+    "roles":  [
+                  "Support"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "COMMANDO 9",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "M870",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "C75 AUTO",
+                                          "type":  "Machine Pistol"
+                                      },
+                                      {
+                                          "name":  "SUPER SHORTY",
+                                          "type":  "Shotgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Barbed Wire",
+                                    "Bulletproof Camera",
+                                    "Deployable Shield",
+                                    "Observation Blocker",
+                                    "Impact Grenade",
+                                    "Nitro Cell",
+                                    "Proximity Alarm"
+                                ]
+                },
+    "uniqueAbility":  "Gadget Kit",
+    "biography":  {
+                      "realName":  "Undefined",
+                      "dateOfBirth":  "Undefined",
+                      "placeOfBirth":  "Undefined",
+                      "description":  "Sentry is a Defense Recruit with access to all secondary gadgets available for Defense Operators. They focus on hostage protection and versatile defensive strategies."
+                  },
+    "squad":  "Recruit",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  1,
+    "gameplayTips":  [
+                         "Choose the appropriate gadget based on the site you're defending and team composition.",
+                         "Utilize your versatile loadout to adapt to various defensive situations.",
+                         "Prioritize communication and teamwork to effectively support your team's Specialists."
+                     ]
 }

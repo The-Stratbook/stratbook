@@ -1,51 +1,57 @@
-{
-  "id": 45,
-  "name": "Kaid",
-  "side": "Defend",
-  "roles": [
-    "Utility"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "AUG A3",
-        "type": "Submachine Gun"
-      },
-      {
-        "name": "TCSG12",
-        "type": "Shotgun"
-      }
-    ],
-    "secondary": [
-      {
-        "name": ".44 Mag Semi-Auto",
-        "type": "Handgun"
-      },
-      {
-        "name": "LFP586",
-        "type": "Handgun"
-      }
-    ],
-    "gadgets": [
-      "Barbed Wire",
-      "Nitro Cell"
-    ]
-  },
-  "uniqueAbility": "Rtila Electroclaw",
-  "biography": {
-    "realName": "Jalal El Fassi",
-    "dateOfBirth": "1967-06-26",
-    "placeOfBirth": "Aroumd, Morocco",
-    "description": "Kaid uses his Rtila Electroclaws to electrify reinforced walls, hatches, and other metallic objects, providing a tactical advantage for his team."
-  },
-  "squad": "Redhammer",
-  "health": 3,
-  "speed": 2,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Place Electroclaws in hidden spots to maximize their effectiveness.",
-    "Coordinate with teammates to protect key defensive positions.",
-    "Use Electroclaws to deny enemy breaching tools."
-  ],
-  "relatedTips": [10, 24, 43, 44, 47]
+﻿{
+    "id":  35,
+    "name": "Kaid",
+    "side":  "Defend",
+    "roles":  [
+                  "Utility"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "AUG A3",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "TCSG12",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  ".44 Mag Semi-Auto",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "LFP586",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Barbed Wire",
+                                    "Nitro Cell"
+                                ]
+                },
+    "uniqueAbility":  "Rtila Electroclaw",
+    "biography":  {
+                      "realName":  "Jalal El Fassi",
+                      "dateOfBirth":  "1967-06-26",
+                      "placeOfBirth":  "Aroumd, Morocco",
+                      "description":  "Kaid uses his Rtila Electroclaws to electrify reinforced walls, hatches, and other metallic objects, providing a tactical advantage for his team."
+                  },
+    "squad":  "Redhammer",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Place Electroclaws in hidden spots to maximize their effectiveness.",
+                         "Coordinate with teammates to protect key defensive positions.",
+                         "Use Electroclaws to deny enemy breaching tools."
+                     ],
+    "relatedTips":  [
+                        10,
+                        24,
+                        43,
+                        44,
+                        47
+                    ]
 }

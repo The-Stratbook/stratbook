@@ -1,47 +1,47 @@
-{
-  "id": 70,
-  "name": "Aruni",
-  "side": "Defend",
-  "roles": [
-    "Anti-Entry",
-    "Intel"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "P10 Roni",
-        "type": "Submachine Gun"
-      },
-      {
-        "name": "MK 14 EBR",
-        "type": "Marksman Rifle"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "PRB92",
-        "type": "Handgun"
-      }
-    ],
-    "gadgets": [
-      "Bulletproof Camera",
-      "Barbed Wire"
-    ]
-  },
-  "uniqueAbility": "Surya Gate",
-  "biography": {
-    "realName": "Apha Tawanroong",
-    "dateOfBirth": "1983-08-09",
-    "placeOfBirth": "Ta Phraya District, Thailand",
-    "description": "Aruni deploys Surya Gates that project laser arrays to detect and damage intruders, providing area denial and intel."
-  },
-  "squad": "Nighthaven",
-  "health": 3,
-  "speed": 3,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Place Surya Gates on entry points to deny access and gather intel on attackers.",
-    "Coordinate with teammates to maximize the effectiveness of the gates.",
-    "Use the gates to funnel attackers into predictable paths."
-  ]
+﻿{
+    "id":  4,
+    "name": "Aruni",
+    "side":  "Defend",
+    "roles":  [
+                  "Anti-Entry",
+                  "Intel"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "P10 Roni",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "MK 14 EBR",
+                                        "type":  "Marksman Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "PRB92",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Bulletproof Camera",
+                                    "Barbed Wire"
+                                ]
+                },
+    "uniqueAbility":  "Surya Gate",
+    "biography":  {
+                      "realName":  "Apha Tawanroong",
+                      "dateOfBirth":  "1983-08-09",
+                      "placeOfBirth":  "Ta Phraya District, Thailand",
+                      "description":  "Aruni deploys Surya Gates that project laser arrays to detect and damage intruders, providing area denial and intel."
+                  },
+    "squad":  "Nighthaven",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Place Surya Gates on entry points to deny access and gather intel on attackers.",
+                         "Coordinate with teammates to maximize the effectiveness of the gates.",
+                         "Use the gates to funnel attackers into predictable paths."
+                     ]
 }

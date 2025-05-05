@@ -1,34 +1,52 @@
-{
-  "id": 76,
-  "name": "Grim",
-  "side": "Attack",
-  "roles": ["Intel", "Flank Watch"],
-  "loadout": {
-    "primary": [
-      { "name": "552 COMMANDO", "type": "Assault Rifle" },
-      { "name": "SG-CQB", "type": "Shotgun" }
-    ],
-    "secondary": [
-      { "name": "P229", "type": "Handgun" },
-      { "name": "BAILIFF 410", "type": "Shotgun" }
-    ],
-    "gadgets": ["Claymore", "Hard Breach Charge"]
-  },
-  "uniqueAbility": "Kawan Hive Launcher",
-  "biography": {
-    "realName": "Charlie Tho Keng Boon",
-    "dateOfBirth": "1990-07-28",
-    "placeOfBirth": "Singapore, Singapore",
-    "description": "Grim utilizes the Kawan Hive Launcher to deploy canisters that release bee-like robotic trackers, revealing and tracking enemies that pass through the swarm."
-  },
-  "squad": "Wolfguard",
-  "health": 2,
-  "speed": 2,
-  "difficulty": 2,
-  "gameplayTips": [
-    "Deploy the Kawan Hive in areas where defenders frequently rotate or flank.",
-    "Use the bee swarm to check rooms before entering them.",
-    "Combine with other intel operators to maintain constant awareness of defender positions.",
-    "Launch bees into the objective area during a push to reveal defender positions."
-  ]
+﻿{
+    "id":  29,
+    "name": "Grim",
+    "side":  "Attack",
+    "roles":  [
+                  "Intel",
+                  "Flank Watch"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "552 COMMANDO",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "SG-CQB",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "P229",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "BAILIFF 410",
+                                          "type":  "Shotgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Claymore",
+                                    "Hard Breach Charge"
+                                ]
+                },
+    "uniqueAbility":  "Kawan Hive Launcher",
+    "biography":  {
+                      "realName":  "Charlie Tho Keng Boon",
+                      "dateOfBirth":  "1990-07-28",
+                      "placeOfBirth":  "Singapore, Singapore",
+                      "description":  "Grim utilizes the Kawan Hive Launcher to deploy canisters that release bee-like robotic trackers, revealing and tracking enemies that pass through the swarm."
+                  },
+    "squad":  "Wolfguard",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Deploy the Kawan Hive in areas where defenders frequently rotate or flank.",
+                         "Use the bee swarm to check rooms before entering them.",
+                         "Combine with other intel operators to maintain constant awareness of defender positions.",
+                         "Launch bees into the objective area during a push to reveal defender positions."
+                     ]
 }

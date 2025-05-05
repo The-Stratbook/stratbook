@@ -1,34 +1,52 @@
-{
-  "id": 71,
-  "name": "Fenrir",
-  "side": "Defend",
-  "roles": ["Trap", "Intel"],
-  "loadout": {
-    "primary": [
-      { "name": "MP7", "type": "Submachine Gun" },
-      { "name": "SASG-12", "type": "Shotgun" }
-    ],
-    "secondary": [
-      { "name": "BAILIFF 410", "type": "Shotgun" },
-      { "name": "P226 MK 25", "type": "Handgun" }
-    ],
-    "gadgets": ["Barbed Wire", "Bulletproof Camera"]
-  },
-  "uniqueAbility": "F-NATT Dread Mine",
-  "biography": {
-    "realName": "Sigrid Ingridsdottir",
-    "dateOfBirth": "1987-02-17",
-    "placeOfBirth": "Oslo, Norway",
-    "description": "Fenrir deploys F-NATT Dread Mines that create an area of effect, causing hallucinations for any attacker that enters the field, making them see phantom defenders and impairing their ability to identify real threats."
-  },
-  "squad": "Nighthaven",
-  "health": 2,
-  "speed": 2,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Place your F-NATT mines in common routes attackers take to objectives.",
-    "Coordinate with teammates to capitalize on disoriented attackers.",
-    "Use the hallucination effect to waste attacker time and resources.",
-    "Deploy mines in areas with limited visibility to increase their effectiveness."
-  ]
+﻿{
+    "id":  21,
+    "name": "Fenrir",
+    "side":  "Defend",
+    "roles":  [
+                  "Trap",
+                  "Intel"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "MP7",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "SASG-12",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "BAILIFF 410",
+                                          "type":  "Shotgun"
+                                      },
+                                      {
+                                          "name":  "P226 MK 25",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Barbed Wire",
+                                    "Bulletproof Camera"
+                                ]
+                },
+    "uniqueAbility":  "F-NATT Dread Mine",
+    "biography":  {
+                      "realName":  "Sigrid Ingridsdottir",
+                      "dateOfBirth":  "1987-02-17",
+                      "placeOfBirth":  "Oslo, Norway",
+                      "description":  "Fenrir deploys F-NATT Dread Mines that create an area of effect, causing hallucinations for any attacker that enters the field, making them see phantom defenders and impairing their ability to identify real threats."
+                  },
+    "squad":  "Nighthaven",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Place your F-NATT mines in common routes attackers take to objectives.",
+                         "Coordinate with teammates to capitalize on disoriented attackers.",
+                         "Use the hallucination effect to waste attacker time and resources.",
+                         "Deploy mines in areas with limited visibility to increase their effectiveness."
+                     ]
 }

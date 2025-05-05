@@ -1,51 +1,51 @@
-{
-  "id": 7,
-  "name": "Glaz",
-  "side": "Attack",
-  "roles": [
-    "Sniper"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "OTS-03",
-        "type": "Marksman Rifle"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "PMM",
-        "type": "Handgun"
-      },
-      {
-        "name": "GONNE-6",
-        "type": "Hand Cannon"
-      },
-      {
-        "name": "BEARING 9",
-        "type": "Machine Pistol"
-      }
-    ],
-    "gadgets": [
-      "Smoke Grenade",
-      "Frag Grenade",
-      "Claymore"
-    ]
-  },
-  "uniqueAbility": "Flip Sight",
-  "biography": {
-    "realName": "Timur Glazkov",
-    "dateOfBirth": "1993-07-02",
-    "placeOfBirth": "Vladivostok, Russia",
-    "description": "Glaz is a back-line marksman, capable of soft breaching and providing covering fire from a distance."
-  },
-  "squad": "Ghosteyes",
-  "health": 3,
-  "speed": 2,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Use the HDS Flipsight to highlight enemies in yellow for better visibility.",
-    "Take advantage of Glaz's ability to see through smoke to provide covering fire.",
-    "Use the high velocity of the OTS-03 to penetrate soft walls and Castle barricades."
-  ]
+﻿{
+    "id":  26,
+    "name": "Glaz",
+    "side":  "Attack",
+    "roles":  [
+                  "Sniper"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "OTS-03",
+                                        "type":  "Marksman Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "PMM",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "GONNE-6",
+                                          "type":  "Hand Cannon"
+                                      },
+                                      {
+                                          "name":  "BEARING 9",
+                                          "type":  "Machine Pistol"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Smoke Grenade",
+                                    "Frag Grenade",
+                                    "Claymore"
+                                ]
+                },
+    "uniqueAbility":  "Flip Sight",
+    "biography":  {
+                      "realName":  "Timur Glazkov",
+                      "dateOfBirth":  "1993-07-02",
+                      "placeOfBirth":  "Vladivostok, Russia",
+                      "description":  "Glaz is a back-line marksman, capable of soft breaching and providing covering fire from a distance."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the HDS Flipsight to highlight enemies in yellow for better visibility.",
+                         "Take advantage of Glaz's ability to see through smoke to provide covering fire.",
+                         "Use the high velocity of the OTS-03 to penetrate soft walls and Castle barricades."
+                     ]
 }

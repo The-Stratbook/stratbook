@@ -95,11 +95,11 @@ const Hub = () => {
           <div className="grid grid-cols-3 gap-4">
             {operators.map((operator) => (
               <div key={operator.id} className="card bg-base-200 shadow-lg">
-                <Link to={`/hub/operators/${operator.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+                <Link to={`/hub/operators/${operator.fileName}`} className="block">
                   <figure>
                     <img
-                      src={`/images/operators/${operator.name}.png`}
-                      alt={operator.name}
+                      src={`/images/operators/${operator.fileName}.png`}
+                      alt={operator.fileName}
                       className="w-full h-48 object-cover rounded-t-lg"
                       onError={(e) => (e.target.src = '/images/operators/default.png')}
                     />

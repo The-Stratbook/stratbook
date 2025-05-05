@@ -1,47 +1,47 @@
-{
-  "id": 64,
-  "name": "Valkyrie",
-  "side": "Defend",
-  "roles": [
-    "Intel",
-    "Support"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "MPX",
-        "type": "Submachine Gun"
-      },
-      {
-        "name": "SPAS-12",
-        "type": "Shotgun"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "D-50",
-        "type": "Handgun"
-      }
-    ],
-    "gadgets": [
-      "Impact Grenade",
-      "Nitro Cell"
-    ]
-  },
-  "uniqueAbility": "Black Eye",
-  "biography": {
-    "realName": "Meghan J. Castellano",
-    "dateOfBirth": "1994-07-21",
-    "placeOfBirth": "Oceanside, California",
-    "description": "Valkyrie deploys Black Eye cameras to provide live video feed for her team, enhancing situational awareness."
-  },
-  "squad": "Ghosteyes",
-  "health": 2,
-  "speed": 2,
-  "difficulty": 2,
-  "gameplayTips": [
-    "Place Black Eye cameras in hidden or strategic locations for maximum intel.",
-    "Coordinate with teammates to capitalize on the intel provided by the cameras.",
-    "Be mindful of attackers destroying your cameras."
-  ]
+﻿{
+    "id":  69,
+    "name": "Valkyrie",
+    "side":  "Defend",
+    "roles":  [
+                  "Intel",
+                  "Support"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "MPX",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "SPAS-12",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "D-50",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Impact Grenade",
+                                    "Nitro Cell"
+                                ]
+                },
+    "uniqueAbility":  "Black Eye",
+    "biography":  {
+                      "realName":  "Meghan J. Castellano",
+                      "dateOfBirth":  "1994-07-21",
+                      "placeOfBirth":  "Oceanside, California",
+                      "description":  "Valkyrie deploys Black Eye cameras to provide live video feed for her team, enhancing situational awareness."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Place Black Eye cameras in hidden or strategic locations for maximum intel.",
+                         "Coordinate with teammates to capitalize on the intel provided by the cameras.",
+                         "Be mindful of attackers destroying your cameras."
+                     ]
 }

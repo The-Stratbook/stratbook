@@ -1,34 +1,52 @@
-{
-  "id": 75,
-  "name": "Brava",
-  "side": "Attack",
-  "roles": ["Support", "Anti-Gadget"],
-  "loadout": {
-    "primary": [
-      { "name": "PARA-308", "type": "Assault Rifle" },
-      { "name": "CAMRS", "type": "Marksman Rifle" }
-    ],
-    "secondary": [
-      { "name": "SUPER SHORTY", "type": "Shotgun" },
-      { "name": "USP40", "type": "Handgun" }
-    ],
-    "gadgets": ["Smoke Grenade", "Claymore"]
-  },
-  "uniqueAbility": "Kludge Drone",
-  "biography": {
-    "realName": "Nayara Cardoso",
-    "dateOfBirth": "1988-03-23",
-    "placeOfBirth": "Belo Horizonte, Brazil",
-    "description": "Brava deploys Kludge Drones that can hack and reprogram defender electronic devices, turning them against their owners or neutralizing them remotely."
-  },
-  "squad": "Ghosteyes",
-  "health": 1,
-  "speed": 3,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Hack defender cameras to gain valuable intel for your team.",
-    "Reprogram defender gadgets like Kapkan traps or Bandit batteries to work against them.",
-    "Use your Kludge Drones to neutralize defender utility without exposing yourself.",
-    "Coordinate with your team to maximize the impact of hacked devices."
-  ]
+﻿{
+    "id":  10,
+    "name": "Brava",
+    "side":  "Attack",
+    "roles":  [
+                  "Support",
+                  "Anti-Gadget"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "PARA-308",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "CAMRS",
+                                        "type":  "Marksman Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "SUPER SHORTY",
+                                          "type":  "Shotgun"
+                                      },
+                                      {
+                                          "name":  "USP40",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Smoke Grenade",
+                                    "Claymore"
+                                ]
+                },
+    "uniqueAbility":  "Kludge Drone",
+    "biography":  {
+                      "realName":  "Nayara Cardoso",
+                      "dateOfBirth":  "1988-03-23",
+                      "placeOfBirth":  "Belo Horizonte, Brazil",
+                      "description":  "Brava deploys Kludge Drones that can hack and reprogram defender electronic devices, turning them against their owners or neutralizing them remotely."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  1,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Hack defender cameras to gain valuable intel for your team.",
+                         "Reprogram defender gadgets like Kapkan traps or Bandit batteries to work against them.",
+                         "Use your Kludge Drones to neutralize defender utility without exposing yourself.",
+                         "Coordinate with your team to maximize the impact of hacked devices."
+                     ]
 }

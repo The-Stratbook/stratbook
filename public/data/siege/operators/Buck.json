@@ -1,14 +1,17 @@
-{
-  "name": "Buck",
-  "role": "Attacker",
-  "unit": "JTF2",
-  "primaryWeapon": "C8-SFW",
-  "secondaryWeapon": "MK1 9mm",
-  "gadget": "Skeleton Key",
-  "gameplayTips": [
-    "Use the Skeleton Key for vertical gameplay to open floors and ceilings.",
-    "Switch quickly between rifle and shotgun to adapt to different engagement distances.",
-    "Coordinate with teammates to capitalize on new sightlines created by the shotgun."
-  ],
-  "relatedTips": [25]
+﻿{
+    "id":  11,
+    "name": "Buck",
+    "role":  "Attacker",
+    "unit":  "JTF2",
+    "primaryWeapon":  "C8-SFW",
+    "secondaryWeapon":  "MK1 9mm",
+    "gadget":  "Skeleton Key",
+    "gameplayTips":  [
+                         "Use the Skeleton Key for vertical gameplay to open floors and ceilings.",
+                         "Switch quickly between rifle and shotgun to adapt to different engagement distances.",
+                         "Coordinate with teammates to capitalize on new sightlines created by the shotgun."
+                     ],
+    "relatedTips":  [
+                        25
+                    ]
 }

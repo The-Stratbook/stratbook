@@ -1,51 +1,51 @@
-{
-  "id": 9,
-  "name": "IQ",
-  "side": "Attack",
-  "roles": [
-    "Intel"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "AUG A2",
-        "type": "Assault Rifle"
-      },
-      {
-        "name": "552 Commando",
-        "type": "Assault Rifle"
-      },
-      {
-        "name": "G8A1",
-        "type": "Light Machine Gun"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "P12",
-        "type": "Handgun"
-      }
-    ],
-    "gadgets": [
-      "Breach Charge",
-      "Frag Grenade",
-      "Claymore"
-    ]
-  },
-  "uniqueAbility": "Electronics Detector",
-  "biography": {
-    "realName": "Monika Weiss",
-    "dateOfBirth": "1987-08-01",
-    "placeOfBirth": "Leipzig, Germany",
-    "description": "IQ is an intel operator equipped with a wrist-mounted electronics detector, capable of identifying enemy gadgets through walls."
-  },
-  "squad": "Nighthaven",
-  "health": 3,
-  "speed": 3,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Use the electronics detector to locate enemy gadgets and traps.",
-    "Coordinate with teammates to neutralize identified threats.",
-    "Stay mobile to maximize the effectiveness of your intel-gathering capabilities."
-  ]
+﻿{
+    "id":  32,
+    "name": "IQ",
+    "side":  "Attack",
+    "roles":  [
+                  "Intel"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "AUG A2",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "552 Commando",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "G8A1",
+                                        "type":  "Light Machine Gun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "P12",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Breach Charge",
+                                    "Frag Grenade",
+                                    "Claymore"
+                                ]
+                },
+    "uniqueAbility":  "Electronics Detector",
+    "biography":  {
+                      "realName":  "Monika Weiss",
+                      "dateOfBirth":  "1987-08-01",
+                      "placeOfBirth":  "Leipzig, Germany",
+                      "description":  "IQ is an intel operator equipped with a wrist-mounted electronics detector, capable of identifying enemy gadgets through walls."
+                  },
+    "squad":  "Nighthaven",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the electronics detector to locate enemy gadgets and traps.",
+                         "Coordinate with teammates to neutralize identified threats.",
+                         "Stay mobile to maximize the effectiveness of your intel-gathering capabilities."
+                     ]
 }

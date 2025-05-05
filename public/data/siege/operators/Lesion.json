@@ -1,50 +1,50 @@
-{
-  "id": 39,
-  "name": "Lesion",
-  "side": "Defend",
-  "roles": [
-    "Trapper"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "SIX12 SD",
-        "type": "Shotgun"
-      },
-      {
-        "name": "T-5 SMG",
-        "type": "Submachine Gun"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "Q-929",
-        "type": "Handgun"
-      },
-      {
-        "name": "Super Shorty",
-        "type": "Shotgun"
-      }
-    ],
-    "gadgets": [
-      "Observation Blocker",
-      "Bulletproof Camera"
-    ]
-  },
-  "uniqueAbility": "Gu Mines",
-  "biography": {
-    "realName": "Liu Tze Long",
-    "dateOfBirth": "1981-07-02",
-    "placeOfBirth": "Junk Bay, Hong Kong, China",
-    "description": "Lesion uses his Gu Mines to injure and slow down enemies, providing a tactical advantage for his team."
-  },
-  "squad": "Ghosteyes",
-  "health": 3,
-  "speed": 2,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Place Gu Mines in high-traffic areas to disrupt enemy movements.",
-    "Coordinate with teammates to capitalize on slowed enemies.",
-    "Use Gu Mines to gather intel on enemy positions."
-  ]
+﻿{
+    "id":  38,
+    "name": "Lesion",
+    "side":  "Defend",
+    "roles":  [
+                  "Trapper"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "SIX12 SD",
+                                        "type":  "Shotgun"
+                                    },
+                                    {
+                                        "name":  "T-5 SMG",
+                                        "type":  "Submachine Gun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "Q-929",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "Super Shorty",
+                                          "type":  "Shotgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Observation Blocker",
+                                    "Bulletproof Camera"
+                                ]
+                },
+    "uniqueAbility":  "Gu Mines",
+    "biography":  {
+                      "realName":  "Liu Tze Long",
+                      "dateOfBirth":  "1981-07-02",
+                      "placeOfBirth":  "Junk Bay, Hong Kong, China",
+                      "description":  "Lesion uses his Gu Mines to injure and slow down enemies, providing a tactical advantage for his team."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Place Gu Mines in high-traffic areas to disrupt enemy movements.",
+                         "Coordinate with teammates to capitalize on slowed enemies.",
+                         "Use Gu Mines to gather intel on enemy positions."
+                     ]
 }

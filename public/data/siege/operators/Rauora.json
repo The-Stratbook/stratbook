@@ -1,34 +1,52 @@
-{
-  "id": 73,
-  "name": "Rauora",
-  "side": "Attack",
-  "roles": ["Support", "Map Control"],
-  "loadout": {
-    "primary": [
-      { "name": "417", "type": "Marksman Rifle" },
-      { "name": "M249", "type": "Light Machine Gun" }
-    ],
-    "secondary": [
-      { "name": "REAPER MK2", "type": "Handgun" },
-      { "name": "GSH-18", "type": "Handgun" }
-    ],
-    "gadgets": ["Smoke Grenade", "Breach Charge"]
-  },
-  "uniqueAbility": "D.O.M. Panel Launcher",
-  "biography": {
-    "realName": "Hāpai Iwini",
-    "dateOfBirth": "1996-05-11",
-    "placeOfBirth": "Christchurch, New Zealand",
-    "description": "Rauora uses her D.O.M. Panel Launcher to deploy bulletproof panels from a distance, strategically controlling the flow of combat. With a quick trigger at the top of the door, she can open or close the panel to create tactical opportunities."
-  },
-  "squad": "Viperstrike",
-  "health": 2,
-  "speed": 2,
-  "difficulty": 2,
-  "gameplayTips": [
-    "Deploy panels to block or control enemy movements across the map.",
-    "Use the panels as cover when advancing or planting the defuser.",
-    "Open and close panels strategically to surprise enemies or provide temporary cover for teammates.",
-    "Combine with smoke grenades for effective area control and visibility manipulation."
-  ]
+﻿{
+    "id":  53,
+    "name": "Rauora",
+    "side":  "Attack",
+    "roles":  [
+                  "Support",
+                  "Map Control"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "417",
+                                        "type":  "Marksman Rifle"
+                                    },
+                                    {
+                                        "name":  "M249",
+                                        "type":  "Light Machine Gun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "REAPER MK2",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "GSH-18",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Smoke Grenade",
+                                    "Breach Charge"
+                                ]
+                },
+    "uniqueAbility":  "D.O.M. Panel Launcher",
+    "biography":  {
+                      "realName":  "HÄpai Iwini",
+                      "dateOfBirth":  "1996-05-11",
+                      "placeOfBirth":  "Christchurch, New Zealand",
+                      "description":  "Rauora uses her D.O.M. Panel Launcher to deploy bulletproof panels from a distance, strategically controlling the flow of combat. With a quick trigger at the top of the door, she can open or close the panel to create tactical opportunities."
+                  },
+    "squad":  "Viperstrike",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Deploy panels to block or control enemy movements across the map.",
+                         "Use the panels as cover when advancing or planting the defuser.",
+                         "Open and close panels strategically to surprise enemies or provide temporary cover for teammates.",
+                         "Combine with smoke grenades for effective area control and visibility manipulation."
+                     ]
 }

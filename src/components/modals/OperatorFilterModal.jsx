@@ -78,14 +78,14 @@ const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, 
             >
               <figure className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src={`/images/operators/${operator.name}.png`}
-                  alt={operator.name}
+                  src={`/images/operators/${operator.fileName}.png`}
+                  alt={operator.fileName}
                   className="w-full h-50 object-cover object-top rounded-t-lg"
                   onError={(e) => (e.target.src = "/images/operators/default.jpg")}
                 />
                 <img
-                  src={`/images/operators/${operator.name}_logo.png`}
-                  alt={`${operator.name} Icon`}
+                  src={`/images/operators/${operator.fileName}_logo.png`}
+                  alt={`${operator.fileName} Icon`}
                   className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-2 border-white shadow-md"
                   onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
                 />

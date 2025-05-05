@@ -1,51 +1,53 @@
-{
-  "id": 1,
-  "name": "Ash",
-  "side": "Attack",
-  "roles": [
-    "Entry Fragger"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "G36C",
-        "type": "Assault Rifle"
-      },
-      {
-        "name": "R4-C",
-        "type": "Assault Rifle"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "5.7 USG",
-        "type": "Handgun"
-      },
-      {
-        "name": "M45 MEUSOC",
-        "type": "Handgun"
-      }
-    ],
-    "gadgets": [
-      "Breach Charge",
-      "Claymore"
-    ]
-  },
-  "uniqueAbility": "Breaching Round",
-  "biography": {
-    "realName": "Eliza Cohen",
-    "dateOfBirth": "1992-12-24",
-    "placeOfBirth": "Jerusalem, Israel",
-    "description": "Ash is a fast-paced front liner; capable of breaching, flanking and dividing the Defender's attention in seconds."
-  },
-  "squad": "Redhammer",
-  "health": 3,
-  "speed": 3,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Watch out for traps as an Entry Fragger.",
-    "Use breaching rounds to destroy defensive utilities.",
-    "Create crucial lines of sight with breaching rounds."
-  ],
-  "relatedTips": [26]
+﻿{
+    "id":  5,
+    "name": "Ash",
+    "side":  "Attack",
+    "roles":  [
+                  "Entry Fragger"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "G36C",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "R4-C",
+                                        "type":  "Assault Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "5.7 USG",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "M45 MEUSOC",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Breach Charge",
+                                    "Claymore"
+                                ]
+                },
+    "uniqueAbility":  "Breaching Round",
+    "biography":  {
+                      "realName":  "Eliza Cohen",
+                      "dateOfBirth":  "1992-12-24",
+                      "placeOfBirth":  "Jerusalem, Israel",
+                      "description":  "Ash is a fast-paced front liner; capable of breaching, flanking and dividing the Defender's attention in seconds."
+                  },
+    "squad":  "Redhammer",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Watch out for traps as an Entry Fragger.",
+                         "Use breaching rounds to destroy defensive utilities.",
+                         "Create crucial lines of sight with breaching rounds."
+                     ],
+    "relatedTips":  [
+                        26
+                    ]
 }

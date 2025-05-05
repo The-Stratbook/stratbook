@@ -1,48 +1,53 @@
-{
-  "id": 63,
-  "name": "Azami",
-  "side": "Defend",
-  "roles": [
-    "Utility",
-    "Trap"
-  ],
-  "loadout": {
-    "primary": [
-      {
-        "name": "9X19SVN",
-        "type": "Submachine Gun"
-      },
-      {
-        "name": "ACS12",
-        "type": "Shotgun"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "D-50",
-        "type": "Handgun"
-      }
-    ],
-    "gadgets": [
-      "Impact Grenade",
-      "Barbed Wire"
-    ]
-  },
-  "uniqueAbility": "Kiba Barrier",
-  "biography": {
-    "realName": "Kana Fujiwara",
-    "dateOfBirth": "1997-09-06",
-    "placeOfBirth": "Kyoto, Japan",
-    "description": "Azami uses Kiba Barriers, throwable kunai that create bulletproof barriers, to patch defenses and control sightlines."
-  },
-  "squad": "Viperstrike",
-  "health": 3,
-  "speed": 3,
-  "difficulty": 3,
-  "gameplayTips": [
-    "Use Kiba Barriers to block lines of sight and protect vulnerable angles.",
-    "Deploy barriers to cover breached walls or create new defensive positions.",
-    "Be creative with barrier placement - ceilings, floors, and doorways can all be reinforced."
-  ],
-  "relatedTips": [23, 33, 50, 7]
+﻿{
+    "id":  6,
+    "name": "Azami",
+    "side":  "Defend",
+    "roles":  [
+                  "Utility",
+                  "Trap"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "9X19SVN",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "ACS12",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "D-50",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Impact Grenade",
+                                    "Barbed Wire"
+                                ]
+                },
+    "uniqueAbility":  "Kiba Barrier",
+    "biography":  {
+                      "realName":  "Kana Fujiwara",
+                      "dateOfBirth":  "1997-09-06",
+                      "placeOfBirth":  "Kyoto, Japan",
+                      "description":  "Azami uses Kiba Barriers, throwable kunai that create bulletproof barriers, to patch defenses and control sightlines."
+                  },
+    "squad":  "Viperstrike",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use Kiba Barriers to block lines of sight and protect vulnerable angles.",
+                         "Deploy barriers to cover breached walls or create new defensive positions.",
+                         "Be creative with barrier placement - ceilings, floors, and doorways can all be reinforced."
+                     ],
+    "relatedTips":  [
+                        23,
+                        33,
+                        50,
+                        7
+                    ]
 }
