@@ -2,5 +2,33 @@
   "id": 29,
   "name": "Doc",
   "side": "Defend",
-  "roles": ["Healer"]
+  "roles": ["Healer"],
+  "loadout": {
+    "primary": [
+      { "name": "MP5", "type": "Submachine Gun" },
+      { "name": "P90", "type": "Submachine Gun" },
+      { "name": "SG-CQB", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "P9", "type": "Handgun" },
+      { "name": "LFP586", "type": "Handgun" }
+    ],
+    "gadgets": ["Bulletproof Camera", "Barbed Wire"]
+  },
+  "uniqueAbility": "Stim Pistol",
+  "biography": {
+    "realName": "Gustave Kateb",
+    "dateOfBirth": "September 16th (Age 39)",
+    "placeOfBirth": "Paris, France",
+    "description": "Doc uses his Stim Pistol to heal teammates or himself, providing a tactical advantage in critical situations."
+  },
+  "squad": "Wolfguard",
+  "health": 3,
+  "speed": 2,
+  "difficulty": 2,
+  "gameplayTips": [
+    "Use the Stim Pistol to revive downed teammates from a distance.",
+    "Heal teammates during firefights to maintain their combat effectiveness.",
+    "Be mindful of your position to avoid being targeted while healing others."
+  ]
 }

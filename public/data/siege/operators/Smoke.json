@@ -2,5 +2,32 @@
   "id": 24,
   "name": "Smoke",
   "side": "Defend",
-  "roles": ["Area Denial"]
+  "roles": ["Area Denial"],
+  "loadout": {
+    "primary": [
+      { "name": "M590A1", "type": "Shotgun" },
+      { "name": "FMG-9", "type": "Submachine Gun" }
+    ],
+    "secondary": [
+      { "name": "P226 MK 25", "type": "Handgun" },
+      { "name": "SMG-11", "type": "Machine Pistol" }
+    ],
+    "gadgets": ["Barbed Wire", "Proximity Alarm"]
+  },
+  "uniqueAbility": "Remote Gas Grenade",
+  "biography": {
+    "realName": "James Porter",
+    "dateOfBirth": "May 14th (Age 36)",
+    "placeOfBirth": "London, England (King's Cross)",
+    "description": "Smoke uses his Remote Gas Grenades to deny area access and control enemy movement."
+  },
+  "squad": "Nighthaven",
+  "health": 2,
+  "speed": 2,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use Remote Gas Grenades to block entry points and delay attackers.",
+    "Coordinate with teammates to maximize the effectiveness of your gas grenades.",
+    "Be mindful of friendly fire when deploying gas grenades."
+  ]
 }

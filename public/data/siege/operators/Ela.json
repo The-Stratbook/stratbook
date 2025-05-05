@@ -2,5 +2,31 @@
   "id": 40,
   "name": "Ela",
   "side": "Defend",
-  "roles": ["Roamer"]
+  "roles": ["Roamer"],
+  "loadout": {
+    "primary": [
+      { "name": "Scorpion EVO 3 A1", "type": "Submachine Gun" },
+      { "name": "FO-12", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "RG15", "type": "Handgun" }
+    ],
+    "gadgets": ["Barbed Wire", "Deployable Shield"]
+  },
+  "uniqueAbility": "Grzmot Mine",
+  "biography": {
+    "realName": "Elżbieta Bosak",
+    "dateOfBirth": "November 8th (Age 31)",
+    "placeOfBirth": "Wrocław, Poland",
+    "description": "Ela uses her Grzmot Mines to disorient enemies with a concussion effect, providing a tactical advantage for her team."
+  },
+  "squad": "Nighthaven",
+  "health": 3,
+  "speed": 3,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Place Grzmot Mines in high-traffic areas to disrupt enemy movements.",
+    "Use the disorientation effect to gain the upper hand in firefights.",
+    "Coordinate with teammates to capitalize on disoriented enemies."
+  ]
 }

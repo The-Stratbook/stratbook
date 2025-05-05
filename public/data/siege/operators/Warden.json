@@ -1,6 +1,33 @@
 {
-  "id": 47,
+  "id": 58,
   "name": "Warden",
   "side": "Defend",
-  "roles": ["Intel"]
+  "roles": ["Intel", "Anti-Gadget"],
+  "loadout": {
+    "primary": [
+      { "name": "M590A1", "type": "Shotgun" },
+      { "name": "MPX", "type": "Submachine Gun" }
+    ],
+    "secondary": [
+      { "name": "P-10C", "type": "Handgun" },
+      { "name": "SMG-12", "type": "Machine Pistol" }
+    ],
+    "gadgets": ["Deployable Shield", "Nitro Cell", "Observation Blocker"]
+  },
+  "uniqueAbility": "Glance Smart Glasses",
+  "biography": {
+    "realName": "Collinn McKinley",
+    "dateOfBirth": "March 18th (Age 48)",
+    "placeOfBirth": "Louisville, Kentucky",
+    "description": "Warden uses his Glance Smart Glasses to see through smoke and resist flash effects, providing critical intel and survivability."
+  },
+  "squad": "Ghosteyes",
+  "health": 2,
+  "speed": 2,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Activate the Glance Smart Glasses to counter flashbangs and gain visibility through smoke.",
+    "Stay immobile while using the glasses to maintain their effectiveness.",
+    "Coordinate with teammates to capitalize on the intel provided by the glasses."
+  ]
 }

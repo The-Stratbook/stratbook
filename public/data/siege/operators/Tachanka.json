@@ -1,6 +1,34 @@
 {
-  "id": 32,
+  "id": 53,
   "name": "Tachanka",
   "side": "Defend",
-  "roles": ["Heavy Gun"]
+  "roles": ["Area Denial", "Crowd Control"],
+  "loadout": {
+    "primary": [
+      { "name": "DP27", "type": "Light Machine Gun" },
+      { "name": "9X19VSN", "type": "Submachine Gun" }
+    ],
+    "secondary": [
+      { "name": "PMM", "type": "Handgun" },
+      { "name": "GSH-18", "type": "Handgun" },
+      { "name": "BEARING 9", "type": "Machine Pistol" }
+    ],
+    "gadgets": ["Barbed Wire", "Proximity Alarm", "Deployable Shield"]
+  },
+  "uniqueAbility": "Shumikha Launcher",
+  "biography": {
+    "realName": "Alexsandr Senaviev",
+    "dateOfBirth": "November 3rd (Age 38)",
+    "placeOfBirth": "Saint Petersburg, Russia",
+    "description": "Tachanka uses his Shumikha Launcher to deploy incendiary grenades, providing area denial and tactical control."
+  },
+  "squad": "Redhammer",
+  "health": 3,
+  "speed": 1,
+  "difficulty": 2,
+  "gameplayTips": [
+    "Use the Shumikha Launcher to block entry points and control enemy movement.",
+    "Coordinate with teammates to maximize the effectiveness of incendiary grenades.",
+    "Be mindful of reload times when using the Shumikha Launcher."
+  ]
 }

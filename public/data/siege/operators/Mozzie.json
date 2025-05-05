@@ -1,6 +1,32 @@
 {
-  "id": 46,
+  "id": 48,
   "name": "Mozzie",
   "side": "Defend",
-  "roles": ["Drone Hacker"]
+  "roles": ["Intel", "Anti-Gadget"],
+  "loadout": {
+    "primary": [
+      { "name": "Commando 9", "type": "Assault Rifle" },
+      { "name": "P10 Roni", "type": "Submachine Gun" }
+    ],
+    "secondary": [
+      { "name": "SDP 9mm", "type": "Handgun" }
+    ],
+    "gadgets": ["Barbed Wire", "Nitro Cell"]
+  },
+  "uniqueAbility": "Pest Launcher",
+  "biography": {
+    "realName": "Max Goose",
+    "dateOfBirth": "February 15th (Age 35)",
+    "placeOfBirth": "Portland, Australia",
+    "description": "Mozzie uses his Pest Launcher to hack enemy drones, providing a tactical advantage for his team."
+  },
+  "squad": "Ghosteyes",
+  "health": 2,
+  "speed": 2,
+  "difficulty": 3,
+  "gameplayTips": [
+    "Use Pests to deny attackers' drone intel.",
+    "Coordinate with teammates to maximize hacked drone utility.",
+    "Place Pests in high-traffic areas to increase their effectiveness."
+  ]
 }

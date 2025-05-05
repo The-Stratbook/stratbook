@@ -1,6 +1,34 @@
 {
-  "id": 30,
+  "id": 52,
   "name": "Rook",
   "side": "Defend",
-  "roles": ["Armor"]
+  "roles": ["Anchor", "Support"],
+  "loadout": {
+    "primary": [
+      { "name": "MP5", "type": "Submachine Gun" },
+      { "name": "P90", "type": "Submachine Gun" },
+      { "name": "SG-CQB", "type": "Shotgun" }
+    ],
+    "secondary": [
+      { "name": "P9", "type": "Handgun" },
+      { "name": "LFP586", "type": "Handgun" }
+    ],
+    "gadgets": ["Proximity Alarm", "Impact Grenade"]
+  },
+  "uniqueAbility": "Armor Pack",
+  "biography": {
+    "realName": "Julien Nizan",
+    "dateOfBirth": "January 6th (Age 27)",
+    "placeOfBirth": "Tours, France",
+    "description": "Rook provides his team with additional armor plates, increasing their survivability in combat."
+  },
+  "squad": "GIGN",
+  "health": 3,
+  "speed": 1,
+  "difficulty": 1,
+  "gameplayTips": [
+    "Distribute armor plates at the start of the round to boost team survivability.",
+    "Destroy the Armor Pack after use to prevent attackers from using it.",
+    "Stay on-site to provide support and maintain defensive positions."
+  ]
 }

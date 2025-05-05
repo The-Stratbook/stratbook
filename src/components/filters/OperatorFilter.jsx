@@ -5,9 +5,9 @@ const OperatorFilter = ({ selectedOperator, onSelectOperator, selectedSide, onSi
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="w-full"> {/* Ensure the div takes full width */}
+    <div className="w-full">
       <button
-        className="btn btn-primary w-full" // Make the button full width
+        className="btn btn-primary w-full"
         onClick={() => setIsModalOpen(true)}
       >
         {selectedOperator ? `Selected Operator: ${selectedOperator.name}` : "Select an Operator"}

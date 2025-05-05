@@ -8,6 +8,7 @@ const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, 
     const fetchOperators = async () => {
       try {
         const response = await fetch('/data/siege/operatorsIndex.json');
+        console.log('response', response);
         if (!response.ok) throw new Error('Failed to fetch operators index');
         const operatorFiles = await response.json();
 

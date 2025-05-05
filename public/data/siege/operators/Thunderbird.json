@@ -1,6 +1,34 @@
 {
-  "id": 53,
+  "id": 55,
   "name": "Thunderbird",
   "side": "Defend",
-  "roles": ["Utility"]
+  "roles": ["Support", "Healer"],
+  "loadout": {
+    "primary": [
+      { "name": "SPAS-15", "type": "Shotgun" },
+      { "name": "SPEAR .308", "type": "Assault Rifle" }
+    ],
+    "secondary": [
+      { "name": "BEARING 9", "type": "Machine Pistol" },
+      { "name": "Q-929", "type": "Handgun" },
+      { "name": "ITA12S", "type": "Shotgun" }
+    ],
+    "gadgets": ["Barbed Wire", "Bulletproof Camera", "Deployable Shield"]
+  },
+  "uniqueAbility": "Kóna Station",
+  "biography": {
+    "realName": "Mina Sky",
+    "dateOfBirth": "April 1st (Age 36)",
+    "placeOfBirth": "Nakoda Territories, Saskatchewan",
+    "description": "Thunderbird deploys Kóna Stations to heal or revive teammates, providing critical support during engagements."
+  },
+  "squad": "Wolfguard",
+  "health": 2,
+  "speed": 2,
+  "difficulty": 2,
+  "gameplayTips": [
+    "Place Kóna Stations in strategic locations to maximize healing potential.",
+    "Coordinate with teammates to ensure Kóna Stations are used effectively.",
+    "Be mindful of enemy use of Kóna Stations if placed in contested areas."
+  ]
 }
