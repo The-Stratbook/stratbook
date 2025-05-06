@@ -4,7 +4,7 @@
   "description": "Sometimes placing a **kapkan trap** in a stupid spot can work wonders. Check out this video to see how it can catch attackers off-guard.",
   "operator": "Kapkan",
   "side": "Defend",
-  "map": "Club House",
+  "map": "Clubhouse",
   "bombSite": "Basement",
   "skill": "Advanced",
   "tags": ["Traps", "Kill Potential"],
