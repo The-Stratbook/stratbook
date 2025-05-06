@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useLocation, useNavigate } from 'react-router-dom';
 import SideFilter from "../components/filters/SideFilter";
 import MapFilter from "../components/filters/MapFilter";
@@ -14,13 +14,11 @@ const TipsOverview = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [tipsData, setTipsData] = useState([]);
-  const [operatorsData, setOperatorsData] = useState([]);
-  const [mapsData, setMapsData] = useState([]);
   const [filtersVisible, setFiltersVisible] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Parse query parameters
-  const queryParams = new URLSearchParams(location.search);
+  // Parse query parameters using useMemo to avoid recreation on every render
+  const queryParams = useMemo(() => new URLSearchParams(location.search), [location.search]);
   
   const [filters, setFilters] = useState({
     map: queryParams.get('map') || '',
@@ -40,7 +38,7 @@ const TipsOverview = () => {
     if (searchParam) {
       setSearchTerm(searchParam);
     }
-  }, []);
+  }, [queryParams]);
 
   // Update URL whenever filters change
   useEffect(() => {
@@ -88,7 +86,7 @@ const TipsOverview = () => {
         
         if (operatorsResponse.ok && mapsResponse.ok) {
           const operatorFiles = await operatorsResponse.json();
-          const mapFiles = await mapsResponse.json();
+          //const mapFiles = await mapsResponse.json();
           
           // Fetch operator details if we have an operator filter
           if (filters.operator) {
@@ -99,8 +97,6 @@ const TipsOverview = () => {
                 return res.json();
               })
             );
-            
-            setOperatorsData(operatorData.filter(op => op !== null));
             
             // Set selected operator based on the query parameter
             const foundOperator = operatorData.find(op => 
@@ -113,15 +109,13 @@ const TipsOverview = () => {
           }
           
           // Fetch map details if needed in the future
-          const mapData = await Promise.all(
-            mapFiles.map(async (file) => {
-              const res = await fetch(`/data/siege/maps/${file}`);
-              if (!res.ok) return null;
-              return res.json();
-            })
-          );
-          
-          setMapsData(mapData.filter(map => map !== null));
+          //const mapData = await Promise.all(
+          //  mapFiles.map(async (file) => {
+          //    const res = await fetch(`/data/siege/maps/${file}`);
+          //    if (!res.ok) return null;
+          //    return res.json();
+          //  })
+          //);
         }
       } catch (error) {
         console.error("Error fetching data:", error);
