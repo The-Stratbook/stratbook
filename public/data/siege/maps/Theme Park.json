@@ -1,5 +1,26 @@
 {
   "id": 18,
   "name": "Theme Park",
-  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"],
+  "location": "HONG KONG",
+  "releaseDate": "Blood Orchid (August 2017)",
+  "reworkDate": "December 2019",
+  "description": "Team Rainbow has been called to raid an abandoned theme park on the shores of Hong Kong. Lead a lethal raid in this challenging perimeter. Get ready to discover a colorful and eclectic new map filled with dynamic and fast-paced face-offs.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
 }

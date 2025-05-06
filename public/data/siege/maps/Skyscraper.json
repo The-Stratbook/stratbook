@@ -1,5 +1,26 @@
 {
   "id": 6,
   "name": "Skyscraper",
-  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"],
+  "location": "NAGOYA, JAPAN",
+  "releaseDate": "Red Crow (November 2016)",
+  "reworkDate": "December 2020",
+  "description": "Team Rainbow has been called to neutralize a Yakuza war brewing high above the streets of Nagoya, Japan. Perched on top of Skyscraper, you will explore refined works of Japanese architecture inside a dangerous mansion. Be prepared for vertiginous rappels in the haze of the morning sun, where modernity and tradition meet.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
 }

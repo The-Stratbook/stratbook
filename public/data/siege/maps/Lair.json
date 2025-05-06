@@ -1,5 +1,25 @@
 {
   "id": 5,
   "name": "Lair",
-  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"]
+  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"],
+  "location": "Portugal",
+  "releaseDate": "Operation Deep Freeze (November 2023)",
+  "description": "Lair is a competitive map across three floors with multiple points of entry and breaching opportunities, making verticality a key factor in your strategy. Expect a flank in Armory Hall or to catch your enemies off guard by infiltrating the R6 room. Stay vigilant in the demon's den, Operators!",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
 }

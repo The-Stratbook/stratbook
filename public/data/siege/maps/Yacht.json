@@ -1,5 +1,25 @@
 {
   "id": 22,
   "name": "Yacht",
-  "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+  "playlist": ["Standard", "Quick Match", "Team Deathmatch"],
+  "location": "BAFFIN BAY",
+  "releaseDate": "Black Ice (February 2016)",
+  "description": "In the Baffin Bay, a luxury yacht has crashed into an iceberg breaching the hull. Rainbow has been sent to secure the stranded vessel as an unidentified submarine has docked near the vessel.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
 }

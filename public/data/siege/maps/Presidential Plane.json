@@ -1,5 +1,25 @@
 {
   "id": 24,
   "name": "Presidential Plane",
-  "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+  "playlist": ["Standard", "Quick Match", "Team Deathmatch"],
+  "location": "LONDON, UNITED KINGDOM",
+  "releaseDate": "Base game (December 2015)",
+  "description": "This presidential plane offers an exotic and unique siege experience. It is claustrophobic, tense and constrained, involving limited breaching opportunities and sight lines.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
 }

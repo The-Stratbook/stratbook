@@ -1,5 +1,26 @@
 {
   "id": 19,
   "name": "House",
-  "playlist": ["Standard", "Quick Match", "Team Deathmatch"]
+  "playlist": ["Standard", "Quick Match", "Team Deathmatch"],
+  "location": "LOS ANGELES, CALIFORNIA",
+  "releaseDate": "Base game (December 2015)",
+  "reworkDate": "June 2020",
+  "description": "Playing on themes of familiarity and vulnerability, this encounter takes place in a typical suburban home. It’s a prime example of destructive depth and replayability, and is one of the showcases for classic siege gameplay.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
 }
