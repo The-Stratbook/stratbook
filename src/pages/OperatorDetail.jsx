@@ -202,7 +202,7 @@ const OperatorDetail = () => {
               <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
                 <h2 className="text-2xl font-bold mb-4 border-b pb-2">Community Tips & Strategies</h2>
                 <ul className="space-y-4">
-                  {relatedTips.map((tip, index) => (
+                  {relatedTips.slice(0, 3).map((tip, index) => (
                     <li key={index} className="pb-4 border-b border-gray-200 dark:border-gray-700 last:border-0">
                       <Link to={`/siege/tip/${tip.id}`} className="block">
                         <h3 className="font-semibold text-lg text-primary hover:text-primary-focus mb-1">{tip.title}</h3>

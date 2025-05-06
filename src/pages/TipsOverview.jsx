@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from 'react-router-dom';
 import SideFilter from "../components/filters/SideFilter";
 import MapFilter from "../components/filters/MapFilter";
 import OperatorFilter from "../components/filters/OperatorFilter";
@@ -10,29 +11,65 @@ import TipsList from "../components/tips/TipsList";
 import Layout from '../layouts/Layout';
 
 const TipsOverview = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [tipsData, setTipsData] = useState([]);
-  const [selectedMap, setSelectedMap] = useState('');
-  const [selectedOperator, setSelectedOperator] = useState('');
+  const [operatorsData, setOperatorsData] = useState([]);
+  const [mapsData, setMapsData] = useState([]);
   const [filtersVisible, setFiltersVisible] = useState(true);
-  const [filters, setFilters] = useState({
-    map: '',
-    operator: '',
-    side: '',
-    skill: '',
-    tag: ''
-  });
   const [searchTerm, setSearchTerm] = useState('');
+
+  // Parse query parameters
+  const queryParams = new URLSearchParams(location.search);
+  
+  const [filters, setFilters] = useState({
+    map: queryParams.get('map') || '',
+    operator: queryParams.get('operator') || '',
+    side: queryParams.get('side') || '',
+    skill: queryParams.get('skill') || '',
+    tag: queryParams.get('tag') || ''
+  });
+  
+  // Set selected values for components that maintain their own state
+  const [selectedMap, setSelectedMap] = useState(queryParams.get('map') || '');
+  const [selectedOperator, setSelectedOperator] = useState('');
+
+  // Handle search parameter
+  useEffect(() => {
+    const searchParam = queryParams.get('search');
+    if (searchParam) {
+      setSearchTerm(searchParam);
+    }
+  }, []);
+
+  // Update URL whenever filters change
+  useEffect(() => {
+    const newParams = new URLSearchParams();
+    
+    if (filters.map) newParams.set('map', filters.map);
+    if (filters.operator) newParams.set('operator', filters.operator);
+    if (filters.side) newParams.set('side', filters.side);
+    if (filters.skill) newParams.set('skill', filters.skill);
+    if (filters.tag) newParams.set('tag', filters.tag);
+    if (searchTerm) newParams.set('search', searchTerm);
+    
+    // Only update URL if filters have changed to avoid unnecessary history entries
+    if (location.search !== `?${newParams.toString()}`) {
+      navigate(`?${newParams.toString()}`, { replace: true });
+    }
+  }, [filters, searchTerm, navigate, location.search]);
+
   const pageTitle = "Tips Overview | The Stratbook";
   const cleanDescription = "Browse a comprehensive list of tips and strategies for Rainbow Six Siege.";
   const canonicalUrl = `${window.location.origin}/siege/tips`;
 
   useEffect(() => {
-    const fetchTips = async () => {
+    const fetchData = async () => {
       try {
         // Fetch the index file listing all JSON files in the tips folder
-        const response = await fetch('/data/siege/tipsIndex.json');
-        if (!response.ok) throw new Error('Failed to fetch tips index');
-        const files = await response.json();
+        const tipsResponse = await fetch('/data/siege/tipsIndex.json');
+        if (!tipsResponse.ok) throw new Error('Failed to fetch tips index');
+        const files = await tipsResponse.json();
 
         // Fetch each tip file dynamically
         const tips = await Promise.all(
@@ -44,17 +81,59 @@ const TipsOverview = () => {
         );
 
         setTipsData(tips);
+        
+        // Fetch operators and maps for filter initialization
+        const operatorsResponse = await fetch('/data/siege/operatorsIndex.json');
+        const mapsResponse = await fetch('/data/siege/mapsIndex.json');
+        
+        if (operatorsResponse.ok && mapsResponse.ok) {
+          const operatorFiles = await operatorsResponse.json();
+          const mapFiles = await mapsResponse.json();
+          
+          // Fetch operator details if we have an operator filter
+          if (filters.operator) {
+            const operatorData = await Promise.all(
+              operatorFiles.map(async (file) => {
+                const res = await fetch(`/data/siege/operators/${file}`);
+                if (!res.ok) return null;
+                return res.json();
+              })
+            );
+            
+            setOperatorsData(operatorData.filter(op => op !== null));
+            
+            // Set selected operator based on the query parameter
+            const foundOperator = operatorData.find(op => 
+              op && op.name.toLowerCase() === filters.operator.toLowerCase()
+            );
+            
+            if (foundOperator) {
+              setSelectedOperator(foundOperator);
+            }
+          }
+          
+          // Fetch map details if needed in the future
+          const mapData = await Promise.all(
+            mapFiles.map(async (file) => {
+              const res = await fetch(`/data/siege/maps/${file}`);
+              if (!res.ok) return null;
+              return res.json();
+            })
+          );
+          
+          setMapsData(mapData.filter(map => map !== null));
+        }
       } catch (error) {
-        console.error("Error fetching tips:", error);
+        console.error("Error fetching data:", error);
       }
     };
 
-    fetchTips();
-  }, []);
+    fetchData();
+  }, [filters.operator]);
 
   const filteredTips = tipsData
     .filter(tip => 
-      (!filters.operator || tip.operator === filters.operator) &&
+      (!filters.operator || tip.operator?.toLowerCase() === filters.operator.toLowerCase()) &&
       (!filters.side || tip.side === filters.side) &&
       (!filters.skill || tip.skill === filters.skill) &&
       (!filters.map || tip.map === filters.map || tip.map === 'Any') &&
@@ -115,6 +194,10 @@ const TipsOverview = () => {
     setSelectedOperator("");
   };
 
+  const handleSearchChange = (term) => {
+    setSearchTerm(term);
+  };
+
   return (
     <Layout seoProps={{ 
       title: pageTitle, 
@@ -154,7 +237,7 @@ const TipsOverview = () => {
 
               {filtersVisible && (
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-2 mb-3">
-                  <SearchFilter searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+                  <SearchFilter searchTerm={searchTerm} onSearchChange={handleSearchChange} />
                 </div>
               )}
 
@@ -163,7 +246,7 @@ const TipsOverview = () => {
                   <TagFilter
                     selectedTag={filters.tag}
                     onSelectTag={(tag) => setFilters({ ...filters, tag })}
-                    allTags={[...new Set(tipsData.flatMap(tip => tip.tags))]}
+                    allTags={[...new Set(tipsData.flatMap(tip => tip.tags).filter(Boolean))]}
                   />
                 </div>
               )}

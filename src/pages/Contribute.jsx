@@ -23,7 +23,7 @@ const Contribute = () => {
             <h2 className="card-title text-2xl mb-4">Why Contribute?</h2>
             <div className="space-y-4">
               <p className="text-base-content">
-                The Stratbook is a community-driven platform built by players for players. By sharing 
+                The Stratbook is a community-driven platform built for players by players. By sharing 
                 your knowledge, you help others improve their gameplay while establishing yourself as 
                 a valuable contributor to the tactical FPS community.
               </p>
@@ -116,7 +116,7 @@ const Contribute = () => {
                   <p className="text-sm">
                     Fork our repository, add your content, and submit a pull request. Don't worry if you're 
                     not familiar with Git—we have a step-by-step guide.
-                    The other option is to join our Discord server and submit your content there.
+                    The other option is to <a href="https://discord.gg/vBt738jk" target="_blank" rel="noopener noreferrer" className="text-primary transition">join our discord</a> server and submit your content there.
                   </p>
                 </div>
               </div>
