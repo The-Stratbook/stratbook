@@ -26,6 +26,7 @@ const Header = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
             <li><Link to="/siege/external-tools">External Tools</Link></li>
+            <li><Link to="/siege/operator-roulette">Operator Roulette</Link></li>
             <li><Link to="/contribute">Contribute</Link></li>
             <li><Link to="/hub">Hub</Link>
               <ul className="p-2 bg-base-200">
@@ -68,6 +69,7 @@ const Header = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
             <li><Link to="/siege/external-tools">External Tools</Link></li>
+            <li><Link to="/siege/operator-roulette">Operator Roulette</Link></li>
             <li><Link to="/contribute">Contribute</Link></li>
             <li tabIndex={0}>
               <details>

@@ -11,6 +11,7 @@ import ComingSoon from './pages/ComingSoon';
 import TermsOfService from './components/legal/TermsOfService';
 import PrivacyPolicy from './components/legal/PrivacyPolicy';
 import CookiePolicy from './components/legal/CookiePolicy';
+import OperatorRoulette from './pages/OperatorRoulette';
 
 // Import Coming Soon feature pages
 import OperatorGuides from './pages/coming-soon/OperatorGuides';
@@ -67,6 +68,7 @@ function App() {
       <Route path="/siege/tips" element={<TipsOverview />} />
       <Route path="/siege/tip/:id" element={<TipDetail />} />
       <Route path="/siege/external-tools" element={<ExternalTools />} />
+      <Route path="/siege/operator-roulette" element={<OperatorRoulette />} />
 
       {/* Hub routes */}
       <Route path="/siege/hub" element={<Hub isFullWidth={true} />} />
