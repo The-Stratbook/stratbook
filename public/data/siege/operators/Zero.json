@@ -43,7 +43,6 @@
     "health":  3,
     "speed":  3,
     "difficulty":  3,
-    "fileName":  "zero",
     "gameplayTips":  [
                          "Use the Argus Launcher to gather intel on enemy positions and setups.",
                          "Take advantage of the cameras' ability to shoot a single laser to destroy defender gadgets.",

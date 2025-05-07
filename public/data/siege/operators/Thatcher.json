@@ -1,7 +1,6 @@
 {
     "id": 54,
     "name": "Thatcher",
-    "fileName": "thatcher",
     "side": "Attack",
     "roles": ["Anti-Gadget", "Support"],
     "loadout": {
