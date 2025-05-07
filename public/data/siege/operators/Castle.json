@@ -1,0 +1,46 @@
+﻿{
+    "id":  13,
+    "name": "Castle",
+    "side":  "Defender",
+    "roles":  [
+                  "Barricade"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "UMP45",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "M1014",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "5.7 USG",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Bulletproof Camera",
+                                    "Impact Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Armor Panel",
+    "biography":  {
+                      "realName":  "Miles Campbell",
+                      "dateOfBirth":  "1989-09-20",
+                      "placeOfBirth":  "Sherman Oaks, California, USA",
+                      "description":  "Castle uses his Armor Panels to reinforce doors and windows, providing additional protection for his team."
+                  },
+    "squad":  "Wolfguard",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Use Armor Panels to block key entry points and slow down attackers.",
+                         "Coordinate with teammates to ensure panels are placed strategically.",
+                         "Be mindful of attackers with breaching capabilities who can counter your panels."
+                     ]
+}

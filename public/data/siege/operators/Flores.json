@@ -1,0 +1,49 @@
+﻿{
+    "id":  23,
+    "name": "Flores",
+    "side":  "Attacker",
+    "roles":  [
+                  "Disruptor"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "AR33",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "SR-25",
+                                        "type":  "Marksman Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "GSH-18",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Stun Grenade",
+                                    "Claymore"
+                                ]
+                },
+    "uniqueAbility":  "RCE-Ratero Charge",
+    "biography":  {
+                      "realName":  "Santiago Miguel Lucero",
+                      "dateOfBirth":  "1987-10-02",
+                      "placeOfBirth":  "Buenos Aires, Argentina",
+                      "description":  "Flores uses the RCE-Ratero Charge to scout and destroy gadgets or soft surfaces, providing tactical advantages for his team."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the RCE-Ratero to destroy defender utility and gadgets.",
+                         "Time your drone detonations carefully to maximize their effectiveness.",
+                         "Coordinate with teammates to capitalize on the disruption caused by your drones."
+                     ],
+    "relatedTips":  [
+                        16
+                    ]
+}

@@ -2,7 +2,7 @@
     "id": 34,
     "title": "Insane grenade for villa's aviator attack.",
     "description": "This is a very save way to throw a grenade into the Aviator objective and land it on a common spot for defenders to play from.",
-    "side": "Attacker",
+    "side": "Attack",
     "skill": "Beginner",
     "map": "Villa",
     "bombSite": "Aviator",

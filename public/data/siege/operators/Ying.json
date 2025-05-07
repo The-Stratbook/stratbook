@@ -1,0 +1,47 @@
+﻿{
+    "id":  73,
+    "name": "Ying",
+    "side":  "Attacker",
+    "roles":  [
+                  "Roamer"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "T-95 LSW",
+                                        "type":  "Light Machine Gun"
+                                    },
+                                    {
+                                        "name":  "SIX12",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "Q-929",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Hard Breach Charge",
+                                    "Smoke Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Candela",
+    "biography":  {
+                      "realName":  "Siu Mei Lin",
+                      "dateOfBirth":  "1992-05-12",
+                      "placeOfBirth":  "Central District, Hong Kong, China",
+                      "description":  "Ying is equipped with the Candela, a device that releases a cluster of flash charges to blind enemies."
+                  },
+    "squad":  "Wolfguard",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the Candela to disorient enemies before pushing into a room.",
+                         "Coordinate with teammates to capitalize on the disoriented enemies.",
+                         "Experiment with anchoring the Candela on surfaces for strategic placement."
+                     ],
+    "fileName":  "ying"
+}

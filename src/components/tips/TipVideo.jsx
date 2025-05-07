@@ -12,15 +12,26 @@ const TipVideo = ({ videoUrl, title, isVertical = false, onVideoRefChange = null
   if (!videoUrl) return null;
 
   const getEmbedUrl = (url) => {
-    if (url.includes("shorts")) {
-      return url.replace("/shorts/", "/embed/");
+    if (url.includes("youtube.com")) {
+      if(url.includes("shorts/")) {
+        return url.replace("/shorts/", "/embed/");      
+      }     
+
+      return url.replace("youtube.com/watch?v=", "embed/");
     }
-    return url.replace("watch?v=", "embed/");
+
+    if (url.includes("instagram.com")) {
+      return `${url}embed/`;
+    }
+    
+    if (url.includes("tiktok.com")) {
+      return url.replace("/video/", "/embed/video/");
+    }
   };
 
   if (isVertical) {
     return (
-      <div className="md:w-1/3 bg-base-100 shadow-xl rounded-lg overflow-hidden" style={{ height: "75vh" }}>
+      <div className="bg-base-100 shadow-xl rounded-lg overflow-hidden" style={{ height: "75vh" }}>
         <iframe
           ref={videoRef}
           src={getEmbedUrl(videoUrl)}

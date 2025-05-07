@@ -1,0 +1,55 @@
+﻿{
+    "id":  68,
+    "name": "Twitch",
+    "fileName": "twitch",
+    "side":  "Attacker",
+    "roles":  [
+                  "Remote Breacher"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "F2",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "417",
+                                        "type":  "Marksman Rifle"
+                                    },
+                                    {
+                                        "name":  "SG-CQB",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "P9",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "LFP586",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Smoke Grenade",
+                                    "Claymore"
+                                ]
+                },
+    "uniqueAbility":  "Shock Drone",
+    "biography":  {
+                      "realName":  "Emmanuelle Pichon",
+                      "dateOfBirth":  "1997-10-12",
+                      "placeOfBirth":  "Nancy, France",
+                      "description":  "Twitch is a disabler and intel Operator. She can utilize these skills as either a remote back-line support or as an aggressive entry fragger."
+                  },
+    "squad":  "Wolfguard",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the drone to disable defensive gadgets and traps.",
+                         "Bait defenders with the drone to create opportunities for teammates.",
+                         "Use the drone creatively to finish off downed defenders."
+                     ]
+}

@@ -74,8 +74,10 @@ const ComingSoon = () => {
     <Layout seoProps={{
       title: 'Coming Soon | The Stratbook Roadmap',
       description: 'Explore our roadmap of upcoming features and content for The Stratbook, your ultimate tactical FPS resource.',
-      keywords: 'Tactical FPS roadmap, Siege roadmap, upcoming features, game guides, operator guides',
-      url: window.location.href
+      keywords: 'Tactical FPS roadmap, Siege roadmap, upcoming features, game guides, operator guides, map guides, meta analysis',
+      url: window.location.href,
+      image: '/images/general/logo.png',
+      canonicalUrl: `${window.location.origin}/coming-soon`
     }}>
       <div className="container mx-auto p-4 max-w-6xl">
         <div className="mb-8 text-center">

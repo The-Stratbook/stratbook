@@ -1,0 +1,25 @@
+{
+  "id": 21,
+  "name": "Tower",
+  "playlist": ["Quick Match", "Team Deathmatch"],
+  "location": "SEOUL, SOUTH KOREA",
+  "releaseDate": "White Noise (November 2017)",
+  "description": "Scale the snow-capped Mok Myeok Tower to lead a rescue mission in Seoul, South Korea. The modern communications and observation tower offers fresh vertical vantage points overlooking the entire cityscape, and sets the stage for diverse multilevel tactics.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
+}

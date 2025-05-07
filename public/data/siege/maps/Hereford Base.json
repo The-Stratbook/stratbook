@@ -1,0 +1,26 @@
+{
+  "id": 26,
+  "name": "Hereford Base",
+  "playlist": [],
+  "location": "UNITED KINGDOM",
+  "releaseDate": "Base game (December 2015)",
+  "reworkDate": "September 2018",
+  "description": "This is where SAS agents learn their craft and as such it a patchwork of plywood targets, sandbags, barbed wire and other obstacles. One of the most archetypal examples of siege gameplay.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
+}

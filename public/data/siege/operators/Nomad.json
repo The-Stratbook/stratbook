@@ -1,0 +1,54 @@
+﻿{
+    "id":  47,
+    "name": "Nomad",
+    "side":  "Attacker",
+    "roles":  [
+                  "Map Control"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "AK-74M",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "ARX200",
+                                        "type":  "Assault Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "PRB92",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  ".44 MAG Semi-Auto",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Breach Charge",
+                                    "Stun Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Airjab Launcher",
+    "biography":  {
+                      "realName":  "Sanaa El Maktoub",
+                      "dateOfBirth":  "1986-07-27",
+                      "placeOfBirth":  "Marrakesh, Morocco",
+                      "description":  "Nomad uses the Airjab Launcher to deploy repulsion grenades that disorient and push back enemies within range."
+                  },
+    "squad":  "Wolfguard",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use Airjab grenades to control flanking routes and secure objectives.",
+                         "Place Airjab grenades strategically to catch enemies off guard.",
+                         "Coordinate with teammates to capitalize on disoriented enemies."
+                     ],
+    "relatedTips":  [
+                        12,
+                        5
+                    ]
+}

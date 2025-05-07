@@ -1,8 +1,8 @@
 {
     "id": 23,
-    "title": "Insane kiba pixel peek on Club House basement",
-    "description": "With this trick you can use **Kiba** to pixel peek on Club House basement. This is a great way to surprise attackers and that try to take control over main door.",
-    "side": "Defender",
+    "title": "Insane kiba pixel peek on Clubhouse basement",
+    "description": "With this trick you can use **Kiba** to pixel peek on Clubhouse basement. This is a great way to surprise attackers and that try to take control over main door.",
+    "side": "Defend",
     "skill": "Intermediate",
     "operator": "Azami",
     "tags": ["Pixel"],

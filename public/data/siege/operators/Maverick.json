@@ -1,0 +1,51 @@
+﻿{
+    "id":  41,
+    "name": "Maverick",
+    "side":  "Attacker",
+    "roles":  [
+                  "Hard Breacher"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "AR-15.50",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "M4",
+                                        "type":  "Assault Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "1911 TACOPS",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Claymore",
+                                    "Smoke Grenade",
+                                    "Stun Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Breaching Torch",
+    "biography":  {
+                      "realName":  "Erik Thorn",
+                      "dateOfBirth":  "1989-04-20",
+                      "placeOfBirth":  "Boston, Massachusetts",
+                      "description":  "Maverick uses the Breaching Torch to create precise holes in reinforced surfaces, providing new sightlines and entry points."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the Breaching Torch to create small holes for sightlines or larger openings for entry.",
+                         "Be mindful of the torch's fuel and use it strategically.",
+                         "Coordinate with teammates to maximize the tactical advantage of new sightlines."
+                     ],
+    "relatedTips":  [
+                        49,
+                        6
+                    ]
+}

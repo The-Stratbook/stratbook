@@ -1,0 +1,29 @@
+{
+  "id": 8,
+  "name": "Nighthaven Labs",
+  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"],
+  "location": "Offshore",
+  "releaseDate": "Operation Solar Raid (December 2022)",
+  "description": "Nighthaven Labs is a competitive map with many entry points and breach points that will make it tricky to hold a position for too long. Be prepared to be flanked in Nighthaven's HQ or to surprise your enemies by breaking in the R&D lab. Be careful to always watch your steps Operators!",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ],
+  "relatedTips": [
+    22,
+    25
+  ]
+}

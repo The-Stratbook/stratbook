@@ -1,0 +1,48 @@
+﻿{
+    "id":  8,
+    "name": "Blackbeard",
+    "side":  "Attacker",
+    "roles":  [
+                  "Front Line",
+                  "Breach"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "MK17 CQB",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "SR-25",
+                                        "type":  "Marksman Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "D-50",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Claymore",
+                                    "Frag Grenade"
+                                ]
+                },
+    "uniqueAbility":  "H.U.L.L. Adaptable Shield",
+    "biography":  {
+                      "realName":  "Craig Jenson",
+                      "dateOfBirth":  "1993-03-12",
+                      "placeOfBirth":  "Bellevue, Washington",
+                      "description":  "Blackbeard uses his H.U.L.L. Adaptable Shield to protect his head while maintaining firepower. The shield can adapt its shape for optimal cover, and includes a breaching system to create rotations through soft walls."
+                  },
+    "squad":  "Redhammer",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  1,
+    "gameplayTips":  [
+                         "Use the H.U.L.L. Adaptable Shield to protect yourself while engaging enemies head-on.",
+                         "The shield can absorb a few bullets before breaking, giving you a significant advantage in firefights.",
+                         "Use the shield's breaching ability to create new angles and rotation holes in soft walls.",
+                         "Remember you can simultaneously equip your primary weapon with the shield for maximum effectiveness."
+                     ]
+}

@@ -1,0 +1,48 @@
+﻿{
+    "id":  59,
+    "name": "Sledge",
+    "side":  "Attacker",
+    "roles":  [
+                  "Soft Breacher",
+                  "Entry Fragger"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "L85A2",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "M590A1",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "P226 MK 25",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Frag Grenade",
+                                    "Stun Grenade",
+                                    "Impact EMP Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Breaching Hammer",
+    "biography":  {
+                      "realName":  "Seamus Cowden",
+                      "dateOfBirth":  "1990-04-02",
+                      "placeOfBirth":  "John Oâ€™Groats, Scotland",
+                      "description":  "Sledge is a soft breacher and flanker, excelling at creating new lines of fire and entry points, harassing the defenders."
+                  },
+    "squad":  "Redhammer",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the hammer to destroy defender gadgets and create new entry points.",
+                         "Combine hammer swings to create larger breaches for shielded teammates.",
+                         "Use the hammer while rappelling to breach windows or doors safely."
+                     ]
+}

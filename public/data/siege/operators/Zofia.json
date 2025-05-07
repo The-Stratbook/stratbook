@@ -1,0 +1,47 @@
+﻿{
+    "id":  75,
+    "name": "Zofia",
+    "side":  "Attacker",
+    "roles":  [
+                  "Flexible Entry"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "LMG-E",
+                                        "type":  "Light Machine Gun"
+                                    },
+                                    {
+                                        "name":  "M762",
+                                        "type":  "Assault Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "RG15",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Claymore",
+                                    "Hard Breach Charge"
+                                ]
+                },
+    "uniqueAbility":  "KS79 Lifeline",
+    "biography":  {
+                      "realName":  "Zofia Bosak",
+                      "dateOfBirth":  "1989-01-28",
+                      "placeOfBirth":  "WrocÅ‚aw, Poland",
+                      "description":  "Zofia is equipped with the KS79 Lifeline, a device that fires both concussion and impact projectiles to disrupt enemies and breach surfaces."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the concussion projectiles to disorient enemies before engaging.",
+                         "Utilize the impact projectiles for quick breaching and creating sightlines.",
+                         "Coordinate with teammates to maximize the disruption caused by the Lifeline."
+                     ],
+    "fileName":  "zofia"
+}

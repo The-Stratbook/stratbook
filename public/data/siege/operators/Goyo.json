@@ -1,0 +1,46 @@
+﻿{
+    "id":  27,
+    "name": "Goyo",
+    "side":  "Defender",
+    "roles":  [
+                  "Anti-Entry"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "Vector .45 ACP",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "TCSG12",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "P229",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Proximity Alarm",
+                                    "Bulletproof Camera"
+                                ]
+                },
+    "uniqueAbility":  "Volcán Canister",
+    "biography":  {
+                      "realName":  "César Ruiz Hernández",
+                      "dateOfBirth":  "1994-06-20",
+                      "placeOfBirth":  "Culiacán Rosales, Mexico",
+                      "description":  "Goyo uses his Volcán Canisters to create explosive traps, providing a tactical advantage for his team."
+                  },
+    "squad":  "Redhammer",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Place Volcán Canisters in strategic locations to block enemy advances.",
+                         "Coordinate with teammates to maximize the impact of explosive traps.",
+                         "Use the canisters to create choke points and delay attackers."
+                     ]
+}

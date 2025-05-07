@@ -1,0 +1,52 @@
+﻿{
+    "id":  56,
+    "name": "Sens",
+    "side":  "Attacker",
+    "roles":  [
+                  "Support",
+                  "Map Control"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "POF-9",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "417",
+                                        "type":  "Marksman Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "SDP 9mm",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "GONNE-6",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Hard Breach Charge",
+                                    "Claymore"
+                                ]
+                },
+    "uniqueAbility":  "R.O.U. Projector System",
+    "biography":  {
+                      "realName":  "NÃ©on Ngoma Mutombo",
+                      "dateOfBirth":  "1993-11-19",
+                      "placeOfBirth":  "Brussels, Belgium",
+                      "description":  "Sens deploys the R.O.U. Projector System that creates a wall of light, blocking line of sight for defenders and providing cover for attacking teammates during pushes and plants."
+                  },
+    "squad":  "Wolfguard",
+    "health":  3,
+    "speed":  1,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the R.O.U. to create visual cover when planting the defuser or advancing to the objective.",
+                         "Deploy the R.O.U. to block multiple angles simultaneously during a push.",
+                         "Remember that the light wall only blocks vision, not bullets or movement.",
+                         "Combine with smoke grenades from teammates for maximum visual coverage."
+                     ]
+}

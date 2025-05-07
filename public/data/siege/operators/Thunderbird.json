@@ -1,0 +1,57 @@
+﻿{
+    "id":  66,
+    "name": "Thunderbird",
+    "fileName": "thunderbird",
+    "side":  "Defender",
+    "roles":  [
+                  "Support",
+                  "Healer"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "SPAS-15",
+                                        "type":  "Shotgun"
+                                    },
+                                    {
+                                        "name":  "SPEAR .308",
+                                        "type":  "Assault Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "BEARING 9",
+                                          "type":  "Machine Pistol"
+                                      },
+                                      {
+                                          "name":  "Q-929",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "ITA12S",
+                                          "type":  "Shotgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Barbed Wire",
+                                    "Bulletproof Camera",
+                                    "Deployable Shield"
+                                ]
+                },
+    "uniqueAbility":  "KÃ³na Station",
+    "biography":  {
+                      "realName":  "Mina Sky",
+                      "dateOfBirth":  "1989-04-01",
+                      "placeOfBirth":  "Nakoda Territories, Saskatchewan",
+                      "description":  "Thunderbird deploys KÃ³na Stations to heal or revive teammates, providing critical support during engagements."
+                  },
+    "squad":  "Wolfguard",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Place KÃ³na Stations in strategic locations to maximize healing potential.",
+                         "Coordinate with teammates to ensure KÃ³na Stations are used effectively.",
+                         "Be mindful of enemy use of KÃ³na Stations if placed in contested areas."
+                     ]
+}

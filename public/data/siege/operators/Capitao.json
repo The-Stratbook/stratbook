@@ -1,0 +1,52 @@
+﻿{
+    "id":  12,
+    "name":  "Capitão",
+    "fileName":  "Capitao",
+    "side":  "Attacker",
+    "roles":  [
+                  "Area Denial",
+                  "Support"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "PARA-308",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "M249",
+                                        "type":  "Light Machine Gun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "PRB92",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Claymore",
+                                    "Hard Breach Charge"
+                                ]
+                },
+    "uniqueAbility":  "Tactical Crossbow",
+    "biography":  {
+                      "realName":  "Vicente Souza",
+                      "dateOfBirth":  "1967-11-17",
+                      "placeOfBirth":  "Nova Iguaçu, Brazil",
+                      "description":  "CapitÃ£o uses a Tactical Crossbow that fires asphyxiating bolts that burn oxygen within a small area, and smoke bolts that create instant cover."
+                  },
+    "squad":  "BOPE",
+    "health":  1,
+    "speed":  3,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Use asphyxiating bolts to flush defenders out of tight corners and behind shields.",
+                         "Create instant smoke cover with smoke bolts when planting the defuser or crossing dangerous angles.",
+                         "The crossbow makes no sound when fired, allowing for stealthy area denial.",
+                         "Coordinate with teammates to capitalize on defenders forced out of position by your bolts."
+                     ],
+    "relatedTips":  [
+                        21
+                    ]
+}

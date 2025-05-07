@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "name": "Kafe Dostoyevsky",
+  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"],
+  "location": "MOSCOW, RUSSIA",
+  "releaseDate": "Base game (December 2015)",
+  "reworkDate": "June 2019",
+  "description": "This high-class café in central Moscow is the pinnacle of glitz and glamour, and is a natural intervention ground for Spetsnaz forces. Destruction of the rich, chic, classic decor will be a key element of this map.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ],
+  "relatedTips": [
+    29
+  ]
+}

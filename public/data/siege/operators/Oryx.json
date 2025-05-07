@@ -1,0 +1,51 @@
+﻿{
+    "id":  49,
+    "name": "Oryx",
+    "side":  "Defender",
+    "roles":  [
+                  "Mobility",
+                  "Roamer"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "SPAS-12",
+                                        "type":  "Shotgun"
+                                    },
+                                    {
+                                        "name":  "T-5 SMG",
+                                        "type":  "Submachine Gun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "Bailiff 410",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "USP40",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Barbed Wire",
+                                    "Proximity Alarm"
+                                ]
+                },
+    "uniqueAbility":  "Remah Dash",
+    "biography":  {
+                      "realName":  "Saif Al Hadid",
+                      "dateOfBirth":  "1980-07-03",
+                      "placeOfBirth":  "Azraq, Jordan",
+                      "description":  "Oryx uses his Remah Dash to knock down enemies, breach walls, and climb hatches, providing a tactical advantage for his team."
+                  },
+    "squad":  "Redhammer",
+    "health":  2,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use Remah Dash to create rotations and surprise enemies.",
+                         "Coordinate with teammates to capitalize on knocked-down enemies.",
+                         "Be mindful of health loss when breaching walls with Remah Dash."
+                     ]
+}

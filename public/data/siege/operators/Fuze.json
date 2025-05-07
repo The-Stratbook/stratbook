@@ -1,0 +1,56 @@
+﻿{
+    "id":  25,
+    "name": "Fuze",
+    "side":  "Attacker",
+    "roles":  [
+                  "Soft Breacher",
+                  "Area Denial"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "AK-12",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "6P41",
+                                        "type":  "Light Machine Gun"
+                                    },
+                                    {
+                                        "name":  "Ballistic Shield",
+                                        "type":  "Shield"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "PMM",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "GSH-18",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Breach Charge",
+                                    "Hard Breach Charge",
+                                    "Smoke Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Cluster Charge",
+    "biography":  {
+                      "realName":  "Shuhrat Kessikbayev",
+                      "dateOfBirth":  "1991-10-12",
+                      "placeOfBirth":  "Samarkand, Uzbekistan",
+                      "description":  "Fuze is best played as an aggressive flanker and area denial Operator. His strengths allow him to dispatch defensive capabilities and harass enemies anchored in defensive positions."
+                  },
+    "squad":  "Redhammer",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the cluster charge to clear rooms of gadgets and defenders.",
+                         "Be ready to pick off defenders as they flee from the cluster charge.",
+                         "Learn the cluster charge's pattern to maximize its effectiveness."
+                     ]
+}

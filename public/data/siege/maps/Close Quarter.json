@@ -1,0 +1,25 @@
+{
+  "id": 25,
+  "name": "Close Quarter",
+  "playlist": ["Team Deathmatch"],
+  "location": "Greece",
+  "releaseDate": "Operation Vector Glare (June 2022)",
+  "description": "Close Quarter is the first dedicated Team Deathmatch map that focuses on movement rather than defense setups. With a circular flow and a good mix of different lines of sight, this facility used by Team Rainbow for training purposes will be a completely different experience.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
+}

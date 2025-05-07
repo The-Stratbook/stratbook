@@ -1,0 +1,48 @@
+﻿{
+    "id":  16,
+    "name": "Deimos",
+    "side":  "Attacker",
+    "roles":  [
+                  "Intel",
+                  "Map Control"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "AK-74M",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "M590A1",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  ".44 VENDETTA",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Frag Grenade",
+                                    "Hard Breach Charge"
+                                ]
+                },
+    "uniqueAbility":  "Deathmark Tracker",
+    "biography":  {
+                      "realName":  "Gerald Morris",
+                      "dateOfBirth":  "1974-12-24",
+                      "placeOfBirth":  "Birmingham, Alabama",
+                      "description":  "Deimos uses a miniature flying probe to seek out and track chosen targets, revealing their location while also revealing his own position. His unique .44 Vendetta is the only weapon available while tracking."
+                  },
+    "squad":  "Viperstrike",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the Deathmark Tracker to hunt down specific high-value defenders.",
+                         "Coordinate with your team when tracking an operator to maximize effectiveness.",
+                         "Remember that using the tracker reveals your own position as well, so be cautious.",
+                         "The .44 Vendetta is powerful but limited, so ensure your shots count when tracking a target."
+                     ]
+}

@@ -39,7 +39,7 @@ const Footer = () => {
             <li><Link to="/siege/tips" className="text-base-content hover:text-white hover:pl-2 transition-all duration-300 flex items-center">
               <span className="w-1 h-1 bg-primary rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"></span>
               Tips & Tricks</Link></li>
-            <li><Link to="/external-tools" className="text-base-content hover:text-white hover:pl-2 transition-all duration-300 flex items-center">
+            <li><Link to="/siege/external-tools" className="text-base-content hover:text-white hover:pl-2 transition-all duration-300 flex items-center">
               <span className="w-1 h-1 bg-primary rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"></span>
               External Tools</Link></li>
             <li><Link to="/contribute" className="text-base-content hover:text-white hover:pl-2 transition-all duration-300 flex items-center">

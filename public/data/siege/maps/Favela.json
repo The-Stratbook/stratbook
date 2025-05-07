@@ -1,0 +1,26 @@
+{
+  "id": 20,
+  "name": "Favela",
+  "playlist": ["Standard", "Quick Match", "Team Deathmatch"],
+  "location": "BRAZIL",
+  "releaseDate": "Skull Rain (August 2016)",
+  "reworkDate": "June 2021",
+  "description": "Team Rainbow has been called to pacify and regain control of the Favela. Mixing colorful and narrow streets with high vantage points, this map supports exterior shell destruction which renders it as the most destructible to date.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
+}

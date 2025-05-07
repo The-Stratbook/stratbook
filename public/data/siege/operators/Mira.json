@@ -1,0 +1,54 @@
+﻿{
+    "id":  43,
+    "name": "Mira",
+    "side":  "Defender",
+    "roles":  [
+                  "Intel",
+                  "Trap"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "Vector .45 ACP",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "ITA12L",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "USP40",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "ITA12S",
+                                          "type":  "Shotgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Proximity Alarm",
+                                    "Nitro Cell"
+                                ]
+                },
+    "uniqueAbility":  "Black Mirror",
+    "biography":  {
+                      "realName":  "Elena MarÃ­a Ãlvarez",
+                      "dateOfBirth":  "1986-11-18",
+                      "placeOfBirth":  "Madrid, Spain",
+                      "description":  "Mira uses her Black Mirror to provide one-way visibility and create tactical opportunities for her team."
+                  },
+    "squad":  "Viperstrike",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use Black Mirrors to provide intel while remaining protected.",
+                         "Coordinate with teammates to capitalize on the intel provided by the mirrors.",
+                         "Be mindful of enemy operators who can counter your mirrors."
+                     ],
+    "relatedTips":  [
+                        13
+                    ]
+}

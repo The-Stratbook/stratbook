@@ -11,6 +11,7 @@ import ComingSoon from './pages/ComingSoon';
 import TermsOfService from './components/legal/TermsOfService';
 import PrivacyPolicy from './components/legal/PrivacyPolicy';
 import CookiePolicy from './components/legal/CookiePolicy';
+import OperatorRoulette from './pages/OperatorRoulette';
 
 // Import Coming Soon feature pages
 import OperatorGuides from './pages/coming-soon/OperatorGuides';
@@ -26,6 +27,12 @@ import EducationalContent from './pages/coming-soon/EducationalContent';
 import { trackPageView, initializeGA } from './ga4';
 import { initializeClarity } from './clarity';
 import { initializeGTM } from './gtm';
+import Hub from './pages/Hub';
+import HubMaps from './pages/HubMaps';
+import HubOperators from './pages/HubOperators';
+import OperatorDetail from './pages/OperatorDetail';
+import MapDetail from './pages/MapDetail';
+import KillBoard from './pages/KillBoard';
 
 function App() {
   const location = useLocation();
@@ -39,10 +46,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home isFullWidth={true} />} />
-      <Route path="/siege/tips" element={<TipsOverview />} />
-      <Route path="/siege/tip/:id" element={<TipDetail />} />
-      <Route path="/external-tools" element={<ExternalTools />} />
+      {/* Default The Stratbook route */}
+      <Route path="/" element={<Home/>} />
       <Route path="/coming-soon" element={<ComingSoon />} />
       <Route path="/contribute" element={<Contribute />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
@@ -59,6 +64,22 @@ function App() {
       <Route path="/coming-soon/community-features" element={<CommunityFeatures />} />
       <Route path="/coming-soon/site-improvements" element={<SiteImprovements />} />
       <Route path="/coming-soon/educational-content" element={<EducationalContent />} />
+
+      {/* Siege routes */}
+      <Route path="/siege/tips" element={<TipsOverview />} />
+      <Route path="/siege/tip/:id" element={<TipDetail />} />
+      <Route path="/siege/external-tools" element={<ExternalTools />} />
+
+      {/* Hub routes */}
+      <Route path="/siege/hub" element={<Hub />} />
+      <Route path="/siege/hub/maps" element={<HubMaps />} />
+      <Route path="/siege/hub/maps/:mapName" element={<MapDetail />} />
+      <Route path="/siege/hub/operators" element={<HubOperators/>} />
+      <Route path="/siege/hub/operators/:operatorName" element={<OperatorDetail />} />
+
+      {/* Fun Tools routes */}
+      <Route path="/siege/fun/killboard" element={<KillBoard />} />
+      <Route path="/siege/fun/operator-roulette" element={<OperatorRoulette />} />
     </Routes>
 );
 }

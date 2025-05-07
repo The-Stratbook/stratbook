@@ -7,8 +7,10 @@ const Contribute = () => {
     <Layout seoProps={{ 
       title: 'Contribute to The Stratbook | Share Your Knowledge',
       description: 'Learn how to contribute your tactical FPS knowledge, strategies, tips, and tricks to The Stratbook community.',
-      keywords: 'contribute, Rainbow Six Siege tips, tactical FPS strategies, gaming community, share knowledge',
-      url: window.location.href
+      keywords: 'contribute, Rainbow Six Siege tips, tactical FPS strategies, gaming community, share knowledge, R6S contribution, community guides',
+      url: window.location.href,
+      image: '/images/general/logo.png',
+      canonicalUrl: `${window.location.origin}/contribute`
     }}>
       <div className="container mx-auto p-4 max-w-4xl">
         <div className="mb-8 text-center">
@@ -23,7 +25,7 @@ const Contribute = () => {
             <h2 className="card-title text-2xl mb-4">Why Contribute?</h2>
             <div className="space-y-4">
               <p className="text-base-content">
-                The Stratbook is a community-driven platform built by players for players. By sharing 
+                The Stratbook is a community-driven platform built for players by players. By sharing 
                 your knowledge, you help others improve their gameplay while establishing yourself as 
                 a valuable contributor to the tactical FPS community.
               </p>
@@ -116,7 +118,7 @@ const Contribute = () => {
                   <p className="text-sm">
                     Fork our repository, add your content, and submit a pull request. Don't worry if you're 
                     not familiar with Git—we have a step-by-step guide.
-                    The other option is to join our Discord server and submit your content there.
+                    The other option is to <a href="https://discord.gg/vBt738jk" target="_blank" rel="noopener noreferrer" className="text-primary transition">join our discord</a> server and submit your content there.
                   </p>
                 </div>
               </div>
@@ -173,7 +175,7 @@ const Contribute = () => {
   "id": 0,                        // Leave as 0 for new submissions
   "title": "Your Strategy Title", // Required - Keep concise but descriptive
   "description": "Detailed explanation of the strategy...", // Required - Supports markdown
-  "side": "Attacker",            // Required - "Attacker", "Defender", or "Both"
+  "side": "Attack",            // Required - "Attacker", "Defender", or "Both"
   "skill": "Intermediate",       // Required - "Beginner", "Intermediate", or "Expert"
   "tags": ["Vertical Play", "Entry"], // Required - Categories that describe your strategy
   "relatedStrategies": [],       // Required - Can be empty for new submissions

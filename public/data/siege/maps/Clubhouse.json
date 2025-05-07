@@ -1,0 +1,33 @@
+{
+  "id": 4,
+  "name": "Clubhouse",
+  "playlist": ["Standard", "Quick Match", "Ranked", "Team Deathmatch"],
+  "location": "HANOVER, GERMANY",
+  "releaseDate": "Base game (December 2015)",
+  "reworkDate": "Small rework - September 2021",
+  "description": "This map depicts an assault on a biker gang clubhouse. Featuring a full bar, gaming tables and leather furniture, this mixed interior/exterior layout offers a host of interesting tactical possibilities for both attacker and defender.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ],
+  "relatedTips": [
+    15,
+    21,
+    23,
+    30,
+    33
+  ]
+}

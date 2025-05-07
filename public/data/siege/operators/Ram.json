@@ -1,0 +1,52 @@
+﻿{
+    "id":  52,
+    "name": "Ram",
+    "side":  "Attacker",
+    "roles":  [
+                  "Breach",
+                  "Support"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "R4-C",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "552 COMMANDO",
+                                        "type":  "Assault Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "MK1 9mm",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "P229",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Smoke Grenade",
+                                    "Stun Grenade"
+                                ]
+                },
+    "uniqueAbility":  "BU-GI Auto-Breacher",
+    "biography":  {
+                      "realName":  "Jae-min Park",
+                      "dateOfBirth":  "1994-08-02",
+                      "placeOfBirth":  "Seoul, South Korea",
+                      "description":  "Ram deploys the BU-GI Auto-Breacher, a remote-controlled device that can create breaching holes in walls and barricades, providing new entry points for attackers without risking operator exposure."
+                  },
+    "squad":  "Wolfguard",
+    "health":  1,
+    "speed":  3,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Use the BU-GI Auto-Breacher to create unexpected entry points for your team.",
+                         "Coordinate breaches with teammates' attacks to maximize effectiveness.",
+                         "The BU-GI can be used as a sacrificial drone to bait out defender utility.",
+                         "Create multiple breach points to confuse defenders and split their attention."
+                     ]
+}

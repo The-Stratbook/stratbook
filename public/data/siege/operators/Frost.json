@@ -1,0 +1,55 @@
+﻿{
+    "id":  24,
+    "name": "Frost",
+    "side":  "Defender",
+    "roles":  [
+                  "Trapper"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "Super 90",
+                                        "type":  "Shotgun"
+                                    },
+                                    {
+                                        "name":  "9mm C1",
+                                        "type":  "Submachine Gun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "MK1 9mm",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "ITA12S",
+                                          "type":  "Shotgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Bulletproof Camera",
+                                    "Deployable Shield"
+                                ]
+                },
+    "uniqueAbility":  "Welcome Mat",
+    "biography":  {
+                      "realName":  "Tina Lin Tsang",
+                      "dateOfBirth":  "1993-05-04",
+                      "placeOfBirth":  "Vancouver, British Columbia",
+                      "description":  "Frost uses her Welcome Mat traps to incapacitate enemies, providing a tactical advantage for her team."
+                  },
+    "squad":  "Wolfguard",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Place Welcome Mats in high-traffic areas to catch enemies off guard.",
+                         "Coordinate with teammates to capitalize on incapacitated enemies.",
+                         "Use environmental cues to hide traps effectively."
+                     ],
+    "relatedTips":  [
+                        11,
+                        17,
+                        37
+                    ]
+}

@@ -1,0 +1,52 @@
+﻿{
+    "id": 47,
+    "name":  "Nøkk",
+    "fileName":  "Nokk",
+    "side":  "Attacker",
+    "roles":  [
+                  "Stealth"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "FMG-9",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "SIX12 SD",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "5.7 USG",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "D-50",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Hard Breach Charge",
+                                    "Frag Grenade",
+                                    "Impact EMP Grenade"
+                                ]
+                },
+    "uniqueAbility":  "HEL Presence Reduction",
+    "biography":  {
+                      "realName":  "[REDACTED]",
+                      "dateOfBirth":  "[REDACTED]",
+                      "placeOfBirth":  "[REDACTED]",
+                      "description":  "Nøkk uses the HEL Presence Reduction to reduce noise and hide from observation tools, allowing her to move undetected."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the HEL Presence Reduction to sneak past cameras and drones undetected.",
+                         "Coordinate with teammates to capitalize on your stealth capabilities.",
+                         "Be mindful of the ability's duration and cooldown to maximize its effectiveness."
+                     ]
+}

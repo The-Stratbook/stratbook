@@ -1,0 +1,52 @@
+﻿{
+    "id":  65,
+    "name": "Thorn",
+    "side":  "Defender",
+    "roles":  [
+                  "Anti-Entry",
+                  "Trapper"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "UZK50GI",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "M870",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "1911 TACOPS",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "C75 AUTO",
+                                          "type":  "Machine Pistol"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Deployable Shield",
+                                    "Barbed Wire"
+                                ]
+                },
+    "uniqueAbility":  "Razorbloom Shell",
+    "biography":  {
+                      "realName":  "Brianna Skehan",
+                      "dateOfBirth":  "1997-06-18",
+                      "placeOfBirth":  "County Kildare, Ireland",
+                      "description":  "Thorn uses Razorbloom Shells that stick to surfaces and detonate when detecting nearby opponents, propelling sharp blades in all directions and delivering lethal damage."
+                  },
+    "squad":  "Redhammer",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Place Razorbloom Shells in strategic locations to deny entry to important areas.",
+                         "Use the shells as traps near doorways and windows that attackers commonly use.",
+                         "Combine with barbed wire to slow enemies, making it harder for them to escape the Razorbloom's detonation.",
+                         "Coordinate with teammates to maximize the effectiveness of your traps."
+                     ]
+}

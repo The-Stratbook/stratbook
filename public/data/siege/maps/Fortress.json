@@ -1,0 +1,25 @@
+{
+  "id": 23,
+  "name": "Fortress",
+  "playlist": ["Standard", "Quick Match", "Team Deathmatch"],
+  "location": "MOROCCO",
+  "releaseDate": "Wind bastion (December 2018)",
+  "description": "This large daytime map features a mudbrick kasbah and iconic architecture unique to the southern region of Morocco. The imposing main entrance greets all visitors with its two towers and Kasbah Sehkra Mania written above the archway.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
+}

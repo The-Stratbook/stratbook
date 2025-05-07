@@ -1,0 +1,57 @@
+﻿{
+    "id":  37,
+    "name": "Kapkan",
+    "side":  "Defender",
+    "roles":  [
+                  "Trapper"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "9x19VSN",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "SASG-12",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "PMM",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "GSH-18",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Barbed Wire",
+                                    "Bulletproof Camera"
+                                ]
+                },
+    "uniqueAbility":  "Entry Denial Device",
+    "biography":  {
+                      "realName":  "Maxim Basuda",
+                      "dateOfBirth":  "1987-05-14",
+                      "placeOfBirth":  "Kovrov, Russia",
+                      "description":  "Kapkan uses his Entry Denial Devices to set explosive traps on door and window frames, providing a tactical advantage for his team."
+                  },
+    "squad":  "Redhammer",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Place traps in blind spots to catch enemies off guard.",
+                         "Coordinate with teammates to maximize the impact of your traps.",
+                         "Use traps as an early warning system to detect enemy movements."
+                     ],
+    "relatedTips":  [
+                        1,
+                        15,
+                        18,
+                        3,
+                        31
+                    ]
+}

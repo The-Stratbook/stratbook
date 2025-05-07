@@ -1,0 +1,51 @@
+﻿{
+    "id":  42,
+    "name": "Melusi",
+    "side":  "Defender",
+    "roles":  [
+                  "Crowd Control",
+                  "Intel"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "MP5",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "Super 90",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "ITA12S",
+                                          "type":  "Shotgun"
+                                      },
+                                      {
+                                          "name":  "RG15",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Bulletproof Camera",
+                                    "Impact Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Banshee Sonic Defense",
+    "biography":  {
+                      "realName":  "Thandiwe Ndlovu",
+                      "dateOfBirth":  "1993-06-16",
+                      "placeOfBirth":  "Louwsburg, South Africa",
+                      "description":  "Melusi uses her Banshee Sonic Defense to slow and disrupt attackers, providing a tactical advantage for her team."
+                  },
+    "squad":  "Wolfguard",
+    "health":  3,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Place Banshees in choke points to slow attackers and gather intel.",
+                         "Coordinate with teammates to capitalize on slowed enemies.",
+                         "Use Banshees to protect key defensive positions."
+                     ]
+}

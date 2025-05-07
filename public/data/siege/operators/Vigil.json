@@ -1,0 +1,52 @@
+﻿{
+    "id":  70,
+    "name": "Vigil",
+    "fileName": "vigil",
+    "side":  "Defender",
+    "roles":  [
+                  "Roamer",
+                  "Anti-Gadget"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "K1A",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "BOSG.12.2",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "C75 Auto",
+                                          "type":  "Machine Pistol"
+                                      },
+                                      {
+                                          "name":  "SMG-12",
+                                          "type":  "Machine Pistol"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Bulletproof Camera",
+                                    "Impact Grenade"
+                                ]
+                },
+    "uniqueAbility":  "ERC-7",
+    "biography":  {
+                      "realName":  "Chul Kyung Hwa",
+                      "dateOfBirth":  "1991-01-17",
+                      "placeOfBirth":  "[REDACTED]",
+                      "description":  "Vigil uses the ERC-7 to remain undetected by cameras, allowing him to roam freely and disrupt attackers."
+                  },
+    "squad":  "Ghosteyes",
+    "health":  2,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the ERC-7 to avoid detection and surprise attackers.",
+                         "Coordinate with teammates to capitalize on your roaming capabilities.",
+                         "Be mindful of your surroundings to avoid being cornered."
+                     ]
+}

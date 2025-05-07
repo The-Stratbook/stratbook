@@ -1,0 +1,51 @@
+﻿{
+    "id":  51,
+    "name": "Pulse",
+    "side":  "Defender",
+    "roles":  [
+                  "Intel",
+                  "Roamer"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "UMP45",
+                                        "type":  "Submachine Gun"
+                                    },
+                                    {
+                                        "name":  "M1014",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "5.7 USG",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "M45 MEUSOC",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Nitro Cell",
+                                    "Deployable Shield"
+                                ]
+                },
+    "uniqueAbility":  "Cardiac Sensor",
+    "biography":  {
+                      "realName":  "Jack Estrada",
+                      "dateOfBirth":  "1993-10-11",
+                      "placeOfBirth":  "Goldsboro, North Carolina",
+                      "description":  "Pulse uses his Cardiac Sensor to detect heartbeats through walls, providing critical intel for his team."
+                  },
+    "squad":  "Nighthaven",
+    "health":  2,
+    "speed":  3,
+    "difficulty":  2,
+    "gameplayTips":  [
+                         "Use the Cardiac Sensor to locate attackers and plan ambushes.",
+                         "Combine with Nitro Cell for effective area denial.",
+                         "Be mindful of counters like IQ and Thatcher's EMP grenades."
+                     ]
+}

@@ -1,0 +1,55 @@
+﻿{
+    "id":  39,
+    "name": "Lion",
+    "side":  "Attacker",
+    "roles":  [
+                  "Intel"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "417",
+                                        "type":  "Marksman Rifle"
+                                    },
+                                    {
+                                        "name":  "SG-CQB",
+                                        "type":  "Shotgun"
+                                    },
+                                    {
+                                        "name":  "V308",
+                                        "type":  "Assault Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "LFP586",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "P9",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Claymore",
+                                    "Frag Grenade",
+                                    "Stun Grenade"
+                                ]
+                },
+    "uniqueAbility":  "EE-ONE-D",
+    "biography":  {
+                      "realName":  "Olivier Flament",
+                      "dateOfBirth":  "1994-08-29",
+                      "placeOfBirth":  "Toulouse, France",
+                      "description":  "Lion uses the EE-ONE-D drone to detect movement in an area, providing valuable intel on enemy positions."
+                  },
+    "squad":  "Wolfguard",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the EE-ONE-D to detect moving enemies and coordinate with teammates for effective pushes.",
+                         "Time your scans strategically to maximize their impact during engagements.",
+                         "Be aware of enemies who may try to bait scans to mislead your team."
+                     ]
+}

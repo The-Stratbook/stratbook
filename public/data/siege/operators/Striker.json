@@ -1,0 +1,55 @@
+﻿{
+    "id":  62,
+    "name": "Striker",
+    "side":  "Attacker",
+    "roles":  [
+                  "Support"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "M4",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "M249",
+                                        "type":  "Light Machine Gun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "5.7 USG",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "ITA12S",
+                                          "type":  "Shotgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Breach Charge",
+                                    "Claymore",
+                                    "Frag Grenade",
+                                    "Hard Breach Charge",
+                                    "Smoke Grenade",
+                                    "Stun Grenade",
+                                    "Impact EMP Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Gadget Kit",
+    "biography":  {
+                      "realName":  "Undefined",
+                      "dateOfBirth":  "Undefined",
+                      "placeOfBirth":  "Undefined",
+                      "description":  "Striker is an Attack Recruit with access to all secondary gadgets available to Attack Operators. They serve as frontline operators in ground, air, and naval assaults, creating windows of opportunity for Rainbow's Specialists."
+                  },
+    "squad":  "Recruit",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  1,
+    "gameplayTips":  [
+                         "Utilize your versatile loadout to adapt to various situations in a match.",
+                         "Support your team with the appropriate secondary gadget based on team composition and objective.",
+                         "As a recruit, focus on mastering vertical breaching, flanking maneuvers, and drone use."
+                     ]
+}

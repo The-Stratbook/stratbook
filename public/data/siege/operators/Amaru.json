@@ -1,0 +1,54 @@
+﻿{
+    "id":  3,
+    "name": "Amaru",
+    "side":  "Attacker",
+    "roles":  [
+                  "Flanker"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "G8A1",
+                                        "type":  "Light Machine Gun"
+                                    },
+                                    {
+                                        "name":  "Supernova",
+                                        "type":  "Shotgun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "GONNE-6",
+                                          "type":  "Hand Cannon"
+                                      },
+                                      {
+                                          "name":  "SMG-11",
+                                          "type":  "Machine Pistol"
+                                      },
+                                      {
+                                          "name":  "ITA12S",
+                                          "type":  "Shotgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Stun Grenade",
+                                    "Hard Breach Charge"
+                                ]
+                },
+    "uniqueAbility":  "Garra Hook",
+    "biography":  {
+        "realName": "Azucena Rocío Quispe",
+                      "dateOfBirth":  "1977-05-06",
+                      "placeOfBirth":  "Cojata, Peru",
+                      "description":  "Amaru uses the Garra Hook to quickly ascend ledges, windows, and even open hatches, surprising enemies with her mobility."
+                  },
+    "squad":  "Redhammer",
+    "health":  3,
+    "speed":  3,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Use the Garra Hook to quickly reposition and surprise enemies.",
+                         "Coordinate with teammates to capitalize on the chaos caused by your rapid entry.",
+                         "Be mindful of your surroundings to avoid being caught off guard after using the Garra Hook."
+                     ]
+}

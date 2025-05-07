@@ -45,7 +45,7 @@ const TipDetail = () => {
     .substring(0, 160)
     .trim();
 
-  const isVerticalVideo = tip.videoUrl?.includes("shorts") || tip.videoUrl?.includes("reel");
+  const isVerticalVideo = tip.videoUrl?.includes("shorts") || tip.videoUrl?.includes("reel") || tip.videoUrl?.includes("instagram") || tip.videoUrl?.includes("tiktok");
 
   const convertToSeconds = (time) => {
     const [minutes, seconds] = time.split(':').map(Number);
@@ -152,7 +152,7 @@ const TipDetail = () => {
       "@type": "VideoObject",
       "name": tip.title,
       "description": cleanDescription,
-      "thumbnailUrl": tip.imageUrl || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
+      "thumbnailUrl": tip.imageUrl || `https://img.youtube.com/vi/${videoId}/hqdefault.png`,
       "uploadDate": tip.publishedDate || new Date().toISOString(),
       "contentUrl": `https://www.youtube.com/watch?v=${videoId}`,
       "embedUrl": `https://www.youtube.com/embed/${videoId}`,
@@ -192,67 +192,81 @@ const TipDetail = () => {
       publishedDate: tip.publishedDate,
       modifiedDate: tip.lastModified
     }}>
-      <div className="bg-base-200 p-2 sm:p-4">
-        <div className="container mx-auto flex flex-col gap-4">
-          {!isVerticalVideo && tip.videoUrl && (
-            <div id="video-section">
-              <TipVideo 
-                videoUrl={tip.videoUrl} 
-                title={tip.title} 
-                onVideoRefChange={handleVideoRefChange}
-              />
-            </div>
-          )}
+      <div className="container mx-auto px-4 max-w-6xl">
+        {/* Video Section */}
+        {!isVerticalVideo && tip.videoUrl && (
+          <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+            <TipVideo 
+              videoUrl={tip.videoUrl} 
+              title={tip.title} 
+              isVertical={false}
+              onVideoRefChange={handleVideoRefChange}
+            />
+          </section>
+        )}
 
-          <div className={`flex flex-col ${isVerticalVideo ? "md:flex-row" : "flex-col"} gap-4`}>
-            <div className={`flex-1 p-3 sm:p-4 rounded-lg`}>
-              <h1 className="text-2xl sm:text-3xl font-bold text-primary mb-2 sm:mb-4">{tip.title}</h1>
-              <h2 className="text-lg sm:text-xl font-bold mb-2">Tip Description</h2>
+        <div className={`flex flex-col ${isVerticalVideo ? "md:flex-row" : "flex-col"} gap-8`}>
+          {/* Left Column */}
+          <div className="w-full md:w-2/3">
+            <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+              <h1 className="text-2xl sm:text-3xl font-bold text-primary mb-4">{tip.title}</h1>
               <ReactMarkdown>{tip.description}</ReactMarkdown>
+            </section>
 
-              <div className="mt-4">
-                {isVerticalVideo ? (
-                  <button
-                    className="btn btn-primary w-full sm:hidden"
-                    onClick={() => {
-                      const videoElement = document.getElementById('video-section');
-                      if (videoElement) {
-                        videoElement.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
-                  >
-                    See the video below
-                  </button>
-                ) : <></>}
-              </div>
-
+            <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+              <h2 className="text-xl font-bold mb-4">Metadata</h2>
               <TipMetadata tip={tip} />
-              
-              <VideoTimestamps 
-                timestamps={tip.videoTimestamps} 
-                onTimestampClick={seekToTimestamp} 
-              />
-              
-              <DetailedNotes detailedNotes={tip.detailedNotes} />
-              
-              <TipFAQ faqs={tip.FAQ} />
-              
-              <RelatedStrategies strategies={tip.relatedStrategies} />
-              
-              <ShareTip title={tip.title} />
-            </div>
+            </section>
 
-            {isVerticalVideo && tip.videoUrl && (
-              <div id="video-section">
+            {tip.videoTimestamps && (
+              <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+                <h2 className="text-xl font-bold mb-4">Video Timestamps</h2>
+                <VideoTimestamps 
+                  timestamps={tip.videoTimestamps} 
+                  onTimestampClick={seekToTimestamp} 
+                />
+              </section>
+            )}
+
+            {tip.detailedNotes && (
+              <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+                <h2 className="text-xl font-bold mb-4">Detailed Notes</h2>
+                <DetailedNotes detailedNotes={tip.detailedNotes} />
+              </section>
+            )}
+
+            {tip.FAQ && (
+              <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+                <h2 className="text-xl font-bold mb-4">FAQs</h2>
+                <TipFAQ faqs={tip.FAQ} />
+              </section>
+            )}
+
+            {tip.relatedStrategies && tip.relatedStrategies.length > 0 && (
+              <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+                <h2 className="text-xl font-bold mb-4">Related Strategies</h2>
+                <RelatedStrategies strategies={tip.relatedStrategies} />
+              </section>
+            )}
+
+            <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+              <ShareTip title={tip.title} />
+            </section>
+          </div>
+
+          {/* Right Column */}
+          {isVerticalVideo && tip.videoUrl && (
+            <div className="w-full md:w-1/3">
+              <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
                 <TipVideo 
                   videoUrl={tip.videoUrl} 
                   title={tip.title} 
                   isVertical={true}
                   onVideoRefChange={handleVideoRefChange}
                 />
-              </div>
-            )}
-          </div>
+              </section>
+            </div>
+          )}
         </div>
       </div>
     </Layout>

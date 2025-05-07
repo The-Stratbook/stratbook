@@ -1,0 +1,51 @@
+﻿{
+    "id":  71,
+    "name": "Wamai",
+    "side":  "Defender",
+    "roles":  [
+                  "Trap"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "AUG A2",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "MP5K",
+                                        "type":  "Submachine Gun"
+                                    }
+                                ],
+                    "secondary":  [
+                                      {
+                                          "name":  "P12",
+                                          "type":  "Handgun"
+                                      },
+                                      {
+                                          "name":  "KERATOS .357",
+                                          "type":  "Handgun"
+                                      }
+                                  ],
+                    "gadgets":  [
+                                    "Proximity Alarm",
+                                    "Impact Grenade"
+                                ]
+                },
+    "uniqueAbility":  "Mag-NET System",
+    "biography":  {
+                      "realName":  "NgÅ©gÄ© Muchoki Furaha",
+                      "dateOfBirth":  "1997-06-01",
+                      "placeOfBirth":  "Lamu, Kenya",
+                      "description":  "Wamai uses the Mag-NET System to attract and neutralize enemy projectiles, providing tactical control."
+                  },
+    "squad":  "Nighthaven",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  3,
+    "gameplayTips":  [
+                         "Place Mag-NET Systems in strategic locations to neutralize enemy projectiles.",
+                         "Coordinate with teammates to maximize the effectiveness of neutralized projectiles.",
+                         "Be mindful of placement to avoid wasting the Mag-NET System on less critical projectiles."
+                     ],
+    "fileName":  "wamai"
+}

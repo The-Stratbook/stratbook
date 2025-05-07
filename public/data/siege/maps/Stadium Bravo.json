@@ -1,0 +1,26 @@
+{
+  "id": 14,
+  "name": "Stadium Bravo",
+  "playlist": ["Standard", "Quick Match", "Team Deathmatch"],
+  "location": "Greece",
+  "releaseDate": "Operation Brutal Swarm (September 2022)",
+  "reworkDate": "June 2024",
+  "description": "Re-discover Stadium! The iconic map has been given some updates to make it more competitive. Across Stadium Bravo map, bulletproof glass has been removed, meaning windows can now be destroyed. The layouts and destructibility for both maps has also been changed to improve player comfort and navigation, and provide more of a challenge for Attackers.",
+  "externalTools": [
+    {
+      "name": "Stratbook.gg",
+      "description": "Team-oriented strategy planning tool for Rainbow Six Siege teams to create and share tactics.",
+      "url": "https://stratbook.gg/"
+    },
+    {
+      "name": "R6Strat",
+      "description": "Tool for creating, sharing, and viewing Rainbow Six Siege strategies with interactive map features.",
+      "url": "https://r6strat.com/"
+    },
+    {
+      "name": "R6 Calls",
+      "description": "Resource for learning and practicing map callouts used in Rainbow Six Siege.",
+      "url": "https://www.r6calls.com/"
+    }
+  ]
+}

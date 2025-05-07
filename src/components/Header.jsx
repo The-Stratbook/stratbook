@@ -25,10 +25,22 @@ const Header = () => {
             className="menu menu-sm dropdown-content bg-base-300 rounded-box z-[999] mt-3 w-52 p-2 shadow">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
-            <li><Link to="/external-tools">External Tools</Link></li>
-            <li><Link to="/contribute">Contribute</Link></li>
+            <li><Link to="/siege/external-tools">External Tools</Link></li>
             <li>
-              <Link to="/coming-soon">Coming Soon</Link>
+              <Link to="#">Fun</Link>
+              <ul className="p-2 bg-base-200">
+                <li><Link to="/siege/fun/killboard">Kill Board</Link></li>
+                <li><Link to="/siege/fun/operator-roulette">Random Operator</Link></li>
+              </ul>
+            </li>
+            <li><Link to="/contribute">Contribute</Link></li>
+            <li><Link to="/siege/hub">Hub</Link>
+              <ul className="p-2 bg-base-200">
+                <li><Link to="/siege/hub/maps">Maps</Link></li>
+                <li><Link to="/siege/hub/operators">Operators</Link></li>
+              </ul>
+            </li>
+            <li><Link to="/coming-soon">Coming Soon</Link>
               <ul className="p-2 bg-base-200">
                 <li><Link to="/coming-soon/operator-guides" className="text-base-content">Operator Guides</Link></li>
                 <li><Link to="/coming-soon/map-guides" className="text-base-content">Map Guides</Link></li>
@@ -38,8 +50,6 @@ const Header = () => {
                   <Link to="/coming-soon/fun-tools" className="text-base-content">Fun Tools</Link>
                   <ul className="p-2 bg-base-100">
                     <li><span className="opacity-60">Strat Roulette</span></li>
-                    <li><span className="opacity-60">Random Operator</span></li>
-                    <li><span className="opacity-60">Kill Board</span></li>
                   </ul>
                 </li>
                 <li><Link to="/coming-soon/myths-section" className="text-base-content">Myths Section</Link></li>
@@ -62,8 +72,28 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
-            <li><Link to="/external-tools">External Tools</Link></li>
+            <li><Link to="/siege/external-tools">External Tools</Link></li>
+            <li tabIndex={0}>
+              <details>
+                <summary>Fun</summary>
+                <ul className="p-2 bg-base-200 z-[999]">
+                  <li><Link to="/siege/fun/killboard">Kill Board</Link></li>
+                  <li><Link to="/siege/fun/operator-roulette">Random Operator</Link></li>
+                </ul>
+              </details>
+            </li>
             <li><Link to="/contribute">Contribute</Link></li>
+            <li tabIndex={0}>
+              <details>
+                <summary>
+                  <Link to="/siege/hub" className="inline-block pr-1">Hub</Link>
+                </summary>
+                <ul className="p-2 bg-base-200 z-[999]">
+                  <li><Link to="/siege/hub/maps">Maps</Link></li>
+                  <li><Link to="/siege/hub/operators">Operators</Link></li>
+                </ul>
+              </details>
+            </li>
             <li tabIndex={0}>
               <details>
                 <summary>
@@ -81,8 +111,6 @@ const Header = () => {
                       </summary>
                       <ul className="p-2 bg-base-100">
                         <li><span className="opacity-60">Strat Roulette</span></li>
-                        <li><span className="opacity-60">Random Operator</span></li>
-                        <li><span className="opacity-60">Kill Board</span></li>
                       </ul>
                     </details>
                   </li>
