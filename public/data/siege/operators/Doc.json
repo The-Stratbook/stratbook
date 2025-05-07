@@ -1,7 +1,7 @@
 ﻿{
     "id":  17,
     "name": "Doc",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Healer"
               ],

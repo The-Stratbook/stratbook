@@ -2,7 +2,7 @@
     "id": 47,
     "name":  "Nøkk",
     "fileName":  "Nokk",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Stealth"
               ],

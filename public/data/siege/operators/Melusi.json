@@ -1,7 +1,7 @@
 ﻿{
     "id":  42,
     "name": "Melusi",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Crowd Control",
                   "Intel"

@@ -1,7 +1,7 @@
 ﻿{
     "id":  72,
     "name": "Warden",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Intel",
                   "Anti-Gadget"

@@ -1,7 +1,7 @@
 ﻿{
     "id":  52,
     "name": "Ram",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Breach",
                   "Support"

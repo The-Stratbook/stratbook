@@ -1,7 +1,7 @@
 ﻿{
     "id":  35,
     "name": "Kaid",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Utility"
               ],

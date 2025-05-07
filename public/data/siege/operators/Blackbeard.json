@@ -1,6 +1,7 @@
 ﻿{
     "id":  8,
     "name": "Blackbeard",
+    "side":  "Attacker",
     "roles":  [
                   "Front Line",
                   "Breach"

@@ -1,7 +1,7 @@
 ﻿{
     "id":  64,
     "name": "Thermite",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Hard Breacher"
               ],

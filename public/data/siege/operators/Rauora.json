@@ -1,7 +1,7 @@
 ﻿{
     "id":  53,
     "name": "Rauora",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Support",
                   "Map Control"

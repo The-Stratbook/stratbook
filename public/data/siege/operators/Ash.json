@@ -1,7 +1,7 @@
 ﻿{
     "id":  5,
     "name": "Ash",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Entry Fragger"
               ],

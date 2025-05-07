@@ -1,7 +1,7 @@
 ﻿{
     "id":  26,
     "name": "Glaz",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Sniper"
               ],

@@ -1,7 +1,7 @@
 ﻿{
     "id":  3,
     "name": "Amaru",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Flanker"
               ],

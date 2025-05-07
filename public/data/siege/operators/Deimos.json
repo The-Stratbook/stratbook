@@ -1,7 +1,7 @@
 ﻿{
     "id":  16,
     "name": "Deimos",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Intel",
                   "Map Control"

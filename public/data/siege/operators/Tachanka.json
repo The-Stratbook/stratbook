@@ -1,7 +1,7 @@
 ﻿{
     "id":  63,
     "name": "Tachanka",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Area Denial",
                   "Crowd Control"

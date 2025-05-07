@@ -1,7 +1,7 @@
 ﻿{
     "id":  38,
     "name": "Lesion",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Trapper"
               ],

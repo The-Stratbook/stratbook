@@ -1,7 +1,7 @@
 ﻿{
     "id":  24,
     "name": "Frost",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Trapper"
               ],

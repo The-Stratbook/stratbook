@@ -1,7 +1,7 @@
 ﻿{
     "id":  29,
     "name": "Grim",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Intel",
                   "Flank Watch"

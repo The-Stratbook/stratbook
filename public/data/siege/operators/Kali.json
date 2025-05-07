@@ -1,7 +1,7 @@
 ﻿{
     "id":  36,
     "name": "Kali",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Support"
               ],

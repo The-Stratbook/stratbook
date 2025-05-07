@@ -1,7 +1,7 @@
 ﻿{
     "id":  23,
     "name": "Flores",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Disruptor"
               ],

@@ -1,7 +1,7 @@
 ﻿{
     "id":  43,
     "name": "Mira",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Intel",
                   "Trap"

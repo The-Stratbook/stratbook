@@ -1,7 +1,7 @@
 ﻿{
     "id":  65,
     "name": "Thorn",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Anti-Entry",
                   "Trapper"

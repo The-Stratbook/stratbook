@@ -1,11 +1,45 @@
 ﻿{
     "id":  11,
     "name": "Buck",
-    "role":  "Attacker",
+    "side":  "Attacker",
     "unit":  "JTF2",
-    "primaryWeapon":  "C8-SFW",
-    "secondaryWeapon":  "MK1 9mm",
-    "gadget":  "Skeleton Key",
+    "roles":  [
+                  "Front Line",
+                  "Breach"
+              ],
+    "loadout":  {
+                    "primary":  [
+                                    {
+                                        "name":  "C8-SFW",
+                                        "type":  "Assault Rifle"
+                                    },
+                                    {
+                                        "name":  "CAMRS",
+                                        "type":  "Marksman Rifle"
+                                    }
+                                ],
+                    "secondary":  [
+                                    {
+                                        "name":  "MK1 9mm",
+                                        "type":  "Handgun"
+                                    }
+                                ],
+                    "gadgets":  [
+                                    "Stun Grenade",
+                                    "Claymore"
+                                ]
+                },
+    "uniqueAbility":  "Skeleton Key",
+    "biography":  {
+                    "realName":  "Sebastien Côté",
+                    "dateOfBirth":  "1989-08-20",
+                    "placeOfBirth":  "Montreal, QC",
+                    "description":  "Under-barrel mounted 12 gauge shotgun with four round capacity, used in tandem with an assault rifle. The Skeleton Key allows the operator to alternate between their standard issue assault rifle and a breaching shotgun with ease and efficiency."
+                },
+    "squad":  "Redhammer",
+    "health":  2,
+    "speed":  2,
+    "difficulty":  1,
     "gameplayTips":  [
                          "Use the Skeleton Key for vertical gameplay to open floors and ceilings.",
                          "Switch quickly between rifle and shotgun to adapt to different engagement distances.",

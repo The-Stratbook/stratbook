@@ -1,7 +1,7 @@
 ﻿{
     "id":  14,
     "name": "Caveira",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Interrogator"
               ],

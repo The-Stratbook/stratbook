@@ -1,7 +1,7 @@
 ﻿{
     "id":  74,
     "name": "Zero",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Intel",
                   "Disruptor"

@@ -1,7 +1,7 @@
 ﻿{
     "id":  37,
     "name": "Kapkan",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Trapper"
               ],

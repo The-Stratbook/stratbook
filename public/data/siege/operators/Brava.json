@@ -1,7 +1,7 @@
 ﻿{
     "id":  10,
     "name": "Brava",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Support",
                   "Anti-Gadget"

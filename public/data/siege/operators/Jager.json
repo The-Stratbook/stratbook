@@ -2,7 +2,7 @@
     "id":  34,
     "name":  "Jäger",
     "fileName":  "Jager",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Anti-Projectile"
               ],

@@ -1,7 +1,7 @@
 ﻿{
     "id":  18,
     "name": "Dokkaebi",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Disruptor"
               ],

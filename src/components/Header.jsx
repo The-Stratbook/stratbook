@@ -26,9 +26,15 @@ const Header = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
             <li><Link to="/siege/external-tools">External Tools</Link></li>
-            <li><Link to="/siege/operator-roulette">Operator Roulette</Link></li>
+            <li>
+              <Link to="#">Fun</Link>
+              <ul className="p-2 bg-base-200">
+                <li><Link to="/siege/fun/killboard">Kill Board</Link></li>
+                <li><Link to="/siege/fun/operator-roulette">Random Operator</Link></li>
+              </ul>
+            </li>
             <li><Link to="/contribute">Contribute</Link></li>
-            <li><Link to="/hub">Hub</Link>
+            <li><Link to="/siege/hub">Hub</Link>
               <ul className="p-2 bg-base-200">
                 <li><Link to="/siege/hub/maps">Maps</Link></li>
                 <li><Link to="/siege/hub/operators">Operators</Link></li>
@@ -44,8 +50,6 @@ const Header = () => {
                   <Link to="/coming-soon/fun-tools" className="text-base-content">Fun Tools</Link>
                   <ul className="p-2 bg-base-100">
                     <li><span className="opacity-60">Strat Roulette</span></li>
-                    <li><span className="opacity-60">Random Operator</span></li>
-                    <li><span className="opacity-60">Kill Board</span></li>
                   </ul>
                 </li>
                 <li><Link to="/coming-soon/myths-section" className="text-base-content">Myths Section</Link></li>
@@ -69,12 +73,20 @@ const Header = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/siege/tips">Tips & Tricks</Link></li>
             <li><Link to="/siege/external-tools">External Tools</Link></li>
-            <li><Link to="/siege/operator-roulette">Operator Roulette</Link></li>
+            <li tabIndex={0}>
+              <details>
+                <summary>Fun</summary>
+                <ul className="p-2 bg-base-200 z-[999]">
+                  <li><Link to="/siege/fun/killboard">Kill Board</Link></li>
+                  <li><Link to="/siege/fun/operator-roulette">Random Operator</Link></li>
+                </ul>
+              </details>
+            </li>
             <li><Link to="/contribute">Contribute</Link></li>
             <li tabIndex={0}>
               <details>
                 <summary>
-                  <Link to="/hub" className="inline-block pr-1">Hub</Link>
+                  <Link to="/siege/hub" className="inline-block pr-1">Hub</Link>
                 </summary>
                 <ul className="p-2 bg-base-200 z-[999]">
                   <li><Link to="/siege/hub/maps">Maps</Link></li>
@@ -99,8 +111,6 @@ const Header = () => {
                       </summary>
                       <ul className="p-2 bg-base-100">
                         <li><span className="opacity-60">Strat Roulette</span></li>
-                        <li><span className="opacity-60">Random Operator</span></li>
-                        <li><span className="opacity-60">Kill Board</span></li>
                       </ul>
                     </details>
                   </li>

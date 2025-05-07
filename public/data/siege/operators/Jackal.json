@@ -1,7 +1,7 @@
 ﻿{
     "id":  33,
     "name": "Jackal",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Tracker"
               ],

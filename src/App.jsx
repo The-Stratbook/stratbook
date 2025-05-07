@@ -32,6 +32,7 @@ import HubMaps from './pages/HubMaps';
 import HubOperators from './pages/HubOperators';
 import OperatorDetail from './pages/OperatorDetail';
 import MapDetail from './pages/MapDetail';
+import KillBoard from './pages/KillBoard';
 
 function App() {
   const location = useLocation();
@@ -46,7 +47,7 @@ function App() {
   return (
     <Routes>
       {/* Default The Stratbook route */}
-      <Route path="/" element={<Home isFullWidth={true} />} />
+      <Route path="/" element={<Home/>} />
       <Route path="/coming-soon" element={<ComingSoon />} />
       <Route path="/contribute" element={<Contribute />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
@@ -68,14 +69,17 @@ function App() {
       <Route path="/siege/tips" element={<TipsOverview />} />
       <Route path="/siege/tip/:id" element={<TipDetail />} />
       <Route path="/siege/external-tools" element={<ExternalTools />} />
-      <Route path="/siege/operator-roulette" element={<OperatorRoulette />} />
 
       {/* Hub routes */}
-      <Route path="/siege/hub" element={<Hub isFullWidth={true} />} />
-      <Route path="/siege/hub/maps" element={<HubMaps isFullWidth={false} />} />
-      <Route path="/siege/hub/maps/:mapName" element={<MapDetail isFullWidth={false} />} />
-      <Route path="/siege/hub/operators" element={<HubOperators isFullWidth={false} />} />
-      <Route path="/siege/hub/operators/:operatorName" element={<OperatorDetail isFullWidth={false} />} />
+      <Route path="/siege/hub" element={<Hub />} />
+      <Route path="/siege/hub/maps" element={<HubMaps />} />
+      <Route path="/siege/hub/maps/:mapName" element={<MapDetail />} />
+      <Route path="/siege/hub/operators" element={<HubOperators/>} />
+      <Route path="/siege/hub/operators/:operatorName" element={<OperatorDetail />} />
+
+      {/* Fun Tools routes */}
+      <Route path="/siege/fun/killboard" element={<KillBoard />} />
+      <Route path="/siege/fun/operator-roulette" element={<OperatorRoulette />} />
     </Routes>
 );
 }

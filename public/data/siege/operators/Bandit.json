@@ -1,7 +1,7 @@
 ﻿{
     "id":  7,
     "name": "Bandit",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Anti-Breach"
               ],

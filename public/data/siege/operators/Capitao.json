@@ -2,7 +2,7 @@
     "id":  12,
     "name":  "Capitão",
     "fileName":  "Capitao",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Area Denial",
                   "Support"

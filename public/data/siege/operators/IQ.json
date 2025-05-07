@@ -1,7 +1,7 @@
 ﻿{
     "id":  32,
     "name": "IQ",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Intel"
               ],

@@ -1,7 +1,7 @@
 ﻿{
     "id":  6,
     "name": "Azami",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Utility",
                   "Trap"

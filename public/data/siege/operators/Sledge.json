@@ -1,7 +1,7 @@
 ﻿{
     "id":  59,
     "name": "Sledge",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Soft Breacher",
                   "Entry Fragger"

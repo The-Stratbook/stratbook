@@ -1,7 +1,7 @@
 ﻿{
     "id":  27,
     "name": "Goyo",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Anti-Entry"
               ],

@@ -1,7 +1,7 @@
 ﻿{
     "id":  30,
     "name": "Hibana",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Hard Breacher",
                   "Flexible"

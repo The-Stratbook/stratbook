@@ -1,7 +1,7 @@
 ﻿{
     "id":  25,
     "name": "Fuze",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Soft Breacher",
                   "Area Denial"

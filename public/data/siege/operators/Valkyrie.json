@@ -2,7 +2,7 @@
     "id":  69,
     "name": "Valkyrie",
     "fileName": "valkyrie",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Intel",
                   "Support"

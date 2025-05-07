@@ -1,7 +1,7 @@
 ﻿{
     "id":  9,
     "name": "Blitz",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Front Line",
                   "Map Control"

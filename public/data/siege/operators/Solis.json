@@ -1,7 +1,7 @@
 ﻿{
     "id":  61,
     "name": "Solis",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Intel",
                   "Anti-Gadget"

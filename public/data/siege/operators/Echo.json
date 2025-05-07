@@ -1,7 +1,7 @@
 ﻿{
     "id":  19,
     "name": "Echo",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Disruptor Drone"
               ],

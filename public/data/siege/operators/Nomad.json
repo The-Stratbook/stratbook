@@ -1,7 +1,7 @@
 ﻿{
     "id":  47,
     "name": "Nomad",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Map Control"
               ],

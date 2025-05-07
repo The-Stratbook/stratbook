@@ -1,7 +1,7 @@
 ﻿{
     "id":  20,
     "name": "Ela",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Roamer"
               ],

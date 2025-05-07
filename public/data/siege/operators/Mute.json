@@ -1,7 +1,7 @@
 ﻿{
     "id":  46,
     "name": "Mute",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Anti-Gadget",
                   "Crowd Control"

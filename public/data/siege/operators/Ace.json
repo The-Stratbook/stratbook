@@ -1,7 +1,7 @@
 ﻿{
     "id":  1,
     "name": "Ace",
-    "side":  "Attack",
+    "side":  "Attacker",
     "roles":  [
                   "Hard Breacher"
               ],

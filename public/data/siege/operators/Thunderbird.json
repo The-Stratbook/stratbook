@@ -2,7 +2,7 @@
     "id":  66,
     "name": "Thunderbird",
     "fileName": "thunderbird",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Support",
                   "Healer"

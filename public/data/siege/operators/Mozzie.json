@@ -1,7 +1,7 @@
 ﻿{
     "id":  45,
     "name": "Mozzie",
-    "side":  "Defend",
+    "side":  "Defender",
     "roles":  [
                   "Intel",
                   "Anti-Gadget"
