@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Layout from '../layouts/Layout';
+import Layout from '../components/templates/Layout';
 
 const Hub = () => {
   const [maps, setMaps] = useState([]);

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Link } from "react-router-dom";
-import LayoutFullWidth from "./layouts/LayoutFullWidth";
+import LayoutFullWidth from "./components/templates/LayoutFullWidth";
 
 const Home = () => {
   const pageTitle = "Tactical FPS Tips & Strategies | The Stratbook";

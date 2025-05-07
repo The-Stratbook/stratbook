@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../layouts/Layout';
+import Layout from '../components/templates/Layout';
 import { Link } from 'react-router-dom';
 import FeatureCard from '../components/cards/FeatureCard';
 import StatusCard from '../components/StatusCard';

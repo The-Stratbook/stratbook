@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import OperatorBadge from '../badges/OperatorBadge';
-import OperatorImageSet from '../operators/OperatorImageSet';
-import OperatorRoles from '../operators/OperatorRoles';
+import OperatorBadge from '../../components/badges/OperatorBadge';
+import OperatorImageSet from '../../features/operators/components/operators/OperatorImageSet';
+import OperatorRoles from '../../features/operators/components/operators/OperatorRoles';
 
 /**
  * Component for displaying an operator's details in a card format

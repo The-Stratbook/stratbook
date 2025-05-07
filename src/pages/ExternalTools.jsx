@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../layouts/Layout';
+import Layout from '../components/templates/Layout';
 import ExternalToolCard from '../components/cards/ExternalToolCard';
 
 const ExternalTools = () => {

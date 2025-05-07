@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Tag } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
-import ImageWithFallback from '../../components/ImageWithFallback';
+import ImageWithFallback from '../../components/atoms/ImageWithFallback'
 
 const TipCard = ({ tip }) => {
   // Generate a descriptive alt text that combines title, map and operator info when available
