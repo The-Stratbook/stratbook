@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import Layout from '../layouts/Layout';
 import SearchFilter from '../components/filters/SearchFilter';
 import SideFilter from '../components/filters/SideFilter';
+import { SIDES } from '../utils/sideUtils';
 
 const HubOperators = () => {
   const [operators, setOperators] = useState([]);
-  const [selectedSide, setSelectedSide] = useState(""); 
+  const [selectedSide, setSelectedSide] = useState(SIDES.BOTH); 
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -36,9 +37,7 @@ const HubOperators = () => {
 
   const filteredOperators = operators
     .filter((operator) =>
-      selectedSide === "Both" ||
-      selectedSide === "All" ||
-      selectedSide === "" ||
+      selectedSide === SIDES.BOTH ||
       (operator.side && operator.side.toLowerCase() === selectedSide.toLowerCase())
     )
     .filter((operator) => {
@@ -59,7 +58,7 @@ const HubOperators = () => {
     <Layout seoProps={{
       title: 'Rainbow Six Siege Operators | Explore All Operators',
       description: 'Learn about all Rainbow Six Siege operators, their abilities, loadouts, and strategies. Find the best operator for your playstyle.',
-      keywords: 'Rainbow Six Siege operators, Siege operator abilities, Siege operator strategies, R6S operators, Siege attackers, Siege defenders, operator loadouts',
+      keywords: `Rainbow Six Siege operators, Siege operator abilities, Siege operator strategies, R6S operators, ${SIDES.ATTACK}ers, ${SIDES.DEFEND}ers, operator loadouts`,
       url: window.location.href,
       image: '/images/general/logo.png',
       canonicalUrl: `${window.location.origin}/siege/hub/operators`

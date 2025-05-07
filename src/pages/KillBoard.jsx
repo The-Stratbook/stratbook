@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import LayoutFullWidth from '../layouts/LayoutFullWidth';
+import { normalizeSide, SIDES } from '../utils/sideUtils';
 
 const KillBoard = () => {
   const [attackers, setAttackers] = useState([]);
@@ -24,20 +25,19 @@ const KillBoard = () => {
           })
         );
                 
-        // Improved filtering based on HubOperators.jsx implementation
         const attackersList = operatorData
           .filter(op => {
             if (!op.side) return false;
-            const side = op.side.toLowerCase();
-            return side === 'attacker' || side === 'attack' || side === 'attackers';
+            const side = normalizeSide(op.side);
+            return side === SIDES.ATTACK;
           })
           .map(op => ({ ...op, alive: true }));
         
         const defendersList = operatorData
           .filter(op => {
             if (!op.side) return false;
-            const side = op.side.toLowerCase();
-            return side === 'defender' || side === 'defense' || side === 'defence' || side === 'defenders';
+            const side = normalizeSide(op.side);
+            return side === SIDES.DEFEND;
           })
           .map(op => ({ ...op, alive: true }));
                 

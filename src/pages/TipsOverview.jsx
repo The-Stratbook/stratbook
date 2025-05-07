@@ -9,6 +9,7 @@ import TagFilter from "../components/filters/TagFilter";
 import SearchFilter from "../components/filters/SearchFilter";
 import TipsList from "../components/tips/TipsList";
 import Layout from '../layouts/Layout';
+import { SIDES } from '../utils/sideUtils';
 
 const TipsOverview = () => {
   const location = useLocation();
@@ -184,8 +185,8 @@ const TipsOverview = () => {
   };
 
   const handleSideChange = (side) => {
-    setFilters({ ...filters, side, operator: "" });
-    setSelectedOperator("");
+    setFilters({ ...filters, side, operator: SIDES.both });
+    setSelectedOperator(SIDES.both);
   };
 
   const handleSearchChange = (term) => {

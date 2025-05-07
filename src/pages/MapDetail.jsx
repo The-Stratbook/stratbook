@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import Layout from '../layouts/Layout';
 import { useParams, Link } from 'react-router-dom';
+import Layout from '../layouts/Layout';
+import Section from '../components/Section';
+import List from '../components/List';
+import ImageWithFallback from '../components/ImageWithFallback';
 
 const MapDetail = () => {
   const { mapName } = useParams();
   const [mapData, setMapData] = useState(null);
   const [relatedTips, setRelatedTips] = useState([]);
 
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -45,17 +49,10 @@ const MapDetail = () => {
     fetchData();
   }, [mapName]);
 
-  if (!mapData) return <p>Loading...</p>;
+  if (!mapData) return <div>Loading...</div>;
 
   return (
-    <Layout seoProps={{
-      title: `${mapData.name} | Map Details | The Stratbook`,
-      description: `Explore details, strategies, and tips for the Rainbow Six Siege map ${mapData.name}. Learn callouts, gameplay strategies, and map-specific tactics.`,
-      keywords: `${mapData.name}, Rainbow Six Siege, Map Guide, ${mapData.name} callouts, ${mapData.name} bomb sites, ${mapData.name} strategies, R6S map guide`,
-      url: window.location.href,
-      image: `/images/maps/${mapData.name}.jpg`,
-      canonicalUrl: `${window.location.origin}/siege/hub/maps/${mapData.name.toLowerCase().replace(/\s+/g, '-')}`
-    }}>
+    <Layout>
       {/* Hero Banner with Map Image */}
       <div className="bg-gray-800 py-8 mb-6">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -67,14 +64,12 @@ const MapDetail = () => {
                 <span key={index} className="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">{mode}</span>
               ))}
             </div>
-            <img 
-              src={`/images/maps/${mapData.name}.jpg`} 
-              alt={mapData.name} 
+
+            <ImageWithFallback
+              src={`/images/maps/${mapData.name}.jpg`}
+              alt={mapData.name}
+              fallbackSrc="/images/general/logo.png"
               className="w-full max-w-3xl h-auto rounded-lg shadow-md"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src = "/images/general/logo.png";
-              }}
             />
           </div>
         </div>
@@ -85,10 +80,8 @@ const MapDetail = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left Column - Map Information */}
           <div className="w-full lg:w-2/3">
-            <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-              <h2 className="text-2xl font-bold mb-4 border-b pb-2">Overview</h2>
+            <Section title="Overview">
               <p className="text-gray-700 dark:text-gray-300 mb-4">{mapData.description}</p>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <p className="text-gray-600 dark:text-gray-400">Location</p>
@@ -105,47 +98,42 @@ const MapDetail = () => {
                   </div>
                 )}
               </div>
-            </section>
+            </Section>
 
-            {relatedTips.length > 0 && (
-              <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-                <h2 className="text-2xl font-bold mb-4 border-b pb-2">Community Tips & Strategies</h2>
-                <ul className="space-y-4">
-                  {relatedTips.slice(0, 3).map((tip, index) => (
-                    <li key={index} className="pb-4 border-b border-gray-200 dark:border-gray-700 last:border-0">
-                      <Link to={`/siege/tip/${tip.id}`} className="block">
-                        <h3 className="font-semibold text-lg text-primary hover:text-primary-focus mb-1">{tip.title}</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{tip.description.substring(0, 120)}...</p>
-                        <div className="flex flex-wrap gap-2">
-                          <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">
-                            {tip.skill} Skill
-                          </span>
-                          {tip.map && (
-                            <span className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded">
-                              {tip.map}
-                            </span>
-                          )}
-                          {tip.tags && tip.tags.map((tag, tagIndex) => (
-                            <span key={tagIndex} className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded">
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                {relatedTips.length > 3 && (
-                  <div className="mt-4 text-center">
-                    <Link to={`/siege/tips?map=${mapData.name}`} className="text-primary hover:text-primary-focus">
-                      View all {relatedTips.length} tips for {mapData.name}
-                    </Link>
-                  </div>
+            <Section title="Community Tips & Strategies">
+              <List
+                items={relatedTips.slice(0, 3)}
+                renderItem={(tip) => (
+                  <Link to={`/siege/tip/${tip.id}`} className="block">
+                    <h3 className="font-semibold text-lg text-primary hover:text-primary-focus mb-1">{tip.title}</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{tip.description.substring(0, 120)}...</p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">
+                        {tip.skill} Skill
+                      </span>
+                      {tip.map && (
+                        <span className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded">
+                          {tip.map}
+                        </span>
+                      )}
+                      {tip.tags && tip.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </Link>
                 )}
-              </section>
-            )}
+              />
+              {relatedTips.length > 3 && (
+                <div className="mt-4 text-center">
+                  <Link to={`/siege/tips?map=${mapData.name}`} className="text-primary hover:text-primary-focus">
+                    View all {relatedTips.length} tips for {mapData.name}
+                  </Link>
+                </div>
+              )}
+            </Section>
           </div>
-
           {/* Right Column - Additional Content */}
           <div className="w-full lg:w-1/3">
             {/* External Tools Section */}
@@ -199,6 +187,7 @@ const MapDetail = () => {
           </div>
         </div>
       </div>
+            
     </Layout>
   );
 };

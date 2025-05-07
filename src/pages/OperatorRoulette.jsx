@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../layouts/Layout';
+import { normalizeSide, SIDES } from '../utils/sideUtils';
 
 const OperatorRoulette = () => {
   const [operators, setOperators] = useState([]);
@@ -35,8 +36,8 @@ const OperatorRoulette = () => {
         setOperators(validOperators);
         
         // Separate attackers and defenders
-        const attackersData = validOperators.filter(op => op.side === 'Attack');
-        const defendersData = validOperators.filter(op => op.side === 'Defend');
+        const attackersData = validOperators.filter(op => normalizeSide(op.side) === SIDES.ATTACK);
+        const defendersData = validOperators.filter(op => normalizeSide(op.side) === SIDES.DEFEND);
         setAttackers(attackersData);
         setDefenders(defendersData);
       } catch (error) {
@@ -123,7 +124,7 @@ const OperatorRoulette = () => {
           {selectedOperator && (
             <div className="flex flex-col items-center">
               <div className="bg-gray-100 dark:bg-gray-700 rounded-lg p-8 flex flex-col items-center max-w-md mx-auto relative">
-                <span className={`absolute top-4 right-4 badge ${selectedOperator.side === 'Attack' ? 'badge-info' : 'badge-warning'} badge-lg`}>
+                <span className={`absolute top-4 right-4 badge ${normalizeSide(selectedOperator.side) === SIDES.ATTACK ? 'badge-info' : 'badge-warning'} badge-lg`}>
                   {selectedOperator.side}
                 </span>
                 

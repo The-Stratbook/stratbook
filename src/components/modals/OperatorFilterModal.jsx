@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import SideFilter from "../filters/SideFilter";
 import SearchFilter from "../filters/SearchFilter";
+import { normalizeSide, SIDES } from "../../utils/sideUtils";
 
 const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, onSideChange, selectedOperator }) => {
   const [operators, setOperators] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(SIDES.BOTH);
 
   useEffect(() => {
     const fetchOperators = async () => {
@@ -36,9 +37,9 @@ const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, 
   // Filter operators by search term
   const filteredOperators = operators.filter((operator) => {
     const matchesSide =
-      selectedSide === "both" || selectedSide === ""
+      selectedSide === SIDES.BOTH
         ? true
-        : operator.side && operator.side.toLowerCase() === selectedSide.toLowerCase();
+        : operator.side && normalizeSide(operator.side) === selectedSide;
 
     const matchesSearch = operator.name
       .toLowerCase()
@@ -61,7 +62,7 @@ const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, 
           <button
             className="btn btn-outline btn-sm"
             onClick={() => {
-              onSelectOperator("");
+              onSelectOperator(SIDES.BOTH);
               onClose();
             }}
           >
