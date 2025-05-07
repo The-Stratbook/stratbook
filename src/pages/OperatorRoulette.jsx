@@ -9,7 +9,7 @@ const OperatorRoulette = () => {
   const [defenders, setDefenders] = useState([]);
   const [selectedOperator, setSelectedOperator] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [side, setSide] = useState('random'); // 'attack', 'defend', or 'random'
+  const [side, setSide] = useState('random');
   
   useEffect(() => {
     // Fetch all operators
@@ -56,9 +56,9 @@ const OperatorRoulette = () => {
       let pool = operators;
       
       // Filter by side if not random
-      if (selectedSide === 'attack') {
+      if (normalizeSide(selectedSide) === SIDES.ATTACK) {
         pool = attackers;
-      } else if (selectedSide === 'defend') {
+      } else if (normalizeSide(selectedSide) === SIDES.ATTACK) {
         pool = defenders;
       }
       
@@ -99,10 +99,10 @@ const OperatorRoulette = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
             <button 
               className="btn btn-lg btn-info"
-              onClick={() => randomizeOperator('attack')}
+              onClick={() => randomizeOperator(SIDES.ATTACK)}
               disabled={loading || attackers.length === 0}
             >
-              {loading && side === 'attack' ? 
+              {loading && side === SIDES.ATTACK ? 
                 <span className="loading loading-spinner"></span> : 
                 'Random Attacker'
               }
@@ -110,10 +110,10 @@ const OperatorRoulette = () => {
                         
             <button 
               className="btn btn-lg btn-warning"
-              onClick={() => randomizeOperator('defend')}
+              onClick={() => randomizeOperator(SIDES.DEFEND)}
               disabled={loading || defenders.length === 0}
             >
-              {loading && side === 'defend' ? 
+              {loading && side === SIDES.DEFEND ? 
                 <span className="loading loading-spinner"></span> : 
                 'Random Defender'
               }

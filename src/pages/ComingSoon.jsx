@@ -40,8 +40,8 @@ const ComingSoon = () => {
       category: "Fun Tools",
       items: [
         { name: "Strat Roulette", description: "Random challenge generator to make casual play more interesting", status: "planned" },
-        { name: "Random Operator", description: "Generate random operator selections with optional weapon constraints", status: "planned" },
-        { name: "Kill Board", description: "Track the operators you used during your matches, if a operator died you need to cross it off the board and you cannot use it again untill all operators have died (from that side)", status: "planned" }
+        { name: "Random Operator", description: "Generate random operator selections with optional weapon constraints", status: "in-progress" },
+        { name: "Kill Board", description: "Track the operators you used during your matches, if a operator died you need to cross it off the board and you cannot use it again untill all operators have died (from that side)", status: "in-progress" }
       ]
     },
     {
@@ -55,7 +55,7 @@ const ComingSoon = () => {
     {
       category: "Community Features",
       items: [
-        { name: "User Accounts", description: "Create accounts to save favorite strategies and track personal progress", status: "planned" },
+        { name: "Open Collective", description: "Collaborate with other creative people and get a reward out of it based on a score system", status: "planned" },
         { name: "Community Submissions", description: "Platform for users to submit their own strategies and tips", status: "planned" },
         { name: "Rating System", description: "Allow users to rate strategies and tips based on effectiveness", status: "planned" }
       ]
