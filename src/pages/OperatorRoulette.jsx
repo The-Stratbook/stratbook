@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../layouts/Layout';
 import { normalizeSide, SIDES } from '../utils/sideUtils';
+import { LucideChartNoAxesColumnDecreasing } from 'lucide-react';
 
 const OperatorRoulette = () => {
   const [operators, setOperators] = useState([]);
@@ -102,10 +103,7 @@ const OperatorRoulette = () => {
               onClick={() => randomizeOperator(SIDES.ATTACK)}
               disabled={loading || attackers.length === 0}
             >
-              {loading && side === SIDES.ATTACK ? 
-                <span className="loading loading-spinner"></span> : 
-                'Random Attacker'
-              }
+                Random Attacker
             </button>
                         
             <button 
@@ -113,10 +111,7 @@ const OperatorRoulette = () => {
               onClick={() => randomizeOperator(SIDES.DEFEND)}
               disabled={loading || defenders.length === 0}
             >
-              {loading && side === SIDES.DEFEND ? 
-                <span className="loading loading-spinner"></span> : 
-                'Random Defender'
-              }
+                Random Defender
             </button>
           </div>
           
@@ -124,30 +119,32 @@ const OperatorRoulette = () => {
           {selectedOperator && (
             <div className="flex flex-col items-center">
               <div className="bg-gray-100 dark:bg-gray-700 rounded-lg p-8 flex flex-col items-center max-w-md mx-auto relative">
-                <span className={`absolute top-4 right-4 badge ${normalizeSide(selectedOperator.side) === SIDES.ATTACK ? 'badge-info' : 'badge-warning'} badge-lg`}>
-                  {selectedOperator.side}
-                </span>
-                
-                <div className="relative w-48 h-48 mb-4">
-                  <img 
-                    src={`/images/operators/${selectedOperator.fileName || selectedOperator.name}.png`} 
-                    alt={selectedOperator.name}
-                    className="w-full h-full object-contain"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = "/images/general/logo.png";
-                    }}
-                  />
-                  <img 
-                    src={`/images/operators/${selectedOperator.fileName || selectedOperator.name}_logo.png`} 
-                    alt={`${selectedOperator.name} logo`}
-                    className="absolute bottom-0 right-0 w-12 h-12"
-                    onError={(e) => {
-                      e.target.onerror = null;
+                {!LucideChartNoAxesColumnDecreasing && (
+                <>
+                  <span className={`absolute top-4 right-4 badge ${normalizeSide(selectedOperator.side) === SIDES.ATTACK ? 'badge-info' : 'badge-warning'} badge-lg`}>
+                    {selectedOperator.side}
+                  </span>
+                  
+                  <div className="relative w-48 h-48 mb-4">
+                    <img 
+                      src={`/images/operators/${selectedOperator.fileName || selectedOperator.name}.png`} 
+                      alt={selectedOperator.name}
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = "/images/general/logo.png";
+                      }}
+                    />
+                    <img 
+                      src={`/images/operators/${selectedOperator.fileName || selectedOperator.name}_logo.png`} 
+                      alt={`${selectedOperator.name} logo`}
+                      className="absolute bottom-0 right-0 w-12 h-12"
+                      onError={(e) => {
+                        e.target.onerror = null;
                       e.target.style.display = "none";
                     }}
-                  />
-                </div>
+                    />
+                  </div>
                 
                 <h2 className="text-2xl font-bold mb-2">{selectedOperator.fileName || selectedOperator.name}</h2>
                 <div className="flex flex-wrap justify-center gap-2 mb-4">
@@ -166,9 +163,15 @@ const OperatorRoulette = () => {
                 >
                   View Details
                 </Link>
+                </>
+                )}
+
+                {loading && (<span className="loading loading-spinner"></span>)}
               </div>
             </div>
           )}
+          
+          
         </div>
         
         {/* Future Features Section */}
