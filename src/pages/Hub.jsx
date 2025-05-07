@@ -55,8 +55,10 @@ const Hub = () => {
     <Layout seoProps={{
       title: 'The Stratbook Hub | All Siege Information in One Place',
       description: 'Explore maps, operators, and more in The Stratbook Hub. Your ultimate resource for Rainbow Six Siege.',
-      keywords: 'Rainbow Six Siege, Siege Hub, Siege Maps, Siege Operators, Tactical FPS',
-      url: window.location.href
+      keywords: 'Rainbow Six Siege, Siege Hub, Siege Maps, Siege Operators, Tactical FPS, R6S information, Siege guide',
+      url: window.location.href,
+      image: '/images/general/logo.png',
+      canonicalUrl: `${window.location.origin}/siege/hub`
     }}>
       <div className="container mx-auto p-4">
         <header className="text-center mb-8">

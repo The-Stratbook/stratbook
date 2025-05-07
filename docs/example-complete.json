@@ -3,7 +3,7 @@
   "title": "Advanced Vertical Play on Coastline",
   "description": "This strategy utilizes vertical destruction to gain an advantage when attacking the Hookah objective on Coastline. By controlling Billiards and applying pressure from above, you can force defenders to relocate or become vulnerable to coordinated pushes.",
   "operator": "Buck",
-  "side": "Attack",
+  "side": "Attacker",
   "map": "Coastline",
   "bombSite": "Hookah/Billiards",
   "skill": "Intermediate",

@@ -110,9 +110,11 @@ const OperatorDetail = () => {
   return (
     <Layout seoProps={{
       title: `${operatorData.name} | Operator Details | The Stratbook`,
-      description: `Learn about ${operatorData.name}, their roles, tips, tricks, and more.`,
-      keywords: `${operatorData.name}, Rainbow Six Siege, Operator Guide`,
-      url: window.location.href
+      description: `Learn about ${operatorData.name}, their unique abilities, loadout options, gameplay tips, and strategies for Rainbow Six Siege. Master ${operatorData.name}'s kit and improve your gameplay.`,
+      keywords: `${operatorData.name}, Rainbow Six Siege, Operator Guide, ${operatorData.name} loadout, ${operatorData.name} tips, ${operatorData.name} R6S, ${operatorData.side} operator, ${operatorData.roles.join(', ')}`,
+      url: window.location.href,
+      image: `/images/operators/${operatorData.name}.png`,
+      canonicalUrl: `${window.location.origin}/siege/hub/operators/${operatorName}`
     }}>
       {/* Hero Banner with Operator Image and Logo */}
       <div className="bg-gray-800 py-8 mb-6">

@@ -198,6 +198,8 @@ const TipsOverview = () => {
       description: cleanDescription, 
       url: canonicalUrl, 
       image: "/images/general/logo.png",
+      keywords: "Rainbow Six Siege tips, R6S strategies, Siege gameplay tips, tactical FPS guides, operator strategies, map strategies, R6 tricks",
+      canonicalUrl: canonicalUrl,
       faqSchema: generateCollectionSchema()
     }}>
       <div className="p-4">

@@ -102,7 +102,11 @@ const KillBoard = () => {
     <LayoutFullWidth
       seoProps={{
         title: 'KillBoard | The Stratbook',
-        description: 'Track your operator usage and force yourself to play with different operators in Rainbow Six Siege.',
+        description: 'Track your operator usage and force yourself to play with different operators in Rainbow Six Siege. A fun game to expand your operator pool and improve versatility.',
+        keywords: 'Rainbow Six Siege, KillBoard challenge, R6S operators, operator tracking, gameplay variety, Siege operators game, Rainbow Six operators',
+        url: window.location.href,
+        image: '/images/general/logo.png',
+        canonicalUrl: `${window.location.origin}/fun/killboard`,
       }}
     >
       <div className="container mx-auto p-4">

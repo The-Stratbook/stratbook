@@ -50,9 +50,11 @@ const MapDetail = () => {
   return (
     <Layout seoProps={{
       title: `${mapData.name} | Map Details | The Stratbook`,
-      description: `Explore details, strategies, and tips for the map ${mapData.name}.`,
-      keywords: `${mapData.name}, Rainbow Six Siege, Map Guide`,
-      url: window.location.href
+      description: `Explore details, strategies, and tips for the Rainbow Six Siege map ${mapData.name}. Learn callouts, gameplay strategies, and map-specific tactics.`,
+      keywords: `${mapData.name}, Rainbow Six Siege, Map Guide, ${mapData.name} callouts, ${mapData.name} bomb sites, ${mapData.name} strategies, R6S map guide`,
+      url: window.location.href,
+      image: `/images/maps/${mapData.name}.jpg`,
+      canonicalUrl: `${window.location.origin}/siege/hub/maps/${mapData.name.toLowerCase().replace(/\s+/g, '-')}`
     }}>
       {/* Hero Banner with Map Image */}
       <div className="bg-gray-800 py-8 mb-6">

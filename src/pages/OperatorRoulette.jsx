@@ -75,9 +75,11 @@ const OperatorRoulette = () => {
   return (
     <Layout seoProps={{
       title: 'Operator Roulette | The Stratbook',
-      description: 'Randomly select operators for Rainbow Six Siege to add variety to your gameplay.',
-      keywords: 'Rainbow Six Siege, R6S, operator roulette, random operator',
-      url: window.location.href
+      description: 'Randomly select operators for Rainbow Six Siege to add variety to your gameplay. Try new operators, weapons, and strategies with our operator randomizer.',
+      keywords: 'Rainbow Six Siege, R6S, operator roulette, random operator, Siege operators, R6 randomizer, random attacker, random defender',
+      url: window.location.href,
+      image: '/images/general/logo.png',
+      canonicalUrl: `${window.location.origin}/siege/operator-roulette`
     }}>
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">Operator Roulette</h1>

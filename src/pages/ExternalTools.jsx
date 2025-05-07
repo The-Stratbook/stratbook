@@ -55,8 +55,10 @@ const ExternalTools = () => {
     <Layout seoProps={{ 
       title: 'External Tools & Resources | The Stratbook', 
       description: 'Discover useful external tools, websites, and resources for Rainbow Six Siege and other tactical FPS games to improve your gameplay.',
-      keywords: 'Rainbow Six tools, Siege resources, R6 stats, FPS tools, tactical shooter resources',
-      url: window.location.href
+      keywords: 'Rainbow Six tools, Siege resources, R6 stats, FPS tools, tactical shooter resources, R6S community tools, Siege planning tools',
+      url: window.location.href,
+      image: '/images/general/logo.png',
+      canonicalUrl: `${window.location.origin}/external-tools`
     }}>
       <div className="container mx-auto p-4">
         <div className="mb-8 text-center">

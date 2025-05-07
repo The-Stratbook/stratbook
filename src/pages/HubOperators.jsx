@@ -58,9 +58,11 @@ const HubOperators = () => {
   return (
     <Layout seoProps={{
       title: 'Rainbow Six Siege Operators | Explore All Operators',
-      description: 'Learn about all Rainbow Six Siege operators, their abilities, and strategies.',
-      keywords: 'Rainbow Six Siege operators, Siege operator abilities, Siege operator strategies',
-      url: window.location.href
+      description: 'Learn about all Rainbow Six Siege operators, their abilities, loadouts, and strategies. Find the best operator for your playstyle.',
+      keywords: 'Rainbow Six Siege operators, Siege operator abilities, Siege operator strategies, R6S operators, Siege attackers, Siege defenders, operator loadouts',
+      url: window.location.href,
+      image: '/images/general/logo.png',
+      canonicalUrl: `${window.location.origin}/siege/hub/operators`
     }}>
       <div className="container mx-auto p-4">
         <h1 className="text-4xl font-bold mb-4">Operators</h1>

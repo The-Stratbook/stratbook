@@ -7,8 +7,10 @@ const Contribute = () => {
     <Layout seoProps={{ 
       title: 'Contribute to The Stratbook | Share Your Knowledge',
       description: 'Learn how to contribute your tactical FPS knowledge, strategies, tips, and tricks to The Stratbook community.',
-      keywords: 'contribute, Rainbow Six Siege tips, tactical FPS strategies, gaming community, share knowledge',
-      url: window.location.href
+      keywords: 'contribute, Rainbow Six Siege tips, tactical FPS strategies, gaming community, share knowledge, R6S contribution, community guides',
+      url: window.location.href,
+      image: '/images/general/logo.png',
+      canonicalUrl: `${window.location.origin}/contribute`
     }}>
       <div className="container mx-auto p-4 max-w-4xl">
         <div className="mb-8 text-center">

@@ -49,8 +49,10 @@ const HubMaps = () => {
     <Layout seoProps={{
       title: 'Rainbow Six Siege Maps | Explore All Maps',
       description: 'Discover detailed information about all Rainbow Six Siege maps, including strategies and callouts.',
-      keywords: 'Rainbow Six Siege maps, Siege map strategies, Siege map callouts',
-      url: window.location.href
+      keywords: 'Rainbow Six Siege maps, Siege map strategies, Siege map callouts, R6S maps, Siege bomb sites, map knowledge',
+      url: window.location.href,
+      image: '/images/general/logo.png',
+      canonicalUrl: `${window.location.origin}/siege/hub/maps`
     }}>
       <div className="container mx-auto p-4">
         <h1 className="text-4xl font-bold mb-4">Maps</h1>
