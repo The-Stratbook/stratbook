@@ -141,7 +141,7 @@ const OperatorRoulette = () => {
                       className="absolute bottom-0 right-0 w-12 h-12"
                       onError={(e) => {
                         e.target.onerror = null;
-                      e.target.style.display = "none";
+                        e.target.style.display = "none";
                     }}
                     />
                   </div>
@@ -177,7 +177,7 @@ const OperatorRoulette = () => {
         {/* Future Features Section */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
           <h2 className="text-xl font-bold mb-4 text-center">Coming Soon</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border border-dashed border-gray-300 dark:border-gray-600 rounded-md p-4 text-center">
               <h3 className="font-medium mb-2">Random Weapons</h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
@@ -188,12 +188,6 @@ const OperatorRoulette = () => {
               <h3 className="font-medium mb-2">Random Gadgets</h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
                 Add variety with random gadget selections
-              </p>
-            </div>
-            <div className="border border-dashed border-gray-300 dark:border-gray-600 rounded-md p-4 text-center">
-              <h3 className="font-medium mb-2">Challenges</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Get unique gameplay challenges to test your skills
               </p>
             </div>
           </div>
