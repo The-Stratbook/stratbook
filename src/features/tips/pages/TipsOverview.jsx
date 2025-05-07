@@ -24,7 +24,7 @@ const TipsOverview = () => {
   const [filters, setFilters] = useState({
     map: queryParams.get('map') || '',
     operator: queryParams.get('operator') || '',
-    side: queryParams.get('side') || '',
+    side: queryParams.get('side') || SIDES.BOTH, // Default to SIDES.BOTH
     skill: queryParams.get('skill') || '',
     tag: queryParams.get('tag') || ''
   });
@@ -185,8 +185,7 @@ const TipsOverview = () => {
   };
 
   const handleSideChange = (side) => {
-    setFilters({ ...filters, side, operator: SIDES.both });
-    setSelectedOperator(SIDES.both);
+    setFilters({ ...filters, side }); // Only update the side filter
   };
 
   const handleSearchChange = (term) => {
