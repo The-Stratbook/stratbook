@@ -1,7 +1,6 @@
 ﻿{
     "id":  70,
     "name": "Vigil",
-    "fileName": "vigil",
     "side":  "Defender",
     "roles":  [
                   "Roamer",

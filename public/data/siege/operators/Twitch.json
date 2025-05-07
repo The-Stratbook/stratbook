@@ -1,7 +1,6 @@
 ﻿{
     "id":  68,
     "name": "Twitch",
-    "fileName": "twitch",
     "side":  "Attacker",
     "roles":  [
                   "Remote Breacher"

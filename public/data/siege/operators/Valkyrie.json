@@ -1,7 +1,6 @@
 ﻿{
     "id":  69,
     "name": "Valkyrie",
-    "fileName": "valkyrie",
     "side":  "Defender",
     "roles":  [
                   "Intel",
