@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Layout from '../layouts/Layout';
 import SearchFilter from '../components/filters/SearchFilter';
 import SideFilter from '../components/filters/SideFilter';
 import { SIDES } from '../utils/sideUtils';
+import GridOperatorCard from "../components/operators/GridOperatorCard";
 
 const HubOperators = () => {
   const [operators, setOperators] = useState([]);
@@ -74,31 +74,14 @@ const HubOperators = () => {
           <SearchFilter placeholder="Search operator..." searchTerm={searchTerm} onSearchChange={setSearchTerm} />
         </div>
 
-        <div className="grid grid-cols-5 gap-5 mt-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
           {filteredOperators.map((operator) => (
-            <Link
-              to={`/siege/hub/operators/${operator.fileName || operator.name}`}
-              className="block card bg-base-200 relative group cursor-pointer"
+            <GridOperatorCard 
               key={operator.id}
-            >
-              <figure className="relative overflow-hidden rounded-lg shadow-lg">
-                <img
-                  src={`/images/operators/${operator.fileName || operator.name}.png`}
-                  alt={operator.fileName || operator.name}
-                  className="w-full h-50 object-cover object-top rounded-t-lg"
-                  onError={(e) => (e.target.src = "/images/operators/default.png")}
-                />
-                <img
-                  src={`/images/operators/${operator.fileName || operator.name}_logo.png`}
-                  alt={`${operator.fileName || operator.name} Icon`}
-                  className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-2 border-white shadow-md"
-                  onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
-                />
-              </figure>
-              <div className="card-body text-black text-center py-2 rounded-b-lg">
-                <h3 className="text-sm font-bold text-base-content">{operator.name}</h3>
-              </div>
-            </Link>
+              name={operator.name}
+              fileName={operator.fileName || operator.name}
+              linkTo={`/siege/hub/operators/${operator.fileName || operator.name}`}
+            />
           ))}
         </div>
       </div>

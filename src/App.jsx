@@ -12,6 +12,7 @@ import TermsOfService from './components/legal/TermsOfService';
 import PrivacyPolicy from './components/legal/PrivacyPolicy';
 import CookiePolicy from './components/legal/CookiePolicy';
 import OperatorRoulette from './pages/OperatorRoulette';
+import ComponentDemo from './pages/ComponentDemo';
 
 // Import Coming Soon feature pages
 import OperatorGuides from './pages/coming-soon/OperatorGuides';
@@ -53,9 +54,10 @@ function App() {
       <Route path="/terms-of-service" element={<TermsOfService />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/cookie-policy" element={<CookiePolicy />} />
+      <Route path="/component-demo" element={<ComponentDemo />} />
       
       {/* Coming Soon feature routes */}
-      <Route path="/coming-soon/operator-guides" element={<OperatorGuides />} />
+<Route path="/coming-soon/operator-guides" element={<OperatorGuides />} />
       <Route path="/coming-soon/map-guides" element={<MapGuides />} />
       <Route path="/coming-soon/pro-setups" element={<ProSetups />} />
       <Route path="/coming-soon/meta-tier-lists" element={<MetaTierLists />} />

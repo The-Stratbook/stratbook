@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Tag } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
+import ImageWithFallback from '../../components/ImageWithFallback';
 
 const TipCard = ({ tip }) => {
   // Generate a descriptive alt text that combines title, map and operator info when available
@@ -39,14 +40,14 @@ const TipCard = ({ tip }) => {
             {tip.title.length > 70 ? `${tip.title.substring(0, 70)}...` : tip.title}
           </h3>
 
-          {/* Tip Image - Fixed height */}
+          {/* Tip Image - Fixed height with standardized ImageWithFallback */}
           <figure className="mb-4" style={{ height: "12rem" }}>
-            <img
+            <ImageWithFallback
               src={tip.imageUrl || "/images/tips/default.jpg"}
+              fallbackSrc="/images/tips/default.jpg"
               alt={generateAltText()}
               className="w-full h-full object-cover rounded-xl"
-              loading="lazy"
-              onError={(e) => (e.target.src = "/images/tips/default.jpg")}
+              aspectRatio="16/9"
             />
           </figure>
 

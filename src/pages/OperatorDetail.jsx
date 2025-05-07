@@ -1,41 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '../layouts/Layout';
-import { useParams, Link } from 'react-router-dom';
-
-// Helper function to format date
-const formatOperatorDate = (dateString) => {
-  // Check if it's already in the old format like "November 3rd (Age 38)"
-  if (dateString.includes('(Age')) {
-    return dateString;
-  }
-  
-  // If it's in YYYY-MM-DD format
-  try {
-    const date = new Date(dateString);
-    if (isNaN(date)) return dateString;
-    
-    const month = date.toLocaleString('en-US', { month: 'long' });
-    
-    const day = date.getDate();
-    let daySuffix = 'th';
-    if (day === 1 || day === 21 || day === 31) daySuffix = 'st';
-    else if (day === 2 || day === 22) daySuffix = 'nd';
-    else if (day === 3 || day === 23) daySuffix = 'rd';
-    
-    // Calculate age based on current date
-    const today = new Date();
-    let age = today.getFullYear() - date.getFullYear();
-    const monthDiff = today.getMonth() - date.getMonth();
-    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < date.getDate())) {
-      age--;
-    }
-    
-    return `${month} ${day}${daySuffix} (Age ${age})`;
-  } catch (error) {
-    console.error('Error formatting date:', error);
-    return dateString;
-  }
-};
+import { useParams } from 'react-router-dom';
+import OperatorBanner from '../components/operators/OperatorBanner';
+import OperatorLoadout from '../components/operators/OperatorLoadout';
+import OperatorBiography from '../components/operators/OperatorBiography';
+import OperatorTips from '../components/operators/OperatorTips';
+import RelatedTips from '../components/operators/RelatedTips';
 
 const OperatorDetail = () => {
   const { operatorName } = useParams();
@@ -111,7 +81,7 @@ const OperatorDetail = () => {
     <Layout seoProps={{
       title: `${operatorData.name} | Operator Details | The Stratbook`,
       description: `Learn about ${operatorData.name}, their unique abilities, loadout options, gameplay tips, and strategies for Rainbow Six Siege. Master ${operatorData.name}'s kit and improve your gameplay.`,
-      keywords: `${operatorData.name}, Rainbow Six Siege, Operator Guide, ${operatorData.name} loadout, ${operatorData.name} tips, ${operatorData.name} R6S, ${operatorData.side} operator, ${operatorData.roles.join(', ')}`,
+      keywords: `${operatorData.name}, Rainbow Six Siege, Operator Guide, ${operatorData.name} loadout, ${operatorData.name} tips, ${operatorData.name} R6S, ${operatorData.side} operator, ${operatorData.roles?.join(', ')}`,
       url: window.location.href,
       image: `/images/operators/${operatorData.name}.png`,
       canonicalUrl: `${window.location.origin}/siege/hub/operators/${operatorName}`
@@ -119,73 +89,7 @@ const OperatorDetail = () => {
       {/* Hero Banner with Operator Image and Logo */}
       <div className="bg-gray-800 py-8 mb-6">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex flex-col md:flex-row items-center">
-            {/* Operator Info */}
-            <div className="flex-1 text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">{operatorData.name}</h1>
-              <div className="flex items-center gap-2 mb-4">
-                <span className="bg-blue-600 px-3 py-1 rounded-full text-sm">{operatorData.side}</span>
-                {operatorData.roles.map((role, index) => (
-                  <span key={index} className="bg-gray-700 px-3 py-1 rounded-full text-sm">{role}</span>
-                ))}
-              </div>
-              <p className="text-gray-300">{operatorData.biography.description}</p>
-              
-              <div className="mt-4 flex flex-wrap gap-6">
-                <div className="flex items-center">
-                  <span className="text-gray-400 mr-2">Health:</span>
-                  <div className="flex">
-                    {[...Array(3)].map((_, i) => (
-                      <span key={i} className={`w-4 h-4 rounded-full mx-0.5 ${i < operatorData.health ? "bg-green-500" : "bg-gray-600"}`}></span>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-gray-400 mr-2">Speed:</span>
-                  <div className="flex">
-                    {[...Array(3)].map((_, i) => (
-                      <span key={i} className={`w-4 h-4 rounded-full mx-0.5 ${i < operatorData.speed ? "bg-blue-500" : "bg-gray-600"}`}></span>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-gray-400 mr-2">Difficulty:</span>
-                  <div className="flex">
-                    {[...Array(3)].map((_, i) => (
-                      <span key={i} className={`w-4 h-4 rounded-full mx-0.5 ${i < operatorData.difficulty ? "bg-yellow-500" : "bg-gray-600"}`}></span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="mt-4">
-                <span className="bg-purple-700 px-3 py-1 rounded-full text-sm">
-                  Squad: {operatorData.squad}
-                </span>
-              </div>
-            </div>
-            
-            {/* Operator Images */}
-            <div className="mt-6 md:mt-0 flex items-center justify-center relative">
-              <img 
-                src={`/images/operators/${operatorData.name}.png`} 
-                alt={operatorData.name} 
-                className="w-64 h-auto z-10"
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src = "/images/general/logo.png";
-                }}
-              />
-              <img 
-                src={`/images/operators/${operatorData.name}_logo.png`} 
-                alt={`${operatorData.name} logo`} 
-                className="absolute bottom-0 right-0 w-16 h-16 z-20"
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.style.display = "none";
-                }}
-              />
-            </div>
-          </div>
+          <OperatorBanner operator={operatorData} />
         </div>
       </div>
 
@@ -197,104 +101,26 @@ const OperatorDetail = () => {
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
               <h2 className="text-2xl font-bold mb-4 border-b pb-2">Unique Ability</h2>
               <p className="text-lg font-medium mb-2">{operatorData.uniqueAbility}</p>
-              <p className="text-gray-700 dark:text-gray-300">{operatorData.biography.description}</p>
+              <p className="text-gray-700 dark:text-gray-300">{operatorData.biography && operatorData.biography.description}</p>
             </section>
 
             {relatedTips.length > 0 && (
               <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-                <h2 className="text-2xl font-bold mb-4 border-b pb-2">Community Tips & Strategies</h2>
-                <ul className="space-y-4">
-                  {relatedTips.slice(0, 3).map((tip, index) => (
-                    <li key={index} className="pb-4 border-b border-gray-200 dark:border-gray-700 last:border-0">
-                      <Link to={`/siege/tip/${tip.id}`} className="block">
-                        <h3 className="font-semibold text-lg text-primary hover:text-primary-focus mb-1">{tip.title}</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{tip.description.substring(0, 120)}...</p>
-                        <div className="flex flex-wrap gap-2">
-                          <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">
-                            {tip.skill} Skill
-                          </span>
-                          {tip.map && (
-                            <span className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded">
-                              {tip.map}
-                            </span>
-                          )}
-                          {tip.tags && tip.tags.map((tag, tagIndex) => (
-                            <span key={tagIndex} className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded">
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                {relatedTips.length > 3 && (
-                  <div className="mt-4 text-center">
-                    <Link to={`/siege/tips?operator=${operatorData.name}`} className="text-primary hover:text-primary-focus">
-                      View all {relatedTips.length} tips for {operatorData.name}
-                    </Link>
-                  </div>
-                )}
+                <RelatedTips tips={relatedTips} operatorName={operatorData.name} />
               </section>
             )}
 
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-              <h2 className="text-2xl font-bold mb-4 border-b pb-2">Loadout</h2>
-              
-              <h3 className="text-xl font-semibold mb-2">Primary Weapons</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                {operatorData.loadout.primary.map((weapon, index) => (
-                  <div key={index} className="bg-gray-100 dark:bg-gray-700 p-3 rounded-md">
-                    <p className="font-medium">{weapon.name}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">{weapon.type}</p>
-                  </div>
-                ))}
-              </div>
-              
-              <h3 className="text-xl font-semibold mb-2">Secondary Weapons</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                {operatorData.loadout.secondary.map((weapon, index) => (
-                  <div key={index} className="bg-gray-100 dark:bg-gray-700 p-3 rounded-md">
-                    <p className="font-medium">{weapon.name}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">{weapon.type}</p>
-                  </div>
-                ))}
-              </div>
-              
-              <h3 className="text-xl font-semibold mb-2">Gadgets</h3>
-              <div className="flex flex-wrap gap-2">
-                {operatorData.loadout.gadgets.map((gadget, index) => (
-                  <span key={index} className="bg-gray-200 dark:bg-gray-600 px-3 py-1 rounded-md text-sm">{gadget}</span>
-                ))}
-              </div>
+              <OperatorLoadout loadout={operatorData.loadout} />
             </section>
 
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-              <h2 className="text-2xl font-bold mb-4 border-b pb-2">Biography</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                <div>
-                  <p className="text-gray-600 dark:text-gray-400">Real Name</p>
-                  <p className="font-medium">{operatorData.biography.realName}</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 dark:text-gray-400">Date of Birth</p>
-                  <p className="font-medium">{formatOperatorDate(operatorData.biography.dateOfBirth)}</p>
-                </div>
-                <div>
-                  <p className="text-gray-600 dark:text-gray-400">Place of Birth</p>
-                  <p className="font-medium">{operatorData.biography.placeOfBirth}</p>
-                </div>
-              </div>
+              <OperatorBiography biography={operatorData.biography} />
             </section>
 
             {operatorData.gameplayTips && operatorData.gameplayTips.length > 0 && (
               <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-                <h2 className="text-2xl font-bold mb-4 border-b pb-2">Gameplay Tips</h2>
-                <ul className="list-disc pl-5 space-y-2">
-                  {operatorData.gameplayTips.map((tip, index) => (
-                    <li key={index} className="text-gray-700 dark:text-gray-300">{tip}</li>
-                  ))}
-                </ul>
+                <OperatorTips tips={operatorData.gameplayTips} />
               </section>
             )}
           </div>

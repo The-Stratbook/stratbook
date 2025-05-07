@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Layout from '../layouts/Layout';
 import { normalizeSide, SIDES } from '../utils/sideUtils';
-import { LucideChartNoAxesColumnDecreasing } from 'lucide-react';
+import FeaturePreview from '../components/FeaturePreview';
+import OperatorRouletteHeader from '../components/roulette/OperatorRouletteHeader';
+import RouletteContainer from '../components/roulette/RouletteContainer';
 
 const OperatorRoulette = () => {
   const [operators, setOperators] = useState([]);
@@ -57,9 +58,9 @@ const OperatorRoulette = () => {
       let pool = operators;
       
       // Filter by side if not random
-      if (normalizeSide(selectedSide) === SIDES.ATTACK) {
+      if (selectedSide === SIDES.ATTACK) {
         pool = attackers;
-      } else if (normalizeSide(selectedSide) === SIDES.ATTACK) {
+      } else if (selectedSide === SIDES.DEFEND) {
         pool = defenders;
       }
       
@@ -74,6 +75,22 @@ const OperatorRoulette = () => {
     }, 500);
   };
 
+  // Upcoming features data for the FeaturePreview component
+  const upcomingFeatures = [
+    {
+      title: "Random Weapons",
+      description: "Get random primary and secondary weapons with attachments"
+    },
+    {
+      title: "Random Gadgets",
+      description: "Add variety with random gadget selections"
+    },
+    {
+      title: "Operator Filters",
+      description: "Filter operators by role, speed, and special abilities"
+    }
+  ];
+
   return (
     <Layout seoProps={{
       title: 'Operator Roulette | The Stratbook',
@@ -86,112 +103,19 @@ const OperatorRoulette = () => {
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">Operator Roulette</h1>
         
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-          <p className="text-center text-gray-700 dark:text-gray-300 mb-6">
-            We created this Operator Roulette because Rainbow Six: Siege removed the random operator selection button from the "standard" playlist. 
-            Now you can still enjoy the excitement of playing with random operators and discover new ways to play the game!
-          </p>
-          
-          <p className="text-center text-gray-700 dark:text-gray-300 mb-6">
-            Can't decide which operator to play? Let us pick one for you! Select your preferences and click the button to get a random operator.
-          </p>
-          
-          {/* Selection Controls */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-            <button 
-              className="btn btn-lg btn-info"
-              onClick={() => randomizeOperator(SIDES.ATTACK)}
-              disabled={loading || attackers.length === 0}
-            >
-                Random Attacker
-            </button>
-                        
-            <button 
-              className="btn btn-lg btn-warning"
-              onClick={() => randomizeOperator(SIDES.DEFEND)}
-              disabled={loading || defenders.length === 0}
-            >
-                Random Defender
-            </button>
-          </div>
-          
-          {/* Result Display */}
-          {selectedOperator && (
-            <div className="flex flex-col items-center">
-              <div className="bg-gray-100 dark:bg-gray-700 rounded-lg p-8 flex flex-col items-center max-w-md mx-auto relative">
-                {!LucideChartNoAxesColumnDecreasing && (
-                <>
-                  <span className={`absolute top-4 right-4 badge ${normalizeSide(selectedOperator.side) === SIDES.ATTACK ? 'badge-info' : 'badge-warning'} badge-lg`}>
-                    {selectedOperator.side}
-                  </span>
-                  
-                  <div className="relative w-48 h-48 mb-4">
-                    <img 
-                      src={`/images/operators/${selectedOperator.fileName || selectedOperator.name}.png`} 
-                      alt={selectedOperator.name}
-                      className="w-full h-full object-contain"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = "/images/general/logo.png";
-                      }}
-                    />
-                    <img 
-                      src={`/images/operators/${selectedOperator.fileName || selectedOperator.name}_logo.png`} 
-                      alt={`${selectedOperator.name} logo`}
-                      className="absolute bottom-0 right-0 w-12 h-12"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.style.display = "none";
-                    }}
-                    />
-                  </div>
-                
-                <h2 className="text-2xl font-bold mb-2">{selectedOperator.fileName || selectedOperator.name}</h2>
-                <div className="flex flex-wrap justify-center gap-2 mb-4">
-                  {selectedOperator.roles.map((role, index) => (
-                    <span key={index} className="badge badge-outline">{role}</span>
-                  ))}
-                </div>
-                
-                <p className="text-center text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
-                  {selectedOperator.biography.description}
-                </p>
-                
-                <Link 
-                  to={`/siege/hub/operator/${selectedOperator.fileName || selectedOperator.name}`}
-                  className="btn btn-sm btn-primary"
-                >
-                  View Details
-                </Link>
-                </>
-                )}
-
-                {loading && (<span className="loading loading-spinner"></span>)}
-              </div>
-            </div>
-          )}
-          
-          
-        </div>
+        <RouletteContainer
+          onSelectOperator={randomizeOperator}
+          loading={loading}
+          selectedOperator={selectedOperator}
+          attackersAvailable={attackers.length > 0}
+          defendersAvailable={defenders.length > 0}
+          className="mb-8"
+        >
+          <OperatorRouletteHeader />
+        </RouletteContainer>
         
         {/* Future Features Section */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-          <h2 className="text-xl font-bold mb-4 text-center">Coming Soon</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="border border-dashed border-gray-300 dark:border-gray-600 rounded-md p-4 text-center">
-              <h3 className="font-medium mb-2">Random Weapons</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Get random primary and secondary weapons with attachments
-              </p>
-            </div>
-            <div className="border border-dashed border-gray-300 dark:border-gray-600 rounded-md p-4 text-center">
-              <h3 className="font-medium mb-2">Random Gadgets</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Add variety with random gadget selections
-              </p>
-            </div>
-          </div>
-        </div>
+        <FeaturePreview features={upcomingFeatures} />
       </div>
     </Layout>
   );

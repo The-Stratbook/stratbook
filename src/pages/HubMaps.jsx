@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../layouts/Layout';
 import SearchFilter from '../components/filters/SearchFilter';
+import ImageWithFallback from '../components/ImageWithFallback';
 
 const HubMaps = () => {
   const [maps, setMaps] = useState([]);
@@ -82,11 +83,12 @@ const HubMaps = () => {
             <div key={map.id} className="card bg-base-200 shadow-lg">
               <Link to={`/siege/hub/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
                 <figure>
-                  <img
+                  <ImageWithFallback
                     src={`/images/maps/${map.name}.jpg`}
                     alt={map.name}
+                    fallbackSrc="/images/maps/default.png"
                     className="w-full h-32 object-cover rounded-t-lg"
-                    onError={(e) => (e.target.src = '/images/maps/default.png')}
+                    aspectRatio="16/9"
                   />
                 </figure>
                 <div className="card-body text-center">

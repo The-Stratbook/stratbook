@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import LayoutFullWidth from '../layouts/LayoutFullWidth';
 import { normalizeSide, SIDES } from '../utils/sideUtils';
+import CompactOperatorCard from '../components/operators/CompactOperatorCard';
+import SelectedOperatorCard from '../components/operators/SelectedOperatorCard';
 
 const KillBoard = () => {
   const [attackers, setAttackers] = useState([]);
@@ -145,31 +147,17 @@ const KillBoard = () => {
             <h2 className="text-xl font-bold mb-2">Currently Selected:</h2>
             <div className="flex flex-wrap gap-4">
               {selectedAttacker && (
-                <div className="flex items-center gap-2 bg-base-100 p-2 rounded-lg border-l-4 border-primary">
-                  <div className="w-8 h-8">
-                    <img 
-                      src={`/images/operators/${selectedAttacker}_logo.png`} 
-                      alt={selectedAttacker}
-                      className="w-full h-full object-cover" 
-                      onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
-                    />
-                  </div>
-                  <span>{selectedAttacker} (Attacker)</span>
-                </div>
+                <SelectedOperatorCard 
+                  name={selectedAttacker} 
+                  side="Attacker"
+                />
               )}
               
               {selectedDefender && (
-                <div className="flex items-center gap-2 bg-base-100 p-2 rounded-lg border-l-4 border-secondary">
-                  <div className="w-8 h-8">
-                    <img 
-                      src={`/images/operators/${selectedDefender}_logo.png`} 
-                      alt={selectedDefender}
-                      className="w-full h-full object-cover" 
-                      onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
-                    />
-                  </div>
-                  <span>{selectedDefender} (Defender)</span>
-                </div>
+                <SelectedOperatorCard 
+                  name={selectedDefender} 
+                  side="Defender"
+                />
               )}
             </div>
           </div>
@@ -189,21 +177,15 @@ const KillBoard = () => {
               ) : (
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                   {attackers.map((op) => (
-                    <div
+                    <CompactOperatorCard
                       key={op.name}
-                      className={`p-4 border rounded-lg cursor-pointer ${op.alive ? 'bg-base-200 hover:bg-base-300' : 'bg-red-200 text-black'} ${selectedAttacker === op.name ? 'ring-2 ring-primary' : ''}`}
+                      name={op.name}
+                      fileName={op.fileName}
+                      alive={op.alive}
+                      isSelected={selectedAttacker === op.name}
+                      side="Attacker"
                       onClick={() => handleKill('Attacker', op.name)}
-                    >
-                      <div className="flex flex-col items-center">
-                        <img
-                          src={`/images/operators/${op.fileName ||op.name}_logo.png`}
-                          alt={op.name}
-                          className="w-12 h-12 mb-2"
-                          onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
-                        />
-                        <span>{op.name}</span>
-                      </div>
-                    </div>
+                    />
                   ))}
                 </div>
               )}
@@ -216,21 +198,15 @@ const KillBoard = () => {
               ) : (
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                   {defenders.map((op) => (
-                    <div
+                    <CompactOperatorCard
                       key={op.name}
-                      className={`p-4 border rounded-lg cursor-pointer ${op.alive ? 'bg-base-200 hover:bg-base-300' : 'bg-red-200 text-black'} ${selectedDefender === op.name ? 'ring-2 ring-secondary' : ''}`}
+                      name={op.name}
+                      fileName={op.fileName}
+                      alive={op.alive}
+                      isSelected={selectedDefender === op.name}
+                      side="Defender"
                       onClick={() => handleKill('Defender', op.name)}
-                    >
-                      <div className="flex flex-col items-center">
-                        <img
-                          src={`/images/operators/${op.fileName || op.name}_logo.png`}
-                          alt={op.name}
-                          className="w-12 h-12 mb-2"
-                          onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
-                        />
-                        <span>{op.name}</span>
-                      </div>
-                    </div>
+                    />
                   ))}
                 </div>
               )}
