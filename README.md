@@ -1,73 +1,110 @@
-# Getting Started with Create React App
+# Stratbook: Elevate Your Tactical FPS Gameplay
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Discover strategies, tips, and tricks to dominate tactical FPS games. Built by players, for the community, Stratbook is an open-source project designed to help gamers improve and share their knowledge.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Status
 
-### `npm start`
+This project is quite new and is still improving on many fronts, we do not have Guides or how-to's about how to help besides the files that are inside this project.
+We are always happy with any help or contributions done by you! Doesn't matter if it is adding new strategies to the 'database' or helping build features.
+At this moment we do not have a board or wiki yet, but we do want to add it in the future.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- **Comprehensive Strategy 'Database'**: Explore a wide range of strategies with detailed explanations, skill levels, and more.
+- **Community Contributions**: Submit your own strategies or improve existing ones.
+- **Open Source Development**: Collaborate with developers to add features and enhance the platform.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To set up the project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/The-Stratbook/stratbook.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd stratbook
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+- **Explore Strategies**: Browse, search, and filter strategies tailored to different maps, operators, and playstyles.
+- **Contribute**: Add new strategies or improve existing ones by following the guidelines in the [Contributing](#contributing) section.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+We welcome all contributions, whether you're adding new strategies, fixing bugs, or building new features. Here's how you can contribute:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Fork this repository.
+2. Create a new branch for your changes:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add a brief description of your changes"
+   ```
+4. Push your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
 
-## Learn More
+For more details, check out our [Contributing Guidelines](./CONTRIBUTING.md).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Strategy Contributions
 
-### Code Splitting
+We welcome community contributions to our strategy database! Check out the [Contributing Strategy](#contributing-strategies) section for details on how to submit your strategies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the [MIT License](./LICENSE). Feel free to use, modify, and distribute this software in compliance with the license terms.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+A huge thank you to the community for their support and contributions. Special thanks to [vanhoutenbos](https://github.com/vanhoutenbos) for spearheading the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Have questions or suggestions? Reach out to us:
+- [GitHub Discussions](https://github.com/The-Stratbook/stratbook/discussions)
+- [Discord](https://discord.gg/vBt738j)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Badges
+[![Build Status](https://img.shields.io/github/workflow/status/The-Stratbook/stratbook/CI)](https://github.com/The-Stratbook/stratbook/actions)
+[![License](https://img.shields.io/github/license/The-Stratbook/stratbook)](./LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/The-Stratbook/stratbook)](https://github.com/The-Stratbook/stratbook/graphs/contributors)
+
+---
 
 ## Contributing Strategies
 
@@ -138,9 +175,13 @@ We've provided two example templates to help you understand the structure:
 To submit a new strategy:
 
 1. Fork this repository
-2. Create your strategy JSON file in the `public/data/siege/tips` directory
+2. Create your strategy JSON file in the `public/data/<game>/tips` directory
 3. The filename should be structured (e.g., `<id>.json`) for example `1.json`
 4. Submit a pull request with your new strategy
 5. Our team will review the submission and provide feedback if needed
 
-Thank you for contributing to the Siege Tips community!
+Thank you for contributing to the Stratbook community!
+
+## Any other contributions
+
+Do you want to contribute but in another way than mentioned above? Feel free to contact [Jean-Paul](https://github.com/vanhoutenbos) through github or through [discord](https://discord.gg/vBt738jk)
