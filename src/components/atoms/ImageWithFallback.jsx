@@ -23,7 +23,6 @@ const ImageWithFallback = ({
   ...props 
 }) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
 
   const handleLoad = () => {
     setIsLoading(false);
@@ -32,7 +31,6 @@ const ImageWithFallback = ({
   const handleError = (e) => {
     e.target.onerror = null;
     e.target.src = fallbackSrc;
-    setHasError(true);
     setIsLoading(false);
   };
 

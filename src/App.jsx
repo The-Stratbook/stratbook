@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { trackPageView, initializeGA } from './ga4';
 import { initializeClarity } from './clarity';
 import { initializeGTM } from './gtm';
+import ScrollToTop from './components/ScrollToTop';
 
 import Home from './Home';
 import TipsOverview from './features/tips/pages/TipsOverview';
@@ -23,7 +24,6 @@ import OperatorGuides from './features/coming-soon/pages/OperatorGuides';
 import MapGuides from './features/coming-soon/pages/MapGuides';
 import ProSetups from './features/coming-soon/pages/ProSetups';
 import MetaTierLists from './features/coming-soon/pages/MetaTierLists';
-import FunTools from './features/coming-soon/pages/FunTools';
 import MythsSection from './features/coming-soon/pages/MythsSection';
 import CommunityFeatures from './features/coming-soon/pages/CommunityFeatures';
 import SiteImprovements from './features/coming-soon/pages/SiteImprovements';
@@ -46,45 +46,47 @@ function App() {
   }, [location]);
 
   return (
-    <Routes>
-      {/* Default The Stratbook route */}
-      <Route path="/" element={<Home/>} />
-      <Route path="/coming-soon" element={<ComingSoon />} />
-      <Route path="/contribute" element={<Contribute />} />
-      <Route path="/terms-of-service" element={<TermsOfService />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      <Route path="/cookie-policy" element={<CookiePolicy />} />
-      <Route path="/component-demo" element={<ComponentDemo />} />
-      
-      {/* Coming Soon feature routes */}
-      <Route path="/coming-soon/operator-guides" element={<OperatorGuides />} />
-      <Route path="/coming-soon/map-guides" element={<MapGuides />} />
-      <Route path="/coming-soon/pro-setups" element={<ProSetups />} />
-      <Route path="/coming-soon/meta-tier-lists" element={<MetaTierLists />} />
-      <Route path="/coming-soon/fun-tools" element={<FunTools />} />
-      <Route path="/coming-soon/myths-section" element={<MythsSection />} />
-      <Route path="/coming-soon/community-features" element={<CommunityFeatures />} />
-      <Route path="/coming-soon/site-improvements" element={<SiteImprovements />} />
-      <Route path="/coming-soon/educational-content" element={<EducationalContent />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        {/* Default The Stratbook route */}
+        <Route path="/" element={<Home/>} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path="/contribute" element={<Contribute />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/component-demo" element={<ComponentDemo />} />
+        
+        {/* Coming Soon feature routes */}
+        <Route path="/coming-soon/operator-guides" element={<OperatorGuides />} />
+        <Route path="/coming-soon/map-guides" element={<MapGuides />} />
+        <Route path="/coming-soon/pro-setups" element={<ProSetups />} />
+        <Route path="/coming-soon/meta-tier-lists" element={<MetaTierLists />} />
+        <Route path="/coming-soon/myths-section" element={<MythsSection />} />
+        <Route path="/coming-soon/community-features" element={<CommunityFeatures />} />
+        <Route path="/coming-soon/site-improvements" element={<SiteImprovements />} />
+        <Route path="/coming-soon/educational-content" element={<EducationalContent />} />
 
-      {/* Siege routes */}
-      <Route path="/siege/tips" element={<TipsOverview />} />
-      <Route path="/siege/tip/:id" element={<TipDetail />} />
-      <Route path="/siege/external-tools" element={<ExternalTools />} />
+        {/* Siege routes */}
+        <Route path="/siege/tips" element={<TipsOverview />} />
+        <Route path="/siege/tip/:id" element={<TipDetail />} />
+        <Route path="/siege/external-tools" element={<ExternalTools />} />
 
-      {/* Siege Hub routes */}
-      <Route path="/siege/hub" element={<Hub />} />
-      <Route path="/siege/hub/maps" element={<HubMaps />} />
-      <Route path="/siege/hub/maps/:mapName" element={<MapDetail />} />
-      <Route path="/siege/hub/operators" element={<HubOperators/>} />
-      <Route path="/siege/hub/operators/:operatorName" element={<OperatorDetail />} />
+        {/* Siege Hub routes */}
+        <Route path="/siege/hub" element={<Hub />} />
+        <Route path="/siege/hub/maps" element={<HubMaps />} />
+        <Route path="/siege/hub/maps/:mapName" element={<MapDetail />} />
+        <Route path="/siege/hub/operators" element={<HubOperators/>} />
+        <Route path="/siege/hub/operators/:operatorName" element={<OperatorDetail />} />
 
-      {/* Siege Fun Tools routes */}
-      <Route path="/siege/fun" element={<Fun />} />
-      <Route path="/siege/fun/killboard" element={<KillBoard />} />
-      <Route path="/siege/fun/operator-roulette" element={<OperatorRoulette />} />
-    </Routes>
-);
+        {/* Siege Fun Tools routes */}
+        <Route path="/siege/fun" element={<Fun />} />
+        <Route path="/siege/fun/killboard" element={<KillBoard />} />
+        <Route path="/siege/fun/operator-roulette" element={<OperatorRoulette />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;

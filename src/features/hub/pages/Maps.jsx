@@ -78,20 +78,19 @@ const HubMaps = () => {
           <SearchFilter searchTerm={searchTerm} onSearchChange={setSearchTerm} />
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredMaps.map((map) => (
             <div key={map.id} className="card bg-base-200 shadow-lg">
               <Link to={`/siege/hub/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
-                <figure>
+                <figure className="h-40">
                   <ImageWithFallback
                     src={`/images/maps/${map.name}.jpg`}
+                    fallbackSrc="/images/maps/Default.jpg"
                     alt={map.name}
-                    fallbackSrc="/images/maps/default.png"
-                    className="w-full h-32 object-cover rounded-t-lg"
-                    aspectRatio="16/9"
+                    className="w-full h-full object-cover rounded-t-lg"
                   />
                 </figure>
-                <div className="card-body text-center">
+                <div className="card-body p-4 text-center">
                   <h3 className="text-lg font-bold">{map.name}</h3>
                 </div>
               </Link>

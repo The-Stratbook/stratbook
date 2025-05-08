@@ -127,16 +127,6 @@ const Home = () => {
                 </div>
                 <div className="card bg-base-200 shadow-lg p-4">
                   <h3 className="text-xl font-bold text-primary">
-                    <Link to="/coming-soon/meta-tier-lists" className="hover:underline">Meta Tier Lists</Link>
-                  </h3>
-                </div>
-                <div className="card bg-base-200 shadow-lg p-4">
-                  <h3 className="text-xl font-bold text-primary">
-                    <Link to="/coming-soon/fun-tools" className="hover:underline">Fun Games</Link>
-                  </h3>
-                </div>
-                <div className="card bg-base-200 shadow-lg p-4">
-                  <h3 className="text-xl font-bold text-primary">
                     <Link to="/coming-soon/myths-section" className="hover:underline">Myth Busting</Link>
                   </h3>
                 </div>

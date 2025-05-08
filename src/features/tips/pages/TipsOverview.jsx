@@ -185,7 +185,7 @@ const TipsOverview = () => {
   };
 
   const handleSideChange = (side) => {
-    setFilters({ ...filters, side }); // Only update the side filter
+    setFilters({ ...filters, side });
   };
 
   const handleSearchChange = (term) => {

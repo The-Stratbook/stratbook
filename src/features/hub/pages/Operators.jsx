@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from '../../../components/templates/Layout';
 import SearchFilter from '../../../components/filters/SearchFilter';
 import SideFilter from '../../../components/filters/SideFilter';
-import { SIDES } from '../../../utils/sideUtils';
+import { SIDES, normalizeSide } from '../../../utils/sideUtils';
 import GridOperatorCard from "../../../features/operators/components/operators/GridOperatorCard";
 
 const HubOperators = () => {
@@ -36,8 +36,8 @@ const HubOperators = () => {
 
   const filteredOperators = operators
     .filter((operator) =>
-      selectedSide === SIDES.BOTH ||
-      (operator.side && operator.side.toLowerCase() === selectedSide.toLowerCase())
+      normalizeSide(selectedSide) === SIDES.BOTH ||
+      (operator.side && normalizeSide(operator.side) === normalizeSide(selectedSide))
     )
     .filter((operator) => {
       if (!searchTerm) return true;

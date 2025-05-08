@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ImageWithFallback from '../../../../components/atoms/ImageWithFallback';
 
 /**
  * A medium-sized grid card for operators with image and logo
@@ -26,17 +27,17 @@ const GridOperatorCard = ({
       className={`block card bg-base-200 relative group cursor-pointer ${className}`}
     >
       <figure className="relative overflow-hidden rounded-lg shadow-lg">
-        <img
+        <ImageWithFallback
           src={`/images/operators/${imageName}.png`}
+          fallbackSrc="/images/operators/default.png"
           alt={name}
           className="w-full h-50 object-cover object-top rounded-t-lg"
-          onError={(e) => (e.target.src = "/images/operators/default.png")}
         />
-        <img
+        <ImageWithFallback
           src={`/images/operators/${imageName}_logo.png`}
+          fallbackSrc="/images/operators/default_logo.png"
           alt={`${name} Icon`}
           className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-2 border-white shadow-md"
-          onError={(e) => (e.target.src = "/images/operators/default_logo.png")}
         />
       </figure>
       <div className="card-body text-black text-center py-2 rounded-b-lg">
