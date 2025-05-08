@@ -2,7 +2,7 @@
     "id": 28,
     "title": "A summary of some usefull callouts to know",
     "description": "In this video you'll get to hear some callouts that everyone uses or should use.",
-    "side": "Both",
+    "side": "Universal",
     "skill": "Intermediate",
     "tags": ["Call-outs"],
     "videoUrl": "https://www.instagram.com/p/DGUdyIbsIjz/",
@@ -14,5 +14,4 @@
       "name": "Dakpan",
       "discord_username": "myusernameisdakpanbutitwastaken"
     }
-  }
-  
+}

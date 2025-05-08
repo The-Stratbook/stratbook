@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../../../components/templates/Layout';
 import SearchFilter from '../../../components/filters/SearchFilter';
+import SideFilter from '../../../components/filters/SideFilter';
 import ImageWithFallback from '../../../components/atoms/ImageWithFallback';
 
 const HubMaps = () => {
   const [maps, setMaps] = useState([]);
   const [selectedPlaylist, setSelectedPlaylist] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedSide, setSelectedSide] = useState('');
 
   useEffect(() => {
     const fetchMaps = async () => {
@@ -46,6 +48,10 @@ const HubMaps = () => {
       !searchTerm || map.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
+  const handleSideChange = (side) => {
+    setSelectedSide(side);
+  };
+
   return (
     <Layout seoProps={{
       title: 'Rainbow Six Siege Maps | Explore All Maps',
@@ -57,6 +63,14 @@ const HubMaps = () => {
     }}>
       <div className="container mx-auto p-4">
         <h1 className="text-4xl font-bold mb-4">Maps</h1>
+        
+        <div className="mb-4">
+          <SideFilter 
+            selectedSide={selectedSide} 
+            onSideChange={handleSideChange}
+            showUniversal={false} 
+          />
+        </div>
 
         <div className="tabs tabs-boxed w-full mb-4 rounded-lg overflow-hidden">
           {uniquePlaylists.map((playlist) => (

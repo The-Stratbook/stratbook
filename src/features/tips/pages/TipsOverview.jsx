@@ -9,7 +9,7 @@ import TagFilter from "../../../components/filters/TagFilter";
 import SearchFilter from "../../../components/filters/SearchFilter";
 import TipsList from "../components/tips/TipsList";
 import Layout from '../../../components/templates/Layout';
-import { SIDES } from '../../../utils/sideUtils';
+import { SIDES, normalizeSide } from '../../../utils/sideUtils';
 
 const TipsOverview = () => {
   const location = useLocation();
@@ -129,7 +129,10 @@ const TipsOverview = () => {
   const filteredTips = tipsData
     .filter(tip => 
       (!filters.operator || tip.operator?.toLowerCase() === filters.operator.toLowerCase()) &&
-      (!filters.side || tip.side === filters.side) &&
+      (!filters.side || 
+        filters.side === SIDES.BOTH || 
+        tip.side?.toLowerCase() === filters.side.toLowerCase()
+      ) &&
       (!filters.skill || tip.skill === filters.skill) &&
       (!filters.map || tip.map === filters.map || tip.map === 'Any') &&
       (!filters.tag || (Array.isArray(tip.tags) && tip.tags.includes(filters.tag)))
@@ -215,14 +218,21 @@ const TipsOverview = () => {
 
               {filtersVisible && (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mb-3">
-                  <MapFilter selectedMap={selectedMap} onSelectMap={handleSelectMap} />
+                  <MapFilter 
+                    selectedMap={selectedMap} 
+                    onSelectMap={handleSelectMap} 
+                  />
                   <OperatorFilter
                     selectedOperator={selectedOperator}
                     onSelectOperator={handleSelectOperator}
                     selectedSide={filters.side}
                     onSideChange={handleSideChange}
                   />
-                  <SideFilter selectedSide={filters.side} onSideChange={handleSideChange} />
+                  <SideFilter 
+                    selectedSide={filters.side} 
+                    onSideChange={handleSideChange}
+                    showUniversal={true}
+                  />
                   <SkillLevelFilter
                     selectedSkill={filters.skill}
                     onSelectSkill={(skill) => setFilters({ ...filters, skill })}
@@ -233,7 +243,10 @@ const TipsOverview = () => {
 
               {filtersVisible && (
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-2 mb-3">
-                  <SearchFilter searchTerm={searchTerm} onSearchChange={handleSearchChange} />
+                  <SearchFilter 
+                    searchTerm={searchTerm} 
+                    onSearchChange={handleSearchChange} 
+                  />
                 </div>
               )}
 

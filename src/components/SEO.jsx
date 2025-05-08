@@ -47,7 +47,6 @@ const SEO = ({ title, description, url, image, type, canonicalUrl, faqSchema, ke
         }
         document.head.appendChild(metaTag);
       }
-      
       metaTag.setAttribute('content', content);
     });
 
@@ -64,17 +63,18 @@ const SEO = ({ title, description, url, image, type, canonicalUrl, faqSchema, ke
       canonicalTag.remove();
     }
 
-    // Handle schema data if provided
-    let schemaTag = document.querySelector('script[type="application/ld+json"]');
+    // Handle schema data - FIX: remove all existing schema tags with data-schema-type attribute first
+    // This ensures we don't accumulate multiple schema tags when navigating or clicking buttons
+    const existingSchemaTags = document.querySelectorAll('script[data-schema-type]');
+    existingSchemaTags.forEach(tag => tag.remove());
+
     if (faqSchema) {
-      if (!schemaTag) {
-        schemaTag = document.createElement('script');
-        schemaTag.type = 'application/ld+json';
-        document.head.appendChild(schemaTag);
-      }
+      const schemaTag = document.createElement('script');
+      schemaTag.type = 'application/ld+json';
+      // Add a custom attribute to identify our schema tags for later cleanup
+      schemaTag.setAttribute('data-schema-type', 'faq');
       schemaTag.textContent = JSON.stringify(faqSchema);
-    } else if (schemaTag) {
-      schemaTag.remove();
+      document.head.appendChild(schemaTag);
     }
 
     // Cleanup function

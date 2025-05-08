@@ -66,7 +66,11 @@ const HubOperators = () => {
         <h1 className="text-4xl font-bold mb-4">Operators</h1>
 
         <div className="mb-4">
-          <SideFilter selectedSide={selectedSide} onSideChange={handleSideChange} />
+          <SideFilter 
+            selectedSide={selectedSide} 
+            onSideChange={handleSideChange} 
+            showUniversal={false}
+          />
         </div>
 
         <div className="mb-4">

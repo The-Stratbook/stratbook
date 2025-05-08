@@ -29,7 +29,7 @@ const TipCard = ({ tip }) => {
           <h3 
             className="card-title text-xl text-secondary"
             style={{
-              height: "4.5rem", // Approximately 3 lines of text
+              height: "5.5rem", // Approximately 3 lines of text
               overflow: "hidden",
               textOverflow: "ellipsis",
               display: "-webkit-box",
@@ -37,7 +37,7 @@ const TipCard = ({ tip }) => {
               WebkitBoxOrient: "vertical"
             }}
           >
-            {tip.title.length > 70 ? `${tip.title.substring(0, 70)}...` : tip.title}
+            {tip.title}
           </h3>
 
           {/* Tip Image - Fixed height with standardized ImageWithFallback */}
@@ -47,7 +47,6 @@ const TipCard = ({ tip }) => {
               fallbackSrc="/images/tips/default.jpg"
               alt={generateAltText()}
               className="w-full h-full object-cover rounded-xl"
-              aspectRatio="16/9"
             />
           </figure>
 

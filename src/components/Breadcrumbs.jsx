@@ -55,18 +55,21 @@ const Breadcrumbs = () => {
     
     const schema = generateBreadcrumbSchema();
     
-    let scriptTag = document.querySelector('script[data-breadcrumbs]');
-    if (!scriptTag) {
-      scriptTag = document.createElement('script');
-      scriptTag.setAttribute('type', 'application/ld+json');
-      scriptTag.setAttribute('data-breadcrumbs', 'true');
-      document.head.appendChild(scriptTag);
-    }
+    // First, remove any existing breadcrumb schema tags to prevent duplication
+    const existingBreadcrumbTags = document.querySelectorAll('script[data-breadcrumbs]');
+    existingBreadcrumbTags.forEach(tag => tag.remove());
     
+    // Create a new tag with our breadcrumb schema
+    const scriptTag = document.createElement('script');
+    scriptTag.setAttribute('type', 'application/ld+json');
+    scriptTag.setAttribute('data-breadcrumbs', 'true');
     scriptTag.textContent = JSON.stringify(schema);
+    document.head.appendChild(scriptTag);
     
+    // Cleanup function to remove the tag when the component unmounts
     return () => {
-      if (scriptTag) scriptTag.remove();
+      const breadcrumbTags = document.querySelectorAll('script[data-breadcrumbs]');
+      breadcrumbTags.forEach(tag => tag.remove());
     };
   }, [location.pathname, pathnames.length]);
   
@@ -89,19 +92,18 @@ const Breadcrumbs = () => {
           // Skip rendering empty names
           if (!name) return null;
           
-          // Build the path up to this point
-          const to = `/${pathnames.slice(0, index + 1).join('/')}`;
-          
-          return (
-            <li key={to} className="breadcrumb-item flex items-center">
-              <span className="mx-20">/</span>
-              {last ? (
-                <span aria-current="page">{name}</span>
-              ) : (
-                <Link to={to} className="text-blue-500 hover:text-blue-700">
-                  {name}
-                </Link>
-              )}
+          return last ? (
+            <li key={value} className="breadcrumb-item">
+              <span className="text-gray-500">
+                {name}
+              </span>
+            </li>
+          ) : (
+            <li key={value} className="breadcrumb-item flex items-center">
+              <Link to={`/${pathnames.slice(0, index + 1).join('/')}`} className="text-blue-500 hover:text-blue-700">
+                {name}
+              </Link>
+              <span className="mx-2 text-gray-400">/</span>
             </li>
           );
         })}
