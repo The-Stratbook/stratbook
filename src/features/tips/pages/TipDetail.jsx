@@ -16,9 +16,13 @@ const TipDetail = () => {
   const { id } = useParams();
   const videoRef = useRef(null);
   const [tip, setTip] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // No need for manual script loading since react-social-media-embed handles this for us
+    // Just focusing on fetching the tip data when ID changes
     const fetchTip = async () => {
+      setLoading(true);
       try {
         const response = await fetch(`/data/siege/tips/${id}.json`);
         if (!response.ok) throw new Error('Tip not found');
@@ -27,14 +31,32 @@ const TipDetail = () => {
       } catch (error) {
         console.error(error);
         setTip(null);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchTip();
   }, [id]);
 
+  if (loading) {
+    return (
+      <Layout>
+        <div className="container mx-auto flex justify-center items-center min-h-[50vh]">
+          <div className="loading loading-spinner loading-lg text-primary"></div>
+        </div>
+      </Layout>
+    );
+  }
+
   if (!tip) {
-    return <div className="alert alert-error">Tip not found</div>;
+    return (
+      <Layout>
+        <div className="container mx-auto p-4">
+          <div className="alert alert-error">Tip not found</div>
+        </div>
+      </Layout>
+    );
   }
 
   const baseUrl = window.location.origin;
@@ -214,7 +236,6 @@ const TipDetail = () => {
             </section>
 
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-              <h2 className="text-xl font-bold mb-4">Metadata</h2>
               <TipMetadata tip={tip} />
             </section>
 
@@ -230,7 +251,6 @@ const TipDetail = () => {
 
             {tip.detailedNotes && (
               <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-                <h2 className="text-xl font-bold mb-4">Detailed Notes</h2>
                 <DetailedNotes detailedNotes={tip.detailedNotes} />
               </section>
             )}

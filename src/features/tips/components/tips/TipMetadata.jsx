@@ -33,7 +33,7 @@ const TipMetadata = ({ tip }) => {
       </div>
 
       <div className="mt-4">
-        <h3 className="text-lg font-bold">Additional Details</h3>
+        <h3 className="text-lg font-bold">Metadata</h3>
         <div className="space-y-2">
           {tip.operator && <p><strong>Operator:</strong> {tip.operator}</p>}
           {tip.side && <p><strong>Side:</strong> {tip.side}</p>}

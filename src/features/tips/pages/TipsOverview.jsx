@@ -131,7 +131,7 @@ const TipsOverview = () => {
       (!filters.operator || tip.operator?.toLowerCase() === filters.operator.toLowerCase()) &&
       (!filters.side || 
         filters.side === SIDES.BOTH || 
-        tip.side?.toLowerCase() === filters.side.toLowerCase()
+        normalizeSide(tip.side) === normalizeSide(filters.side)
       ) &&
       (!filters.skill || tip.skill === filters.skill) &&
       (!filters.map || tip.map === filters.map || tip.map === 'Any') &&
