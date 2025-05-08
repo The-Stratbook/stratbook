@@ -2,7 +2,7 @@
     "id": 46,
     "title": "Some ingame settings you need like crosshair color",
     "description": "These tips will help you play the game with less disruptance and more visibility!",
-    "side": "Both",
+    "side": "Universal",
     "skill": "Intermediate",
     "tags": ["Settings"],
     "videoUrl": "https://www.instagram.com/p/DEqZEMsRoLd/",
@@ -15,4 +15,3 @@
       "discord_username": "myusernameisdakpanbutitwastaken"
     }
   }
-  

@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../layouts/Layout';
+import Layout from '../components/templates/Layout';
 
 const Contribute = () => {
 
@@ -175,7 +175,7 @@ const Contribute = () => {
   "id": 0,                        // Leave as 0 for new submissions
   "title": "Your Strategy Title", // Required - Keep concise but descriptive
   "description": "Detailed explanation of the strategy...", // Required - Supports markdown
-  "side": "Attack",            // Required - "Attacker", "Defender", or "Both"
+  "side": "Attacker",            // Required - "Attacker", "Defender", or "Both"
   "skill": "Intermediate",       // Required - "Beginner", "Intermediate", or "Expert"
   "tags": ["Vertical Play", "Entry"], // Required - Categories that describe your strategy
   "relatedStrategies": [],       // Required - Can be empty for new submissions

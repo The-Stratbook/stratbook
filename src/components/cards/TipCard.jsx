@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Tag } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
+import ImageWithFallback from '../../components/atoms/ImageWithFallback'
 
 const TipCard = ({ tip }) => {
   // Generate a descriptive alt text that combines title, map and operator info when available
@@ -18,17 +19,13 @@ const TipCard = ({ tip }) => {
   const hasMoreTags = Array.isArray(tip.tags) && tip.tags.length > 2;
 
   return (
-    <div
-      className="card bg-base-100 hover:shadow-lg transition-shadow"
-      style={{ height: "100%" }} // Ensure consistent card height
-    >
+    <div className="card bg-base-100 hover:shadow-lg transition-shadow h-full">
       <Link to={`/siege/tip/${tip.id}`} className="block h-full">
-        <div className="card-body flex flex-col justify-between">
+        <div className="card-body flex flex-col justify-between h-full p-4 sm:p-6">
           {/* Tip Title - Limited to 3 lines with ellipsis */}
           <h3 
-            className="card-title text-xl text-secondary"
+            className="card-title text-lg sm:text-xl text-secondary mb-3"
             style={{
-              height: "4.5rem", // Approximately 3 lines of text
               overflow: "hidden",
               textOverflow: "ellipsis",
               display: "-webkit-box",
@@ -36,35 +33,28 @@ const TipCard = ({ tip }) => {
               WebkitBoxOrient: "vertical"
             }}
           >
-            {tip.title.length > 70 ? `${tip.title.substring(0, 70)}...` : tip.title}
+            {tip.title}
           </h3>
 
-          {/* Tip Image - Fixed height */}
-          <figure className="mb-4" style={{ height: "12rem" }}>
-            <img
+          {/* Tip Image - Responsive height with standardized ImageWithFallback */}
+          <figure className="mb-4 aspect-[4/3] w-full">
+            <ImageWithFallback
               src={tip.imageUrl || "/images/tips/default.jpg"}
+              fallbackSrc="/images/tips/default.jpg"
               alt={generateAltText()}
               className="w-full h-full object-cover rounded-xl"
-              loading="lazy"
-              onError={(e) => (e.target.src = "/images/tips/default.jpg")}
             />
           </figure>
 
           {/* Tags - Show only 2 tags, with indicator if more exist */}
-          <div className="flex space-x-2 items-center mb-2" style={{ height: "1.75rem" }}>
+          <div className="flex flex-wrap gap-2 items-center mb-3">
             <span className="text-base-content">
               <Tag size={16} />
             </span>
             {displayedTags.map((tag) => (
               <div
                 key={tag}
-                className="badge badge-primary badge-outline truncate"
-                style={{
-                  maxWidth: "100px",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap",
-                }}
+                className="badge badge-primary badge-outline truncate max-w-[100px]"
               >
                 {tag}
               </div>
@@ -76,25 +66,13 @@ const TipCard = ({ tip }) => {
             )}
           </div>
 
-          {/* Truncate long descriptive text - Fixed height */}
-          <div
-            className="text-base-content"
-            style={{
-              height: "4.5rem", // Fixed height for description
-              overflow: "hidden",
-            }}
-          >
+          {/* Truncate long descriptive text - Responsive height */}
+          <div className="text-base-content mb-4">
             <ReactMarkdown
               components={{
                 p: ({ node, ...props }) => (
                   <span
-                    style={{
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                      display: "-webkit-box",
-                      WebkitLineClamp: 3,
-                      WebkitBoxOrient: "vertical",
-                    }}
+                    className="line-clamp-3"
                     {...props}
                   />
                 ),
@@ -103,7 +81,7 @@ const TipCard = ({ tip }) => {
               {tip.description}
             </ReactMarkdown>
           </div>
-          <div className="card-actions mt-4">
+          <div className="card-actions mt-auto">
             <button
               onClick={(e) => {
                 e.preventDefault();

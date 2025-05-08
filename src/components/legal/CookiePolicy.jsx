@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../layouts/Layout';
+import Layout from '../../components/templates/Layout';
 
 const CookiePolicy = () => {
   return (

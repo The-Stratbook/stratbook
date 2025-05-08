@@ -92,24 +92,28 @@ label {
 :root {  
   --attack-color: #ff9800; /* Default Orange */
   --defend-color: #2196f3; /* Default Blue */
+  --universal-color: #4caf50; /* Default Green */
 }
 
 /* Orange/Red Theme */
 [data-color-theme="orange-red"] {
   --attack-color: #ff9800;
   --defend-color: #f44336;
+  --universal-color: #4caf50;
 }
 
 /* Blue/Orange Theme */
 [data-color-theme="blue-orange"] {
   --attack-color: #2196f3;
   --defend-color: #ff9800;
+  --universal-color: #4caf50;
 }
 
 /* Blue/Red Theme */
 [data-color-theme="blue-red"] {
   --attack-color: #2196f3;
   --defend-color: #f44336;
+  --universal-color: #4caf50;
 }
 
 /* DaisyUI/Tailwind custom buttons for attack/defend (unchanged) */
@@ -141,4 +145,14 @@ label {
 
 .card.defend {
   border-color: var(--defend-color);
+}
+
+.youtube-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.rsme-youtube-embed > div {
+  width: 100%;
+  height: 100%;
 }

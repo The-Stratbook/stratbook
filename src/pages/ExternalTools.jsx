@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../layouts/Layout';
+import Layout from '../components/templates/Layout';
 import ExternalToolCard from '../components/cards/ExternalToolCard';
+import { externalToolsService } from '../services/api';
 
 const ExternalTools = () => {
   const [tools, setTools] = useState(null);
@@ -10,12 +11,9 @@ const ExternalTools = () => {
   useEffect(() => {
     const fetchTools = async () => {
       try {
-        const response = await fetch('/data/externalTools.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch external tools data');
-        }
-        const data = await response.json();
-        setTools(data);
+        // Use our service layer instead of direct fetch
+        const toolsData = await externalToolsService.getAllTools();
+        setTools(toolsData);
         setLoading(false);
       } catch (err) {
         console.error('Error fetching external tools:', err);

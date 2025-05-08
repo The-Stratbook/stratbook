@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Link } from "react-router-dom";
-import LayoutFullWidth from "./layouts/LayoutFullWidth";
+import LayoutFullWidth from "./components/templates/LayoutFullWidth";
 
 const Home = () => {
   const pageTitle = "Tactical FPS Tips & Strategies | The Stratbook";
@@ -123,16 +123,6 @@ const Home = () => {
                 <div className="card bg-base-200 shadow-lg p-4">
                   <h3 className="text-xl font-bold text-primary">
                     <Link to="/coming-soon/pro-setups" className="hover:underline">Pro Setups</Link>
-                  </h3>
-                </div>
-                <div className="card bg-base-200 shadow-lg p-4">
-                  <h3 className="text-xl font-bold text-primary">
-                    <Link to="/coming-soon/meta-tier-lists" className="hover:underline">Meta Tier Lists</Link>
-                  </h3>
-                </div>
-                <div className="card bg-base-200 shadow-lg p-4">
-                  <h3 className="text-xl font-bold text-primary">
-                    <Link to="/coming-soon/fun-tools" className="hover:underline">Fun Games</Link>
                   </h3>
                 </div>
                 <div className="card bg-base-200 shadow-lg p-4">

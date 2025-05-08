@@ -110,6 +110,35 @@ Have questions or suggestions? Reach out to us:
 
 We welcome community contributions to our strategy database! Below you'll find detailed information about the structure for submitting a new strategy.
 
+### File structure
+
+foccused on feature-based organization and atomic design principles.
+
+src/
+  ├── assets/           # Static assets (icons, images)
+  ├── components/       # Shared reusable components (atomic design)
+  │    ├── atoms/       # Basic UI elements (buttons, inputs, etc.)
+  │    ├── molecules/   # Simple combinations of atoms
+  │    └── organisms/   # Complex UI components 
+  ├── features/         # Feature-specific code
+  │    ├── maps/
+  │    │    ├── components/  # Components specific to this feature
+  │    │    ├── hooks/       # Feature-specific hooks
+  │    │    ├── pages/       # Pages for this feature
+  │    │    └── utils/       # Feature-specific utilities
+  │    ├── operators/
+  │    │    └── ...
+  │    ├── tips/
+  │    │    └── ...
+  │    └── ...
+  ├── layouts/          # Page layout templates
+  ├── hooks/            # Shared custom hooks
+  ├── pages/            # Top-level pages that don't belong to a specific feature (About, Home, etc.)
+                        # Feature-specific pages should go in their respective feature folder
+  ├── services/         # API services and data fetching
+  ├── styles/           # Global styles and theme
+  └── utils/            # Shared utility functions
+
 ### Strategy JSON Structure
 
 #### Required Fields

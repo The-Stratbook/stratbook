@@ -1,4 +1,3 @@
-
 /* These will work regardless of the theme */
 .btn-attack {
   background-color: var(--attack-color);
@@ -10,6 +9,18 @@
   background-color: transparent;
   border-color: var(--attack-color);
   color: var(--attack-color);
+}
+
+.btn-universal {
+  background-color: var(--universal-color);
+  border-color: var(--universal-color);
+  color: #17171b;
+}
+
+.btn-universal-outline {
+  background-color: transparent;
+  border-color: var(--universal-color);
+  color: var(--universal-color);
 }
 
 .btn-defend {
@@ -26,6 +37,10 @@
 
 .card.attack {
   border-color: var(--attack-color);
+}
+
+.card.universal {
+  border-color: var(--universal-color);
 }
 
 .card.defend {
