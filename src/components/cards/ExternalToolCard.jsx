@@ -12,20 +12,22 @@ const ExternalToolCard = ({ tool, className = '' }) => {
   };
 
   return (
-    <div className={`card bg-base-200 shadow-xl transition-all hover:shadow-2xl hover:-translate-y-1 ${className}`}>
+    <div className={`card bg-base-200 shadow-xl transition-all hover:shadow-2xl hover:-translate-y-1 h-full ${className}`}>
       <figure className="px-4 pt-4">
-        <img 
-          src={tool.image} 
-          alt={getAltText()}
-          className="rounded-xl h-32 object-contain bg-base-200 p-2"
-          loading="lazy"
-          onError={handleImageError}
-        />
+        <div className="w-full h-24 sm:h-32 flex items-center justify-center">
+          <img 
+            src={tool.image} 
+            alt={getAltText()}
+            className="rounded-xl max-h-full max-w-full object-contain bg-base-200 p-2"
+            loading="lazy"
+            onError={handleImageError}
+          />
+        </div>
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">{tool.name}</h2>
-        <p className="text-sm">{tool.description}</p>
-        <div className="card-actions justify-end mt-4">
+      <div className="card-body p-4 sm:p-6 flex flex-col h-full">
+        <h2 className="card-title text-lg sm:text-xl">{tool.name}</h2>
+        <p className="text-sm line-clamp-3">{tool.description}</p>
+        <div className="card-actions justify-end mt-auto pt-3">
           <a 
             href={tool.link} 
             target="_blank" 

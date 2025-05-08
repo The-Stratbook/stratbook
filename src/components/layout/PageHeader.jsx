@@ -10,9 +10,9 @@ import React from 'react';
 const PageHeader = ({ title, subtitle, children, className = "mb-8 text-center" }) => {
   return (
     <div className={className}>
-      <h1 className="text-4xl font-bold mb-2">{title}</h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">{title}</h1>
       {subtitle && (
-        <p className="text-xl mb-4 text-base-content">
+        <p className="text-lg sm:text-xl mb-4 text-base-content">
           {subtitle}
         </p>
       )}

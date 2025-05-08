@@ -10,6 +10,7 @@ import SearchFilter from "../../../components/filters/SearchFilter";
 import TipsList from "../components/tips/TipsList";
 import Layout from '../../../components/templates/Layout';
 import { SIDES, normalizeSide } from '../../../utils/sideUtils';
+import { tipsService, operatorsService } from '../../../services/api';
 
 const TipsOverview = () => {
   const location = useLocation();
@@ -65,58 +66,20 @@ const TipsOverview = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Fetch the index file listing all JSON files in the tips folder
-        const tipsResponse = await fetch('/data/siege/tipsIndex.json');
-        if (!tipsResponse.ok) throw new Error('Failed to fetch tips index');
-        const files = await tipsResponse.json();
-
-        // Fetch each tip file dynamically
-        const tips = await Promise.all(
-          files.map(async (file) => {
-            const res = await fetch(`/data/siege/tips/${file}`);
-            if (!res.ok) throw new Error(`Failed to fetch tip: ${file}`);
-            return res.json();
-          })
-        );
-
+        // Use our service layer instead of direct fetch calls
+        const tips = await tipsService.getAllTips();
         setTipsData(tips);
         
-        // Fetch operators and maps for filter initialization
-        const operatorsResponse = await fetch('/data/siege/operatorsIndex.json');
-        const mapsResponse = await fetch('/data/siege/mapsIndex.json');
-        
-        if (operatorsResponse.ok && mapsResponse.ok) {
-          const operatorFiles = await operatorsResponse.json();
-          //const mapFiles = await mapsResponse.json();
+        // If operator filter is set, fetch operator details
+        if (filters.operator) {
+          const operators = await operatorsService.getAllOperators();
+          const foundOperator = operators.find(op => 
+            op && op.name.toLowerCase() === filters.operator.toLowerCase()
+          );
           
-          // Fetch operator details if we have an operator filter
-          if (filters.operator) {
-            const operatorData = await Promise.all(
-              operatorFiles.map(async (file) => {
-                const res = await fetch(`/data/siege/operators/${file}`);
-                if (!res.ok) return null;
-                return res.json();
-              })
-            );
-            
-            // Set selected operator based on the query parameter
-            const foundOperator = operatorData.find(op => 
-              op && op.name.toLowerCase() === filters.operator.toLowerCase()
-            );
-            
-            if (foundOperator) {
-              setSelectedOperator(foundOperator);
-            }
+          if (foundOperator) {
+            setSelectedOperator(foundOperator);
           }
-          
-          // Fetch map details if needed in the future
-          //const mapData = await Promise.all(
-          //  mapFiles.map(async (file) => {
-          //    const res = await fetch(`/data/siege/maps/${file}`);
-          //    if (!res.ok) return null;
-          //    return res.json();
-          //  })
-          //);
         }
       } catch (error) {
         console.error("Error fetching data:", error);

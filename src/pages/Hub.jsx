@@ -1,54 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/templates/Layout';
+import { mapsService, operatorsService } from '../services/api';
 
 const Hub = () => {
   const [maps, setMaps] = useState([]);
   const [operators, setOperators] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchMaps = async () => {
+    const fetchData = async () => {
       try {
-        const response = await fetch('/data/siege/mapsIndex.json');
-        if (!response.ok) throw new Error('Failed to fetch maps index');
-        const mapFiles = await response.json();
-
-        const mapData = await Promise.all(
-          mapFiles.map(async (file) => {
-            const mapResponse = await fetch(`/data/siege/maps/${file}`);
-            if (!mapResponse.ok) throw new Error(`Failed to fetch map: ${file}`);
-            return mapResponse.json();
-          })
-        );
-
-        setMaps(mapData.sort(() => 0.5 - Math.random()).slice(0, 3)); // Randomize and pick 3
+        // Use our service layer to fetch data
+        const randomMaps = await mapsService.getRandomMaps(3);
+        const randomOperators = await operatorsService.getRandomOperators(3);
+        
+        setMaps(randomMaps);
+        setOperators(randomOperators);
+        setLoading(false);
       } catch (error) {
-        console.error('Error fetching maps:', error);
+        console.error('Error fetching data:', error);
+        setLoading(false);
       }
     };
 
-    const fetchOperators = async () => {
-      try {
-        const response = await fetch('/data/siege/operatorsIndex.json');
-        if (!response.ok) throw new Error('Failed to fetch operators index');
-        const operatorFiles = await response.json();
-
-        const operatorData = await Promise.all(
-          operatorFiles.map(async (file) => {
-            const operatorResponse = await fetch(`/data/siege/operators/${file}`);
-            if (!operatorResponse.ok) throw new Error(`Failed to fetch operator: ${file}`);
-            return operatorResponse.json();
-          })
-        );
-
-        setOperators(operatorData.sort(() => 0.5 - Math.random()).slice(0, 3)); // Randomize and pick 3
-      } catch (error) {
-        console.error('Error fetching operators:', error);
-      }
-    };
-
-    fetchMaps();
-    fetchOperators();
+    fetchData();
   }, []);
 
   return (
@@ -62,61 +38,71 @@ const Hub = () => {
     }}>
       <div className="container mx-auto p-4">
         <header className="text-center mb-8">
-          <h1 className="text-5xl font-bold mb-4">The Stratbook - Hub</h1>
-          <p className="text-lg text-gray-600">All information about Siege in one place</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">The Stratbook - Hub</h1>
+          <p className="text-lg text-base-content/70">All information about Siege in one place</p>
         </header>
 
-        <section className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">Featured Maps</h2>
-          <div className="grid grid-cols-3 gap-4">
-            {maps.map((map) => (
-              <div key={map.id} className="card bg-base-200 shadow-lg">
-                <Link to={`/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
-                  <figure>
-                    <img
-                      src={`/images/maps/${map.name}.jpg`}
-                      alt={map.name}
-                      className="w-full h-32 object-cover rounded-t-lg"
-                      onError={(e) => (e.target.src = '/images/maps/default.png')}
-                    />
-                  </figure>
-                  <div className="card-body text-center">
-                    <h3 className="text-lg font-bold">{map.name}</h3>
+        {loading ? (
+          <div className="flex justify-center items-center min-h-[200px]">
+            <span className="loading loading-spinner loading-lg text-primary"></span>
+          </div>
+        ) : (
+          <>
+            <section className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Featured Maps</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                {maps.map((map) => (
+                  <div key={map.id} className="card bg-base-200 shadow-lg hover:shadow-xl transition-all">
+                    <Link to={`/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+                      <figure className="aspect-video">
+                        <img
+                          src={`/images/maps/${map.name}.jpg`}
+                          alt={map.name}
+                          className="w-full h-full object-cover rounded-t-lg"
+                          onError={(e) => (e.target.src = '/images/maps/default.png')}
+                          loading="lazy"
+                        />
+                      </figure>
+                      <div className="card-body p-4 text-center">
+                        <h3 className="text-lg font-bold">{map.name}</h3>
+                      </div>
+                    </Link>
                   </div>
-                </Link>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className="text-center mt-4">
-            <Link to="/siege/hub/maps" className="btn btn-primary">Show All Maps</Link>
-          </div>
-        </section>
+              <div className="text-center mt-6">
+                <Link to="/siege/hub/maps" className="btn btn-primary">Show All Maps</Link>
+              </div>
+            </section>
 
-        <section>
-          <h2 className="text-3xl font-bold mb-4">Featured Operators</h2>
-          <div className="grid grid-cols-3 gap-4">
-            {operators.map((operator) => (
-              <div key={operator.id} className="card bg-base-200 shadow-lg">
-                <Link to={`/siege/hub/operators/${operator.fileName || operator.name}`} className="block">
-                  <figure>
-                    <img
-                      src={`/images/operators/${operator.fileName || operator.name}.png`}
-                      alt={operator.fileName || operator.name}
-                      className="w-full h-48 object-cover rounded-t-lg"
-                      onError={(e) => (e.target.src = '/images/operators/default.png')}
-                    />
-                  </figure>
-                  <div className="card-body text-center">
-                    <h3 className="text-lg font-bold">{operator.name}</h3>
+            <section>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Featured Operators</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                {operators.map((operator) => (
+                  <div key={operator.id} className="card bg-base-200 shadow-lg hover:shadow-xl transition-all">
+                    <Link to={`/siege/hub/operators/${operator.fileName || operator.name}`} className="block">
+                      <figure className="p-4 pt-6">
+                        <img
+                          src={`/images/operators/${operator.fileName || operator.name}.png`}
+                          alt={operator.fileName || operator.name}
+                          className="w-full h-48 object-contain"
+                          onError={(e) => (e.target.src = '/images/operators/default.png')}
+                          loading="lazy"
+                        />
+                      </figure>
+                      <div className="card-body p-4 text-center">
+                        <h3 className="text-lg font-bold">{operator.name}</h3>
+                      </div>
+                    </Link>
                   </div>
-                </Link>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className="text-center mt-4">
-            <Link to="/siege/hub/operators" className="btn btn-primary">Show All Operators</Link>
-          </div>
-        </section>
+              <div className="text-center mt-6">
+                <Link to="/siege/hub/operators" className="btn btn-primary">Show All Operators</Link>
+              </div>
+            </section>
+          </>
+        )}
       </div>
     </Layout>
   );

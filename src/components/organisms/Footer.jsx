@@ -114,7 +114,7 @@ const Footer = () => {
         <p className="text-base-content/70 text-sm mb-4 md:mb-0">
           Copyright &copy; {new Date().getFullYear()} -  All rights reserved by The Stratbook.
         </p>
-        <div className="flex space-x-6">
+        <div className="flex flex-wrap gap-4 sm:space-x-6 justify-center">
           <Link to="/privacy-policy" className="text-base-content/70 hover:text-white transition">Privacy Policy</Link>
           <Link to="/terms-of-service" className="text-base-content/70 hover:text-white transition">Terms of Service</Link>
           <Link to="/cookie-policy" className="text-base-content/70 hover:text-white transition">Cookie Policy</Link>

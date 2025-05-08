@@ -4,52 +4,54 @@ import Layout from '../../../components/templates/Layout';
 import Section from '../../../components/organisms/Section';
 import List from '../../../components/List';
 import ImageWithFallback from '../../../components/atoms/ImageWithFallback';
+import { mapsService, tipsService } from '../../../services/api';
 
 const MapDetail = () => {
   const { mapName } = useParams();
   const [mapData, setMapData] = useState(null);
   const [relatedTips, setRelatedTips] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Convert mapName to uppercase before fetching data
-        const upperCaseMapName = mapName.toUpperCase();
-
-        // Fetch map data
-        const mapResponse = await fetch(`/data/siege/maps/${upperCaseMapName}.json`);
-        if (!mapResponse.ok) throw new Error('Failed to fetch map data');
-        const data = await mapResponse.json();
-        setMapData(data);
-
+        setLoading(true);
+        // Use mapsService instead of direct fetch
+        const allMaps = await mapsService.getAllMaps();
+        
+        // Find the map using case-insensitive matching and URL-friendly formatting
+        const formattedMapName = mapName.replace(/-/g, ' ');
+        const map = allMaps.find(m => 
+          m.name.toLowerCase().replace(/\s+/g, '-') === mapName.toLowerCase() ||
+          m.name.toLowerCase() === formattedMapName.toLowerCase()
+        );
+        
+        if (!map) {
+          throw new Error('Map not found');
+        }
+        
+        setMapData(map);
+        
         // Fetch related tips if they exist
-        if (data.relatedTips && Array.isArray(data.relatedTips) && data.relatedTips.length > 0) {
-          const tipPromises = data.relatedTips.map(tipId => 
-            fetch(`/data/siege/tips/${tipId}.json`)
-              .then(res => {
-                if (!res.ok) throw new Error(`Failed to fetch tip ${tipId}`);
-                return res.json();
-              })
-              .catch(err => {
-                console.error(`Error fetching tip ${tipId}:`, err);
-                return null;
-              })
+        if (map.relatedTips && Array.isArray(map.relatedTips) && map.relatedTips.length > 0) {
+          const tips = await Promise.all(
+            map.relatedTips.map(tipId => tipsService.getTipById(tipId))
           );
-
-          const fetchedTips = await Promise.all(tipPromises);
-          const validTips = fetchedTips.filter(tip => tip !== null);
-          setRelatedTips(validTips);
+          setRelatedTips(tips.filter(Boolean)); // Filter out any null/undefined tips
         }
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching map data:', error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
   }, [mapName]);
 
-  if (!mapData) return <div>Loading...</div>;
+  if (loading) return <div>Loading...</div>;
+
+  if (!mapData) return <div>Map not found</div>;
 
   return (
     <Layout>

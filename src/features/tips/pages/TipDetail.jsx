@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import Layout from '../../../components/templates/Layout';
+import { tipsService } from '../../../services/api';
 
 // Import our new reusable components
 import TipFAQ from '../components/tips/TipFAQ';
@@ -19,14 +20,11 @@ const TipDetail = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // No need for manual script loading since react-social-media-embed handles this for us
-    // Just focusing on fetching the tip data when ID changes
+    // Using the tipsService instead of direct fetch
     const fetchTip = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`/data/siege/tips/${id}.json`);
-        if (!response.ok) throw new Error('Tip not found');
-        const data = await response.json();
+        const data = await tipsService.getTipById(id);
         setTip(data);
       } catch (error) {
         console.error(error);

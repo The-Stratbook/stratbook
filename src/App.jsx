@@ -56,7 +56,6 @@ function App() {
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
-        <Route path="/component-demo" element={<ComponentDemo />} />
         
         {/* Coming Soon feature routes */}
         <Route path="/coming-soon/operator-guides" element={<OperatorGuides />} />
@@ -84,6 +83,9 @@ function App() {
         <Route path="/siege/fun" element={<Fun />} />
         <Route path="/siege/fun/killboard" element={<KillBoard />} />
         <Route path="/siege/fun/operator-roulette" element={<OperatorRoulette />} />
+
+        {/* Siege Examples routes */}
+        <Route path="/component-demo" element={<ComponentDemo />} />
       </Routes>
     </>
   );

@@ -16,36 +16,20 @@ const TipVideo = ({ videoUrl, title, isVertical = false, onVideoRefChange = null
 
   if (!videoUrl) return null;
   
-  // Function to extract YouTube video ID
-  const extractYouTubeVideoId = (url) => {
-    if (url.includes("shorts/")) {
-      const shortsMatch = url.match(/shorts\/([^?\/]+)/);
-      return shortsMatch ? shortsMatch[1] : null;
-    }
-    
-    const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
-    return match ? match[1] : null;
-  };
-
   // Instagram embed component
   if (videoUrl.includes("instagram.com")) {
-    const containerStyle = isVertical ? 
-      { width: '100%', height: '75vh' } : 
-      { width: '100%', height: '375px' };
-      
     return (
-      <div className="bg-base-100 shadow-xl rounded-lg overflow-hidden" style={containerStyle}>
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center',
-          height: '100%',
-          overflow: 'hidden' 
+      <div className="bg-base-100 shadow-xl rounded-lg overflow-hidden w-full" 
+        style={{ 
+          height: isVertical ? '75vh' : '375px',
+          maxWidth: isVertical ? '430px' : '100%',
+          margin: '0 auto'
         }}>
+        <div className="flex justify-center h-full overflow-hidden">
           <InstagramEmbed 
             url={videoUrl}
-            width={isVertical ? 328 : "100%"}
-            height={isVertical ? "100%" : 375}
-            containerClassName="instagram-container" 
+            width="100%"
+            height="100%"
           />
         </div>
       </div>
@@ -54,21 +38,17 @@ const TipVideo = ({ videoUrl, title, isVertical = false, onVideoRefChange = null
   
   // TikTok embed component
   if (videoUrl.includes("tiktok.com")) {
-    const containerStyle = isVertical ? 
-      { width: '100%', height: '75vh' } : 
-      { width: '100%', height: '375px' };
-      
     return (
-      <div className="bg-base-100 shadow-xl rounded-lg overflow-hidden" style={containerStyle}>
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center',
-          height: '100%',
-          overflow: 'hidden' 
+      <div className="bg-base-100 shadow-xl rounded-lg overflow-hidden w-full"
+        style={{ 
+          height: isVertical ? '75vh' : '375px',
+          maxWidth: isVertical ? '380px' : '100%',
+          margin: '0 auto'
         }}>
+        <div className="flex justify-center h-full overflow-hidden">
           <TikTokEmbed 
             url={videoUrl}
-            width={isVertical ? 325 : "100%"}
+            width="100%"
             height="100%"
           />
         </div>
@@ -78,25 +58,21 @@ const TipVideo = ({ videoUrl, title, isVertical = false, onVideoRefChange = null
   
   // YouTube embed component
   if (videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be")) { 
-    const containerStyle = isVertical ? 
-      { width: '100%', height: '75vh' } : 
-      { width: '100%', height: '700px' };
-
     return (
-      <div style={containerStyle}>
-        <div className="bg-base-100 shadow-xl rounded-lg overflow-hidden" style={containerStyle}>
-          <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center',
-          height: '100%',
-          overflow: 'hidden' 
-        }}>
-            <YouTubeEmbed 
-              url={videoUrl}
-              width={324}
-              height={690}
-            />
-          </div>
+      <div 
+        className="bg-base-100 shadow-xl rounded-lg overflow-hidden w-full"
+        style={{ 
+          height: isVertical ? '75vh' : '600px',  
+          maxWidth: isVertical ? '430px' : '100%',
+          margin: '0 auto'
+        }}
+      >
+        <div className="w-full h-full">
+          <YouTubeEmbed 
+            url={videoUrl}
+            width="100%"
+            height="100%"
+          />
         </div>
       </div>
     );

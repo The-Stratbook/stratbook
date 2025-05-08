@@ -6,57 +6,59 @@ import OperatorLoadout from '../components/operators/OperatorLoadout';
 import OperatorBiography from '../components/operators/OperatorBiography';
 import OperatorTips from '../components/operators/OperatorTips';
 import RelatedTips from '../components/operators/RelatedTips';
+import { operatorsService, tipsService, externalToolsService } from '../../../services/api';
 
 const OperatorDetail = () => {
   const { operatorName } = useParams();
   const [operatorData, setOperatorData] = useState(null);
   const [externalToolsData, setExternalToolsData] = useState(null);
   const [relatedTips, setRelatedTips] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       try {
-        // Fetch operator data
-        const operatorResponse = await fetch(`/data/siege/operators/${operatorName}.json`);
-        if (!operatorResponse.ok) throw new Error('Failed to fetch operator data');
-        const data = await operatorResponse.json();
-        setOperatorData(data);
+        // Use our operatorsService to fetch all operators
+        const allOperators = await operatorsService.getAllOperators();
         
-        // Fetch external tools data
-        const toolsResponse = await fetch('/data/externalTools.json');
-        if (!toolsResponse.ok) throw new Error('Failed to fetch external tools');
-        const toolsData = await toolsResponse.json();
+        // Find the matching operator
+        const operator = allOperators.find(op => 
+          op.name.toLowerCase() === operatorName.toLowerCase() || 
+          op.fileName?.toLowerCase() === operatorName.toLowerCase()
+        );
+        
+        if (!operator) {
+          throw new Error('Operator not found');
+        }
+        
+        setOperatorData(operator);
+        
+        // Fetch external tools data using externalToolsService with the correct method name
+        const toolsData = await externalToolsService.getAllTools();
         setExternalToolsData(toolsData);
 
-        // Fetch tips based on relatedTips IDs if they exist
-        if (data.relatedTips && Array.isArray(data.relatedTips) && data.relatedTips.length > 0) {
-          // Fetch all tips specified by IDs directly
-          const tipPromises = data.relatedTips.map(tipId => 
-            fetch(`/data/siege/tips/${tipId}.json`)
-              .then(res => {
-                if (!res.ok) throw new Error(`Failed to fetch tip ${tipId}`);
-                return res.json();
-              })
-              .catch(err => {
-                console.error(`Error fetching tip ${tipId}:`, err);
-                return null;
-              })
+        // Fetch tips if relatedTips exist
+        if (operator.relatedTips && Array.isArray(operator.relatedTips) && operator.relatedTips.length > 0) {
+          const fetchedTips = await Promise.all(
+            operator.relatedTips.map(tipId => tipsService.getTipById(tipId))
           );
           
-          const fetchedTips = await Promise.all(tipPromises);
           // Filter out any null results from failed fetches
-          const validTips = fetchedTips.filter(tip => tip !== null);
-          setRelatedTips(validTips);
+          setRelatedTips(fetchedTips.filter(Boolean));
         }
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching operator data:', error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
   }, [operatorName]);
 
-  if (!operatorData || !externalToolsData) return <p>Loading...</p>;
+  if (loading) return <p>Loading...</p>;
+  if (!operatorData || !externalToolsData) return <p>Data not available</p>;
 
   // Create relevant external links for this operator
   const relevantLinks = [
