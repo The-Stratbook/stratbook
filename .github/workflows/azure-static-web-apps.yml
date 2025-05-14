@@ -82,6 +82,11 @@ jobs:
     if: github.event_name != 'pull_request'
     needs: build-and-deploy-app
     steps:
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Check Deployment Status
         run: |
           APP_URL=$(az staticwebapp show \
