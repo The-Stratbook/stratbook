@@ -53,7 +53,7 @@ const Hub = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {maps.map((map) => (
                   <div key={map.id} className="card bg-base-200 shadow-lg hover:shadow-xl transition-all">
-                    <Link to={`/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+                    <Link to={`/siege/hub/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
                       <figure className="aspect-video">
                         <img
                           src={`/images/maps/${map.name}.jpg`}
