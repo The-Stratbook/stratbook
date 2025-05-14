@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Tag } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
 import ImageWithFallback from '../../components/atoms/ImageWithFallback'
+import { normalizeSide } from '../../utils/sideUtils';
 
 const TipCard = ({ tip }) => {
   // Generate a descriptive alt text that combines title, map and operator info when available
@@ -10,7 +11,7 @@ const TipCard = ({ tip }) => {
     let altText = `Strategy: ${tip.title}`;
     if (tip.map) altText += ` on ${tip.map}`;
     if (tip.operator) altText += ` using ${tip.operator}`;
-    if (tip.side) altText += ` (${tip.side} side)`;
+    if (tip.side) altText += ` (${normalizeSide(tip.side)} side)`;
     return altText;
   };
 
