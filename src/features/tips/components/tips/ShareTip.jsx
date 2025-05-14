@@ -51,7 +51,7 @@ const ShareTip = ({ title }) => {
         </a>
 
         <a
-          href={`https://discord.gg/vBt738jk`}
+          href={`https://discord.gg/CmyzpXV6m2`}
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-sm bg-[#5865F2] hover:bg-[#4752c4] text-white"

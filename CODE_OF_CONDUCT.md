@@ -36,7 +36,7 @@ This Code of Conduct applies within all community spaces, and also applies when 
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders (At user `myusernameisdakpanbutitwastaken`) responsible for enforcement at **[Discord](https://discord.gg/vBt738jk)**. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders (At user `myusernameisdakpanbutitwastaken`) responsible for enforcement at **[Discord](https://discord.gg/CmyzpXV6m2)**. All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 
