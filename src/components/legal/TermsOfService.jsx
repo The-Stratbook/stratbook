@@ -15,7 +15,7 @@ const TermsOfService = () => {
           <li>We reserve the right to modify or terminate the service at any time.</li>
         </ul>
         <p>
-          For more information, please contact us at <a href="https://discord.gg/vBt738jk" target="_blank" rel="noopener noreferrer"  className="link link-primary">Discord</a>.
+          For more information, please contact us at <a href="https://discord.gg/CmyzpXV6m2" target="_blank" rel="noopener noreferrer"  className="link link-primary">Discord</a>.
         </p>
       </div>
     </Layout>

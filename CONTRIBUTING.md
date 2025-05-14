@@ -53,6 +53,6 @@ To maintain consistency across the codebase, please follow these guidelines:
 
 If you have any questions or need assistance, feel free to:
 - Open a discussion in the GitHub repository.
-- Join our [Discord server](https://discord.gg/vBt738jk) to connect with the community.
+- Join our [Discord server](https://discord.gg/CmyzpXV6m2) to connect with the community.
 
 Thank you for contributing to The Stratbook!

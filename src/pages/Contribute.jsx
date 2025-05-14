@@ -118,7 +118,7 @@ const Contribute = () => {
                   <p className="text-sm">
                     Fork our repository, add your content, and submit a pull request. Don't worry if you're 
                     not familiar with Git—we have a step-by-step guide.
-                    The other option is to <a href="https://discord.gg/vBt738jk" target="_blank" rel="noopener noreferrer" className="text-primary transition">join our discord</a> server and submit your content there.
+                    The other option is to <a href="https://discord.gg/CmyzpXV6m2" target="_blank" rel="noopener noreferrer" className="text-primary transition">join our discord</a> server and submit your content there.
                   </p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const Contribute = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
                 <div>
-                  <span className="font-semibold">Seeking Help?</span> Join our <a href="https://discord.gg/vBt738jk" target="_blank" rel="noopener noreferrer" className="underline">Discord server</a> to connect with other contributors and get assistance with your submissions.
+                  <span className="font-semibold">Seeking Help?</span> Join our <a href="https://discord.gg/CmyzpXV6m2" target="_blank" rel="noopener noreferrer" className="underline">Discord server</a> to connect with other contributors and get assistance with your submissions.
                 </div>
               </div>
             </div>

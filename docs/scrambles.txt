@@ -94,7 +94,7 @@ Home page:
 - validate that all the operators and maps are available
 - make it so that the tipslist shows different images for example order it by 'unique image' -> 'operator icon & map' -> 'operator' -> 'map' so that it looks unique
 
-Make a discord server --> https://discord.gg/vBt738jk
+Make a discord server --> https://discord.gg/CmyzpXV6m2
 Do I want to open-source the project or keep a part of it secret?
 
 

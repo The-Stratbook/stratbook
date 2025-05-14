@@ -15,7 +15,7 @@ const CookiePolicy = () => {
           <li>You can disable cookies in your browser settings if you prefer.</li>
         </ul>
         <p>
-          For more details, please contact us at <a href="https://discord.gg/vBt738jk" target="_blank" rel="noopener noreferrer"  className="link link-primary">Discord</a>
+          For more details, please contact us at <a href="https://discord.gg/CmyzpXV6m2" target="_blank" rel="noopener noreferrer"  className="link link-primary">Discord</a>
         </p>
       </div>
     </Layout>

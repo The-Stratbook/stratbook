@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
           <li>Cookies may be used to enhance your browsing experience.</li>
         </ul>
         <p>
-          For questions or concerns, please contact us at <a href="https://discord.gg/vBt738jk" target="_blank" rel="noopener noreferrer"  className="link link-primary">Discord</a>.
+          For questions or concerns, please contact us at <a href="https://discord.gg/CmyzpXV6m2" target="_blank" rel="noopener noreferrer"  className="link link-primary">Discord</a>.
         </p>
       </div>
     </Layout>

@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
               <div className="ml-3">
                 <p className="text-sm text-base-content">Discord</p>
-                <a href="https://discord.gg/vBt738jk" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition">Join our discord</a>
+                <a href="https://discord.gg/CmyzpXV6m2" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition">Join our discord</a>
               </div>
             </li>
           </ul>
