@@ -1,24 +1,26 @@
 {
-    "id": 2,
-    "title": "Use Osa's shield to block the lasers of a claymore",
-    "description": "You can use Osa's shield to block the lasers of a claymore. This is a great way to get a suprise kill when the enemy pushes you.",
-    "operator": "Osa",
-    "side": "Attack",
-    "map": "",
-    "bombSite": "",
-    "skill": "Intermediate",
-    "tags": ["Tactical"],
-    "imageUrl": "",
-    "videoUrl": "https://www.instagram.com/p/DAbWA1ZRSqq/",
-    "detailedNotes": {
-      "teamCoordination": "Medium",
-      "riskLevel": "Medium",
-      "counterStrategies": [
-        "C4"
-      ]
-    },
-    "contributor": {
-      "name": "Dakpan",
-      "discord_username": "myusernameisdakpanbutitwastaken"
-    }
-  }
+    "id":  2,
+    "title":  "Use Osa's shield to block the lasers of a claymore",
+    "description":  "You can use [Osa](/siege/hub/operators/osa)'s shield to block the lasers of a claymore. This is a great way to get a suprise kill when the enemy pushes you.",
+    "operator":  "Osa",
+    "side":  "Attack",
+    "map":  "",
+    "bombSite":  "",
+    "skill":  "Intermediate",
+    "tags":  [
+                 "Tactical"
+             ],
+    "imageUrl":  "",
+    "videoUrl":  "https://www.instagram.com/p/DAbWA1ZRSqq/",
+    "detailedNotes":  {
+                          "teamCoordination":  "Medium",
+                          "riskLevel":  "Medium",
+                          "counterStrategies":  [
+                                                    "C4"
+                                                ]
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
+}

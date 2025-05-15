@@ -1,21 +1,23 @@
 {
-    "id": 3,
-    "title": "Quick peek using Kapkan",
-    "description": "Use **Kapkan** to quickly peek and catch attackers off-guard. Keep one trap in your pocket and use the animation to surprise enemies. Check out the video to find out how!",
-    "operator": "Kapkan",
-    "side": "Defend",
-    "map": "",
-    "bombSite": "",
-    "skill": "Intermediate",
-    "tags": ["Trick"],
-    "imageUrl": "",
-    "videoUrl": "https://www.youtube.com/shorts/I7gp9P9Pcgg",
-    "detailedNotes": {
-      "teamCoordination": "Low",
-      "riskLevel": "High"
-    },
-    "contributor": {
-      "name": "Dakpan",
-      "discord_username": "myusernameisdakpanbutitwastaken"
-    }
-  }
+    "id":  3,
+    "title":  "Quick peek using Kapkan",
+    "description":  "Use **[Kapkan](/siege/hub/operators/kapkan)** to quickly peek and catch attackers off-guard. Keep one trap in your pocket and use the animation to surprise enemies. Check out the video to find out how!",
+    "operator":  "Kapkan",
+    "side":  "Defend",
+    "map":  "",
+    "bombSite":  "",
+    "skill":  "Intermediate",
+    "tags":  [
+                 "Trick"
+             ],
+    "imageUrl":  "",
+    "videoUrl":  "https://www.youtube.com/shorts/I7gp9P9Pcgg",
+    "detailedNotes":  {
+                          "teamCoordination":  "Low",
+                          "riskLevel":  "High"
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
+}

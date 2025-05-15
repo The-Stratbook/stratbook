@@ -1,25 +1,29 @@
 {
-  "id": 16,
-  "title": "Advanced Flores RCE-Ratero Paths",
-  "description": "When playing **Flores**, use your explosive drones to clear bulletproof utility. Instead of taking the most direct path, use the ceiling to navigate above defenders. Drop down directly on top of deployable shields or Maestro cams by releasing the drone from above - this makes it nearly impossible for defenders to shoot your drone in time.",
-  "operator": "Flores",
-  "side": "Attack",
-  "map": "",
-  "bombSite": "",
-  "skill": "Advanced",
-  "tags": ["Utility", "Drone", "Destruction"],
-  "imageUrl": "",
-  "videoUrl": "https://www.youtube.com/shorts/K9F8YQFWK34",
-  "detailedNotes": {
-    "setupTime": "Mid Round",
-    "teamCoordination": "Medium",
-    "riskLevel": "Low",
-    "counterStrategies": [
-      "Mute jammers disable Flores' ability"
-    ]
-  },
-  "contributor": {
-    "name": "Dakpan",
-    "discord_username": "myusernameisdakpanbutitwastaken"
-  }
+    "id":  16,
+    "title":  "Advanced Flores RCE-Ratero Paths",
+    "description":  "When playing **[Flores](/siege/hub/operators/flores)**, use your explosive drones to clear bulletproof utility. Instead of taking the most direct path, use the ceiling to navigate above defenders. Drop down directly on top of deployable shields or [Maestro](/siege/hub/operators/maestro) cams by releasing the drone from above - this makes it nearly impossible for defenders to shoot your drone in time.",
+    "operator":  "Flores",
+    "side":  "Attack",
+    "map":  "",
+    "bombSite":  "",
+    "skill":  "Advanced",
+    "tags":  [
+                 "Utility",
+                 "Drone",
+                 "Destruction"
+             ],
+    "imageUrl":  "",
+    "videoUrl":  "https://www.youtube.com/shorts/K9F8YQFWK34",
+    "detailedNotes":  {
+                          "setupTime":  "Mid Round",
+                          "teamCoordination":  "Medium",
+                          "riskLevel":  "Low",
+                          "counterStrategies":  [
+                                                    "[Mute](/siege/hub/operators/mute) jammers disable [Flores](/siege/hub/operators/flores)' ability"
+                                                ]
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
 }

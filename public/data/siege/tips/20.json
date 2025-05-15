@@ -1,24 +1,26 @@
 {
-  "id": 20,
-  "title": "Counter bandit tricking with Fuze & Thermite",
-  "description": "When playing with **Fuze**, **Thermite** and an **EMP Operator**, use your cluster charges to counter Bandit tricking. Place the cluster charge on the reinforced wall that Bandit is trying to electrify right after someone used an EMP to disable his active charge. Detonate the charge to destroy the Bandit batteries and potentially kill bandit and allow your hard breacher to open the wall next to the one you just fuzed.",
-  "operator": "Thermite",
-  "side": "Attack",
-  "map": "",
-  "bombSite": "",
-  "skill": "Intermediate",
-  "tags": ["Hard Breach"],
-  "imageUrl": "",
-  "videoUrl": "https://www.youtube.com/shorts/9BLJj9-M_58",
-  "detailedNotes": {
-    "teamCoordination": "High",
-    "riskLevel": "Low",
-    "counterStrategies": [
-      "Tubarao can freeze Fuze's cluster charge"
-    ]
-  },
-  "contributor": {
-    "name": "Dakpan",
-    "discord_username": "myusernameisdakpanbutitwastaken"
-  }
+    "id":  20,
+    "title":  "Counter bandit tricking with Fuze \u0026 Thermite",
+    "description":  "When playing with **[Fuze](/siege/hub/operators/fuze)**, **[Thermite](/siege/hub/operators/thermite)** and an **EMP Operator**, use your cluster charges to counter [Bandit](/siege/hub/operators/bandit) tricking. Place the cluster charge on the reinforced wall that [Bandit](/siege/hub/operators/bandit) is trying to electrify right after someone used an EMP to disable his active charge. Detonate the charge to destroy the [Bandit](/siege/hub/operators/bandit) batteries and potentially kill bandit and allow your hard breacher to open the wall next to the one you just fuzed.",
+    "operator":  "Thermite",
+    "side":  "Attack",
+    "map":  "",
+    "bombSite":  "",
+    "skill":  "Intermediate",
+    "tags":  [
+                 "Hard Breach"
+             ],
+    "imageUrl":  "",
+    "videoUrl":  "https://www.youtube.com/shorts/9BLJj9-M_58",
+    "detailedNotes":  {
+                          "teamCoordination":  "High",
+                          "riskLevel":  "Low",
+                          "counterStrategies":  [
+                                                    "Tubarao can freeze [Fuze](/siege/hub/operators/fuze)'s cluster charge"
+                                                ]
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
 }
