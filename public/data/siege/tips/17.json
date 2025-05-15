@@ -1,26 +1,28 @@
 {
-  "id": 17,
-  "title": "Use frost and azami to surprise enemies",
-  "description": "Use **Frost** and **Azami** to surprise enemies. Place a **Frost** mat under an **Azami** barricade that is placed over a hatch. When the enemy walks over the azami, they will be fall down into the trap.",
-  "operator": "Frost",
-  "side": "Defend",
-  "map": "",
-  "bombSite": "",
-  "skill": "Intermediate",
-  "tags": ["Trap"],
-  "imageUrl": "",
-  "videoUrl": "https://www.youtube.com/shorts/OST8Jz3wiTg",
-  "detailedNotes": {
-    "setupTime": "Preparation Phase",
-    "teamCoordination": "Medium",
-    "riskLevel": "Low",
-    "counterStrategies": [
-      "Shooting the frost mat",
-      "breaking the Azami barricade in time"
-    ]
-  },
-  "contributor": {
-    "name": "Dakpan",
-    "discord_username": "myusernameisdakpanbutitwastaken"
-  }
+    "id":  17,
+    "title":  "Use frost and azami to surprise enemies",
+    "description":  "Use **[Frost](/siege/hub/operators/frost)** and **[Azami](/siege/hub/operators/azami)** to surprise enemies. Place a **[Frost](/siege/hub/operators/frost)** mat under an **[Azami](/siege/hub/operators/azami)** barricade that is placed over a hatch. When the enemy walks over the azami, they will be fall down into the trap.",
+    "operator":  "Frost",
+    "side":  "Defend",
+    "map":  "",
+    "bombSite":  "",
+    "skill":  "Intermediate",
+    "tags":  [
+                 "Trap"
+             ],
+    "imageUrl":  "",
+    "videoUrl":  "https://www.youtube.com/shorts/OST8Jz3wiTg",
+    "detailedNotes":  {
+                          "setupTime":  "Preparation Phase",
+                          "teamCoordination":  "Medium",
+                          "riskLevel":  "Low",
+                          "counterStrategies":  [
+                                                    "Shooting the frost mat",
+                                                    "breaking the [Azami](/siege/hub/operators/azami) barricade in time"
+                                                ]
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
 }

@@ -1,25 +1,26 @@
 {
-    "id": 24,
-    "title": "Kaid the VIP wall on Coastline from the outside",
-    "description": "With this trick you can Kaid the VIP wall on Coastline from the outside. Attackers won't be able to see the kaid charge and it is hard to destroy.",
-    "side": "Defend",
-    "skill": "Intermediate",
-    "operator": "Kaid",
-    "tags": ["Kaid"],
-    "map": "Coastline",
-    "videoUrl": "https://www.instagram.com/p/DGv7pUaxKJk/",
-    "detailedNotes": {
-      "teamCoordination": "Low",
-      "riskLevel": "Low",
-      "timeRequired": "30 seconds or less",
-      "counterStrategies": [
-        "IQ can spot the kaid charge",
-        "An EMP can still disable the kaid charge"
-      ]
-    },
-    "contributor": {
-      "name": "Dakpan",
-      "discord_username": "myusernameisdakpanbutitwastaken"
-    }
-  }
-  
+    "id":  24,
+    "title":  "Kaid the VIP wall on Coastline from the outside",
+    "description":  "With this trick you can [Kaid](/siege/hub/operators/kaid) the VIP wall on Coastline from the outside. Attackers won't be able to see the kaid charge and it is hard to destroy.",
+    "side":  "Defend",
+    "skill":  "Intermediate",
+    "operator":  "Kaid",
+    "tags":  [
+                 "Kaid"
+             ],
+    "map":  "Coastline",
+    "videoUrl":  "https://www.instagram.com/p/DGv7pUaxKJk/",
+    "detailedNotes":  {
+                          "teamCoordination":  "Low",
+                          "riskLevel":  "Low",
+                          "timeRequired":  "30 seconds or less",
+                          "counterStrategies":  [
+                                                    "IQ can spot the kaid charge",
+                                                    "An EMP can still disable the kaid charge"
+                                                ]
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
+}

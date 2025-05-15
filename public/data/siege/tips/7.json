@@ -1,25 +1,27 @@
 {
-  "id": 7,
-  "title": "Thorn with Azami trick",
-  "description": "Seal of a entry seconds after the enemy enters the room where you have preplaced **thorns** and seal it with **azami barricades**.",
-  "operator": "Azami",
-  "side": "Defend",
-  "map": "",
-  "bombSite": "",
-  "skill": "Expert",
-  "tags": ["Trap"],
-  "imageUrl": "",
-  "videoUrl": "https://www.youtube.com/shorts/4-BnNfyx_rc",
-  "detailedNotes": {
-    "teamCoordination": "High",
-    "riskLevel": "High",
-    "counterStrategies": [
-      "Shooting the thorns",
-      "breaking the Azami barricade in time"
-    ]
-  },
-  "contributor": {
-    "name": "Dakpan",
-    "discord_username": "myusernameisdakpanbutitwastaken"
-  }
+    "id":  7,
+    "title":  "Thorn with Azami trick",
+    "description":  "Seal of a entry seconds after the enemy enters the room where you have preplaced **thorns** and seal it with **azami barricades**.",
+    "operator":  "Azami",
+    "side":  "Defend",
+    "map":  "",
+    "bombSite":  "",
+    "skill":  "Expert",
+    "tags":  [
+                 "Trap"
+             ],
+    "imageUrl":  "",
+    "videoUrl":  "https://www.youtube.com/shorts/4-BnNfyx_rc",
+    "detailedNotes":  {
+                          "teamCoordination":  "High",
+                          "riskLevel":  "High",
+                          "counterStrategies":  [
+                                                    "Shooting the thorns",
+                                                    "breaking the [Azami](/siege/hub/operators/azami) barricade in time"
+                                                ]
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
 }

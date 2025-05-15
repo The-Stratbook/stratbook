@@ -1,19 +1,20 @@
 {
-    "id": 27,
-    "title": "Thermite has a lot of awesome breach spots that you can use",
-    "description": "**Thermite** has a lot of awesome breach spots that you can use. With these tricks you can open reinforced walls even if they are electrified.",
-    "side": "Attack",
-    "skill": "Intermediate",
-    "operator": "Thermite",
-    "tags": ["Breach Trick"],
-    "videoUrl": "https://www.instagram.com/p/DHPNC-2xsXK/",
-    "detailedNotes": {
-      "teamCoordination": "Low",
-      "riskLevel": "Low"
-    },
-    "contributor": {
-      "name": "Dakpan",
-      "discord_username": "myusernameisdakpanbutitwastaken"
-    }
-  }
-  
+    "id":  27,
+    "title":  "Thermite has a lot of awesome breach spots that you can use",
+    "description":  "**[Thermite](/siege/hub/operators/thermite)** has a lot of awesome breach spots that you can use. With these tricks you can open reinforced walls even if they are electrified.",
+    "side":  "Attack",
+    "skill":  "Intermediate",
+    "operator":  "Thermite",
+    "tags":  [
+                 "Breach Trick"
+             ],
+    "videoUrl":  "https://www.instagram.com/p/DHPNC-2xsXK/",
+    "detailedNotes":  {
+                          "teamCoordination":  "Low",
+                          "riskLevel":  "Low"
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
+}

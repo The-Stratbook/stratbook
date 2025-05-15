@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { createTipsFilterUrl } from '../../../../utils/linkUtils';
 
 /**
  * A component to display operator loadout information
@@ -47,9 +49,13 @@ const OperatorLoadout = ({ loadout }) => {
           <h3 className="text-xl font-semibold mb-2">Gadgets</h3>
           <div className="flex flex-wrap gap-2">
             {loadout.gadgets.map((gadget, index) => (
-              <span key={index} className="bg-gray-200 dark:bg-gray-600 px-3 py-1 rounded-md text-sm">
+              <Link 
+                key={index} 
+                to={createTipsFilterUrl({ tag: gadget })}
+                className="bg-gray-200 dark:bg-gray-600 px-3 py-1 rounded-md text-sm hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
+              >
                 {gadget}
-              </span>
+              </Link>
             ))}
           </div>
         </>

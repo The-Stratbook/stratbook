@@ -5,7 +5,7 @@ import { normalizeSide, SIDES } from "../../utils/sideUtils";
 
 const OperatorFilterModal = ({ isOpen, onClose, onSelectOperator, selectedSide, onSideChange, selectedOperator }) => {
   const [operators, setOperators] = useState([]);
-  const [searchTerm, setSearchTerm] = useState(SIDES.BOTH);
+  const [searchTerm, setSearchTerm] = useState(selectedOperator ? selectedOperator.name : "");
 
   useEffect(() => {
     const fetchOperators = async () => {

@@ -64,7 +64,9 @@ const Hub = () => {
                         />
                       </figure>
                       <div className="card-body p-4 text-center">
-                        <h3 className="text-lg font-bold">{map.name}</h3>
+                        <h3 className="text-lg font-bold">
+                          <Link to={`/siege/hub/maps/${map.name.toLowerCase().replace(/\s+/g, '-')}`}>{map.name}</Link>
+                        </h3>
                       </div>
                     </Link>
                   </div>
@@ -80,7 +82,7 @@ const Hub = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {operators.map((operator) => (
                   <div key={operator.id} className="card bg-base-200 shadow-lg hover:shadow-xl transition-all">
-                    <Link to={`/siege/hub/operators/${operator.fileName || operator.name}`} className="block">
+                    <Link to={`/siege/hub/operators/${operator.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
                       <figure className="p-4 pt-6">
                         <img
                           src={`/images/operators/${operator.fileName || operator.name}.png`}
@@ -91,7 +93,9 @@ const Hub = () => {
                         />
                       </figure>
                       <div className="card-body p-4 text-center">
-                        <h3 className="text-lg font-bold">{operator.name}</h3>
+                        <h3 className="text-lg font-bold">
+                          <Link to={`/siege/hub/operators/${operator.name.toLowerCase().replace(/\s+/g, '-')}`}>{operator.name}</Link>
+                        </h3>
                       </div>
                     </Link>
                   </div>

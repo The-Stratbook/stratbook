@@ -1,5 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MapPin, Trophy } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+import { createOperatorLink, createMapLink } from '../../../../utils/linkUtils';
 
 const TipMetadata = ({ tip }) => {
   const formatLastTested = (dateString) => {
@@ -21,7 +25,13 @@ const TipMetadata = ({ tip }) => {
         {tip.map && (
           <div className="flex items-center space-x-2">
             <MapPin size={20} />
-            <span><strong>Map:</strong> {tip.map}</span>
+            {tip.map === 'Any' ? (
+              <span>Any Map</span>
+            ) : (
+              <Link to={createMapLink(tip.map)} className="text-primary">
+                {tip.map}
+              </Link>
+            )}
           </div>
         )}
         {tip.difficulty && (
@@ -35,9 +45,28 @@ const TipMetadata = ({ tip }) => {
       <div className="mt-4">
         <h3 className="text-lg font-bold">Metadata</h3>
         <div className="space-y-2">
-          {tip.operator && <p><strong>Operator:</strong> {tip.operator}</p>}
+          {tip.operator && (
+            <p>
+              <strong>Operator:</strong> 
+              <Link to={createOperatorLink(tip.operator)} className="text-primary ml-1">
+                {tip.operator}
+              </Link>
+            </p>
+          )}
           {tip.side && <p><strong>Side:</strong> {tip.side}</p>}
-          {tip.bombSite && <p><strong>Bomb Site:</strong> {tip.bombSite}</p>}
+          {tip.bombSite && (
+            <p>
+              <strong>Bomb Site:</strong> 
+              <ReactMarkdown 
+                rehypePlugins={[rehypeRaw]} 
+                components={{ 
+                  a: ({ node, ...props }) => <a {...props} className="text-primary" /> 
+                }}
+              >
+                {tip.bombSite}
+              </ReactMarkdown>
+            </p>
+          )}
           {tip.lastTested && (
             <p className="text-success font-medium">
               <span className="inline-flex items-center">
@@ -56,7 +85,13 @@ const TipMetadata = ({ tip }) => {
           <h3 className="text-lg font-bold">Tags</h3>
           <div className="flex flex-wrap gap-2">
             {tip.tags.map(tag => (
-              <span key={tag} className="badge badge-primary text-black">{tag}</span>
+              <Link 
+                key={tag} 
+                to={`/siege/tips?tag=${encodeURIComponent(tag)}`} 
+                className="badge badge-primary text-black hover:bg-primary-focus transition-colors"
+              >
+                {tag}
+              </Link>
             ))}
           </div>
         </div>

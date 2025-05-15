@@ -1,7 +1,7 @@
 {
   "id": 1,
   "title": "Hidden Kapkan traps (2x coastline, 1x kafe)",
-  "description": "With these 3 spots you can hide Kapkan traps in a way that they are not visible to the enemy team. This is a great way to get free kills and make the enemy team waste their drones.",
+  "description": "With these 3 spots you can hide [Kapkan](/siege/hub/operators/Kapkan) traps in a way that they are not visible to the enemy team. This is a great way to get free kills and make the enemy team waste their drones.",
   "operator": "Kapkan",
   "side": "Defend",
   "map": "",
@@ -16,7 +16,7 @@
     "teamCoordination": "Low",
     "riskLevel": "Low",
     "counterStrategies": [
-      "Use IQ to find the traps."
+      "Use [IQ](/siege/hub/operators/IQ) to find the traps."
     ]
   },
   "contributor": {

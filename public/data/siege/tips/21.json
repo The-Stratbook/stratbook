@@ -1,24 +1,25 @@
 {
-    "id": 21,
-    "title": "Fire a player who is hiding in the showers",
-    "description": "This trick can easily flush out any player hiding in the showers. Use capitao's fire bolt to set the showers on fire. This will force any player hiding in the showers to either take damage or leave the area.",
-    "side": "Attack",
-    "skill": "Beginner",
-    "operator": "Capitao",
-    "tags": ["Flush"],
-    "map": "Clubhouse",
-    "videoUrl": "https://www.instagram.com/p/DFC5XY1hEDf/",
-    "detailedNotes": {
-      "teamCoordination": "Low",
-      "riskLevel": "Low",
-      "timeRequired": "30 seconds or less",
-      "counterStrategies": [
-        "Castle barricades to delay the opening of the window"
-      ]
-    },
-    "contributor": {
-      "name": "Dakpan",
-      "discord_username": "myusernameisdakpanbutitwastaken"
-    }
-  }
-  
+    "id":  21,
+    "title":  "Fire a player who is hiding in the showers",
+    "description":  "This trick can easily flush out any player hiding in the showers. Use capitao's fire bolt to set the showers on fire. This will force any player hiding in the showers to either take damage or leave the area.",
+    "side":  "Attack",
+    "skill":  "Beginner",
+    "operator":  "Capitao",
+    "tags":  [
+                 "Flush"
+             ],
+    "map":  "Clubhouse",
+    "videoUrl":  "https://www.instagram.com/p/DFC5XY1hEDf/",
+    "detailedNotes":  {
+                          "teamCoordination":  "Low",
+                          "riskLevel":  "Low",
+                          "timeRequired":  "30 seconds or less",
+                          "counterStrategies":  [
+                                                    "[Castle](/siege/hub/operators/castle) barricades to delay the opening of the window"
+                                                ]
+                      },
+    "contributor":  {
+                        "name":  "Dakpan",
+                        "discord_username":  "myusernameisdakpanbutitwastaken"
+                    }
+}
