@@ -65,6 +65,12 @@ jobs:
         run: npm ci
 
       - name: Build React App
+        env:
+          REACT_APP_CLARITY_ID: ${{ secrets.REACT_APP_CLARITY_ID }}
+          REACT_APP_GA_MEASUREMENT_ID: ${{ secrets.REACT_APP_GA_MEASUREMENT_ID }}
+          REACT_APP_ADSENSE_CLIENT_ID: ${{ secrets.REACT_APP_ADSENSE_CLIENT_ID }}
+          REACT_APP_ADSENSE_AD_SLOT: ${{ secrets.REACT_APP_ADSENSE_AD_SLOT }}
+          REACT_APP_GTM_ID: ${{ secrets.REACT_APP_GTM_ID }}
         run: npm run build
 
       - name: Deploy to Static Web App
