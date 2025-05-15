@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
 const DetailedNotes = ({ detailedNotes }) => {
   if (!detailedNotes) return null;
@@ -25,8 +27,11 @@ const DetailedNotes = ({ detailedNotes }) => {
           <div>
             <h3 className="font-bold">Counter Strategies</h3>
             <ul className="list-disc list-inside">
-              {detailedNotes.counterStrategies.map(counter => (
-                <li key={counter}>{counter}</li>
+              {detailedNotes.counterStrategies.map((counter) => (
+                <li key={counter} className="flex items-start space-x-2">
+                  <span>•</span>
+                  <ReactMarkdown rehypePlugins={[rehypeRaw]} components={{ a: ({ node, ...props }) => <a {...props} className="text-primary" /> }}>{counter}</ReactMarkdown>
+                </li>
               ))}
             </ul>
           </div>

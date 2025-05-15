@@ -5,6 +5,7 @@ import Section from '../../../components/organisms/Section';
 import List from '../../../components/List';
 import ImageWithFallback from '../../../components/atoms/ImageWithFallback';
 import { mapsService, tipsService } from '../../../services/api';
+import { createTipsFilterUrl, createOperatorLink } from '../../../utils/linkUtils';
 
 const MapDetail = () => {
   const { mapName } = useParams();
@@ -48,6 +49,32 @@ const MapDetail = () => {
 
     fetchData();
   }, [mapName]);
+
+  // Helper function to create bomb site links
+  const renderBombSiteLink = (bombSite) => {
+    return (
+      <Link 
+        to={createTipsFilterUrl({ map: mapData.name, bombSite })}
+        className="text-primary hover:underline"
+      >
+        {bombSite}
+      </Link>
+    );
+  };
+
+  // Helper function for operator links in text
+  const renderOperatorLinks = (operators) => {
+    if (!operators || !Array.isArray(operators)) return null;
+    
+    return operators.map((op, index) => (
+      <React.Fragment key={op}>
+        <Link to={createOperatorLink(op)} className="text-primary hover:underline">
+          {op}
+        </Link>
+        {index < operators.length - 1 && ', '}
+      </React.Fragment>
+    ));
+  };
 
   if (loading) return <div>Loading...</div>;
 
@@ -102,6 +129,30 @@ const MapDetail = () => {
               </div>
             </Section>
 
+            {/* Bomb Sites Section */}
+            {mapData.bombSites && mapData.bombSites.length > 0 && (
+              <Section title="Bomb Sites">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {mapData.bombSites.map((site, index) => (
+                    <div key={index} className="card bg-base-200 shadow-md p-3 border-l-4 border-primary">
+                      <h3 className="font-semibold">
+                        {renderBombSiteLink(site.name)}
+                      </h3>
+                      {site.recommendedOperators && (
+                        <div className="mt-2">
+                          <p className="text-sm text-gray-600 dark:text-gray-400">Recommended Operators:</p>
+                          <p className="text-sm mt-1">
+                            {renderOperatorLinks(site.recommendedOperators)}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </Section>
+            )}
+
+            {/* Community Tips Section */}
             <Section title="Community Tips & Strategies">
               <List
                 items={relatedTips.slice(0, 3)}
@@ -119,9 +170,13 @@ const MapDetail = () => {
                         </span>
                       )}
                       {tip.tags && tip.tags.map((tag, tagIndex) => (
-                        <span key={tagIndex} className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded">
+                        <Link 
+                          key={tagIndex} 
+                          to={createTipsFilterUrl({ tag })}
+                          className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded"
+                        >
                           {tag}
-                        </span>
+                        </Link>
                       ))}
                     </div>
                   </Link>
@@ -129,7 +184,7 @@ const MapDetail = () => {
               />
               {relatedTips.length > 3 && (
                 <div className="mt-4 text-center">
-                  <Link to={`/siege/tips?map=${mapData.name}`} className="text-primary hover:text-primary-focus">
+                  <Link to={createTipsFilterUrl({ map: mapData.name })} className="text-primary hover:text-primary-focus">
                     View all {relatedTips.length} tips for {mapData.name}
                   </Link>
                 </div>

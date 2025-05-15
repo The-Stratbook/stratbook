@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import Layout from '../../../components/templates/Layout';
 import { tipsService } from '../../../services/api';
 
@@ -199,6 +200,13 @@ const TipDetail = () => {
     schemaMarkup.push(videoSchema);
   }
 
+  // Components for ReactMarkdown to render links with primary color
+  const markdownComponents = {
+    a: ({ node, ...props }) => (
+      <a {...props} className="text-primary hover:underline" />
+    )
+  };
+
   return (
     <Layout seoProps={{ 
       title: tip.title, 
@@ -230,7 +238,12 @@ const TipDetail = () => {
           <div className="w-full md:w-2/3">
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
               <h1 className="text-2xl sm:text-3xl font-bold text-primary mb-4">{tip.title}</h1>
-              <ReactMarkdown>{tip.description}</ReactMarkdown>
+              <ReactMarkdown 
+                rehypePlugins={[rehypeRaw]} 
+                components={markdownComponents}
+              >
+                {tip.description}
+              </ReactMarkdown>
             </section>
 
             <section className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">

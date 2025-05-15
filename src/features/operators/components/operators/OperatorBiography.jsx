@@ -1,4 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+import { createOperatorLink, createMapLink } from '../../../../utils/linkUtils';
 
 /**
  * Helper function to format date
@@ -38,7 +42,7 @@ const formatOperatorDate = (dateString) => {
 };
 
 /**
- * A component to display operator biographical information
+ * A component to display operator biography information with enhanced internal links
  * 
  * @param {Object} props
  * @param {Object} props.biography - The operator's biography data
@@ -46,23 +50,73 @@ const formatOperatorDate = (dateString) => {
 const OperatorBiography = ({ biography }) => {
   if (!biography) return null;
 
+  // Components for ReactMarkdown to render links with primary color
+  const markdownComponents = {
+    a: ({ node, ...props }) => (
+      <a {...props} className="text-primary hover:underline" />
+    )
+  };
+
   return (
     <div>
       <h2 className="text-2xl font-bold mb-4 border-b pb-2">Biography</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-        <div>
-          <p className="text-gray-600 dark:text-gray-400">Real Name</p>
-          <p className="font-medium">{biography.realName}</p>
-        </div>
-        <div>
-          <p className="text-gray-600 dark:text-gray-400">Date of Birth</p>
-          <p className="font-medium">{formatOperatorDate(biography.dateOfBirth)}</p>
-        </div>
-        <div>
-          <p className="text-gray-600 dark:text-gray-400">Place of Birth</p>
-          <p className="font-medium">{biography.placeOfBirth}</p>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        {biography.realName && (
+          <div>
+            <p className="text-gray-600 dark:text-gray-400">Real Name</p>
+            <p className="font-medium">{biography.realName}</p>
+          </div>
+        )}
+        
+        {biography.birthplace && (
+          <div>
+            <p className="text-gray-600 dark:text-gray-400">Birthplace</p>
+            <p className="font-medium">{biography.birthplace}</p>
+          </div>
+        )}
+        
+        {biography.height && (
+          <div>
+            <p className="text-gray-600 dark:text-gray-400">Height</p>
+            <p className="font-medium">{biography.height}</p>
+          </div>
+        )}
+        
+        {biography.weight && (
+          <div>
+            <p className="text-gray-600 dark:text-gray-400">Weight</p>
+            <p className="font-medium">{biography.weight}</p>
+          </div>
+        )}
       </div>
+      
+      {biography.organization && (
+        <div className="mb-4">
+          <p className="text-gray-600 dark:text-gray-400">Organization</p>
+          <p className="font-medium">{biography.organization}</p>
+        </div>
+      )}
+      
+      {biography.description && (
+        <div className="mb-4">
+          <p className="text-gray-600 dark:text-gray-400 mb-1">Background</p>
+          <ReactMarkdown 
+            rehypePlugins={[rehypeRaw]}
+            components={markdownComponents}
+          >
+            {biography.description}
+          </ReactMarkdown>
+        </div>
+      )}
+      
+      {biography.quote && (
+        <div>
+          <p className="text-gray-600 dark:text-gray-400 mb-1">Quote</p>
+          <blockquote className="italic border-l-4 border-primary pl-4 py-2">
+            "{biography.quote}"
+          </blockquote>
+        </div>
+      )}
     </div>
   );
 };
